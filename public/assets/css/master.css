@@ -1,0 +1,145 @@
+.logo img{
+    display: block;
+}
+:focus{
+    outline: none;
+}
+.social_icons ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icons li a img {
+    width: 27px;
+}
+.social_icons li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.face img {
+    width: 15px !important;
+}
+.face {
+    background: #4865AB;
+}
+.twe {
+    background: #5DB2F7;
+}
+.lin_d {
+    background: #0674B0;
+}
+.sign_with h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px !important;
+    font-weight: 600;
+}
+ion-header {
+    display: none;
+}
+.or h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px !important;
+    font-weight: 600;
+}
+.user_nam {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    padding: 0px 20px;
+    color: #333;
+    border-color: #999999;
+}
+.pdd_b {
+    margin-bottom: 21px;
+    position: relative;
+}
+.button-solid {
+    --background: #F1D000 !important;
+    --box-shadow: none;
+}
+.icon_in {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    display: flex;
+}
+.sign_ups {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #fff !important;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
+    box-shadow: none;
+    text-transform: inherit;
+}
+.for_got {
+    text-align: center;
+    margin: auto;
+}
+.for_got a {
+    color: #888;
+    font-size: 20px;
+}
+.sign_doens {
+    text-align: center;
+    margin: auto;
+    margin-top: 20% !important;
+    display: block;
+    color: #888;
+    font-size: 20px;
+}
+.sign_doens a{
+    color: #F1D000;
+    font-weight: 600;
+}
+.top_am {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+#container {
+    text-align: center;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+}
+ 
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+    margin-bottom: 20px;
+}
+  
+#container a {
+    text-decoration: none;
+}
+.error_mesg_invalid p {
+    color: red !important;
+    font-size: 20px !important;
+    font-weight: 600;
+}
