@@ -50,7 +50,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader,IonContent,IonToolbar, IonCard,IonTitle, IonItem, IonLabel, IonButton, IonInput, alertController, IonIcon } from '@ionic/vue'
+import { IonPage,IonHeader,IonContent,IonToolbar,IonTitle, alertController } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -97,35 +97,15 @@ export default defineComponent({
           await errorAlert.present()
         }else{
           this.invalid=true;
-           var self = this;
-          setTimeout(function(){self.invalid=false},1500)
-          // const errorAlert = await alertController
-          //   .create({
-          //     header: 'Failed',
-          //     subHeader: 'Sign in Failed',
-          //     message: "Invalid username or password",
-          //     buttons: ['OK'],
-          //   });
-          // await errorAlert.present()
-
+          setTimeout(()=>{this.invalid=false},1500)
         }
       }else{
-       // alert("Please fill the required fields")
-        // const errorAlert = await alertController
-        //     .create({
-        //       header: 'Failed',
-        //       subHeader: 'Sign in Failed',
-        //       message: "Please fill username and password",
-        //       buttons: ['OK'],
-        //     });
-        // await errorAlert.present()
-        var self = this;
-        setTimeout(function(){self.invalid=false},1500)
         this.invalid=true;
+        setTimeout(()=>{this.invalid=false},1500)
       }
     },
-    validEmail: function (email:any) {
-      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    validEmail: function (email: any) {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     }
   }

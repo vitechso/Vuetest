@@ -71,7 +71,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader,IonContent,IonToolbar, IonCard,IonTitle, IonItem, IonLabel, IonButton, IonInput, alertController, IonIcon } from '@ionic/vue'
+import { IonPage,IonHeader,IonContent,IonToolbar,IonTitle, alertController } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -113,14 +113,11 @@ export default defineComponent({
           await errorAlert.present()
         }else{
           this.invalid=true;
-          var self = this;
-          setTimeout(function(){self.invalid=false},1500)
+          setTimeout(()=>{this.invalid=false},1500)
         }
       }else{
-       // alert("Please fill the required fields")
         this.invalid=true;
-         var self = this;
-          setTimeout(function(){self.invalid=false},1500)
+        setTimeout(()=>{this.invalid=false},1500)
       }
     }
   }
