@@ -1,18 +1,6 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Login</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Login</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
       <div id="container">
       <div class="logo">
         <img src="assets/images/logo.svg">
@@ -71,7 +59,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader,IonContent,IonToolbar,IonTitle, alertController } from '@ionic/vue'
+import { IonPage, IonContent, alertController } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -79,10 +67,7 @@ export default defineComponent({
   name: 'Home',
   components: {
     IonContent,
-    IonHeader,
     IonPage,
-    IonTitle,
-    IonToolbar
   },
   setup() {
       const router = useRouter();
