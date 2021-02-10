@@ -1,0 +1,161 @@
+<template>
+
+<ion-page> 
+<ion-header class="header_am">
+  <ion-toolbar>
+    <ion-row class="ion-align-items-center">
+        <ion-col size="1">
+            <div class="ion-text-center">
+                <img src="assets/images/back_btn.svg"/>
+            </div>
+        </ion-col>
+      <ion-col size="9">
+        <div class="ion-text-left">
+          <span class="title_top">Settings</span> 
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <ion-buttons>
+            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+  <ion-content :fullscreen="true">
+    <div class="main_setting ion-margin">
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/prices.svg"/>
+            </div>
+            <ion-label>Prices</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/transaction_h.svg"/>
+            </div>
+            <ion-label>Transaction History</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/change_pass.svg"/>
+            </div>
+            <ion-label>Change Password</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/security.svg"/>
+            </div>
+            <ion-label>Security</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/terms.svg"/>
+            </div>
+            <ion-label>Terms</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/privacy.svg"/>
+            </div>
+            <ion-label>Privacy</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/legal.svg"/>
+            </div>
+            <ion-label>Legal Notice</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/ratting.svg"/>
+            </div>
+            <ion-label>Rating & Feedback</ion-label>
+            <div slot="end" class="control_cin ens_sd">
+                <img src="assets/images/right_arrow.svg"/>
+            </div>
+        </ion-item>
+
+        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <div slot="start" class="icons_s">
+                <img src="assets/images/Dark_mode.svg"/>
+            </div>
+            <ion-label>Dark Mode</ion-label>
+            <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+        </ion-item>
+
+        <ion-row class="ion-margin-top">
+            <ion-col size="12">
+                <div class="suppoets">
+                    <img src="assets/images/support_icon.svg"/>
+                    <h3>Help & Support</h3>
+                    <ion-button shape="round" class="ok_btn">Logout</ion-button>
+                    <p class="app_vers">App Version: 1879.2021</p>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </div>
+  </ion-content>
+
+</ion-page>
+</template>
+
+<script lang="ts">
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonButtons, IonMenuButton, IonToggle  } from '@ionic/vue'
+import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
+
+export default defineComponent({
+  name: 'Settings',
+  components: {
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonToolbar,
+    IonButtons,
+    IonMenuButton,
+    IonToggle,
+    IonButton
+  },
+  setup() {
+      const router = useRouter();
+      return { router };
+  },
+  methods:{
+      
+  }
+});
+</script>
+
+<style scoped>
+
+</style>

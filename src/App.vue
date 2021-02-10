@@ -4,7 +4,9 @@
   <ion-menu side="start" menu-id="first" content-id="main">
     <ion-row class="top_menu_sl">
       <ion-col size="10">
-        <img src="assets/images/logo.svg"/>
+        <div class="kdh">
+          <img src="assets/images/logo.svg"/>
+        </div> 
       </ion-col>
       <ion-col size="2">
         <div class="menu_close">
@@ -14,15 +16,39 @@
         <!-- <ion-button @click="closeMenu" >Close</ion-button> -->
       </ion-col>
     </ion-row>
-    <ion-content>
+    <ion-content class="back_white">
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon02.svg"/> Drafts <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon03.svg"/> Sent <ion-badge class="bans_sj" slot="end">10</ion-badge></ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon04.svg"/> Account</ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
+        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon06.svg"/> Settings</ion-item>
       </ion-list>
     </ion-content>
+
+    <ion-footer class="ion-no-border">
+      <ion-toolbar>
+        <ion-row class="row_foo ion-padding-start ion-padding-end">
+          <ion-col size="3">
+            <div class="user_short_name">
+              <p>JS</p>
+            </div>
+          </ion-col>
+          <ion-col size="8">
+            <div class="user_name_email">
+              <p class="user_name"><strong>Justin Shepp</strong></p>
+              <p class="email">justin.shepp@gmail.com</p>
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div class="user_logout">
+              <img src="assets/images/logout.svg" />
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-toolbar>
+    </ion-footer>
   </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
    </ion-split-pane>
@@ -30,7 +56,7 @@
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController } from '@ionic/vue';
+import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonSplitPane, IonToolbar,  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -40,7 +66,13 @@ export default defineComponent({
     IonRouterOutlet,
     IonContent,
     IonItem,
+    IonBadge,
+    IonFooter,
     IonList,
+    IonRow,
+    IonCol,
+    IonSplitPane,
+    IonToolbar,
     IonMenu
   },
   methods:{

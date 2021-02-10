@@ -12,6 +12,12 @@ import Writedocument from '../views/Writedocument.vue';
 import Changesignature from '../views/Changesignature.vue';
 import Preview from '../views/Preview.vue';
 import Selectsendtype from '../views/Selectsendtype.vue';
+import Contacts from '../views/Contacts.vue';
+import Settings from '../views/Settings.vue';
+import Security from '../views/Security.vue';
+import Changepassword from '../views/Changepassword.vue';
+import Transactionhistory from '../views/Transactionhistory.vue';
+import Privacy from '../views/Privacy.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -77,6 +83,36 @@ const routes: Array<RouteRecordRaw> = [
     path: '/selectsendtype',
     name: 'Selectsendtype',
     component: Selectsendtype
+  },
+  {
+    path: '/contacts',
+    name: 'Contacts',
+    component: Contacts
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: Settings
+  },
+  {
+    path: '/security',
+    name: 'Security',
+    component: Security
+  },
+  {
+    path: '/change-password',
+    name: 'Changepassword',
+    component: Changepassword
+  },
+  {
+    path: '/transaction-history',
+    name: 'Transactionhistory',
+    component: Transactionhistory
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy
   }
   
 ]

@@ -1,0 +1,197 @@
+<template>
+
+<ion-page> 
+<ion-header class="header_am">
+  <ion-toolbar>
+    <ion-row class="ion-align-items-center">
+        <ion-col size="1">
+            <div class="ion-text-center">
+                <img src="assets/images/back_btn.svg"/>
+            </div>
+        </ion-col>
+      <ion-col size="9">
+        <div class="ion-text-left">
+          <span class="title_top">Transaction History</span> 
+        </div>
+      </ion-col>
+      <ion-col size="2">
+         
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+  <ion-content :fullscreen="true" >
+    <div id="container_fax">
+        <div class="text_top ion-text-left ion-padding-top ion-padding-bottom">
+            <p class="credit_bal">Credit Balance: <strong>€15.00</strong> </p>
+        </div>
+        
+        <div class="fax_box history_details">
+            <div class="inner_history_details">
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order No:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p><strong>12009</strong></p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order Date:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>10 January 2021</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Item:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>Fax 4 Recipients</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Cost:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p class="red_c">- €2.50</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Action:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <div class="action-icon">
+                            <img src="assets/images/view.svg" width="33" class="view-icon"/>
+                            <img src="assets/images/share.svg" width="23" class="share-icon"/>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+            <div class="inner_history_details">
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order No:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p><strong>12008</strong></p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order Date:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>26 December 2020</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Item:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>Credits</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Cost:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p class="red_c">+ €20.00</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Action:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <div class="action-icon">
+                            <img src="assets/images/view.svg" width="33" class="view-icon"/>
+                            <img src="assets/images/share.svg" width="23" class="share-icon"/>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+
+            <div class="inner_history_details">
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order No:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p><strong>12007</strong></p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Order Date:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>15 December 2020</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Item:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p>Fax 4 Recipients</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Cost:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <p class="red_c">- €2.50</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="row_01">
+                    <ion-col size="4">
+                        <p><strong>Action:</strong></p>
+                    </ion-col>
+                    <ion-col size="8">
+                        <div class="action-icon">
+                            <img src="assets/images/view.svg" width="33" class="view-icon"/>
+                            <img src="assets/images/share.svg" width="23" class="share-icon"/>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </div>
+
+    </div>
+  </ion-content>
+</ion-page>
+</template>
+
+<script lang="ts">
+import { IonPage,IonHeader, IonContent, IonToolbar  } from '@ionic/vue'
+import {add} from 'ionicons/icons';
+import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
+
+export default defineComponent({
+  name: 'Transactionhistory',
+  components: {
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonToolbar
+  },
+  setup() {
+      const router = useRouter();
+      return { router, add };
+  }
+});
+</script>
+
+<style scoped>
+
+</style>
