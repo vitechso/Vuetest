@@ -4,6 +4,9 @@
       <div id="container" class="main_self">
       <ion-row>
         <ion-col size="12">
+        <div class="drak_mode">
+          <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+        </div>
           <div class="logo">
             <img src="/assets/images/normal_u1.svg">
           </div>
@@ -50,7 +53,7 @@
 
         <ion-row>
         <ion-col size="12">
-          <ion-button type="submit" shape="round" class="get_st">Get Started</ion-button>
+          <ion-button type="submit" shape="round" class="get_st" @click="() => router.push('/all-letters')">Get Started</ion-button>
         </ion-col>
       </ion-row>
        

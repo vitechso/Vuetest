@@ -15,7 +15,7 @@
         </div>
       </ion-col>
       <ion-col size="2">
-        <div class="search_icon">
+        <div class="search_icon" @click="() => router.push('/selectsendtype')">
           <img src="assets/images/send_share.svg"/>
         </div>
       </ion-col>
@@ -68,7 +68,7 @@
     </div>
   </ion-content>
 
-  <ion-footer class="ion-no-border">
+  <ion-footer class="ion-no-border foo_bottom">
     <ion-toolbar>
       <ion-button class="custom_btn_export">Export Letter</ion-button>
     </ion-toolbar>

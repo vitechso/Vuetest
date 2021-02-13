@@ -15,8 +15,10 @@
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
     "core-js": "^3.6.5",
+    "signature_pad": "^3.0.0-beta.4",
     "vue": "^3.0.0-0",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-signature-pad": "^2.0.2"
   },
   "devDependencies": {
     "@capacitor/cli": "^2.4.6",

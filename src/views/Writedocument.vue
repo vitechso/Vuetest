@@ -23,7 +23,7 @@
 
       <ion-col size="2">
         <div class="search_icon">
-          <img src="assets/images/send_share.svg"/>
+          <img @click="documentSend" src="assets/images/send_share.svg"/>
         </div>
       </ion-col>
 
@@ -33,8 +33,9 @@
   <div class="lock_unlock">
         <ion-row>
             <ion-col size="6">
-                <div class="img_unloacks">
-                    <img src="assets/images/un_lock.svg"/>
+                <div class="img_unloacks" @click="addclass($event)">
+                    <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
+                    <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
                 </div>
             </ion-col>
         </ion-row>
@@ -42,7 +43,7 @@
 </ion-header>
   <ion-content :fullscreen="true" >
     
-    <div id="container_write">
+    <div :class="styleClass" id="container_write">
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="3">
                 <p><strong>From</strong></p>
@@ -65,7 +66,7 @@
                 <p>John Anderson 243 Park Hall...</p>
             </ion-col>
             <ion-col size="1">
-                <div class="contact_book">
+                <div class="contact_book" @click="() => router.push('/contacts')">
                     <img src="assets/images/contact_book.svg"/>
                 </div>
             </ion-col>
@@ -75,14 +76,10 @@
             <ion-col size="3">
                 <p><strong>Subject</strong></p>
             </ion-col>
-            <ion-col size="8">
+            <ion-col size="9">
                 <p>Address Change</p>
             </ion-col>
-            <ion-col size="1">
-                <div class="contact_book">
-                    <img src="assets/images/contact_book.svg"/>
-                </div>
-            </ion-col>
+            
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
@@ -110,7 +107,7 @@
             <ion-col size="4"></ion-col>
             <ion-col size="5">
                 <div class="btn_ajj">
-                    <ion-button shape="round" type="button">Adjust</ion-button>
+                    <ion-button shape="round" type="button" @click="() => router.push('/changesignature')">Adjust</ion-button>
                 </div>
             </ion-col>
         </ion-row>
@@ -165,14 +162,14 @@
             </ion-col>
 
             <ion-col size="6">
-                <div class="icon_bn">
+                <div class="icon_bn" @click="() => router.push('/preview')">
                     <img src="assets/images/view_black.svg"/>
                 </div>
             </ion-col>
 
             <ion-col size="3">
                 <div class="icon_bn right_km">
-                    <img src="assets/images/delete_black.svg"/>
+                    <img @click="presentAlert" src="assets/images/delete_black.svg"/>
                 </div>
             </ion-col>
         </ion-row>
@@ -182,7 +179,8 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonFooter, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, IonSelectOption, IonSelect, IonToggle, IonCol, IonRow } from '@ionic/vue'
+import { IonPage,IonHeader, IonFooter, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, IonSelectOption, IonSelect, IonToggle, IonCol, IonRow,
+alertController  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -207,6 +205,44 @@ export default defineComponent({
   setup() {
       const router = useRouter();
       return { router, add };
+  },
+  data() {
+      return {
+          styleClass:""
+      }
+  },
+  methods:{
+      
+      async presentAlert() {
+        const alert = await alertController
+            .create({
+            cssClass: 'my-custom-class',
+            header: 'Delete Document',
+            subHeader: 'Do you really want to delete document',
+            message: 'Address Change?',
+            buttons: ['Cancel', 'Delete'],
+            });
+        return alert.present();
+     },
+
+     async documentSend() {
+        const alert = await alertController
+            .create({
+            cssClass: 'document_send',
+            message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
+            });
+        return alert.present();
+     },
+
+     addclass(){
+         if(this.$data.styleClass != "locked"){
+            this.$data.styleClass = "locked"
+         }else{
+             this.$data.styleClass = ""
+         }
+        
+     }
+     
   }
 });
 </script>

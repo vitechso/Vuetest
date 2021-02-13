@@ -3,12 +3,15 @@
     <ion-content :fullscreen="true">
     
       <div id="container_01">
+      <div class="drak_mode">
+          <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+        </div>
       <div class="logo">
         <img src="/assets/images/normal_u1.svg">
       </div>
         <form @submit.prevent="handleLogin">
         <div class="sign_with">
-          <h2>Sign in with</h2>
+          <h2>Sign Up With Social</h2>
           <div class="social_icons">
             <ul>
               <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
@@ -51,11 +54,11 @@
         </div>
   </div>
         <div lines="none" class="pdd_b top_am">
-          <ion-button type="submit" shape="round" class="sign_ups">Sign In</ion-button>
+          <ion-button type="submit" shape="round" class="sign_ups" @click="() => router.push('/intro')">Sign In</ion-button>
         </div>
         <div lines="none" class="pdd_b">
           <div class="sign_doens mt-0">
-           You have an account <a href="#">Sign Up ?</a>
+           You have an account <a @click="() => router.push('/home')">Sign Up ?</a>
           </div>
         </div>
        <!-- <div v-if="invalid" class="error_mesg_invalid">

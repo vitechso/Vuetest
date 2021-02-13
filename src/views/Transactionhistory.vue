@@ -5,13 +5,15 @@
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
-            <div class="ion-text-center">
-                <img src="assets/images/back_btn.svg"/>
-            </div>
+            <router-link to="/">    
+                <div class="ion-text-center">
+                    <img src="assets/images/back_btn.svg"/>
+                </div>
+            </router-link>
         </ion-col>
       <ion-col size="9">
         <div class="ion-text-left">
-          <span class="title_top">Transaction History</span> 
+            <span class="title_top">Transaction History</span> 
         </div>
       </ion-col>
       <ion-col size="2">

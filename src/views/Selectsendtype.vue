@@ -25,7 +25,7 @@
   <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax">
 
-    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top">
+    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top" @click="() => router.push('/sendprintedletter')">
         <ion-col size="4">
             <div class="icon_m">
                 <img src="assets/images/yellow_print.svg" />
@@ -38,7 +38,7 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top">
+    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top" @click="() => router.push('/sendfax')">
         <ion-col size="4">
             <div class="icon_m">
                 <img src="assets/images/yellow_fax.svg" />

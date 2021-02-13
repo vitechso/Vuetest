@@ -6,7 +6,9 @@
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
             <div class="ion-text-center">
+            <router-link to="/">
                 <img src="assets/images/back_btn.svg"/>
+            </router-link>
             </div>
         </ion-col>
       <ion-col size="9">
@@ -24,27 +26,28 @@
 </ion-header>
   <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
-            <div slot="start" class="icons_s">
-                <img src="assets/images/prices.svg"/>
-            </div>
-            <ion-label>Prices</ion-label>
-            <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
-            </div>
-        </ion-item>
+            <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+                <div slot="start" class="icons_s">
+                    <img src="assets/images/prices.svg"/>
+                </div>
+                <ion-label>Prices</ion-label>
+                <div slot="end" class="control_cin ens_sd">
+                    <img src="assets/images/right_arrow.svg"/>
+                </div>
+            </ion-item>
+        
+            <ion-item @click="() => router.push('/transaction-history')" lines="none" class="list_cons setting_bs ion-margin-bottom">
+                <div slot="start" class="icons_s">
+                    <img src="assets/images/transaction_h.svg"/>
+                </div>
+                <ion-label>Transaction History</ion-label>
+                <div slot="end" class="control_cin ens_sd">
+                    <img src="assets/images/right_arrow.svg"/>
+                </div>
+            </ion-item>
 
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
-            <div slot="start" class="icons_s">
-                <img src="assets/images/transaction_h.svg"/>
-            </div>
-            <ion-label>Transaction History</ion-label>
-            <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
-            </div>
-        </ion-item>
-
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+        
+        <ion-item @click="() => router.push('/change-password')" lines="none" class="list_cons setting_bs ion-margin-bottom">
             <div slot="start" class="icons_s">
                 <img src="assets/images/change_pass.svg"/>
             </div>
@@ -53,36 +56,43 @@
                 <img src="assets/images/right_arrow.svg"/>
             </div>
         </ion-item>
+        
 
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
-            <div slot="start" class="icons_s">
-                <img src="assets/images/security.svg"/>
-            </div>
-            <ion-label>Security</ion-label>
-            <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
-            </div>
-        </ion-item>
+        
+            <ion-item @click="() => router.push('/security')" lines="none" class="list_cons setting_bs ion-margin-bottom">
+                <div slot="start" class="icons_s">
+                    <img src="assets/images/security.svg"/>
+                </div>
+                <ion-label>Security</ion-label>
+                <div slot="end" class="control_cin ens_sd">
+                    <img src="assets/images/right_arrow.svg"/>
+                </div>
+            </ion-item>
+        
 
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
-            <div slot="start" class="icons_s">
-                <img src="assets/images/terms.svg"/>
-            </div>
-            <ion-label>Terms</ion-label>
-            <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
-            </div>
-        </ion-item>
+        
+            <ion-item  lines="none" class="list_cons setting_bs ion-margin-bottom">
+                <div slot="start" class="icons_s">
+                    <img src="assets/images/terms.svg"/>
+                </div>
+                <ion-label>Terms</ion-label>
+                <div slot="end" class="control_cin ens_sd">
+                    <img src="assets/images/right_arrow.svg"/>
+                </div>
+            </ion-item>
+        
 
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
-            <div slot="start" class="icons_s">
-                <img src="assets/images/privacy.svg"/>
-            </div>
-            <ion-label>Privacy</ion-label>
-            <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
-            </div>
-        </ion-item>
+        
+            <ion-item @click="() => router.push('/privacy')" lines="none" class="list_cons setting_bs ion-margin-bottom">
+                <div slot="start" class="icons_s">
+                    <img src="assets/images/privacy.svg"/>
+                </div>
+                <ion-label>Privacy</ion-label>
+                <div slot="end" class="control_cin ens_sd">
+                    <img src="assets/images/right_arrow.svg"/>
+                </div>
+            </ion-item>
+        
 
         <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
             <div slot="start" class="icons_s">
@@ -94,7 +104,7 @@
             </div>
         </ion-item>
 
-        <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
+        <ion-item @click="() => router.push('/rating-feedback')" lines="none" class="list_cons setting_bs ion-margin-bottom">
             <div slot="start" class="icons_s">
                 <img src="assets/images/ratting.svg"/>
             </div>
@@ -109,7 +119,7 @@
                 <img src="assets/images/Dark_mode.svg"/>
             </div>
             <ion-label>Dark Mode</ion-label>
-            <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+            <ion-toggle @ionChange="changeTheme($event)"  id="themeToggle" slot="end"></ion-toggle>
         </ion-item>
 
         <ion-row class="ion-margin-top">
@@ -128,7 +138,6 @@
 
 </ion-page>
 </template>
-
 <script lang="ts">
 import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonButtons, IonMenuButton, IonToggle  } from '@ionic/vue'
 import { defineComponent } from 'vue';
@@ -150,8 +159,15 @@ export default defineComponent({
       const router = useRouter();
       return { router };
   },
-  methods:{
-      
+  methods :{
+    changeTheme(event: any){
+        console.log(event)
+        if(event.detail.checked){
+            document.body.classList.add('dark')
+        }else{
+            document.body.classList.remove('dark')
+        }
+    }
   }
 });
 </script>

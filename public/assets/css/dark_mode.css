@@ -1,0 +1,218 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark mode variables go here */
+    }
+  }
+.dark p, h1, h2, h3, h4, h5, h6, a{
+    color: #fff;
+}
+body.dark {
+/* Dark mode variables go here */
+    --ion-background-color: #111 !important;
+}
+.dark .setting_bs {
+    background: #333 !important;
+    --background: #333 !important;
+    border: none;
+}
+.dark #container_write {
+    --background: #111;
+    background: #111;
+}
+.dark .slide_fils img {
+    filter: brightness(50);
+}
+.dark .search_bts{
+    color: #aaa;
+}
+.dark ion-checkbox {
+    background: #333;
+    --background: #333;
+    box-shadow: none;
+    border-style: unset;
+    border-width: 1px !important;
+}
+.dark .control_cin img {
+    filter: brightness(50);
+}
+.dark .list_cons {
+    background: #333;
+    --background: #333;
+    border-bottom: 1px solid #4a4a4a;
+}
+.dark .header_am{
+    --background: #111 !important;
+    background: #111 !important;
+}
+.dark ion-content {
+    --background: #111 !important;
+    background: #111 !important;
+}
+.dark .icons_s img {
+    filter: brightness(50);
+}
+.dark .suppoets img {
+    filter: brightness(50);
+}
+.dark .list_cons ion-label{
+    color: #fff !important;
+}
+.dark .suppoets h3 {
+    color: #FFF;
+}
+.dark .ens_sd img {
+    filter: brightness(50);
+}
+.dark .menu_close img {
+    filter: brightness(50);
+}
+.dark .icon_menus img {
+    filter: brightness(50);
+}
+.dark .icon_menus {
+    color: #fff;
+}
+.dark .bans_sj {
+    color: #fff;
+}
+.dark .user_logout img {
+    filter: brightness(50);
+}
+.drak_mode img{
+    width: 70%;
+}
+.dark .kdh {
+    display: none;
+}
+.dark .drak_mode {
+    display: block;
+}
+.dark .sign_with h2{
+    color: #fff;
+}
+.dark .or h2{
+    color: #fff;
+}
+.dark .user_nam{
+    border-color: #cccccc;
+}
+.dark .for_got a{
+    color: #fff;
+}
+.dark .sign_doens{
+    color: #fff;
+}
+.dark .logo{
+    display: none;
+}
+.w-100{
+    width: 100% !important;
+}
+.dark #container p{
+    font-size: 21px;
+    color: #fff;
+}
+.dark .texts_letts p{
+    color: #bbbbbb !important;
+}
+.dark .bor_b {
+    border-bottom: 1px solid #4a4a4a;
+}
+.dark .texts_letts h3{
+    color: #fff;
+}
+.dark .letter_pic{
+    box-shadow: none;
+}
+.dark .upload img {
+    filter: brightness(50);
+}
+.dark .user_ids {
+    font-weight: 100;
+    color: #959595;
+}
+.dark .alert-radio-label{
+    color: #959595;
+}
+.dark .lock_unlock{
+    border: 1px solid #4a4a4a;
+    background-color: #333333;
+}
+.dark .img_unloacks img {
+    filter: brightness(50);
+}
+.dark .contact_book img {
+    filter: brightness(50);
+}
+.dark .back_foo ion-toolbar{
+    background: #333;
+    --background: #333;
+    border-top: 1px solid #111;
+}
+.dark .icon_bn img {
+    filter: brightness(50);
+}
+.dark .title_doc h3 {
+    color: #fff;
+}
+.dark .innerr_b p {
+    color: #333;
+}
+.dark .privew_r p {
+    color: #333;
+}
+.dark .sincerely p {
+    color: #333;
+}
+.dark .foo_bottom ion-toolbar {
+    background: #333 !important;
+    --background: #333;
+}
+.dark .custom_btn_export.button-solid {
+    background: #333;
+    --background: #333 !important;
+}
+.dark .text_share h3 {
+    color: #fff;
+}
+.dark .send_shares{
+    background: #333333;
+}
+.dark .fax_box {
+    background: #333;
+    border-color: #4a4a4a;
+}
+.dark .num_tols {
+    background: #555555;
+}
+.dark .g_total {
+    background: #666666;
+}
+.dark .inner_details {
+    border-color: #4a4a4a;
+}
+.dark .delete_btn a {
+    color: #fff;
+}
+.dark .delete_btn img {
+    filter: brightness(50);
+}
+.dark .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+    width: 100%;
+    max-width: 93%;
+    background: #333333;
+    color: #fff;
+}
+.dark .alert-title {
+    color: #fff;
+}
+.dark .alert-sub-title{
+    color: #fff;
+}
+.dark .alert-message{
+    color: #fff;
+}
+ion-backdrop {
+    background: #000;
+    opacity: 0.7 !important;
+}

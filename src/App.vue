@@ -4,6 +4,9 @@
   <ion-menu side="start" menu-id="first" content-id="main">
     <ion-row class="top_menu_sl">
       <ion-col size="10">
+        <div class="drak_mode">
+          <img src="assets/images/dark_mode_logo.svg"/>
+        </div>
         <div class="kdh">
           <img src="assets/images/logo.svg"/>
         </div> 
@@ -18,12 +21,24 @@
     </ion-row>
     <ion-content class="back_white">
       <ion-list>
-        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
+      
+        <ion-item @click="() => {router.push('/all-letters');closeMenu()}" lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
+      
+      
         <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon02.svg"/> Drafts <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item>
+      
+      
         <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon03.svg"/> Sent <ion-badge class="bans_sj" slot="end">10</ion-badge></ion-item>
-        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon04.svg"/> Account</ion-item>
-        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
-        <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon06.svg"/> Settings</ion-item>
+      
+      
+        <ion-item lines="none" @click="() => {router.push('/account');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon04.svg"/> Account</ion-item>
+      
+      
+        <ion-item lines="none" @click="() => {router.push('/contacts');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
+      
+      
+        <ion-item lines="none" @click="() => {router.push('/settings');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon06.svg"/> Settings</ion-item>
+      
       </ion-list>
     </ion-content>
 
@@ -58,6 +73,7 @@
 <script lang="ts">
 import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonSplitPane, IonToolbar,  } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   name: 'App',
@@ -74,6 +90,10 @@ export default defineComponent({
     IonSplitPane,
     IonToolbar,
     IonMenu
+  },
+  setup() {
+      const router = useRouter();
+      return { router };
   },
   methods:{
     closeMenu(){

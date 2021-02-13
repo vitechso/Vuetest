@@ -18,6 +18,12 @@ import Security from '../views/Security.vue';
 import Changepassword from '../views/Changepassword.vue';
 import Transactionhistory from '../views/Transactionhistory.vue';
 import Privacy from '../views/Privacy.vue';
+import Ratingfeedback from '../views/Ratingfeedback.vue';
+import Account from '../views/Account.vue';
+import EnterPasscode from '../views/EnterPasscode.vue';
+import Drawsignature from '../views/Drawsignature.vue';
+import ImportCSVExcel from '../views/ImportCSVExcel.vue';
+import Addacontact from '../views/Addacontact.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -113,6 +119,36 @@ const routes: Array<RouteRecordRaw> = [
     path: '/privacy',
     name: 'Privacy',
     component: Privacy
+  },
+  {
+    path: '/rating-feedback',
+    name: 'Ratingfeedback',
+    component: Ratingfeedback
+  },
+  {
+    path: '/account',
+    name: 'Account',
+    component: Account
+  },
+  {
+    path: '/enterpasscode',
+    name: 'EnterPasscode',
+    component: EnterPasscode
+  },
+  {
+    path: '/draw-signature',
+    name: 'Drawsignature',
+    component: Drawsignature
+  },
+  {
+    path: '/import-CSVExcel',
+    name: 'ImportCSVExcel',
+    component: ImportCSVExcel
+  },
+  {
+    path: '/add-contact',
+    name: 'Addacontact',
+    component: Addacontact
   }
   
 ]

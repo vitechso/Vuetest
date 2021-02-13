@@ -34,7 +34,7 @@
   <ion-content :fullscreen="true">
     <div id="full_width">
       <ion-list>
-        <ion-item lines="none" class="bor_b">
+        <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
           <ion-row class="ion-align-items-center">
               <ion-col size="2">
                 <div class="letter_pic">
@@ -135,7 +135,7 @@
 
     </div>
 
-    <ion-fab vertical="top" horizontal="end" class="fixeds">
+    <ion-fab vertical="top" horizontal="end" class="fixeds" @click="() => router.push('/choose-template')">
       <ion-fab-button>
         <img class="pl_icon" src="assets/images/plus.svg"/>
       </ion-fab-button>

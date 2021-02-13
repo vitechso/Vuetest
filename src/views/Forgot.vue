@@ -2,6 +2,9 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <div id="container">
+      <div class="drak_mode">
+          <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+        </div>
       <div class="logo">
         <img src="assets/images/logo.svg">
       </div>

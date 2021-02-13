@@ -34,10 +34,10 @@
 
     <ion-row class="ion-padding-start ion-padding-end ion-text-center">
         <ion-col size="6">
-            <ion-button class="import_csv">Import CSV/Excel</ion-button>
+            <ion-button class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
         </ion-col>
         <ion-col size="6">
-            <ion-button class="import_csv">Add Contact</ion-button>
+            <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
         </ion-col>
     </ion-row>
 </ion-header>

@@ -2,12 +2,15 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <div id="container">
+      <div class="drak_mode">
+          <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+        </div>
       <div class="logo">
         <img src="assets/images/logo.svg">
       </div>
         <form @submit.prevent="handleLogin">
         <div class="sign_with">
-          <h2>Sign in with</h2>
+          <h2>Sign In With Social</h2>
           <div class="social_icons">
             <ul>
               <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
@@ -49,7 +52,7 @@
           <p>Invalid Email and Password</p>
         </div>-->
          <div class="sign_doens pdd_b">
-            Don't have account <a href="#">Sign Up ?</a>
+            Don't have account <a @click="() => router.push('/register')">Sign Up ?</a>
           </div>
       </div>
     </form>
