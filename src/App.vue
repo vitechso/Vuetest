@@ -15,7 +15,6 @@
         <div class="menu_close">
           <img @click="closeMenu" src="assets/images/close_menu.svg"/>
         </div>
-        
         <!-- <ion-button @click="closeMenu" >Close</ion-button> -->
       </ion-col>
     </ion-row>

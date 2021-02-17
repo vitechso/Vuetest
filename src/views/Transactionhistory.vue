@@ -5,7 +5,7 @@
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
-            <router-link to="/">    
+            <router-link to="/all-letters">    
                 <div class="ion-text-center">
                     <img src="assets/images/back_btn.svg"/>
                 </div>

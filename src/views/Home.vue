@@ -87,26 +87,7 @@ export default defineComponent({
   },
   methods: {
     async handleLogin(){
-      console.log(this.form.username,this.form.password)
-      if(this.form.username !='' && this.form.password !=''){
-        //alert("here")
-        if(this.form.username == 'admin@moreyou.com' && this.form.password == 'admin'){
-          const errorAlert = await alertController
-            .create({
-              header: 'Success',
-              
-              message: "Logged in successfully",
-              buttons: ['OK'],
-            });
-          await errorAlert.present()
-        }else{
-          this.invalid=true;
-          setTimeout(()=>{this.invalid=false},1500)
-        }
-      }else{
-        this.invalid=true;
-        setTimeout(()=>{this.invalid=false},1500)
-      }
+      this.$router.push('/intro')
     }
   }
 });

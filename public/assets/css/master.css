@@ -854,3 +854,92 @@ p.red_c {
 .document_send .alert-wrapper {
     border-radius: 20px !important;
 }
+
+/* New css light mode */
+
+.light .list_cons ion-label {
+    color: #333;
+}
+
+.light .icon_menus {
+    color: #333;
+}
+
+.light p, h1, h2, h3, h4, h5, h6, a {
+    color: #333;
+}
+
+.light .list_cons ion-label{
+    color: #333 !important;
+}
+.light .suppoets h3 {
+    color: #333;
+}
+
+.light .icon_menus {
+    color: #333;
+}
+.light .bans_sj {
+    color: #333;
+}
+
+.light .sign_with h2{
+    color: #333;
+}
+.light .or h2{
+    color: #333;
+}
+.light .user_nam{
+    border-color: #cccccc;
+}
+.light .for_got a {
+    color: #333;
+}
+.light .sign_doens{
+    color: #333;
+}
+
+.light #container p {
+    color: #333;
+}
+
+.light .texts_letts h3{
+    color: #333;
+}
+
+.light .title_doc h3 {
+    color: #333;
+}
+.light .innerr_b p {
+    color: #333;
+}
+.light .privew_r p {
+    color: #333;
+}
+.light .sincerely p {
+    color: #333;
+}
+
+.light .text_share h3 {
+    color: #333;
+}
+
+.light .delete_btn a {
+    color: #333;
+}
+
+.light .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+    color: #333;
+}
+.light .alert-title {
+    color: #333;
+}
+.light .alert-sub-title{
+    color: #333;
+}
+.light .alert-message{
+    color: #333;
+}
+
+/* New css light mode end*/
+

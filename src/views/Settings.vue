@@ -6,7 +6,7 @@
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
             <div class="ion-text-center">
-            <router-link to="/">
+            <router-link to="/all-letters">
                 <img src="assets/images/back_btn.svg"/>
             </router-link>
             </div>
@@ -163,9 +163,11 @@ export default defineComponent({
     changeTheme(event: any){
         console.log(event)
         if(event.detail.checked){
+            document.body.classList.remove('light');
             document.body.classList.add('dark')
         }else{
-            document.body.classList.remove('dark')
+            document.body.classList.remove('dark');
+            document.body.classList.add('light')
         }
     }
   }

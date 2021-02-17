@@ -5,9 +5,9 @@
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
-            <div class="ion-text-center">
-                <img src="assets/images/back_btn.svg"/>
-            </div>
+                <div class="ion-text-center">
+                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                </div>
         </ion-col>
       <ion-col size="9">
         <div class="ion-text-left">
@@ -200,12 +200,17 @@
                     <ion-item lines="none" class="list_cons">
                         <ion-checkbox color="primary" slot="start"></ion-checkbox>
                         <ion-label>Jon Snow</ion-label>
-                        <div slot="end" class="control_cin">
+                        <slot end>
+                        <div class="control_cin sddsd">
                             <img src="assets/images/edit.svg"/>
                         </div>
-                        <div slot="end" class="control_cin">
+                        </slot> 
+
+                        <slot end>
+                             <div class="control_cin">
                             <img src="assets/images/delete_black.svg"/>
                         </div>
+                        </slot>
                     </ion-item>
                 </ion-list>
             </div>
@@ -253,6 +258,7 @@ export default defineComponent({
     IonButton
   },
   setup() {
+      
       const router = useRouter();
       return { router };
   },

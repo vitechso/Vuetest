@@ -6,7 +6,7 @@
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
             <div class="ion-text-center">
-                <img src="assets/images/back_btn.svg"/>
+                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
             </div>
         </ion-col>
       <ion-col size="11">
