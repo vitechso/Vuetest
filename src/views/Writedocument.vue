@@ -228,7 +228,7 @@ export default defineComponent({
      async documentSend() {
         const alert = await alertController
             .create({
-            cssClass: 'document_send',
+            cssClass: 'document_send',  
             message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
             });
         return alert.present();

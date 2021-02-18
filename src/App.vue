@@ -41,7 +41,7 @@
       </ion-list>
     </ion-content>
 
-    <ion-footer class="ion-no-border">
+    <ion-footer class="ion-no-border clas_bn">
       <ion-toolbar>
         <ion-row class="row_foo ion-padding-start ion-padding-end">
           <ion-col size="3">

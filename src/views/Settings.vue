@@ -170,6 +170,7 @@ export default defineComponent({
             document.body.classList.add('light')
         }
     }
+
   }
 });
 </script>

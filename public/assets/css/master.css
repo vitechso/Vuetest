@@ -857,7 +857,7 @@ p.red_c {
 
 /* New css light mode */
 
-.light .list_cons ion-label {
+/* .light .list_cons ion-label {
     color: #333;
 }
 
@@ -939,7 +939,11 @@ p.red_c {
 }
 .light .alert-message{
     color: #333;
-}
+} */
 
 /* New css light mode end*/
 
+
+ion-row.top_menu_sl {
+    padding-top: 30px;
+}

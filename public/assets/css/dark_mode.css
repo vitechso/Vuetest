@@ -216,3 +216,7 @@ ion-backdrop {
     background: #000;
     opacity: 0.7 !important;
 }
+.dark .clas_bn ion-toolbar {
+    background: #111;
+    --background: #111;
+}
