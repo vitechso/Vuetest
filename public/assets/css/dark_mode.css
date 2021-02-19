@@ -3,9 +3,18 @@
       /* Dark mode variables go here */
     }
   }
-.dark p, h1, h2, h3, h4, h5, h6, a{
+
+.dark p,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark a {
     color: #fff;
 }
+
 body.dark {
 /* Dark mode variables go here */
     --ion-background-color: #111 !important;
@@ -132,7 +141,7 @@ body.dark {
     color: #959595;
 }
 .dark .alert-radio-label{
-    color: #959595;
+    color: #fff !important;
 }
 .dark .lock_unlock{
     border: 1px solid #4a4a4a;
@@ -159,7 +168,7 @@ body.dark {
     color: #333;
 }
 .dark .privew_r p {
-    color: #333;
+    color: #fff;
 }
 .dark .sincerely p {
     color: #333;

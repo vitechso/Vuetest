@@ -677,8 +677,8 @@ ion-segment {
 .ok_btn {
     margin: auto;
     text-align: center;
-    font-size: 25px;
-    width: 151px;
+    font-size: 20px;
+    width: 160px;
     height: 56px;
     display: block;
     text-transform: inherit;
@@ -686,8 +686,8 @@ ion-segment {
 .cancel_btn {
     margin: auto;
     text-align: center;
-    font-size: 25px;
-    width: 151px;
+    font-size: 20px;
+    width: 160px;
     height: 56px;
     display: block;
 }

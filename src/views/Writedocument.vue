@@ -101,10 +101,10 @@
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
+            <ion-col size="5">
                 <p><strong>Signature</strong></p>
             </ion-col>
-            <ion-col size="4"></ion-col>
+            <ion-col size="2"></ion-col>
             <ion-col size="5">
                 <div class="btn_ajj">
                     <ion-button shape="round" type="button" @click="() => router.push('/changesignature')">Adjust</ion-button>
