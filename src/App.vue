@@ -73,6 +73,7 @@
 import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonSplitPane, IonToolbar,  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import { Plugins } from '@capacitor/core';
 
 export default defineComponent({
   name: 'App',
@@ -91,6 +92,20 @@ export default defineComponent({
     IonMenu
   },
   setup() {
+    const { SplashScreen } = Plugins;
+    // Hide the splash (you should do this on app launch)
+SplashScreen.hide();
+
+// Show the splash for an indefinite amount of time:
+SplashScreen.show({
+  autoHide: false
+});
+
+// Show the splash for two seconds and then auto hide:
+SplashScreen.show({
+  showDuration: 2000,
+  autoHide: true
+});
       const router = useRouter();
       return { router };
   },
