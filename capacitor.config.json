@@ -1,6 +1,6 @@
 {
   "appId": "com.example.vuecapacitordemo",
-  "appName": "Moreyouleter",
+  "appName": "Moreyouletter",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",

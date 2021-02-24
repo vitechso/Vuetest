@@ -1,7 +1,7 @@
 <template>
 
 <ion-page> 
-<ion-header class="header_am">
+<ion-header v-if="!isIpad" class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
@@ -93,10 +93,123 @@
    
   </ion-content>
 </ion-page>
+
+<ion-page v-if="isIpad">
+    <ion-header class="ipad_topbar">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Choose Template</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+  <ion-content :fullscreen="true">
+   <div id="container_01" class="ipad_docs">
+        <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
+            <p>Start with a blank document, choose a template or <strong>upload a PDF</strong></p>
+        </div>
+
+        <ion-row>
+            <ion-col size="4">
+                <div class="doc">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4" @click="() => router.push('/writedocument')">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="4">
+                <div class="doc">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="4">
+                <div class="doc">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div class="doc">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </div>
+  </ion-content>
+</ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -114,6 +227,16 @@ export default defineComponent({
   setup() {
       const router = useRouter();
       return { router, add };
+  },
+  data() {
+      return {
+          isIpad:isPlatform('ipad')
+      }
+  },
+  methods:{
+    cancel() {
+        modalController.dismiss()
+    }
   }
 });
 </script>
