@@ -24,6 +24,7 @@ import EnterPasscode from '../views/EnterPasscode.vue';
 import Drawsignature from '../views/Drawsignature.vue';
 import ImportCSVExcel from '../views/ImportCSVExcel.vue';
 import Addacontact from '../views/Addacontact.vue';
+import Uploadpdf from '../views/Uploadpdf.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -149,6 +150,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/add-contact',
     name: 'Addacontact',
     component: Addacontact
+  },
+  {
+    path: '/uploadpdf',
+    name: 'Uploadpdf',
+    component: Uploadpdf
   }
   
 ]

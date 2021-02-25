@@ -1034,7 +1034,7 @@ ion-row.top_menu_sl.ios {
     margin-left: 15px;
 }
 .ipad_title_top {
-    font-size: 33px !important;
+    font-size: 26px !important;
 }
 .right_ipad {
     float: right;
@@ -1219,6 +1219,7 @@ span.popup_title {
 .letter_size {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .change_sign_ipad p {
     font-size: 20px;
@@ -1337,6 +1338,10 @@ span.popup_title {
 img.delete_print_btns {
     margin-left: 25px;
     width: 25px;
+}
+img.delete_print_btns_01 {
+    margin-left: 25px;
+    /* width: 25px; */
 }
 .fill_colortotal {
     background: #f2f2f2;
@@ -1588,4 +1593,89 @@ img.delete_print_btns {
 }
 .hnas_ipads .ens_sd img {
     width: 18px;
+}
+p.font_sels {
+    font-size: 20px;
+    color: #959595;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.pdf_icons {
+    width: 35px;
+}
+.pdf_icons img {
+    width: 35px;
+    margin-right: 20px;
+}
+.pdf_icons {
+    display: flex;
+    align-items: center;
+}
+.opas {
+    display: flex;
+    align-items: center;
+}
+.ipad_secur .setting_bs{
+    height: 91px;
+}
+.ipad_secur .list_cons ion-label {
+    font-size: 30px !important;
+}
+span.red_p {
+    color: #ff5f57;
+}
+span.green_p {
+    color: #29c83f;
+}
+.priy_ipad p{
+    font-size: 21px;
+}
+.priy_ipad h6{
+    font-size: 21px;
+}
+.account_ipads .inner_user_img{
+    height: 215px;
+    width: 215px;
+}
+.upload.right p {
+    font-size: 22px;
+}
+.upload.right {
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+.upload.left p {
+    font-size: 22px;
+}
+.upload.left {
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+}
+.inputs_accounts .user_nam{
+    height: 60px;
+}
+.inputs_accounts .icon_in{
+    top: 18px;
+}
+.inputs_accounts .selects_ins ion-select{
+    height: 60px;
+}
+p.user_ids.iad_spl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+}
+.change_pass_ipads {
+    width: 622px;
+    margin: auto !important;
+    padding-top: 5%;
+}
+.change_pass_ipads .user_nam{
+    height: 60px;
+    font-size: 22px;
+}
+.change_pass_ipads .icon_in{
+    top: 20px;
 }

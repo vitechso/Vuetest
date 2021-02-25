@@ -116,7 +116,7 @@
   <ion-content :fullscreen="true">
    <div id="container_01" class="ipad_docs">
         <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
-            <p>Start with a blank document, choose a template or <strong>upload a PDF</strong></p>
+            <p>Start with a blank document, choose a template or <strong  @click="uploadpdf">upload a PDF</strong></p>
         </div>
 
         <ion-row>
@@ -128,7 +128,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4" @click="() => router.push('/writedocument')">
+            <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -213,7 +213,7 @@ import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,is
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
-
+import Uploadpdf from './Uploadpdf.vue'
 export default defineComponent({
   name: 'Choosetemplate',
   components: {
@@ -226,7 +226,7 @@ export default defineComponent({
   },
   setup() {
       const router = useRouter();
-      return { router, add };
+      return { router, add, modalController };
   },
   data() {
       return {
@@ -236,7 +236,20 @@ export default defineComponent({
   methods:{
     cancel() {
         modalController.dismiss()
-    }
+    },
+
+    async uploadpdf() {
+        modalController.dismiss()
+      const modal = await modalController.create({
+          component: Uploadpdf,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
   }
 });
 </script>

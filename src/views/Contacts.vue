@@ -271,7 +271,7 @@
             
         </ion-col>
         <ion-col size="4">
-            <ion-button class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
+            <ion-button class="import_csv" @click="excel">Import CSV/Excel</ion-button>
             <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
         </ion-col>
     </ion-row>
@@ -581,7 +581,7 @@
 import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, IonSegmentButton, IonSegment, IonItem, IonLabel, IonList, IonCheckbox, isPlatform, modalController   } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
-
+import ImportCSVExcel from './ImportCSVExcel.vue'
 export default defineComponent({
   name: 'Contacts',
   components: {
@@ -614,6 +614,21 @@ export default defineComponent({
     segmentChanged(ev: CustomEvent) {
       console.log('Segment changed', ev.detail.value);
       this.$data.selectedSegment = ev.detail.value;
+    },
+
+    async excel() {
+        modalController.dismiss()
+      const modal = await modalController.create({
+          component: ImportCSVExcel,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+    cancel() {
+        modalController.dismiss()
     }
   }
 });

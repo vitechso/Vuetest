@@ -171,8 +171,8 @@
             <ion-col size="3">
                 <p><strong>Letter Size</strong></p>
             </ion-col>
-            <ion-col size="4"></ion-col>
-            <ion-col size="5">
+            <ion-col size="3"></ion-col>
+            <ion-col size="6">
                 <div class="letter_size">
                     <div class="inner_sizes">
                        <span>DIN 5008 A</span> 
@@ -426,6 +426,7 @@ import { isPlatform,getPlatforms } from '@ionic/vue';
 import Changesignature from './Changesignature.vue'
 import Preview from './Preview.vue'
 import Contacts from './Contacts.vue'
+
 export default defineComponent({
   name: 'Writedocument',
   components: {

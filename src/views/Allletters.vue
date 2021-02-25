@@ -221,6 +221,7 @@ export default defineComponent({
   },
   methods:{
      async openModal() {
+       modalController.dismiss()
       const modal = await modalController.create({
           component: Choosetemplate,
           cssClass: 'choosetem',
