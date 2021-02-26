@@ -1,5 +1,6 @@
 <template>
-  <ion-page v-if="!isIpad">
+  <ion-page>
+  <div  v-if="!isIpad">
     <ion-content :fullscreen="true">
     
       <div id="container_01">
@@ -76,9 +77,9 @@
     </form>
       </div>
     </ion-content>
-  </ion-page>
+ </div>
 
-  <ion-page v-if="isIpad">
+<div v-if="isIpad">
     <ion-content :fullscreen="true" scroll-y="false">
     
       <div id="container_ipad_regi">
@@ -165,6 +166,7 @@
     </form>
       </div>
     </ion-content>
+    </div>
   </ion-page>
 </template>
 

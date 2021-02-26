@@ -1,4 +1,4 @@
-package com.example.vuecapacitordemo;
+package com.example.vuecapacitordemo1one;
 
 import android.os.Bundle;
 
