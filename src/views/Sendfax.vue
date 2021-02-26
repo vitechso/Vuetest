@@ -191,6 +191,10 @@
                 </ion-row>
             </div>
         </div>
+
+        <div class="send_btn">
+            <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
+        </div>
     </div>
   </ion-content>
 </ion-page>

@@ -47,7 +47,7 @@ body.dark {
 .dark .list_cons {
     background: #333;
     --background: #333;
-    border-bottom: 1px solid #4a4a4a;
+    border-bottom: 1px solid #505050;
 }
 .dark .header_am{
     --background: #111 !important;
@@ -105,6 +105,15 @@ body.dark {
 .dark .user_nam{
     border-color: #cccccc;
 }
+.dark .pdd_b input::placeholder {
+    color: #fff;
+}
+
+.dark .selects_ins ion-select {
+    color: #999;
+    border-color: #cccccc;
+}
+
 .dark .for_got a{
     color: #fff;
 }
@@ -168,7 +177,7 @@ body.dark {
     color: #333;
 }
 .dark .privew_r p {
-    color: #fff;
+    color: #333;
 }
 .dark .sincerely p {
     color: #333;
@@ -228,4 +237,36 @@ ion-backdrop {
 .dark .clas_bn ion-toolbar {
     background: #111;
     --background: #111;
+}
+
+.dark .action-icon img {
+    filter: invert(1);
+}
+
+.dark .segmnt .segment-button-checked {
+    color: #f1d000;
+}
+
+.dark .segmnt ion-segment-button {
+    color: #fff;
+}
+
+.dark .sign_doens a {
+    color: #F1D000;
+}
+
+.dark .swiper-pagination-bullet {
+    width: 14px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 0;
+    background: #fff;
+    opacity: 0.2;
+}
+.dark .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.dark ion-segment {
+    border-bottom: 1px solid #4a4a4a;
 }
