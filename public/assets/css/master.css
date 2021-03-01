@@ -862,7 +862,7 @@ p.red_c {
 
 /* New css light mode */
 
-/* .light .list_cons ion-label {
+.light .list_cons ion-label {
     color: #333;
 }
 
@@ -944,8 +944,10 @@ p.red_c {
 }
 .light .alert-message{ 
     color: #333;
-} */
-
+}
+.light .mobile_menus ion-menu{
+    --background: #fff;
+}
 /* New css light mode end*/
 
 

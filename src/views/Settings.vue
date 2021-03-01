@@ -324,6 +324,15 @@ export default defineComponent({
   },
   methods :{
     changeTheme(event: any){
+
+        // const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        // if (prefersDarkScheme.matches) {
+        //     document.body.classList.add("dark");
+        // } else {
+        //     document.body.classList.remove("dark");
+        // }
+
         console.log(event)
         if(event.detail.checked){
             document.body.classList.remove('light');
