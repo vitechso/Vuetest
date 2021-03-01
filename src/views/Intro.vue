@@ -1,5 +1,7 @@
 <template>
-  <ion-page v-if="!isIpad">
+<ion-page>
+<div v-if="!isIpad">
+  <ion-page>
     <ion-content fullscreen="true">
       <div id="container" class="main_self">
       <ion-row>
@@ -61,8 +63,10 @@
       </div>
     </ion-content>
   </ion-page>
+</div>
 
-<ion-page v-if="isIpad" scroll-y="false">
+<div v-if="isIpad" >
+<ion-page scroll-y="false">
     <ion-content fullscreen="true">
       <div id="container_intro" class="main_self">
       <ion-row>
@@ -124,7 +128,8 @@
       </div>
     </ion-content>
 </ion-page>
-
+</div>
+</ion-page>
 </template>
 
 <script lang="ts">

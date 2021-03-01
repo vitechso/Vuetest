@@ -1,5 +1,7 @@
 <template>
-  <ion-page v-if="!isIpad">
+<ion-page>
+<div v-if="!isIpad">
+  <ion-page>
     <ion-content :fullscreen="true">
       <div id="container">
       <div class="drak_mode">
@@ -59,8 +61,10 @@
       </div>
     </ion-content>
   </ion-page>
+</div>
 
-  <ion-page class="logins_nms" v-if="isIpad">
+<div v-if="isIpad">
+  <ion-page class="logins_nms">
     <ion-content :fullscreen="true" scroll-y="false">
       <div id="container_ipad">
       <div class="drak_mode">
@@ -119,6 +123,8 @@
     </form>
       </div>
     </ion-content>
+  </ion-page>
+  </div>
   </ion-page>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
+<ion-page>
 
-<ion-page v-if="!isIpad"> 
+<div v-if="!isIpad">
+<ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
@@ -62,8 +64,10 @@
     </div>
   </ion-content>
 </ion-page>
+</div>
 
-<ion-page v-if="isIpad">
+<div v-if="isIpad">
+<ion-page>
   <ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
@@ -113,6 +117,7 @@
     <ion-row class="custom_row ion-padding-top ion-padding-bottom">
         <ion-col size="9">
             <p><strong>Draw a signature</strong></p>
+            <VueSignaturePad width="500px" height="500px" ref="signaturePad" />
             <p class="text_colors">Manually draw a signature on device using pen or finger</p>
         </ion-col>
         <ion-col size="3">
@@ -122,9 +127,11 @@
         </ion-col>
     </ion-row>
 
-
     </div>
   </ion-content>
+</ion-page>
+</div>
+
 </ion-page>
 </template>
 
@@ -141,9 +148,13 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButton,
-    IonToggle
-    
+    IonToggle 
   },
+  mounted() {
+      let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', 'https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js')
+      document.head.appendChild(recaptchaScript)
+    },
   setup() {
       const router = useRouter();
       return { router };

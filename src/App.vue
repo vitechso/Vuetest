@@ -102,7 +102,7 @@
         <ion-item lines="none" @click="() => {router.push('/account');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon04.svg"/> Account</ion-item>
       
       
-        <ion-item lines="none" @click="() => {router.push('/contacts');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
+        <ion-item lines="none" @click="contact" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
       
       
         <ion-item lines="none" @click="() => {router.push('/settings');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon06.svg"/> Settings</ion-item>
@@ -139,11 +139,11 @@
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform  } from '@ionic/vue';
+import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform, modalController  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { Plugins } from '@capacitor/core';
-
+import Contacts from './views/Contacts.vue'
 export default defineComponent({
   name: 'App',
   components: {
@@ -180,7 +180,19 @@ SplashScreen.show({
   methods:{
     closeMenu(){
      menuController.close()
-    }
+    },
+    async contact() {
+        modalController.dismiss()
+      const modal = await modalController.create({
+          component: Contacts,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+        this.closeMenu()
+      return modal.present();
+    },
   },
    mounted(){
    // alert("here")

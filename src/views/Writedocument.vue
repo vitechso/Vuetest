@@ -1,8 +1,8 @@
 <template>
-
+<ion-page>
 <!---------------Ipad Code--------------->
-
-<ion-page v-if="isIpad"> 
+<div v-if="isIpad">
+<ion-page> 
 
 <ion-header class="header_am"> 
   <ion-toolbar class="">
@@ -236,10 +236,10 @@
     
   </ion-content>
 </ion-page>
-
+</div>
 <!---------------Mobile Code--------------->
-
-<ion-page v-if="!isIpad"> 
+<div v-if="!isIpad">
+<ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
@@ -413,6 +413,8 @@
         </ion-row>
     </ion-toolbar>
   </ion-footer>
+</ion-page>
+</div>
 </ion-page>
 </template>
 
