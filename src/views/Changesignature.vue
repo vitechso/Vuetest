@@ -150,11 +150,6 @@ export default defineComponent({
     IonButton,
     IonToggle 
   },
-  mounted() {
-      let recaptchaScript = document.createElement('script')
-      recaptchaScript.setAttribute('src', 'https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js')
-      document.head.appendChild(recaptchaScript)
-    },
   setup() {
       const router = useRouter();
       return { router };
