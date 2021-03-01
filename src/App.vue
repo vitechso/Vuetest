@@ -21,7 +21,7 @@
     <ion-content class="back_white">
       <ion-list>
       
-        <ion-item @click="() => {router.push('/all-letters');closeMenu()}" lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
+        <ion-item @click="() => {router.push('/all-letters');closeMenu();}" lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
       
       
         <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon02.svg"/> Drafts <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item>
@@ -33,7 +33,7 @@
         <ion-item lines="none" @click="() => {router.push('/account');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon04.svg"/> Account</ion-item>
       
       
-        <ion-item lines="none" @click="() => {router.push('/contacts');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
+        <ion-item lines="none" @click="() => {router.push('/contacts');closeMenu();}" class="icon_menus"><img src="assets/images/menu_icon05.svg"/> Contacts</ion-item>
       
       
         <ion-item lines="none" @click="() => {router.push('/settings');closeMenu()}" class="icon_menus"><img src="assets/images/menu_icon06.svg"/> Settings</ion-item>

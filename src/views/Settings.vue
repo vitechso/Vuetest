@@ -1,14 +1,15 @@
 <template>
 
-<ion-page v-if="!isIpad"> 
+<ion-page> 
+<div  v-if="!isIpad">
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
         <ion-col size="1">
             <div class="ion-text-center">
-            <router-link to="/all-letters">
-                <img src="assets/images/back_btn.svg"/>
-            </router-link>
+            
+                <img @click="()=>{router.push('/all-letters');}" src="assets/images/back_btn.svg"/>
+            
             </div>
         </ion-col>
       <ion-col size="9">
@@ -135,10 +136,8 @@
 
     </div>
   </ion-content>
-
-</ion-page>
-
-<ionn-page v-if="isIpad">
+</div>
+<div v-if="isIpad">
 <ion-header class="header_am">
   <ion-toolbar class="">
     <ion-row class="ion-align-items-center">
@@ -293,7 +292,8 @@
     </div>
   </ion-content>
 
-</ionn-page>
+</div>
+</ion-page>
 </template>
 <script lang="ts">
 import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonButtons, IonMenuButton, IonToggle, isPlatform  } from '@ionic/vue'

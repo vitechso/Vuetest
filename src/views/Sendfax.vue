@@ -1,6 +1,7 @@
 <template>
 
-<ion-page v-if="!isIpad"> 
+<ion-page> 
+<div  v-if="!isIpad">
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center">
@@ -191,12 +192,15 @@
                 </ion-row>
             </div>
         </div>
+
+        <div class="send_btn">
+            <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
+        </div>
     </div>
   </ion-content>
-</ion-page>
+</div>
 
-
-<ion-page v-if="isIpad">
+<div v-if="isIpad">
 <ion-header class="header_am">
   <ion-toolbar class="">
     <ion-row class="ion-align-items-center">
@@ -381,7 +385,7 @@
         </ion-row>
     </div>
 </ion-content>
-
+</div>
 </ion-page>
 </template>
 
