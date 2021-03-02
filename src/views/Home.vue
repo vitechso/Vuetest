@@ -3,14 +3,14 @@
 <div v-if="!isIpad">
   <ion-page>
     <ion-content :fullscreen="true">
-      <div id="container">
-      <div class="drak_mode">
+      <div id="container">      
+        <form @submit.prevent="handleLogin">
+        <div class="drak_mode">
           <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
         </div>
       <div class="logo">
         <img src="assets/images/logo.svg">
       </div>
-        <form @submit.prevent="handleLogin">
         <div class="sign_with">
           <h2>Sign In With Social</h2>
           <div class="social_icons">
@@ -67,13 +67,14 @@
   <ion-page class="logins_nms">
     <ion-content :fullscreen="true" scroll-y="false">
       <div id="container_ipad">
-      <div class="drak_mode">
+      
+        <form @submit.prevent="handleLogin">
+        <div class="drak_mode">
           <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
         </div>
       <div class="logo">
         <img src="assets/images/logo.svg">
       </div>
-        <form @submit.prevent="handleLogin">
         <div class="sign_with">
           <h2>Sign In With Social</h2>
           <div class="social_icons">

@@ -86,13 +86,15 @@
     <ion-content :fullscreen="true" scroll-y="false">
     
       <div id="container_ipad_regi">
-      <div class="drak_mode">
+      
+        <form @submit.prevent="handleLogin">
+        <div class="drak_mode">
           <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
         </div>
       <div class="logo">
         <img src="/assets/images/normal_u1.svg">
       </div>
-        <form @submit.prevent="handleLogin">
+      
         <div class="sign_with">
           <h2>Sign Up With Social</h2>
           <div class="social_icons">

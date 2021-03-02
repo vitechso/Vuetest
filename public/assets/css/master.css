@@ -958,6 +958,20 @@ p.red_c {
 } */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+    #container_ipad_regi .top_am {
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
+    }
+    #container_intro {
+        text-align: center;
+        width: 450px !important;
+        margin: auto;
+        overflow: hidden;
+        transform: translateY(0%) !important;
+    }
+    .pdd_b{
+        margin-bottom: 10px !important;
+    }
     #container{
         width: 550px;
         margin: auto;
@@ -986,14 +1000,14 @@ p.red_c {
     /* .pdd_b {
         margin-top: 50px;
     } */
-    .tow_part {
+    /* .tow_part {
         display: inline-block;
         width: 100%;
-    }
-    .tow_part .pdd_b {
+    } */
+    /* .tow_part .pdd_b {
         width: 50%;
         float: left;
-    }
+    } */
     .ion_tabs .icon_in {
         right: 30px;
     }
@@ -1413,19 +1427,26 @@ img.delete_print_btns_01 {
 
 #container_ipad {
     text-align: center;
-    transform: translateY(15%);
+    transform: translateY(0%);
     width: 519px;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-
+#container_ipad .top_am{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
 #container_ipad .user_nam{
     height: 63px;
     font-size: 22px;
     width: 439px;
 }
 #container_ipad .icon_in{
-    right: 62px;
+    right: 20px;
     top: 20px;
 }
 #container_ipad .for_got a{
@@ -1433,6 +1454,7 @@ img.delete_print_btns_01 {
 }
 #container_ipad .sign_doens{
     font-size: 24px;
+    margin-top: 6% !important;
 }
 #container_ipad .sign_with h2, #container_ipad .or h2{
     font-size: 28px;
@@ -1451,7 +1473,13 @@ img.delete_print_btns_01 {
     width: 900px;
     margin: auto;
     overflow: hidden;
-    transform: translateY(5%);
+    transform: translateY(0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 #container_ipad_regi .logo img {
     width: 519px;
