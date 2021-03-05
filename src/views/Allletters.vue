@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page>
 <ion-header class="header_am">
   <ion-toolbar>
@@ -186,6 +186,60 @@
   </ion-content>
 </ion-page>
 </div>
+
+<div v-if="isDesktop">
+  <ion-page>
+<ion-header class="header_am">
+  <ion-toolbar class="">
+    <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="2" class="ipad_cols">
+        <!-- <div class="ion-text-left ipad_flx">
+          <span class="title_top ipad_title_top">All Letters</span> 
+          <ion-badge class="badgs">8</ion-badge>
+        </div> -->
+        <div class="desktop_conn">
+          <ion-buttons class="">
+            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+        </ion-buttons>
+
+        <div class="edit_icon desk">
+          <img src="assets/images/edit_pencil.svg"/>
+        </div>
+        </div>
+        
+      </ion-col>
+      <ion-col size="8"></ion-col>
+      <ion-col size="2">
+        <div class="user_img">
+          <div class="user_avtar">
+            <img src="assets/images/userimage.png"/>
+          </div>
+          <div class="arrow_ds">
+            <img src="assets/images/user_down.svg"/>
+          </div>
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+  <ion-content>
+    <ion-row class="ipad_h">
+      <ion-col size="2"></ion-col>
+      <ion-col size="10" class="ion-no-padding">
+        <div class="welcome_ipad">
+          <h3>Welcome to moreyou.letters</h3>
+          <h4>Select an exisiting document from sidebar or create a new one</h4>
+          <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
+            <div class="mail_open">
+              <img src="assets/images/mail_open.svg"/>
+            </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+</ion-page>
+</div>
 </ion-page>
 </template>
 
@@ -220,7 +274,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
   methods:{

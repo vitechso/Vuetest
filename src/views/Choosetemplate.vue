@@ -1,7 +1,7 @@
 <template>
 <ion-page>
 
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
@@ -212,6 +212,151 @@
 </ion-page>
 </div>
 
+
+
+<div v-if="isDesktop">
+<ion-page>
+    <ion-header class="ipad_topbar">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Choose Template</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+  <ion-content :fullscreen="true">
+   <div id="container_01" class="ipad_docs">
+        <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
+            <p>Start with a blank document, choose a template or <strong  @click="uploadpdf">upload a PDF</strong></p>
+        </div>
+
+        <ion-row>
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                </div>
+                <div class="title_doc">
+                    <h3>Blank Document</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+
+            <ion-col size="3">
+                <div class="doc desktop_sizes">
+                    <img src="assets/images/normal_u1310.jpg"/>
+                </div>
+                <div class="title_doc">
+                    <h3>Address Change</h3>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </div>
+  </ion-content>
+</ion-page>
+</div>
+
+
+
 </ion-page>
 </template>
 
@@ -237,7 +382,9 @@ export default defineComponent({
   },
   data() {
       return {
-          isIpad:isPlatform('ipad')
+        isIpad:isPlatform('ipad'),
+        isDesktop: isPlatform('desktop'),
+        isMobile: isPlatform('mobile'),
       }
   },
   methods:{
