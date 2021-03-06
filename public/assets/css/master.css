@@ -1,7 +1,13 @@
 ion-content {
     --background: #f7f7f7;
     background: #f7f7f7;
+    height: 100vh;
 }
+
+.bg-white {
+    background-color: #fff;
+}
+
 a {
     text-decoration: none;
 }
@@ -1892,7 +1898,7 @@ p.user_ids.iad_spl {
 
 .desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
     width: 100%;
-    max-width: 40%;
+    max-width: 630px;
     height: 340px;
     position: relative;
 }

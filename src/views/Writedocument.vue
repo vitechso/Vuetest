@@ -465,7 +465,7 @@
   <ion-content :fullscreen="true" class="ipad_write">
 
   <ion-row class="ipad_h">
-      <ion-col size="2" class="ion-no-padding">
+      <ion-col size="2" class="ion-no-padding bg-white">
         <ion-row class="s_bar lettes_desk">
             <ion-col size="12">
                 <div class="ion-text-left ipad_flx">
