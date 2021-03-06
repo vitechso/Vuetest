@@ -1901,6 +1901,7 @@ p.user_ids.iad_spl {
     max-width: 630px;
     height: 340px;
     position: relative;
+    border-radius: 10px;
 }
 
 .desktop_deletes .alert-button-group {
