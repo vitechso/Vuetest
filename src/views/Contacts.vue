@@ -581,7 +581,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-<ion-header class="ipad_topbar">
+<ion-header class="ipad_topbar desktop_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
@@ -598,7 +598,7 @@
     </ion-row>
         </ion-toolbar>
 
-          <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt">
+          <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt desktop-segmnt">
     <ion-segment-button value="contacts" >
       <ion-label>Contacts</ion-label>
     </ion-segment-button>
@@ -612,11 +612,11 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-start ion-padding-end ion-text-center">
-        <ion-col size="8">
+    <ion-row class="ion-padding-start ion-padding-end">
+        <ion-col size="7" class="ion-no-padding">
             
         </ion-col>
-        <ion-col size="4">
+        <ion-col size="5" class="d-flex ion-justify-content-end ion-no-padding">
             <ion-button class="import_csv" @click="excel">Import CSV/Excel</ion-button>
             <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
         </ion-col>
@@ -624,7 +624,7 @@
   </ion-header>
 
   <ion-content :fullscreen="true">
-    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end ion-padding-top">
+    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start">
         <div class="contactlist"> 
             <div class="alpha"><p>A</p></div>
             <div class="contact_name_list">

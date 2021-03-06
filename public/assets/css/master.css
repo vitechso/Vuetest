@@ -1108,6 +1108,7 @@ span.popup_title {
 }
 .close_popus {
     float: right;
+    cursor: pointer;
 }
 .ipad_topbar ion-toolbar {
     height: 69px;
@@ -1913,4 +1914,17 @@ p.user_ids.iad_spl {
     text-transform: capitalize;
     font-weight: 500;
     color: #888;
+}
+
+.desktop_topbar:after {
+    display: none;
+}
+
+.segmnt ion-segment-button {
+    width: 100%;
+    max-width: 100%;
+}
+
+.modal-wrapper {
+    border-radius: 7px !important;
 }
