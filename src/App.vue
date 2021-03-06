@@ -136,6 +136,7 @@
     <ion-router-outlet id="main"></ion-router-outlet>
  
   </ion-app>
+
 </template>
 
 <script lang="ts">
@@ -202,7 +203,9 @@ SplashScreen.show({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
 });

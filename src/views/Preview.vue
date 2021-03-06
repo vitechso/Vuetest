@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
@@ -164,6 +164,8 @@
   </ion-footer>
 </ion-page>
 </div>
+
+
 </ion-page>
 </template>
 
@@ -189,7 +191,8 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+        isMobile: isPlatform('mobile'),
       }
   },
   methods:{

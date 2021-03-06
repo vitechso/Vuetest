@@ -423,7 +423,7 @@
   <ion-toolbar class="">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="2" class="ipad_cols">
-        <div class="desktop_conn">
+        <div class="desktop_conn ion-justify-content-end">
           <ion-buttons class="">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
@@ -516,7 +516,7 @@
           </ion-row>
       </ion-col>
       
-      <ion-col size="8" class="ion-no-padding">
+      <ion-col size="5" class="ion-no-padding">
       <div class="lock_unlock">
         <ion-row>
             <ion-col size="6">
@@ -665,6 +665,67 @@
                 </div>
             </ion-col>
         </ion-row>
+    </div>
+      </ion-col>
+
+      <ion-col size="5">
+        <div id="privew_s" class="back_white privew_ipads">
+
+    <ion-row class="privew_r ion-padding-bottom">
+        <ion-col size="4">
+          <div class="innerr_b ipad_bs">
+            <p><strong>John Anderson</strong></p>
+            <p>Park Hall Aveneues</p>
+            <p>8726 Kassel</p>
+
+            <div class="mail_deta">
+              <p>john.anderson@gmail.com</p>
+              <p>December 11, 2020</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">
+          <div class="innerr_b_right">
+            <p><strong>John Anderson</strong></p>
+            <p>Park Hall Aveneues</p>
+            <p>8726 Kassel</p>
+
+            <div class="mail_deta">
+              <p>john.anderson@gmail.com</p>
+              <p>December 11, 2020</p>
+            </div>
+          </div>
+        </ion-col>
+
+
+    </ion-row>
+
+    <ion-row class="privew_r ion-padding-bottom">
+        <ion-col size="12">
+            <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
+
+            <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="row_sinc">
+      <ion-col size="6">
+        <div class="sincerely">
+          <p>Sincerely,</p>
+          <p><strong>Justin Shepp</strong></p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="pages_of">
+          <p>Page 1 of 1</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
     </div>
       </ion-col>
     </ion-row>
