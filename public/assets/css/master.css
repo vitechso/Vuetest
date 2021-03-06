@@ -1219,7 +1219,7 @@ span.popup_title {
     --border-width: 0 !important;
 }
 .inner_sizes {
-    width: 141px;
+    width: 140px;
     height: 40px;
     border-radius: 7px;
     border: 1px solid #e2e4e6;
@@ -1232,7 +1232,7 @@ span.popup_title {
     justify-content: center;
     font-size: 20px;
     font-weight: 400;
-    margin-right: 10px;
+    margin-left: 10px;
     text-transform: uppercase;
 }
 .letter_size {
@@ -1736,7 +1736,6 @@ p.user_ids.iad_spl {
 
 .desktop_conn ion-buttons {
     margin: inherit;
-    padding-right: 20px;
 }
 .desktop_conn {
     display: flex;
@@ -1762,4 +1761,156 @@ p.user_ids.iad_spl {
 .lettes_desk{
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.Desktop_cols:after {
+    display: none;
+}
+
+.desktop_conn .primary_arrow_inner {
+    position: relative;
+}
+
+.desktop_conn .primary_arrow_inner:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    right: -10px;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.desktop_conn .edit_icon.desk {
+    padding: 0 0 0 30px;
+}
+
+.Desktop_lock_unlock ion-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Desktop_lock_unlock ion-row ion-col .icon_bn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Desktop_lock_unlock ion-row ion-col .icon_bn img {
+    height: 26px;
+}
+
+.fontlight {
+    color: #959595;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.privew_desktop p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.privew_desktop .innerr_b_right {
+    padding: 13px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.privew_desktop {
+    border: 1px solid #e6e6e6;
+}
+
+.desktop-request-title {
+    font-size: 21px;
+    color: #333;
+    margin: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.desktop_pages_of {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    background: #d5d6d8;
+    align-items: center;
+}
+
+.desktop_pages_of img {
+    width: 20px;
+}
+
+.desktop_pages_of p {
+    font-size: 23px;
+    color: #333;
+    margin: 0 20px;
+}
+
+.desktop_pages_of .arrow {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.desktop_deletes .alert-title {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e4e6;
+    margin-bottom: 20px;
+}
+
+.desktop_deletes .alert-sub-title {
+    font-size: 25px;
+    color: #333;
+}
+
+.desktop_deletes .alert-message {
+    font-size: 25px;
+    color: #333;
+    font-weight: 500;
+}
+
+.desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+    width: 100%;
+    max-width: 40%;
+    height: 340px;
+    position: relative;
+}
+
+.desktop_deletes .alert-button-group {
+    padding: 36px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.desktop_deletes .alert-button-group button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #888;
+    margin: 0 12px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #888;
 }
