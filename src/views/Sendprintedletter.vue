@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-    <div v-if="!isIpad">
+    <div v-if="isMobile">
         <ion-page> 
         <ion-header class="header_am">
         <ion-toolbar>
@@ -328,6 +328,163 @@
 
         </ion-page>
     </div>
+
+    <div v-if="isDesktop">
+        <ion-page>
+        <ion-header class="ipad_topbar bordes_ipad">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Send printed letter</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+        <ion-content :fullscreen="true" >
+            <div id="container_fax">
+                <div class="ipad_text_top ion-text-center ion-padding-top ion-padding-bottom">
+                    <p>Below are the details of recipients of printed letter</p>
+                </div>
+
+                <div class="main_iads">
+                    <ion-row class="border_bm">
+                        <ion-col size="3">
+                            <div class="peint_data_headings">
+                                <h3>Name</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="7">
+                            <div class="peint_data_headings">
+                                <h3>Address</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="2"> 
+                            <div class="peint_data_headings ion-text-right">
+                                <h3>Cost</h3>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="border_bm">
+                        <ion-col size="3">
+                            <div class="peint_inner_headings">
+                                <h3>Andrew Symonds</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="7">
+                            <div class="peint_inner_headings">
+                                <h3>243 Park Hall Aveneues Kassel 11015 Germany</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="2"> 
+                            <div class="peint_inner_headings ion-text-right delete_btns">
+                                <h3>€0.50</h3>
+                                <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="border_bm">
+                        <ion-col size="3">
+                            <div class="peint_inner_headings">
+                                <h3>Andy Bickel</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="7">
+                            <div class="peint_inner_headings">
+                                <h3>13 Green Park Avenues Kassel 11015 Germany</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="2"> 
+                            <div class="peint_inner_headings ion-text-right delete_btns">
+                                <h3>€0.50</h3>
+                                <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="border_bm">
+                        <ion-col size="3">
+                            <div class="peint_inner_headings">
+                                <h3>Bryan Adams</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="7">
+                            <div class="peint_inner_headings">
+                                <h3>12 Model Town Road Berlin 11017 Germany</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="2"> 
+                            <div class="peint_inner_headings ion-text-right delete_btns">
+                                <h3>€0.50</h3>
+                                <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="border_bm">
+                        <ion-col size="3">
+                            <div class="peint_inner_headings">
+                                <h3>Benjamin Williams</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="7">
+                            <div class="peint_inner_headings">
+                                <h3>133 Civil Lines GT Road Munich 11013 Germany</h3>
+                            </div>
+                        </ion-col>
+                        <ion-col size="2"> 
+                            <div class="peint_inner_headings ion-text-right delete_btns">
+                                <h3>€0.50</h3>
+                                <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="border_bm fill_colortotal">
+                        <ion-col size="8">
+                        </ion-col>
+                        <ion-col size="4"> 
+                            <div class="total_num">
+                                <h3>Total number of recipients</h3>
+                                <h3>4</h3>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+
+                    <ion-row class="border_bm fill_colortotal">
+                        <ion-col size="8">
+                        </ion-col>
+                        <ion-col size="4"> 
+                            <div class="total_num">
+                                <h3><strong>Grand total</strong></h3>
+                                <h3><strong>€2.00</strong></h3>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </div>
+                <ion-row class="ion-margin-top">
+                    <ion-col size="8"></ion-col>
+                    <ion-col size="4"> 
+                        <div class="ion_tabs_ipads">
+                            <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </ion-content>
+
+        </ion-page>
+    </div>
 </ion-page>
 </template>
 
@@ -355,7 +512,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
   methods:{

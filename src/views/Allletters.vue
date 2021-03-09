@@ -215,8 +215,11 @@
             <img src="assets/images/userimage.png"/>
           </div>
           <div class="arrow_ds">
-            <img src="assets/images/user_down.svg"/>
+            <ion-button @click="openPopover" expand="block">
+                <img src="assets/images/user_down.svg"/>
+            </ion-button>
           </div>
+          
         </div>
       </ion-col>
 
@@ -244,11 +247,12 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,modalController, popoverController  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Choosetemplate from './Choosetemplate.vue'
+import Popover from './Popover.vue'
 export default defineComponent({
   name: 'Allletters',
   components: {
@@ -290,6 +294,17 @@ export default defineComponent({
           },
         })
       return modal.present();
+    },
+
+    async openPopover(ev: Event) {
+      const popover = await popoverController
+        .create({
+          component: Popover,
+          cssClass: 'HeaderDropDown',
+          event: ev,
+          translucent: true
+        })
+      return popover.present();
     },
   },
 });

@@ -1,7 +1,7 @@
 <template>
 
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page>
 <ion-header class="header_am">
   <ion-toolbar>
@@ -54,9 +54,6 @@
   </ion-content>
   </ion-page>
 </div> 
-
-
-
 
 <div v-if="isIpad">
 <ion-page>
@@ -112,11 +109,62 @@
   </ion-content>
   </ion-page>
   </div>
+
+<div v-if="isDesktop">
+<ion-page>
+  <ion-header class="ipad_topbar bordes_ipad">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Change Password</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+
+<ion-content :fullscreen="true">
+    <div class="main_setting ion-margin change_pass_ipads">
+         <div lines="none" class="pdd_b">
+          <input type="password" id="old_password" placeholder="Old Password" class="user_nam" />
+          <div class="icon_in"><img src="assets/images/key.png"/></div>
+        </div>
+
+        <div lines="none" class="pdd_b ion-margin-top">
+          <input type="password" id="new_password" placeholder="New Password" class="user_nam" />
+          <div class="icon_in"><img src="assets/images/key.png"/></div>
+        </div>
+
+        <div lines="none" class="pdd_b ion-margin-top">
+          <input type="password" id="con_password" placeholder="Confirm Password" class="user_nam" />
+          <div class="icon_in"><img src="assets/images/key.png"/></div>
+        </div>
+        
+        <ion-row>
+            <ion-col size="6">
+                <ion-button shape="round" class="ok_btn">Reset</ion-button>
+            </ion-col>
+            <ion-col size="6">
+                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+            </ion-col>
+        </ion-row>
+
+    </div>
+  </ion-content>
+  </ion-page>
+  </div>
 </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -137,9 +185,16 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
+  methods:{
+    cancel() {
+        modalController.dismiss()
+    },
+  }
 });
 </script>
 

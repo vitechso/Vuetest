@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
@@ -298,14 +298,136 @@
 
 </ion-page>
 </div>
+
+<div v-if="isDesktop">
+<ion-page>
+<ion-header class="ipad_topbar bordes_ipad">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Transaction History</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+
+<ion-content :fullscreen="true" >
+    <div id="container_fax">
+        <div class="ipad_text_top ion-text-left ion-padding-top ion-padding-bottom desk_top_fless">
+            <p>Credit Balance: €15.00</p>
+            <ion-button shape="round" class="add_credis" @click="addCredit">Add Credit</ion-button>
+        </div>
+
+        <div class="main_iads fax_hn">
+            <ion-row class="border_bm"> 
+                <ion-col size="2">
+                    <div class="peint_data_headings">
+                        <h3>Order Number</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="peint_data_headings">
+                        <h3>Order Date</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="peint_data_headings">
+                        <h3>Item</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="2"> 
+                    <div class="peint_data_headings ion-text-center">
+                        <h3>Cost</h3>
+                    </div>
+                </ion-col>
+
+                <ion-col size="2"> 
+                    <div class="peint_data_headings ion-text-right">
+                        <h3>Action</h3>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="2">
+                    <div class="peint_inner_headings">
+                        <h3>12009</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h3>10 January 2021</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                     <div class="peint_inner_headings">
+                        <h3>Fax 4 Recipients</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-center">
+                        <h3><span class="red_p">- €2.50</span></h3>
+                    </div>
+                </ion-col>
+                <ion-col size="2"> 
+                    <div class="peint_inner_headings ion-text-right delete_btns">
+                        <!-- <h3>€0.50</h3> -->
+                        <img class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="2">
+                    <div class="peint_inner_headings">
+                        <h3>12009</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h3>10 January 2021</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                     <div class="peint_inner_headings">
+                        <h3>Fax 4 Recipients</h3>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-center">
+                        <h3><span class="green_p">+ €20.00</span></h3>
+                    </div>
+                </ion-col>
+                <ion-col size="2"> 
+                    <div class="peint_inner_headings ion-text-right delete_btns">
+                        <!-- <h3>€0.50</h3> -->
+                        <img class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+</ion-content>
+
+</ion-page>
+</div>
 </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import AddCredits from './AddCredits.vue'
 
 export default defineComponent({
   name: 'Transactionhistory',
@@ -322,9 +444,30 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
+  methods:{
+      cancel() {
+        modalController.dismiss()
+    },
+
+    async addCredit() {
+         modalController.dismiss()
+      const modal = await modalController.create({
+          component: AddCredits,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+    
+  }
+  
 });
 </script>
 

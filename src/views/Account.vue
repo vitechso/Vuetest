@@ -365,7 +365,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -378,10 +378,16 @@ export default defineComponent({
     IonToolbar,
     IonButtons,
     IonMenuButton
-  },
+  }, 
   setup() {
       const router = useRouter();
       return { router };
+  },
+  methods:{
+cancel() {
+    document.body.click()
+        modalController.dismiss()
+    },
   },
   data() {
       return {

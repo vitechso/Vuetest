@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
@@ -149,6 +149,78 @@
   </ion-content>
 </ion-page>
 </div>
+
+<div v-if="isDesktop">
+<ion-page>
+    <ion-header class="ipad_topbar bordes_ipad">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Select Send Type</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+
+  <ion-content :fullscreen="true" class="back_white">
+    <div id="container_fax" class="ion-top_padds">
+
+    <ion-row class="ion-margin-top ion-margin-bottom">
+        <ion-col size="4" @click="sendprint">
+            <div class="inner_sends">
+                <div class="icon_mipad">
+                    <img src="assets/images/yellow_print.svg" />
+                </div>
+                <div class="text_shareipad">
+                    <h3>Printed Letter</h3>
+                </div>
+            </div>
+        </ion-col>
+
+        <ion-col size="4"  @click="sendfax">
+            <div class="inner_sends">
+                <div class="icon_mipad">
+                    <img src="assets/images/yellow_fax.svg" />
+                </div>
+                <div class="text_shareipad">
+                    <h3>Fax</h3>
+                </div>
+            </div>
+        </ion-col>
+
+        <ion-col size="4">
+            <div class="inner_sends">
+                <div class="icon_mipad">
+                    <img src="assets/images/yellow_pdf.svg" />
+                </div>
+
+                <div class="text_shareipad">
+                    <h3>Pdf</h3>
+                </div>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-padding-top ion-padding-bottom">
+        <ion-col size="12">
+            <div class="ion_btn_next">
+                <ion-button shape="round" class="next_btn">Next</ion-button>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    </div>
+  </ion-content>
+</ion-page>
+</div>
 </ion-page>
 </template>
 
@@ -156,6 +228,8 @@
 import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import Sendprintedletter from './Sendprintedletter.vue'
+import Sendfax from './Sendfax.vue'
 
 export default defineComponent({
   name: 'Selectsendtype',
@@ -173,13 +247,38 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
   methods:{
     cancel() {
         modalController.dismiss()
-    }
+    },
+    async sendprint() {
+         modalController.dismiss()
+      const modal = await modalController.create({
+          component: Sendprintedletter,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+    async sendfax() {
+         modalController.dismiss()
+      const modal = await modalController.create({
+          component: Sendfax,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
   }
 });
 </script>

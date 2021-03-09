@@ -1,6 +1,6 @@
 <template>
 <ion-page>
-<div v-if="!isIpad">
+<div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
   <ion-toolbar>
@@ -120,6 +120,70 @@
   </ion-content>
 </ion-page>
 </div>
+
+<div v-if="isDesktop">
+<ion-page>
+    <ion-header class="ipad_topbar bordes_ipad">
+        <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="6" class="ipad_cols">
+        <div class="ion-text-left ipad_flx">
+          <span class="popup_title">Import CSV/Excel</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <div @click="cancel" class="close_popus">
+            <img src="assets/images/cross_icon.svg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+        </ion-toolbar>
+  </ion-header>
+
+  <ion-content :fullscreen="true" class="back_white">
+    <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
+
+    <ion-row class="ion-margin-top ion-margin-bottom ion-justify-content-center ion-align-items-center">
+        <ion-col size="10" class="">
+            <div class="inner_serhner">
+                <img src="assets/images/upload_pdf.svg" />
+                <p class="innasd">Drag and drop or browse your file</p>
+            </div>
+            <div class="maijn_uploads">
+                <div class="hnas">
+                    <img class="doc_pdf" src="assets/images/contact_boocs.svg" />
+                    <div class="_jmaas">
+                        <p class="doc_name">Contacts.CSV</p>
+                        <div class="process_bar"></div>
+                        <p class="up_load_c">Uploaded 100%</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-padding-top ion-padding-bottom weddas">
+        <ion-col size="3"></ion-col>
+        <ion-col size="3">
+            <div class="ion_btn_next">
+                <ion-button shape="round" class="next_btn">Done</ion-button>
+            </div>
+        </ion-col>
+
+        <ion-col size="3">
+            <div class="ion_btn_next">
+                <ion-button shape="round" class="next_btn">Cancel</ion-button>
+            </div>
+        </ion-col>
+        <ion-col size="3"></ion-col>
+    </ion-row>
+
+    </div>
+  </ion-content>
+</ion-page>
+</div>
 </ion-page>
 </template>
 
@@ -143,7 +207,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad')
+          isIpad:isPlatform('ipad'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: isPlatform('mobile'),
       }
   },
   methods:{

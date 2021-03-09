@@ -431,7 +431,7 @@
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
 
-        <div class="edit_icon desk">
+        <div class="edit_icon desk" @click="chossetamp">
           <img src="assets/images/edit_pencil.svg"/>
         </div>
 
@@ -555,7 +555,7 @@
                 </ion-col>
 
                 <ion-col size="8">
-                    <div class="icon_bn right_km">
+                    <div class="icon_bn right_km" @click="sendtype">
                         <img src="assets/images/black_send_share.svg"/>
                     </div>
                 </ion-col>
@@ -764,7 +764,8 @@ import Preview from './Preview.vue'
 import Contacts from './Contacts.vue';
 import Account from './Account.vue'
 import Popover from './Popover.vue'
-
+import Choosetemplate from './Choosetemplate.vue'
+import Selectsendtype from './Selectsendtype.vue'
 export default defineComponent({
   name: 'Writedocument',
   components: {
@@ -825,6 +826,19 @@ export default defineComponent({
          modalController.dismiss()
       const modal = await modalController.create({
           component: Changesignature,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+
+    async sendtype() {
+         modalController.dismiss()
+      const modal = await modalController.create({
+          component: Selectsendtype,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
@@ -896,6 +910,18 @@ export default defineComponent({
           translucent: true
         })
       return popover.present();
+    },
+
+    async chossetamp() {
+       modalController.dismiss()
+      const modal = await modalController.create({
+          component: Choosetemplate,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
     },
      
   }
