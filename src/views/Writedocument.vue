@@ -23,8 +23,11 @@
       </ion-col>
       <ion-col size="2">
         <ion-buttons class="right_ipad">
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+            <ion-menu-button class="primary_arrow_inner">
+                <img src="assets/images/menu.svg"/>
+            </ion-menu-button>
         </ion-buttons>
+        
       </ion-col>
     </ion-row>
   </ion-toolbar>
@@ -453,8 +456,11 @@
             <img src="assets/images/userimage.png"/>
           </div>
           <div class="arrow_ds">
-            <img src="assets/images/user_down.svg"/>
+            <ion-button @click="openPopover" expand="block">
+                <img src="assets/images/user_down.svg"/>
+            </ion-button>
           </div>
+          
         </div>
       </ion-col>
     </ion-row>
@@ -579,7 +585,7 @@
                 <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
             </ion-col>
             <ion-col size="2">
-                <div class="contact_book"  @click="contact">
+                <div class="contact_book" @click="contact">
                     <img src="assets/images/contact_book.svg"/>
                 </div>
             </ion-col>
@@ -748,14 +754,16 @@
 
 <script lang="ts">
 import { IonPage,IonHeader, IonFooter, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, IonSelectOption, IonSelect, IonToggle, IonCol, IonRow,
-alertController, IonSearchbar, modalController  } from '@ionic/vue'
+alertController, IonSearchbar, modalController, popoverController  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { isPlatform,getPlatforms } from '@ionic/vue';
 import Changesignature from './Changesignature.vue'
 import Preview from './Preview.vue'
-import Contacts from './Contacts.vue'
+import Contacts from './Contacts.vue';
+import Account from './Account.vue'
+import Popover from './Popover.vue'
 
 export default defineComponent({
   name: 'Writedocument',
@@ -849,6 +857,18 @@ export default defineComponent({
       return modal.present();
     },
 
+    async account() {
+        modalController.dismiss()
+      const modal = await modalController.create({
+          component: Account,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
      async documentSend() {
          modalController.dismiss()
         const alert = await alertController
@@ -866,10 +886,21 @@ export default defineComponent({
              this.$data.styleClass = ""
          }
         
-     }
+     },
+     async openPopover(ev: Event) {
+      const popover = await popoverController
+        .create({
+          component: Popover,
+          cssClass: 'HeaderDropDown',
+          event: ev,
+          translucent: true
+        })
+      return popover.present();
+    },
      
   }
 });
+
 </script>
 
 <style scoped>
