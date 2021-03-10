@@ -9,6 +9,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+          <img class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Payment Methods</span> 
         </div>
       </ion-col>
@@ -23,30 +24,66 @@
   </ion-header>
 
 <ion-content :fullscreen="true">
-    <ion-row class="ion-padding-top">
-        <ion-col size="1"></ion-col>
-        <ion-col size="10">
-            <div class="add_titles">
-                <h4>Please enter the amount you would like to add in your account</h4>
+    <ion-row class="ion-padding ion-justify-content-end">
+        <ion-col size="3" class="d-flex ion-justify-content-end">
+          <ion-button shape="round" class="add_credis" @click="addpay">Add Payment Method</ion-button>
+          <!-- <ion-button shape="round" class="add_credis" @click="addCredit">Add Payment Method</ion-button> -->
+        </ion-col>
+    </ion-row>
+
+    
+        
+    <ion-row>
+      <ion-col size="12" class="">
+        <ion-list class="ion-padding-horizontal ion-padding-bottom">
+          <ion-radio-group value="grape">
+            <div class="card-details-block border-green">
+              <ion-item lines="none" >
+                <ion-radio slot="start" color="success" value="CreditCard"></ion-radio>
+              </ion-item>
+              
+              <div class="card-info">
+                <img src="assets/images/paymemt.svg"/>
+                <div class="cards-details">
+                  <h2>Credit/Debit Card</h2>
+                  <p><strong>VISA</strong> ending in 6159</p>
+                  <p>Expires: 12/2022</p>
+                  <p><strong><i>Default</i></strong></p>
+                </div>
+              </div>
+              <div class="card-action">
+                  <img src="assets/images/edit.svg"/>
+                  <img src="assets/images/delete_black.svg"/>
+              </div>
             </div>
 
-            <div lines="none" class="pdd_b">
-                <input type="text" id="old_password" placeholder="Amount" class="user_nam" />
-                <div class="icon_in"><img src="assets/images/key.png"/></div>
+            <div class="card-details-block">
+              <ion-item lines="none">
+                <ion-radio slot="start" color="success" value="PayPal"></ion-radio>
+              </ion-item>
+              
+              <div class="card-info">
+                <img src="assets/images/PayPal.svg"/>
+                <div class="cards-details">
+                  <h2>Paypal</h2>
+                  <p><strong>george@gmail.com</strong></p>
+                </div>
+              </div>
+              <div class="card-action">
+                  <img src="assets/images/edit.svg"/>
+                  <img src="assets/images/delete_black.svg"/>
+              </div>
             </div>
-        </ion-col>
-        <ion-col size="1"></ion-col>
+          </ion-radio-group>
+        </ion-list>
+      </ion-col>
     </ion-row>
-    <div class="main_setting ion-margin change_pass_ipads ion-no-padding">
-        <ion-row>
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Add</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-    </div>
+
+    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+      <ion-col size="3">
+        <ion-button shape="round" class="MakeDefault-btn">Make Default</ion-button>
+      </ion-col>
+    </ion-row>    
   </ion-content>
   </ion-page>
   </div>
@@ -56,10 +93,10 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, IonButton, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, IonButton, modalController, IonItem, IonList, IonRadio, IonRadioGroup  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
-
+import AddPaymentMethod from './AddPaymentMethod.vue';
 export default defineComponent({
   name: 'PaymentMethods',
   components: {
@@ -67,7 +104,11 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonButton
+    IonButton,
+    IonItem,
+    IonList,
+    IonRadio,
+    IonRadioGroup
   },
   setup() {
       const router = useRouter();
@@ -85,6 +126,19 @@ export default defineComponent({
       cancel() {
         modalController.dismiss()
     },
+
+    async addpay() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: AddPaymentMethod,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
   }
 });
 </script>

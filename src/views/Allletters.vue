@@ -197,10 +197,12 @@
           <span class="title_top ipad_title_top">All Letters</span> 
           <ion-badge class="badgs">8</ion-badge>
         </div> -->
-        <div class="desktop_conn">
-          <ion-buttons class="">
+        <div class="desktop_conn ion-justify-content-start">
+          <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button>
+
+        <!-- <ion-buttons class="">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
+        </ion-buttons> -->
 
         <div class="edit_icon desk">
           <img src="assets/images/edit_pencil.svg"/>

@@ -9,6 +9,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+          <img class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Edit Card Details</span> 
         </div>
       </ion-col>
@@ -23,51 +24,57 @@
   </ion-header>
 
 <ion-content :fullscreen="true">
-    <ion-row class="ion-padding-top">
-        <ion-col size="1"></ion-col>
-        <ion-col size="10">
-            <div class="add_titles">
-                <h4>Please enter the amount you would like to add in your account</h4>
-            </div>
+  <div class="EditCarD-block">
+    <ion-row class="ion-padding">
+      <ion-col size="6" class="">
+        <div lines="none" class="pdd_b">
+          <input type="text" id="" placeholder="1267876598674537" class="user_nam" />
+        </div>
+      </ion-col>
 
-            <div lines="none" class="pdd_b">
-                <input type="text" id="old_password" placeholder="Amount" class="user_nam" />
-                <div class="icon_in"><img src="assets/images/key.png"/></div>
-            </div>
-        </ion-col>
-        <ion-col size="1"></ion-col>
+      <ion-col size="3" class="ion-padding-start">
+        <div lines="none" class="pdd_b">
+          <input type="text" id="" placeholder="12/22" class="user_nam" />
+        </div>
+      </ion-col>
+
+      <ion-col size="3" class="ion-padding-start">
+        <div lines="none" class="pdd_b">
+          <input type="text" id="" placeholder="***" class="user_nam" />
+        </div>
+      </ion-col>
     </ion-row>
-    <div class="main_setting ion-margin change_pass_ipads ion-no-padding">
-        <ion-row>
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Add</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-    </div>
-  </ion-content>
-  </ion-page>
+
+    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+      <ion-col size="3">
+        <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
+      </ion-col>
+
+      <ion-col size="3">
+        <ion-button shape="round" type="default" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
   </div>
+</ion-content>
+</ion-page>
+</div>
 
 </ion-page>
 
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, IonButton, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
 export default defineComponent({
-  name: 'PaymentMethods',
+  name: 'EditCardDetails',
   components: {
     IonContent,
     IonHeader,
     IonPage,
     IonToolbar,
-    IonButton
   },
   setup() {
       const router = useRouter();

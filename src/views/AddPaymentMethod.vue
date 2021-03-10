@@ -9,6 +9,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+          <img class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Add Payment Method</span> 
         </div>
       </ion-col>
@@ -23,30 +24,31 @@
   </ion-header>
 
 <ion-content :fullscreen="true">
-    <ion-row class="ion-padding-top">
-        <ion-col size="1"></ion-col>
-        <ion-col size="10">
-            <div class="add_titles">
-                <h4>Please enter the amount you would like to add in your account</h4>
+    <ion-row class="ion-padding">
+        <ion-col size="12">
+          <div class="AddPayment-MethodBlock">
+            <div class="PaymentCard-box" @click="paypal">
+              <div class="card-img-box active-Cardbox">
+                <img src="assets/images/PayPal.svg"/>
+              </div>
+              <h2>Paypal</h2>
             </div>
 
-            <div lines="none" class="pdd_b">
-                <input type="text" id="old_password" placeholder="Amount" class="user_nam" />
-                <div class="icon_in"><img src="assets/images/key.png"/></div>
+            <div class="PaymentCard-box" @click="editcard">
+              <div class="card-img-box CreditCard-img">
+                <img src="assets/images/paymemt.svg"/>
+              </div>
+              <h2>Credit/Debit Card</h2>
             </div>
+          </div>
         </ion-col>
-        <ion-col size="1"></ion-col>
     </ion-row>
-    <div class="main_setting ion-margin change_pass_ipads ion-no-padding">
-        <ion-row>
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Add</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-    </div>
+
+    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+      <ion-col size="3">
+        <ion-button shape="round" class="MakeDefault-btn">Next</ion-button>
+      </ion-col>
+    </ion-row> 
   </ion-content>
   </ion-page>
   </div>
@@ -56,18 +58,19 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, IonButton, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import Paypal from './Paypal.vue';
+import EditCardDetails from './EditCardDetails.vue';
 
 export default defineComponent({
-  name: 'PaymentMethods',
+  name: 'AddPaymentMethod',
   components: {
     IonContent,
     IonHeader,
     IonPage,
-    IonToolbar,
-    IonButton
+    IonToolbar
   },
   setup() {
       const router = useRouter();
@@ -85,7 +88,33 @@ export default defineComponent({
       cancel() {
         modalController.dismiss()
     },
-  }
+
+    async paypal() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: Paypal,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+  },
+
+
+  async editcard() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: EditCardDetails,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+  },
+
+},
 });
 </script>
 

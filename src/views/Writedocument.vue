@@ -427,9 +427,11 @@
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="2" class="ipad_cols Desktop_cols">
         <div class="desktop_conn ion-justify-content-end">
-          <ion-buttons class="">
+          <!-- <ion-buttons class="">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
+        </ion-buttons> -->
+        <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button>
+
 
         <div class="edit_icon desk" @click="chossetamp">
           <img src="assets/images/edit_pencil.svg"/>
