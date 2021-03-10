@@ -416,7 +416,7 @@
         </ion-col>
 
         <ion-col>
-            <ion-item @click="(payment)" lines="none" class="list_cons setting_bs ion-margin-bottom">
+            <ion-item @click="payment" lines="none" class="list_cons setting_bs ion-margin-bottom">
                 <div slot="start" class="icons_s">
                     <img src="assets/images/paymemt.svg"/>
                 </div>
@@ -452,6 +452,7 @@ import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Changepassword from './Changepassword.vue'
 import Transactionhistory from './Transactionhistory.vue'
+import PaymentMethods from './PaymentMethods.vue'
 
 export default defineComponent({
   name: 'Settings',
@@ -509,6 +510,18 @@ export default defineComponent({
          modalController.dismiss()
       const modal = await modalController.create({
           component: Transactionhistory,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+    async payment() {
+         modalController.dismiss()
+      const modal = await modalController.create({
+          component: PaymentMethods,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
