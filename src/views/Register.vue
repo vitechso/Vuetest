@@ -247,7 +247,7 @@
         </div>
   </div>
         <div lines="none" class="pdd_b top_am">
-          <ion-button type="submit" shape="round" class="sign_ups" @click="() => router.push('/intro')">Sign In</ion-button>
+          <ion-button type="submit" shape="round" class="sign_ups" @click="() => router.push('/intro')">Sign Up</ion-button>
         </div>
         <div lines="none" class="pdd_b">
           <div class="sign_doens mt-0">
