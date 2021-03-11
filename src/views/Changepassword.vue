@@ -147,12 +147,13 @@
           <div class="icon_in"><img src="assets/images/key.png"/></div>
         </div>
         
-        <ion-row>
-            <ion-col size="6">
+
+        <ion-row class="ion-margin-top destop-account-btn">
+            <ion-col size="6" class="d-flex ion-justify-content-end ion-padding-end">
                 <ion-button shape="round" class="ok_btn">Reset</ion-button>
             </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+            <ion-col size="6" class="d-flex ion-justify-content-start ion-padding-start">
+                <ion-button shape="round" @click="cancel" class="cancel_btn">Cancel</ion-button>
             </ion-col>
         </ion-row>
 

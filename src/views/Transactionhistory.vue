@@ -323,7 +323,7 @@
     <div id="container_fax">
         <div class="ipad_text_top ion-text-left ion-padding-top ion-padding-bottom desk_top_fless">
             <p>Credit Balance: €15.00</p>
-            <ion-button shape="round" class="add_credis" @click="addCredit">Add Credit</ion-button>
+            <ion-button class="add_credis" @click="addCredit">Add Credit</ion-button>
         </div>
 
         <div class="main_iads fax_hn">

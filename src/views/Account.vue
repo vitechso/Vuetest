@@ -351,7 +351,7 @@
                     <ion-button shape="round" class="ok_btn">Update</ion-button>
                 </ion-col>
                 <ion-col size="6" class="d-flex ion-justify-content-start ion-padding-start">
-                    <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+                    <ion-button shape="round" @click="cancel" class="cancel_btn">Cancel</ion-button>
                 </ion-col>
             </ion-row>
             

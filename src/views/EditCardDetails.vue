@@ -46,12 +46,12 @@
     </ion-row>
 
     <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
-      <ion-col size="3">
+      <ion-col size="3" class="ion-padding-end">
         <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
       </ion-col>
 
-      <ion-col size="3">
-        <ion-button shape="round" type="default" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+      <ion-col size="3" class="ion-padding-start">
+        <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
       </ion-col>
     </ion-row>
   </div>

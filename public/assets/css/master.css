@@ -153,6 +153,7 @@ a {
     color: #F1D000;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 .top_am {
     margin-top: 15%;
@@ -429,6 +430,7 @@ ion-item {
     height: 38px;
     font-size: 18px;
     text-transform: capitalize;
+    letter-spacing: normal;
 }
 .lett_selct ion-select {
     width: 100%;
@@ -1260,7 +1262,7 @@ span.popup_title {
     border-radius: 10px;
 }
 .chosse_ipad ion-button {
-    width: 143px;
+    width: 150px;
     height: 38px;
     margin: auto;
     text-align: center;
@@ -1444,6 +1446,7 @@ img.delete_print_btns_01 {
     justify-content: center;
     height: 100vh;
 }
+
 #container_ipad .top_am{
     margin-top: 8%;
     margin-bottom: 8%;
@@ -1743,7 +1746,6 @@ p.user_ids.iad_spl {
 }
 .desktop_conn {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -1757,14 +1759,27 @@ p.user_ids.iad_spl {
 }
 .desktop_vs {
     color: #000 !important;
+    font-size: 18px !important;
 }
 .badgs_desks{
     background-color: #e6e6e6 !important;
-    margin-left: 10px;
+    margin: 5px;
 }
+
+.black-down-arrow .button-solid {
+    --background: transparent !important;
+    --box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+.black-down-arrow .button-solid img {
+    filter: invert(1);
+    transform: rotate(90deg);
+}
+
 .lettes_desk{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .Desktop_cols:after {
@@ -1787,7 +1802,7 @@ p.user_ids.iad_spl {
 }
 
 .desktop_conn .edit_icon.desk {
-    padding: 0 0 0 30px;
+    padding-right: 20px;
 }
 
 .Desktop_lock_unlock ion-row {
@@ -1934,8 +1949,9 @@ p.user_ids.iad_spl {
 }
 
 .desktop_header_dropdownList img {
-    width: 20px;
+    width: 25px;
     margin-right: 10px;
+    height: 25px;
 }
 
 .HeaderDropDown ion-backdrop {
@@ -2206,6 +2222,7 @@ img.paypal-logo {
 
 .MenuBar {
     position: relative;
+    margin-right: 30px;
 }
 
 .MenuBar:after {
@@ -2217,4 +2234,25 @@ img.paypal-logo {
     background: #fff;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.HeaderDropDown.allLetterDropDown .popover-content {
+    top: 100px !important;
+    left: 150px !important;
+}
+
+.HeaderDropDown.allLetterDropDown .popover-content:after {
+    left: 18px;
+}
+
+.container_desktop {
+    height: auto !important;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+    .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 500px;
+    }
 }

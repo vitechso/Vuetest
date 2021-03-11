@@ -129,8 +129,8 @@
 
   <div v-if="isDesktop">
     <ion-page class="logins_nms">
-    <ion-content :fullscreen="true" scroll-y="false">
-      <div id="container_ipad">
+    <ion-content :fullscreen="true">
+      <div id="container_ipad" class="container_desktop">
       
         <form @submit.prevent="handleLogin">
         <div class="drak_mode">
@@ -140,7 +140,7 @@
         <img src="assets/images/logo.svg">
       </div>
         <div class="sign_with">
-          <h2>Sign In With Social</h2>
+          <h2>Sign in with</h2>
           <div class="social_icons">
             <ul>
               <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>

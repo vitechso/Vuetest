@@ -618,7 +618,7 @@
         </ion-col>
         <ion-col size="5" class="d-flex ion-justify-content-end ion-no-padding">
             <ion-button class="import_csv" @click="excel">Import CSV/Excel</ion-button>
-            <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+            <ion-button class="import_csv" @click="addacontact">Add Contact</ion-button>
         </ion-col>
     </ion-row>
   </ion-header>
@@ -930,6 +930,8 @@ import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, IonSeg
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import ImportCSVExcel from './ImportCSVExcel.vue'
+import Addacontact from './Addacontact.vue'
+
 export default defineComponent({
   name: 'Contacts',
   components: {
@@ -970,6 +972,18 @@ export default defineComponent({
         modalController.dismiss()
       const modal = await modalController.create({
           component: ImportCSVExcel,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+    async addacontact() {
+        modalController.dismiss()
+      const modal = await modalController.create({
+          component: Addacontact,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'

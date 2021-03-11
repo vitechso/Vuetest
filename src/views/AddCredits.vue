@@ -9,6 +9,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+          <img class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Add Credits</span> 
         </div>
       </ion-col>
@@ -37,16 +38,16 @@
         </ion-col>
         <ion-col size="1"></ion-col>
     </ion-row>
-    <div class="main_setting ion-margin change_pass_ipads ion-no-padding">
-        <ion-row>
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Add</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-    </div>
+
+    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+      <ion-col size="3" class="ion-padding-end">
+        <ion-button shape="round" class="MakeDefault-btn">Add</ion-button>
+      </ion-col>
+
+      <ion-col size="3" class="ion-padding-start">
+        <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-content>
   </ion-page>
   </div>

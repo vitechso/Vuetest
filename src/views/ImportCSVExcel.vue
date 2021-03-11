@@ -164,22 +164,15 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-top ion-padding-bottom weddas">
-        <ion-col size="3"></ion-col>
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Done</ion-button>
-            </div>
+    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+        <ion-col size="3" class="ion-padding-end">
+          <ion-button shape="round" class="MakeDefault-btn">Done</ion-button>
         </ion-col>
 
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Cancel</ion-button>
-            </div>
+        <ion-col size="3" class="ion-padding-start">
+          <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
         </ion-col>
-        <ion-col size="3"></ion-col>
-    </ion-row>
-
+      </ion-row>
     </div>
   </ion-content>
 </ion-page>

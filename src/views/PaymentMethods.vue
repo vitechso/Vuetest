@@ -24,9 +24,9 @@
   </ion-header>
 
 <ion-content :fullscreen="true">
-    <ion-row class="ion-padding ion-justify-content-end">
+    <ion-row class="ion-padding-horizontal ion-padding-top ion-justify-content-end">
         <ion-col size="3" class="d-flex ion-justify-content-end">
-          <ion-button shape="round" class="add_credis" @click="addpay">Add Payment Method</ion-button>
+          <ion-button class="add_credis" @click="addpay">Add Payment Method</ion-button>
           <!-- <ion-button shape="round" class="add_credis" @click="addCredit">Add Payment Method</ion-button> -->
         </ion-col>
     </ion-row>
