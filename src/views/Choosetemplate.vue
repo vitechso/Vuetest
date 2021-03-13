@@ -31,7 +31,7 @@
             <p>template or <strong>upload a pdf</strong></p>
         </div>
 
-        <ion-row>
+        <ion-row class="">
             <ion-col size="6">
                 <div class="doc">
                 </div>
@@ -240,7 +240,7 @@
             <p>Start with a blank document, choose a template or <strong  @click="uploadpdf">upload a PDF</strong></p>
         </div>
 
-        <ion-row>
+        <ion-row class="ion-margin-bottom">
             <ion-col size="3">
                 <div class="doc desktop_sizes">
                 </div>
@@ -312,44 +312,6 @@
                 </div>
             </ion-col>
         </ion-row>
-
-        <ion-row>
-            <ion-col size="3">
-                <div class="doc desktop_sizes">
-                </div>
-                <div class="title_doc">
-                    <h3>Blank Document</h3>
-                </div>
-            </ion-col>
-
-            <ion-col size="3">
-                <div class="doc desktop_sizes">
-                    <img src="assets/images/normal_u1310.jpg"/>
-                </div>
-                <div class="title_doc">
-                    <h3>Address Change</h3>
-                </div>
-            </ion-col>
-
-            <ion-col size="3">
-                <div class="doc desktop_sizes">
-                    <img src="assets/images/normal_u1310.jpg"/>
-                </div>
-                <div class="title_doc">
-                    <h3>Address Change</h3>
-                </div>
-            </ion-col>
-
-            <ion-col size="3">
-                <div class="doc desktop_sizes">
-                    <img src="assets/images/normal_u1310.jpg"/>
-                </div>
-                <div class="title_doc">
-                    <h3>Address Change</h3>
-                </div>
-            </ion-col>
-        </ion-row>
-
     </div>
   </ion-content>
 </ion-page>

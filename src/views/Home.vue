@@ -175,7 +175,8 @@
         </div>
         <div lines="none" class="pdd_b">
           <div class="for_got">
-            <a @click="() => router.push('/forgot')">Forgot your password?</a>
+            <!-- <a @click="() => router.push('/forgot')">Forgot your password?</a> -->
+            <a href="">Forgot your password?</a>
           </div>
         </div>
        <!-- <div v-if="invalid" class="error_mesg_invalid">

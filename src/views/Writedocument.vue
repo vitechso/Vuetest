@@ -426,24 +426,25 @@
   <ion-toolbar class="">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols">
-        <div class="desktop_conn">
-          <!-- <ion-buttons class="">
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons> -->
-        <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button>
+        <div class="desktop_conn ">
 
+            <!-- <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button> -->
 
-        <div class="edit_icon desk" @click="chossetamp">
-          <img src="assets/images/edit_pencil.svg"/>
-        </div>
+            <div class="desktop-header-icon MenuBar icon-hover">
+                <img src="assets/images/menu.svg"/>
+            </div>
 
-        <div class="edit_icon desk" @click="desktopdelete">
-          <img src="assets/images/delete.svg"/>
-        </div>
+            <div class="desktop-header-icon icon-hover" @click="chossetamp">
+                <img src="assets/images/edit_pencil.svg"/>
+            </div>
 
-        <div class="edit_icon desk">
-          <img src="assets/images/search.svg"/>
-        </div>
+            <div class="desktop-header-icon icon-hover" @click="desktopdelete">
+                <img src="assets/images/delete.svg"/>
+            </div>
+
+            <div class="desktop-header-icon icon-hover">
+                <img src="assets/images/search.svg"/>
+            </div>
 
         </div>
       </ion-col>
@@ -457,10 +458,11 @@
           <div class="user_avtar">
             <img src="assets/images/userimage.png"/>
           </div>
+
           <div class="arrow_ds">
-            <ion-button @click="openPopover" expand="block">
+            <div class="icon-hover" @click="openPopover">
                 <img src="assets/images/user_down.svg"/>
-            </ion-button>
+            </div>
           </div>
           
         </div>
@@ -476,7 +478,7 @@
         <ion-col size="2" class="ion-no-padding bg-white">
             <ion-row class="s_bar lettes_desk">
                 <ion-col size="12">
-                    <div class="ion-text-left ipad_flx">
+                    <div class="ion-text-left ipad_flx desk_flx">
                         <span class="title_top ipad_title_top desktop_vs">All Letters</span> 
                         <ion-badge class="badgs badgs_desks">8</ion-badge>
                         <div class="black-down-arrow">
@@ -537,33 +539,32 @@
         <ion-col size="5" class="ion-no-padding bg-white">
             <div class="lock_unlock Desktop_lock_unlock">
                 <ion-row>
-                    <ion-col size="1">
-                        <div class="img_unloacks" @click="addclass($event)">
-                            <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
-                            <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
-                        </div>
-                    </ion-col>
+                    <ion-col size="12" class="ion-no-padding">
+                        <div class="board-icon">
+                            <div class="board-left">
+                                <div class="icon_bn img_unloacks icon-hover" @click="addclass($event)">
+                                    <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
+                                    <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
+                                </div>
 
-                    <ion-col size="1">
-                        <div class="icon_bn">
-                            <img src="assets/images/bold.svg"/>
-                        </div>
-                    </ion-col>
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/bold.svg"/>
+                                </div>
 
-                    <ion-col size="1">
-                        <div class="icon_bn">
-                            <img src="assets/images/itelic.svg"/>
-                        </div>
-                    </ion-col>
-                    <ion-col size="1">
-                        <div class="icon_bn">
-                            <img src="assets/images/underline.svg"/>
-                        </div>
-                    </ion-col>
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/itelic.svg"/>
+                                </div>
 
-                    <ion-col size="8">
-                        <div class="icon_bn right_km" @click="sendtype">
-                            <img src="assets/images/black_send_share.svg"/>
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/underline.svg"/>
+                                </div>
+                            </div>
+
+                             <div class="board-right">
+                                <div class="icon_bn right_km icon-hover" @click="sendtype">
+                                    <img src="assets/images/black_send_share.svg"/>
+                                </div>
+                            </div>
                         </div>
                     </ion-col>
                 </ion-row>
@@ -577,8 +578,8 @@
                     <ion-col size="8">
                         <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
                     </ion-col>
-                    <ion-col size="2">
-                        <div class="contact_book">
+                    <ion-col size="2" class="ion-no-padding">
+                        <div class="contact_book contact_book-desk">
                             <img src="assets/images/contact_book.svg"/>
                         </div>
                     </ion-col>
@@ -591,8 +592,8 @@
                     <ion-col size="8">
                         <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
                     </ion-col>
-                    <ion-col size="2">
-                        <div class="contact_book" @click="contact">
+                    <ion-col size="2" class="ion-no-padding">
+                        <div class="contact_book contact_book-desk icon-hover" @click="contact">
                             <img src="assets/images/contact_book.svg"/>
                         </div>
                     </ion-col>
