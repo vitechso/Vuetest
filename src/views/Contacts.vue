@@ -599,16 +599,18 @@
         </ion-toolbar>
 
           <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt desktop-segmnt">
-    <ion-segment-button value="contacts" >
-      <ion-label>Contacts</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="groups">
-      <ion-label>Groups</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+            <ion-segment-button value="contacts" >
+                <ion-label>Contacts</ion-label>
+            </ion-segment-button>
+
+            <ion-segment-button value="groups">
+                <ion-label>Groups</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12" class="ion-padding-start ion-padding-end">
-            <ion-searchbar class="ion-no-padding search_bts hans_ipad"></ion-searchbar>
+            <ion-searchbar class="ion-no-padding search_bts hans_ipad cntct-search-desk"></ion-searchbar>
         </ion-col>
     </ion-row>
 
@@ -625,22 +627,24 @@
 
   <ion-content :fullscreen="true">
     <div v-if="selectedSegment == 'contacts'" class="ion-padding-start">
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-desk"> 
             <div class="alpha"><p>A</p></div>
             <div class="contact_name_list">
 
                 <ion-row class="main_conipad">
                     <ion-col size="3">
                         <ion-item lines="none">
-                        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-                        <ion-label>Andrew Symonds</ion-label>
+                            <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+                            <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
                     </ion-col>
+                    
                     <ion-col size="2">
                         <div class="insd">
                             <p>401-333-2828</p>
@@ -670,7 +674,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -699,7 +703,7 @@
             </div>
         </div>
 
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-desk"> 
             <div class="alpha"><p>B</p></div>
             <div class="contact_name_list">
                <ion-row class="main_conipad">
@@ -709,7 +713,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -742,7 +746,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -771,7 +775,7 @@
             </div>
         </div>
 
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-desk"> 
             <div class="alpha"><p>C</p></div>
             <div class="contact_name_list">
                 <ion-row class="main_conipad">
@@ -781,7 +785,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -814,7 +818,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -842,9 +846,20 @@
                 </ion-row>
             </div>
         </div>
+
+        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+            <ion-col size="3">
+                <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+            </ion-col>
+
+            <ion-col size="3">
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+            </ion-col>
+        </ion-row>
+
     </div>
     <div v-if="selectedSegment == 'groups'" class="ion-padding-start ion-padding-end ion-padding-top">
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-desk"> 
             <div class="contact_name_list">
                 
                <ion-row class="main_conipad">
@@ -854,7 +869,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -888,7 +903,7 @@
                         <ion-label>Andrew Symonds</ion-label>
                         </ion-item>
                     </ion-col>
-                    <ion-col size="3">
+                    <ion-col size="3" class="ion-padding-end">
                         <div class="insd">
                             <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                         </div>
@@ -916,6 +931,16 @@
                 </ion-row>
             </div>
         </div>
+
+        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+            <ion-col size="3">
+                <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+            </ion-col>
+
+            <ion-col size="3">
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+            </ion-col>
+        </ion-row>
     </div>
     
   </ion-content>

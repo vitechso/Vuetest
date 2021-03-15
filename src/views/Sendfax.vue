@@ -40,6 +40,7 @@
                         <p>Andrew Symonds</p>
                     </ion-col>
                 </ion-row>
+
                 <ion-row class="row_01">
                     <ion-col size="4">
                         <p><strong>Address:</strong></p>
@@ -48,6 +49,7 @@
                         <p>243 Park Hall Aveneues Kassel 11015 Germany</p>
                     </ion-col>
                 </ion-row>
+
                 <ion-row class="row_01">
                     <ion-col size="4">
                         <p><strong>Cost:</strong></p>
@@ -56,6 +58,7 @@
                         <p>€0.50</p>
                     </ion-col>
                 </ion-row>
+
                 <ion-row class="row_01">
                     <ion-col size="4">
                         <p><strong>Enter Fax Number:</strong></p>
@@ -67,6 +70,7 @@
                         </div>
                     </ion-col>
                 </ion-row>
+
                 <ion-row class="row_01">
                     <ion-col size="4">
                     </ion-col>
@@ -423,7 +427,7 @@
                         <h3>Name</h3>
                     </div>
                 </ion-col>
-                <ion-col size="5">
+                <ion-col size="4">
                     <div class="peint_data_headings">
                         <h3>Address</h3>
                     </div>
@@ -433,7 +437,7 @@
                         <h3>Enter Phone Number</h3>
                     </div>
                 </ion-col>
-                <ion-col size="1"> 
+                <ion-col size="2"> 
                     <div class="peint_data_headings ion-text-right">
                         <h3>Cost</h3>
                     </div>
@@ -446,18 +450,18 @@
                         <h3>Andrew Symonds</h3>
                     </div>
                 </ion-col>
-                <ion-col size="5">
+                <ion-col size="4">
                     <div class="peint_inner_headings">
                         <h3>243 Park Hall Aveneues Kassel 11015 Germany</h3>
                     </div>
                 </ion-col>
-                <ion-col size="3">
-                    <div class="fax_num custom_fax_jm">
-                        <img src="assets/images/print.svg"/>
+                <ion-col size="3" class="ion-padding-horizontal">
+                    <div class="fax_num custom_fax_jm SendFax-phoneNumber">
+                        <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
                     </div>
                 </ion-col>
-                <ion-col size="1"> 
+                <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <h3>€0.50</h3>
                         <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
@@ -471,18 +475,18 @@
                         <h3>Andy Bickel</h3>
                     </div>
                 </ion-col>
-                <ion-col size="5">
+                <ion-col size="4">
                     <div class="peint_inner_headings">
                         <h3>13 Green Park Avenues Kassel 11015 Germany</h3>
                     </div>
                 </ion-col>
-                <ion-col size="3">
-                    <div class="fax_num custom_fax_jm">
-                        <img src="assets/images/print.svg"/>
+                <ion-col size="3" class="ion-padding-horizontal">
+                    <div class="fax_num custom_fax_jm SendFax-phoneNumber">
+                        <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
                     </div>
                 </ion-col>
-                <ion-col size="1"> 
+                <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <h3>€0.50</h3>
                         <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
@@ -496,18 +500,18 @@
                         <h3>Bryan Adams</h3>
                     </div>
                 </ion-col>
-                <ion-col size="5">
+                <ion-col size="4">
                     <div class="peint_inner_headings">
                         <h3>12 Model Town Road Berlin 11017 Germany</h3>
                     </div>
                 </ion-col>
-                <ion-col size="3">
-                    <div class="fax_num custom_fax_jm">
-                        <img src="assets/images/print.svg"/>
+                <ion-col size="3" class="ion-padding-horizontal">
+                    <div class="fax_num custom_fax_jm SendFax-phoneNumber">
+                        <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
                     </div>
                 </ion-col>
-                <ion-col size="1"> 
+                <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <h3>€0.50</h3>
                         <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
@@ -521,18 +525,18 @@
                         <h3>Benjamin Williams</h3>
                     </div>
                 </ion-col>
-                <ion-col size="5">
+                <ion-col size="4">
                     <div class="peint_inner_headings">
                         <h3>133 Civil Lines GT Road Munich 11013 Germany</h3>
                     </div>
                 </ion-col>
-                <ion-col size="3">
-                    <div class="fax_num custom_fax_jm">
-                        <img src="assets/images/print.svg"/>
+                <ion-col size="3" class="ion-padding-horizontal">
+                    <div class="fax_num custom_fax_jm SendFax-phoneNumber">
+                        <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
                     </div>
                 </ion-col>
-                <ion-col size="1"> 
+                <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <h3>€0.50</h3>
                         <img class="delete_print_btns" src="assets/images/delete_black.svg"/>
@@ -541,9 +545,9 @@
             </ion-row>
 
             <ion-row class="border_bm fill_colortotal">
-                <ion-col size="8">
+                <ion-col size="6">
                 </ion-col>
-                <ion-col size="4"> 
+                <ion-col size="6"> 
                     <div class="total_num">
                         <h3>Total number of recipients</h3>
                         <h3>4</h3>
@@ -553,9 +557,9 @@
 
 
             <ion-row class="border_bm fill_colortotal">
-                <ion-col size="8">
+                <ion-col size="6">
                 </ion-col>
-                <ion-col size="4"> 
+                <ion-col size="6"> 
                     <div class="total_num">
                         <h3><strong>Grand total</strong></h3>
                         <h3><strong>€2.00</strong></h3>
@@ -563,12 +567,13 @@
                 </ion-col>
             </ion-row>
         </div>
-        <ion-row class="ion-margin-top">
-            <ion-col size="8"></ion-col>
-            <ion-col size="4"> 
-                <div class="ion_tabs_ipads">
-                    <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
-                </div>
+        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+            <ion-col size="3">
+                <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
+            </ion-col>
+
+            <ion-col size="3">
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
             </ion-col>
         </ion-row>
     </div>

@@ -146,18 +146,18 @@
           <input type="password" id="con_password" placeholder="Confirm Password" class="user_nam" />
           <div class="icon_in"><img src="assets/images/key.png"/></div>
         </div>
-        
-
-        <ion-row class="ion-margin-top destop-account-btn">
-            <ion-col size="6" class="d-flex ion-justify-content-end ion-padding-end">
-                <ion-button shape="round" class="ok_btn">Reset</ion-button>
-            </ion-col>
-            <ion-col size="6" class="d-flex ion-justify-content-start ion-padding-start">
-                <ion-button shape="round" @click="cancel" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-
     </div>
+
+    <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+      <ion-col size="3">
+          <ion-button shape="round" class="MakeDefault-btn">Reset</ion-button>
+      </ion-col>
+
+      <ion-col size="3">
+          <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
+
   </ion-content>
   </ion-page>
   </div>

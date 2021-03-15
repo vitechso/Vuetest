@@ -25,7 +25,7 @@
 
 <ion-content :fullscreen="true">
   <div class="EditCarD-block">
-    <ion-row class="ion-padding">
+    <ion-row class="ion-padding account_desktop">
       <ion-col size="6" class="">
         <div lines="none" class="pdd_b">
           <input type="text" id="" placeholder="1267876598674537" class="user_nam" />
@@ -45,13 +45,13 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
-      <ion-col size="3" class="ion-padding-end">
-        <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
+    <ion-row class="ion-justify-content-center ion-margin-bottom ion-padding">
+      <ion-col size="3">
+          <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
       </ion-col>
 
-      <ion-col size="3" class="ion-padding-start">
-        <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+      <ion-col size="3">
+          <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
       </ion-col>
     </ion-row>
   </div>

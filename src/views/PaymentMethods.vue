@@ -26,7 +26,7 @@
 <ion-content :fullscreen="true">
     <ion-row class="ion-padding-horizontal ion-padding-top ion-justify-content-end">
         <ion-col size="3" class="d-flex ion-justify-content-end">
-          <ion-button class="add_credis" @click="addpay">Add Payment Method</ion-button>
+          <ion-button class="add_credis import_csv" @click="addpay">Add Payment Method</ion-button>
           <!-- <ion-button shape="round" class="add_credis" @click="addCredit">Add Payment Method</ion-button> -->
         </ion-col>
     </ion-row>
@@ -78,12 +78,11 @@
         </ion-list>
       </ion-col>
     </ion-row>
-
-    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
-      <ion-col size="3">
-        <ion-button shape="round" class="MakeDefault-btn">Make Default</ion-button>
-      </ion-col>
-    </ion-row>    
+    <ion-row class="ion-justify-content-center ion-padding ion-margin-bottom">
+        <ion-col size="3">
+          <ion-button shape="round" class="MakeDefault-btn _big">Make Default</ion-button>
+        </ion-col>
+      </ion-row>    
   </ion-content>
   </ion-page>
   </div>

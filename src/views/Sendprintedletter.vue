@@ -450,9 +450,9 @@
                     </ion-row>
 
                     <ion-row class="border_bm fill_colortotal">
-                        <ion-col size="8">
+                        <ion-col size="6">
                         </ion-col>
-                        <ion-col size="4"> 
+                        <ion-col size="6"> 
                             <div class="total_num">
                                 <h3>Total number of recipients</h3>
                                 <h3>4</h3>
@@ -462,9 +462,9 @@
 
 
                     <ion-row class="border_bm fill_colortotal">
-                        <ion-col size="8">
+                        <ion-col size="6">
                         </ion-col>
-                        <ion-col size="4"> 
+                        <ion-col size="6"> 
                             <div class="total_num">
                                 <h3><strong>Grand total</strong></h3>
                                 <h3><strong>€2.00</strong></h3>
@@ -472,14 +472,17 @@
                         </ion-col>
                     </ion-row>
                 </div>
-                <ion-row class="ion-margin-top">
-                    <ion-col size="8"></ion-col>
-                    <ion-col size="4"> 
-                        <div class="ion_tabs_ipads">
-                            <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
-                        </div>
+
+                <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+                    <ion-col size="3">
+                        <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
+                    </ion-col>
+
+                    <ion-col size="3">
+                        <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
                     </ion-col>
                 </ion-row>
+
             </div>
         </ion-content>
 

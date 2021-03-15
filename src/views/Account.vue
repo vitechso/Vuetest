@@ -259,7 +259,7 @@
 
 <ion-content :fullscreen="true">
     <div class="main_setting ion-margin account_ipads">
-        <div class="account_m">
+        <div class="account_m account_desktop">
             <ion-row>
                 <ion-col size="12">
                     <p class="user_ids iad_spl">User ID: MU-73993</p>
@@ -278,12 +278,12 @@
             <ion-row>
                 <ion-col size="6">
                     <div class="upload right">
-                        <img src="assets/images/upload_icon.svg" /> <p><strong>Upload Picture</strong></p>
+                        <img src="assets/images/upload_icon.svg" /> <p>Upload Picture</p>
                     </div>
                 </ion-col>
                 <ion-col size="6">
                     <div class="upload left">
-                        <img src="assets/images/take_picture.svg" /> <p><strong>Take Picture</strong></p>
+                        <img src="assets/images/take_picture.svg" /> <p>Take Picture</p>
                     </div>
                 </ion-col>
             </ion-row>
@@ -346,12 +346,13 @@
                 </ion-col>
             </ion-row>
 
-            <ion-row class="ion-margin-top destop-account-btn">
-                <ion-col size="6" class="d-flex ion-justify-content-end ion-padding-end">
-                    <ion-button shape="round" class="ok_btn">Update</ion-button>
+            <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
+                <ion-col size="3">
+                    <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
                 </ion-col>
-                <ion-col size="6" class="d-flex ion-justify-content-start ion-padding-start">
-                    <ion-button shape="round" @click="cancel" class="cancel_btn">Cancel</ion-button>
+
+                <ion-col size="3">
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
                 </ion-col>
             </ion-row>
             

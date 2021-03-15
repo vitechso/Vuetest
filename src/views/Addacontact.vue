@@ -98,7 +98,7 @@
 
     <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
-        <div class="account_m">
+        <div class="account_m account_desktop">
             <ion-row class="ion-padding-top">
                 <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b">
@@ -160,13 +160,13 @@
                 </ion-col>
             </ion-row>
 
-            <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+            <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
                 <ion-col size="3" class="ion-padding-end">
-                    <ion-button shape="round" class="MakeDefault-btn">Add Contact</ion-button>
+                <ion-button shape="round" class="MakeDefault-btn">Add Contact</ion-button>
                 </ion-col>
 
                 <ion-col size="3" class="ion-padding-start">
-                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
                 </ion-col>
             </ion-row>
         </div>

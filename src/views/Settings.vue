@@ -430,15 +430,19 @@
             
         <ion-row class="ion-margin-top">
             <ion-col size="12">
-                <div class="suppoets ipad_spot">
+                <div class="suppoets ipad_spot desktop_spot">
                     <img src="assets/images/support_icon.svg"/>
                     <h3>Help & Support</h3>
-                    <ion-button shape="round" class="ok_btn">Logout</ion-button>
-                    <p class="app_vers">App Version: 1879.2021</p>
+                    <ion-button shape="round" class="MakeDefault-btn">Logout</ion-button>
                 </div>
             </ion-col>
         </ion-row>
 
+        <ion-row class="ion-margin-vertical ipad_spot desktop_spot">
+            <ion-col size="12" class="ion-text-center">
+                <p class="app_vers app_vers-desktop">App Version: 1879.2021</p>
+            </ion-col>
+        </ion-row>
     </div>
   </ion-content>
 

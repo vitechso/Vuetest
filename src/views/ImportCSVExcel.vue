@@ -144,11 +144,11 @@
   <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
 
-    <ion-row class="ion-margin-top ion-margin-bottom ion-justify-content-center ion-align-items-center">
+      <ion-row class="ion-margin-top ion-margin-bottom ion-padding-bottom ion-justify-content-center ion-align-items-center">
         <ion-col size="10" class="">
             <div class="inner_serhner">
                 <img src="assets/images/upload_pdf.svg" />
-                <p class="innasd">Drag and drop or browse your file</p>
+                <p class="innasd">Drag and drop or <strong>browse</strong> your file</p>
             </div>
             <div class="maijn_uploads">
                 <div class="hnas">
@@ -156,17 +156,21 @@
                     <div class="_jmaas">
                         <p class="doc_name">Contacts.CSV</p>
                         <div class="process_bar"></div>
-                        <p class="up_load_c">Uploaded 100%</p>
+                        <div class="process-result-info">
+                          <p class="prcss-result">155 Contacts Imported</p>
+                          <p class="up_load_c">Uploaded 100%</p>
+                        </div>
+                        
                     </div>
                     
                 </div>
             </div>
         </ion-col>
-    </ion-row>
+      </ion-row>
 
-    <ion-row class="ion-justify-content-center ion-padding-horizontal ion-padding-bottom ion-margin-bottom">
+      <ion-row class="ion-justify-content-center ion-padding ion-margin-bottom">
         <ion-col size="3" class="ion-padding-end">
-          <ion-button shape="round" class="MakeDefault-btn">Done</ion-button>
+          <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
         </ion-col>
 
         <ion-col size="3" class="ion-padding-start">

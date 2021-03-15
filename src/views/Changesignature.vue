@@ -155,44 +155,36 @@
   <ion-content :fullscreen="true" class="">
     <div id="container_fax" class="change_sign_ipad">
 
-    <ion-row class="custom_row ion-padding-top ion-padding-bottom">
-        <ion-col size="9">
-            <p><strong>Show signature</strong></p>
-            <p class="text_colors">Enable this option to display the signature in the document</p>
-        </ion-col>
-        <ion-col size="3">
-            <div class="mark_toggle">
-                <ion-toggle color="primary"></ion-toggle>
-            </div>
-        </ion-col>
-    </ion-row>
+      <ion-row class="custom_row ion-padding-top ion-padding-bottom">
+          <ion-col size="9">
+              <p><strong>Show signature</strong></p>
+              <p class="text_colors">Enable this option to display the signature in the document</p>
+          </ion-col>
+          <ion-col size="3">
+              <div class="mark_toggle">
+                  <ion-toggle color="primary"></ion-toggle>
+              </div>
+          </ion-col>
+      </ion-row>
 
-    <ion-row class="custom_row ion-padding-top ion-padding-bottom">
-        <ion-col size="9">
-            <p><strong>Upload signature image</strong></p>
-            <p class="text_colors">Enable this option to display the signature in the document</p>
-            <p class="text_colors">300 px by 170 px</p>
-        </ion-col>
-        <ion-col size="3">
-            <div class="btn_ajj chosse_ipad">
-                <ion-button shape="round" type="button">Select Image</ion-button>
-            </div>
-        </ion-col>
-    </ion-row>
+      <ion-row class="custom_row ion-padding-top ion-padding-bottom">
+          <ion-col size="9">
+              <p><strong>Upload signature image</strong></p>
+              <p class="text_colors">Enable this option to display the signature in the document</p>
+              <p class="signature-image-alert">300 px by 170 px</p>
+          </ion-col>
+          <ion-col size="3">
+              <div class="btn_ajj chosse_ipad">
+                  <ion-button shape="round" type="button">Select Image</ion-button>
+              </div>
+          </ion-col>
+      </ion-row>
 
-    <ion-row class="custom_row ion-padding-top ion-padding-bottom">
-        <ion-col size="9">
-            <p><strong>Draw a signature</strong></p>
-            <VueSignaturePad width="500px" height="500px" ref="signaturePad" />
-            <p class="text_colors">Manually draw a signature on device using pen or finger</p>
-        </ion-col>
+      <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
         <ion-col size="3">
-            <div class="btn_ajj chosse_ipad">
-                <ion-button shape="round" type="button">Draw Signature</ion-button>
-            </div>
+          <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
         </ion-col>
-    </ion-row>
-
+      </ion-row> 
     </div>
   </ion-content>
 </ion-page>

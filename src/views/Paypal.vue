@@ -34,7 +34,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-horizontal ion-padding-bottom">
+    <ion-row class="ion-padding-horizontal ion-padding-bottom account_desktop">
       <ion-col size="6" class="ion-padding-end">
         <div lines="none" class="pdd_b">
           <input type="email" id="email" placeholder="george@gmail.com" class="user_nam" />

@@ -669,10 +669,13 @@ ion-item {
     text-align: center;
 }
 .next_btn {
-    width: 176px;
-    height: 56px;
+    width: 150px;
+    height: 55px;
     font-size: 25px;
     text-transform: inherit;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 .search_icon {
     text-align: center;
@@ -860,6 +863,7 @@ ion-segment {
     margin-bottom: 0;
     font-size: 15px;
     color: #959595;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 
 p.red_c {
@@ -929,6 +933,8 @@ p.red_c {
     font-size: 17px;
     color: #333;
     margin-left: 14px;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
 }
 .pdd_b input::placeholder {
     color: #000;
@@ -1368,7 +1374,7 @@ span.popup_title {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
     text-transform: uppercase;
@@ -1381,7 +1387,22 @@ span.popup_title {
 }
 .change_sign_ipad p {
     font-size: 20px;
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 300;
+    color: #959595;
 }
+
+.change_sign_ipad p strong {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #333;
+    line-height: 34px;
+}
+
+.change_sign_ipad .signature-image-alert {
+    font-size: 15px;
+}
+
 .chosse_ipad {
     width: 100%;
     height: 138px;
@@ -1435,6 +1456,7 @@ span.popup_title {
     font-size: 27px;
     font-weight: 600;
     color: #333;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .bordes_ipad {
     border-bottom: 1px solid #e2e4e6;
@@ -1460,6 +1482,7 @@ span.popup_title {
     font-size: 27px;
     color: #6a6869;
     font-weight: 600;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .main_iads {
     /* padding: 0px 15px; */
@@ -1472,9 +1495,11 @@ span.popup_title {
 }
 .peint_data_headings h3 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
     color: #333;
     padding: 20px 0px;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
 }
 .border_bm {
     padding: 0px 15px;
@@ -1482,12 +1507,13 @@ span.popup_title {
     overflow: hidden;
 }
 .peint_inner_headings h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0;
     color: #333;
     padding: 20px 0px;
-    opacity: .8;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
+
 .delete_btns {
     display: flex;
     justify-content: flex-end;
@@ -1506,10 +1532,17 @@ img.delete_print_btns_01 {
 }
 .total_num h3 {
     margin: 0;
-    font-size: 22px;
+    font-size: 23px;
     color: #333;
     padding: 20px 0px;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
+
+.total_num h3 strong {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+}
+
 .total_num {
     display: flex;
     justify-content: space-between;
@@ -1749,6 +1782,9 @@ img.delete_print_btns_01 {
 }
 .hnas_ipads .list_cons ion-label{
     font-size: 30px !important;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #333;
 }
 .hnas_ipads .icons_s {
     display: flex;
@@ -1762,15 +1798,22 @@ img.delete_print_btns_01 {
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #333;
 }
+
+.desktop_spot h3 {
+    font-size: 25px;
+}
+
 .ipad_spo .ok_btn {
     font-size: 25px;
     width: 176px;
     height: 66px;
 }
-.ipad_spo .app_vers {
+.ipad_spot .app_vers {
     font-size: 17px;
-    color: #959595; 
 }
 .hnas_ipads .ens_sd img {
     width: 18px;
@@ -1846,7 +1889,11 @@ p.user_ids.iad_spl {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 15px;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #959595;
+    text-align: right;
+    line-height: 22px;
 }
 .change_pass_ipads {
     width: 622px;
@@ -2071,22 +2118,27 @@ p.user_ids.iad_spl {
 .desktop_deletes .alert-title {
     text-transform: capitalize;
     font-size: 26px;
-    font-weight: bolder;
     color: #333;
     padding-bottom: 10px;
     border-bottom: 1px solid #e2e4e6;
     margin-bottom: 20px;
+    font-family: 'Proxima Nova Extrabold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 800;
 }
 
 .desktop_deletes .alert-sub-title {
     font-size: 25px;
     color: #333;
+    font-family: 'Proxima Nova', sans-serif !important;
+    line-height: 26px;
 }
 
 .desktop_deletes .alert-message {
     font-size: 25px;
     color: #333;
-    font-weight: 500;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    line-height: 26px;
 }
 
 .desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
@@ -2106,14 +2158,19 @@ p.user_ids.iad_spl {
 }
 
 .desktop_deletes .alert-button-group button {
-    padding: 10px 30px;
+    padding: 10px 50px;
     border-radius: 30px;
     border: 1px solid #888;
     margin: 0 12px;
-    font-size: 24px;
+    font-size: 25px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
     color: #888;
+    height: 55px;
+}
+
+.desktop_deletes .alert-button-group button span {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .desktop_topbar:after {
@@ -2123,6 +2180,19 @@ p.user_ids.iad_spl {
 .segmnt ion-segment-button {
     width: 100%;
     max-width: 100%;
+}
+
+.desktop-segmnt ion-label {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #333;
+}
+
+.desktop-segmnt .segment-button-checked ion-label {
+    color: #f1d000;
 }
 
 .modal-wrapper {
@@ -2148,6 +2218,10 @@ p.user_ids.iad_spl {
 
 .desktop_header_dropdownList {
     position: relative;
+}
+
+.desktop_header_dropdownList p {
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 
 .HeaderDropDown .popover-content:after {
@@ -2193,6 +2267,13 @@ p.innasd {
     color: #959595;
     font-size: 22px;
 }
+
+p.innasd strong {
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 img.doc_pdf {
     width: 60px;
     height: 75px;
@@ -2227,7 +2308,19 @@ p.up_load_c {
     color: #959595;
     margin-top: 6px;
     margin-bottom: 6px;
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 300;
 }
+
+.process-result-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.process-result-info .prcss-result {
+    color: #333;
+}
+
 .deskyop_hmma .list_cons ion-label {
     font-size: 25px !important;
 }
@@ -2242,12 +2335,16 @@ p.up_load_c {
 }
 .desk_top_fless p {
     margin: 0;
+    color: #333;
+    font-size: 25px;
 }
 .add_titles h4 {
     color: #6a6869;
     font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Proxima Nova', sans-serif !important;
+    margin: 0;
 }
 
 .card-details-block {
@@ -2293,6 +2390,7 @@ p.up_load_c {
     font-weight: 700;
     color: #333;
     line-height: normal;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .cards-details p {
@@ -2300,6 +2398,11 @@ p.up_load_c {
     line-height: 25px;
     font-size: 20px;
     color: #333;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+}
+
+.cards-details p strong, .cards-details p strong i {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .border-green {
@@ -2314,7 +2417,14 @@ p.up_load_c {
     height: 55px;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    width: 200px;
+    margin: auto;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+}
+
+.MakeDefault-btn._big {
+    width: 254px;
 }
 
 img.back-btn {
@@ -2358,6 +2468,7 @@ img.back-btn {
     font-weight: 600;
     color: #333;
     margin: 13px 0 0;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .active-Cardbox {
@@ -2386,6 +2497,7 @@ img.paypal-logo {
     color: #6a6869;
     font-weight: 400;
     margin: 0;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 
 .MakeDefault-btn._gary-outline-btn.button-solid {
@@ -2428,7 +2540,7 @@ img.paypal-logo {
 
 .container_desktop {
     height: auto !important;
-    padding-bottom: 30px;
+    padding: 60px 0 30px;
 }
 
 .board-icon {
@@ -2483,6 +2595,12 @@ img.paypal-logo {
     max-width: 36.5% !important;
 }
 
+.custom-col-full {
+    -ms-flex: 0 0 73% !important;
+    flex: 0 0 73% !important;
+    max-width: 73% !important;
+}
+
 .lettes_desk .texts_letts {
     width: 85%;
 }
@@ -2493,6 +2611,52 @@ img.paypal-logo {
     color: #333333;
     line-height: 23px;
     font-size: 20px;
+}
+
+.SendFax-phoneNumber {
+    width: 100%;
+}
+
+.SendFax-phoneNumber ion-input {
+    width: 100%;
+}
+
+.cntct-search-desk input {
+    font-size: 22px !important;
+    font-family: 'Proxima Nova', sans-serif !important;
+}
+
+.import_csv {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.contactlist-desk .alpha p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    padding: 0 25px;
+}
+
+.contactlist-desk ion-label {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #333333;
+}
+
+.contactlist-desk .insd p {
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 300;
+}
+
+.account_desktop input, .account_desktop ion-select {
+    font-size: 22px;
 }
 
 @media (min-width: 1024px) {

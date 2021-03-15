@@ -192,7 +192,7 @@
 <ion-header class="header_am">
   <ion-toolbar class="">
     <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="2" class="ipad_cols Desktop_cols">
+      <ion-col size="2" class="ipad_cols Desktop_cols ">
 
         <div class="desktop_conn">
             <!-- <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button> -->
@@ -226,8 +226,8 @@
 </ion-header>
   <ion-content>
     <ion-row class="ipad_h">
-      <ion-col size="2"></ion-col>
-      <ion-col size="10" class="ion-no-padding">
+      <ion-col size="2" class="SideBar"></ion-col>
+      <ion-col size="10" class="ion-no-padding custom-col-full">
         <div class="welcome_ipad welcome_desktop">
           <h3>Welcome to moreyou.letters</h3>
           <h4>Select an exisiting document from sidebar or create a new one</h4>
