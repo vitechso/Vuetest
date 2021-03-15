@@ -475,7 +475,7 @@
   <ion-content :fullscreen="true" class="ipad_write">
 
     <ion-row class="ipad_h">
-        <ion-col size="2" class="ion-no-padding bg-white">
+        <ion-col size="2" class="ion-no-padding bg-white SideBar">
             <ion-row class="s_bar lettes_desk">
                 <ion-col size="12">
                     <div class="ion-text-left ipad_flx desk_flx">
@@ -503,10 +503,10 @@
               <ion-col size="12">
                 <div class="texts_letts">
                   <h3>Address Change</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                  <p>Dear Sirs and Madames,<br>Lorem Ipsum...</p>
                 </div>
                 <div class="date">
-                  <span>15 Jan</span>
+                  <span>11 Jan</span>
                 </div>
               </ion-col>
             </ion-row>
@@ -514,11 +514,11 @@
             <ion-row class="ion-align-items-center lettes lettes_desk">
                 <ion-col size="12">
                     <div class="texts_letts">
-                    <h3>Address Change</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <h3>Minutes of Meeting</h3>
+                    <p>Dear Johnson Charles It has survived not only...</p>
                     </div>
                     <div class="date">
-                    <span>15 Jan</span>
+                    <span>10 Jan</span>
                     </div>
                 </ion-col>
             </ion-row>
@@ -526,17 +526,17 @@
             <ion-row class="ion-align-items-center lettes lettes_desk">
                 <ion-col size="12">
                     <div class="texts_letts">
-                    <h3>Address Change</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                    <h3>List of Appointments</h3>
+                    <p>Dear Mr Miller There are many variations of passages...</p>
                     </div>
                     <div class="date">
-                    <span>15 Jan</span>
+                    <span>09 Jan</span>
                     </div>
                 </ion-col>
             </ion-row>
         </ion-col>
       
-        <ion-col size="5" class="ion-no-padding bg-white">
+        <ion-col size="5" class="ion-no-padding bg-white custom-col">
             <div class="lock_unlock Desktop_lock_unlock">
                 <ion-row>
                     <ion-col size="12" class="ion-no-padding">
@@ -572,10 +572,10 @@
 
             <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin">
                 <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="2">
-                        <p><strong>From</strong></p>
+                    <ion-col size="3">
+                        <h5>From</h5>
                     </ion-col>
-                    <ion-col size="8">
+                    <ion-col size="7">
                         <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
                     </ion-col>
                     <ion-col size="2" class="ion-no-padding">
@@ -586,10 +586,10 @@
                 </ion-row>
 
                 <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="2">
-                        <p><strong>To</strong></p>
+                    <ion-col size="3">
+                        <h5>To</h5>
                     </ion-col>
-                    <ion-col size="8">
+                    <ion-col size="7">
                         <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
                     </ion-col>
                     <ion-col size="2" class="ion-no-padding">
@@ -600,10 +600,10 @@
                 </ion-row>
 
                 <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="2">
-                        <p><strong>Subject</strong></p>
+                    <ion-col size="3">
+                        <h5>Subject</h5>
                     </ion-col>
-                    <ion-col size="10">
+                    <ion-col size="9">
                         <p class="fontlight">Address Change</p>
                     </ion-col>
                     
@@ -611,7 +611,7 @@
 
                 <ion-row class="row_01 b_p bor_b">
                     <ion-col size="12">
-                        <p><strong>Dear Sirs and Madames,</strong></p>
+                        <h5>Dear Sirs and Madames,</h5>
                     </ion-col>
                     <ion-col size="12">
                         <div class="tab_desc">
@@ -626,7 +626,7 @@
 
                 <ion-row class="row_01 b_p bor_b">
                     <ion-col size="3">
-                        <p><strong>Footer</strong></p>
+                        <h5>Footer</h5>
                     </ion-col>
                     <ion-col size="9">
                         <p class="fontlight">Sincerely, <br> Justin Shepp</p>
@@ -635,7 +635,7 @@
 
                 <ion-row class="row_01 b_p ion-padding-top">
                     <ion-col size="5">
-                        <p><strong>Signature</strong></p>
+                        <h5>Signature</h5>
                     </ion-col>
                     <ion-col size="4"></ion-col>
                     <ion-col size="3">
@@ -647,7 +647,7 @@
 
                 <ion-row class="row_01 b_p">
                     <ion-col size="3">
-                        <p><strong>Letter Size</strong></p>
+                        <h5>Letter Size</h5>
                     </ion-col>
                     
                     <ion-col size="9">
@@ -667,7 +667,7 @@
 
                 <ion-row class="b_p ion-padding-bottom">
                     <ion-col size="3" class="ion-padding-bottom">
-                        <p><strong>Markers</strong></p>
+                        <h5>Markers</h5>
                     </ion-col>
                     <ion-col size="4"></ion-col>
                     <ion-col size="5" class="ion-padding-bottom">
@@ -680,7 +680,7 @@
     
         </ion-col>
 
-        <ion-col size="5" class="d-flex ion-align-items-center relative">
+        <ion-col size="5" class="d-flex ion-align-items-center relative custom-col">
             <div id="privew_s" class="back_white privew_ipads privew_desktop">
 
                 <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
@@ -714,7 +714,7 @@
 
                 <ion-row class="ion-padding-top ion-padding-bottom">
                     <ion-col size="12" class="">
-                        <h5 class="desktop-request-title"><strong>Address Change</strong></h5>
+                        <h5 class="desktop-request-title">Address Change</h5>
                     </ion-col>
                 </ion-row>
 

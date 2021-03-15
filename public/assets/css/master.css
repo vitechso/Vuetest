@@ -547,6 +547,8 @@ ion-item {
     font-size: 18px;
     text-transform: capitalize;
     letter-spacing: normal;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
 }
 .lett_selct ion-select {
     width: 100%;
@@ -1270,6 +1272,7 @@ span.popup_title {
 }
 .ipad_write .row_01 p{
     font-size: 20px;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 .ipad_write .contact_book {
     float: right;
@@ -1369,6 +1372,7 @@ span.popup_title {
     font-weight: 400;
     margin-left: 10px;
     text-transform: uppercase;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 .letter_size {
     display: flex;
@@ -1895,7 +1899,7 @@ p.user_ids.iad_spl {
 
 .desk_flx .desktop_vs {
     color: #000 !important;
-    font-size: 18px !important;
+    font-size: 33px !important;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
 }
@@ -2000,6 +2004,11 @@ p.user_ids.iad_spl {
 .privew_desktop p {
     font-size: 18px;
     margin: 0;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+}
+
+.privew_desktop p strong {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .privew_desktop .innerr_b_right {
@@ -2018,6 +2027,8 @@ p.user_ids.iad_spl {
     font-size: 21px;
     color: #333;
     margin: 0;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
 }
 
 .relative {
@@ -2044,6 +2055,7 @@ p.user_ids.iad_spl {
     font-size: 23px;
     color: #333;
     margin: 0 20px;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 
 .desktop_pages_of .arrow {
@@ -2457,6 +2469,30 @@ img.paypal-logo {
 
 .welcome_desktop h3 {
     font-size: 35px;
+}
+
+.SideBar {
+    -ms-flex: 0 0 27% !important;
+    flex: 0 0 27% !important;
+    max-width: 27% !important;
+}
+
+.custom-col {
+    -ms-flex: 0 0 368px !important;
+    flex: 0 0 36.5% !important;
+    max-width: 36.5% !important;
+}
+
+.lettes_desk .texts_letts {
+    width: 85%;
+}
+
+#container_write h5 {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #333333;
+    line-height: 23px;
+    font-size: 20px;
 }
 
 @media (min-width: 1024px) {
