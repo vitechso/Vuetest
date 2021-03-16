@@ -94,42 +94,34 @@
   <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
 
-    <ion-row class="ion-margin-top ion-margin-bottom ion-justify-content-center ion-align-items-center">
-        <ion-col size="10" class="">
-            <div class="inner_serhner">
-                <img src="assets/images/upload_pdf.svg" />
-                <p class="innasd">Drag and drop or browse your file</p>
-            </div>
-            <div class="maijn_uploads">
-                <div class="hnas">
-                    <img class="doc_pdf" src="assets/images/pdf_icon.svg" />
-                    <div class="_jmaas">
-                        <p class="doc_name">Document.pdf</p>
-                        <div class="process_bar"></div>
-                        <p class="up_load_c">Uploaded 100%</p>
-                    </div>
-                    
+        <ion-row class="ion-margin-top ion-margin-bottom ion-justify-content-center ion-align-items-center">
+            <ion-col size="10" class="">
+                <div class="inner_serhner">
+                    <img src="assets/images/upload_pdf.svg" />
+                    <p class="innasd">Drag and drop or <strong>browse</strong> your file</p>
                 </div>
-            </div>
-        </ion-col>
-    </ion-row>
+                <div class="maijn_uploads">
+                    <div class="hnas">
+                        <img class="doc_pdf" src="assets/images/pdf_icon.svg" />
+                        <div class="_jmaas">
+                            <p class="doc_name">Document.pdf</p>
+                            <div class="process_bar"></div>
+                            <p class="up_load_c">Uploaded 100%</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
 
-    <ion-row class="ion-padding-top ion-padding-bottom weddas">
-        <ion-col size="3"></ion-col>
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Done</ion-button>
-            </div>
-        </ion-col>
-
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Cancel</ion-button>
-            </div>
-        </ion-col>
-        <ion-col size="3"></ion-col>
-    </ion-row>
-
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-bottom">
+            <ion-col size="12">
+                <div class="BtnBlock">
+                    <ion-button shape="round" class="MakeDefault-btn">Done</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
     </div>
   </ion-content>
 </ion-page>

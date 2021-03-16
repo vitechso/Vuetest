@@ -190,24 +190,19 @@
 <div v-if="isDesktop">
   <ion-page>
 <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="2" class="ipad_cols Desktop_cols ">
+  <ion-toolbar class="header-top">
+    <ion-row class="ion-align-items-center bar_c ion-padding-horizontal">
+      <ion-col size="3" class="ipad_cols Desktop_cols ion-no-padding">
 
         <div class="desktop_conn">
             <!-- <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button> -->
-
-            <div class="desktop-header-icon MenuBar icon-hover">
-                <img src="assets/images/menu.svg"/>
-            </div>
-
             <div class="desktop-header-icon icon-hover" @click="chossetamp">
                 <img src="assets/images/edit_pencil.svg"/>
             </div>
         </div>
       </ion-col>
-      <ion-col size="8"></ion-col>
-      <ion-col size="2">
+      <ion-col size="7"></ion-col>
+      <ion-col size="2" class="ion-no-padding">
         <div class="user_img">
           <div class="user_avtar">
             <img src="assets/images/userimage.png"/>
@@ -224,21 +219,31 @@
     </ion-row>
   </ion-toolbar>
 </ion-header>
-  <ion-content>
-    <ion-row class="ipad_h">
-      <ion-col size="2" class="SideBar"></ion-col>
-      <ion-col size="10" class="ion-no-padding custom-col-full">
-        <div class="welcome_ipad welcome_desktop">
-          <h3>Welcome to moreyou.letters</h3>
-          <h4>Select an exisiting document from sidebar or create a new one</h4>
-          <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
-            <div class="mail_open">
-              <img src="assets/images/mail_open.svg"/>
-            </div>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-content>
+<ion-content>
+  <div class="ipad_h destop-sitebar-container">
+    <div class="SideBar">
+      <ion-row class="">
+          <ion-col size="12">
+              
+          </ion-col>
+      </ion-row>
+    </div>
+    <div class="right-content-box">
+      <ion-row>
+        <ion-col size="12" class="ion-no-padding custom-col-full">
+          <div class="welcome_ipad welcome_desktop">
+            <h3>Welcome to moreyou.letters</h3>
+            <h4>Select an exisiting document from sidebar or create a new one</h4>
+            <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
+              <div class="mail_open">
+                <img src="assets/images/mail_open.svg"/>
+              </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
 </ion-page>
 </div>
 </ion-page>

@@ -423,7 +423,7 @@
 <ion-page> 
 
 <ion-header class="header_am"> 
-  <ion-toolbar class="">
+  <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols">
         <div class="desktop_conn ">
@@ -472,10 +472,9 @@
 </ion-header>
 
 
-  <ion-content :fullscreen="true" class="ipad_write">
-
-    <ion-row class="ipad_h">
-        <ion-col size="2" class="ion-no-padding bg-white SideBar">
+<ion-content :fullscreen="true" class="ipad_write">
+    <div class="ipad_h destop-sitebar-container">
+        <div class="bg-white SideBar">
             <ion-row class="s_bar lettes_desk">
                 <ion-col size="12">
                     <div class="ion-text-left ipad_flx desk_flx">
@@ -534,222 +533,227 @@
                     </div>
                 </ion-col>
             </ion-row>
-        </ion-col>
-      
-        <ion-col size="5" class="ion-no-padding bg-white custom-col">
-            <div class="lock_unlock Desktop_lock_unlock">
-                <ion-row>
-                    <ion-col size="12" class="ion-no-padding">
-                        <div class="board-icon">
-                            <div class="board-left">
-                                <div class="icon_bn img_unloacks icon-hover" @click="addclass($event)">
-                                    <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
-                                    <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
+        </div>
+
+        <div class="right-content-box">
+            <ion-row>
+                <ion-col size="6" class="ion-no-padding bg-white">
+                    <div class="lock_unlock Desktop_lock_unlock">
+                        <ion-row>
+                            <ion-col size="12" class="ion-no-padding">
+                                <div class="board-icon">
+                                    <div class="board-left">
+                                        <div class="icon_bn img_unloacks icon-hover" @click="addclass($event)">
+                                            <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
+                                            <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
+                                        </div>
+
+                                        <div class="icon_bn icon-hover">
+                                            <img src="assets/images/bold.svg"/>
+                                        </div>
+
+                                        <div class="icon_bn icon-hover">
+                                            <img src="assets/images/itelic.svg"/>
+                                        </div>
+
+                                        <div class="icon_bn icon-hover">
+                                            <img src="assets/images/underline.svg"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="board-right">
+                                        <div class="icon_bn right_km icon-hover" @click="sendtype">
+                                            <img src="assets/images/black_send_share.svg"/>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="icon_bn icon-hover">
-                                    <img src="assets/images/bold.svg"/>
-                                </div>
-
-                                <div class="icon_bn icon-hover">
-                                    <img src="assets/images/itelic.svg"/>
-                                </div>
-
-                                <div class="icon_bn icon-hover">
-                                    <img src="assets/images/underline.svg"/>
-                                </div>
-                            </div>
-
-                             <div class="board-right">
-                                <div class="icon_bn right_km icon-hover" @click="sendtype">
-                                    <img src="assets/images/black_send_share.svg"/>
-                                </div>
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-            </div>
-
-            <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin">
-                <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="3">
-                        <h5>From</h5>
-                    </ion-col>
-                    <ion-col size="7">
-                        <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
-                    </ion-col>
-                    <ion-col size="2" class="ion-no-padding">
-                        <div class="contact_book contact_book-desk">
-                            <img src="assets/images/contact_book.svg"/>
-                        </div>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="3">
-                        <h5>To</h5>
-                    </ion-col>
-                    <ion-col size="7">
-                        <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
-                    </ion-col>
-                    <ion-col size="2" class="ion-no-padding">
-                        <div class="contact_book contact_book-desk icon-hover" @click="contact">
-                            <img src="assets/images/contact_book.svg"/>
-                        </div>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="3">
-                        <h5>Subject</h5>
-                    </ion-col>
-                    <ion-col size="9">
-                        <p class="fontlight">Address Change</p>
-                    </ion-col>
-                    
-                </ion-row>
-
-                <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="12">
-                        <h5>Dear Sirs and Madames,</h5>
-                    </ion-col>
-                    <ion-col size="12">
-                        <div class="tab_desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="row_01 b_p bor_b">
-                    <ion-col size="3">
-                        <h5>Footer</h5>
-                    </ion-col>
-                    <ion-col size="9">
-                        <p class="fontlight">Sincerely, <br> Justin Shepp</p>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="row_01 b_p ion-padding-top">
-                    <ion-col size="5">
-                        <h5>Signature</h5>
-                    </ion-col>
-                    <ion-col size="4"></ion-col>
-                    <ion-col size="3">
-                        <div class="btn_ajj">
-                            <ion-button shape="round" type="button" @click="openModal">Adjust</ion-button>
-                        </div>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="row_01 b_p">
-                    <ion-col size="3">
-                        <h5>Letter Size</h5>
-                    </ion-col>
-                    
-                    <ion-col size="9">
-                        <div class="letter_size">
-                            <div class="inner_sizes">
-                            <span>DIN 5008 A</span> 
-                            </div>
-                            <div class="inner_sizes">
-                            <span>DIN 5008 B</span> 
-                            </div>
-                            <div class="inner_sizes">
-                            <span>US Letter</span> 
-                            </div>
-                        </div>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="b_p ion-padding-bottom">
-                    <ion-col size="3" class="ion-padding-bottom">
-                        <h5>Markers</h5>
-                    </ion-col>
-                    <ion-col size="4"></ion-col>
-                    <ion-col size="5" class="ion-padding-bottom">
-                        <div class="mark_toggle">
-                            <ion-toggle color="primary"></ion-toggle>
-                        </div>
-                    </ion-col>
-                </ion-row>
-            </div>
-    
-        </ion-col>
-
-        <ion-col size="5" class="d-flex ion-align-items-center relative custom-col">
-            <div id="privew_s" class="back_white privew_ipads privew_desktop">
-
-                <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
-                    <ion-col size="5">
-                    <div class="innerr_b ipad_bs">
-                        <p><strong>John Anderson</strong></p>
-                        <p>Park Hall Aveneues</p>
-                        <p>8726 Kassel</p>
-
-                        <div class="mail_deta">
-                        <p>john.anderson@gmail.com</p>
-                        <p>December 11, 2020</p>
-                        </div>
+                            </ion-col>
+                        </ion-row>
                     </div>
-                    </ion-col>
-                    <ion-col size="5">
-                    <div class="innerr_b_right">
-                        <p><strong>John Anderson</strong></p>
-                        <p>Park Hall Aveneues</p>
-                        <p>8726 Kassel</p>
 
-                        <div class="mail_deta">
-                        <p>john.anderson@gmail.com</p>
-                        <p>December 11, 2020</p>
-                        </div>
+                    <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin">
+                        <ion-row class="row_01 b_p bor_b">
+                            <ion-col size="3">
+                                <h5>From</h5>
+                            </ion-col>
+                            <ion-col size="7">
+                                <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                            </ion-col>
+                            <ion-col size="2" class="ion-no-padding">
+                                <div class="contact_book contact_book-desk">
+                                    <img src="assets/images/contact_book.svg"/>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p bor_b">
+                            <ion-col size="3">
+                                <h5>To</h5>
+                            </ion-col>
+                            <ion-col size="7">
+                                <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                            </ion-col>
+                            <ion-col size="2" class="ion-no-padding">
+                                <div class="contact_book contact_book-desk icon-hover" @click="contact">
+                                    <img src="assets/images/contact_book.svg"/>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p bor_b">
+                            <ion-col size="3">
+                                <h5>Subject</h5>
+                            </ion-col>
+                            <ion-col size="9">
+                                <p class="fontlight">Address Change</p>
+                            </ion-col>
+                            
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p bor_b">
+                            <ion-col size="12">
+                                <h5>Dear Sirs and Madames,</h5>
+                            </ion-col>
+                            <ion-col size="12">
+                                <div class="tab_desc">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p bor_b">
+                            <ion-col size="3">
+                                <h5>Footer</h5>
+                            </ion-col>
+                            <ion-col size="9">
+                                <p class="fontlight">Sincerely, <br> Justin Shepp</p>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p ion-padding-top">
+                            <ion-col size="6">
+                                <h5>Signature</h5>
+                            </ion-col>
+                            
+                            <ion-col size="6">
+                                <div class="btn_ajj adjust-btn-desktop ion-text-right">
+                                    <ion-button shape="round" type="button" @click="openModal">Adjust</ion-button>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="row_01 b_p">
+                            <ion-col size="3">
+                                <h5>Letter Size</h5>
+                            </ion-col>
+                            
+                            <ion-col size="9">
+                                <div class="letter_size">
+                                    <div class="inner_sizes">
+                                    <span>DIN 5008 A</span> 
+                                    </div>
+                                    <div class="inner_sizes">
+                                    <span>DIN 5008 B</span> 
+                                    </div>
+                                    <div class="inner_sizes">
+                                    <span>US Letter</span> 
+                                    </div>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="b_p ion-padding-bottom">
+                            <ion-col size="3" class="ion-padding-bottom">
+                                <h5>Markers</h5>
+                            </ion-col>
+                            <ion-col size="4"></ion-col>
+                            <ion-col size="5" class="ion-padding-bottom">
+                                <div class="mark_toggle">
+                                    <ion-toggle color="primary"></ion-toggle>
+                                </div>
+                            </ion-col>
+                        </ion-row>
                     </div>
-                    </ion-col>
-
-
-                </ion-row>
-
-                <ion-row class="ion-padding-top ion-padding-bottom">
-                    <ion-col size="12" class="">
-                        <h5 class="desktop-request-title">Address Change</h5>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="privew_r ion-padding-bottom">
-                    <ion-col size="12">
-                        <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
-
-                        <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </ion-col>
-                </ion-row>
-
-                <ion-row class="desktop_row_sinc">
-                    <ion-col size="6">
-                        <div class="sincerely">
-                            <p>Sincerely,</p>
-                            <p><strong>Justin Shepp</strong></p>
-                        </div>
-                    </ion-col>
-                </ion-row>
-            </div>
-        
-            <div class="desktop_pages_of">
-                <div class="arrow">
-                    <img src="assets/images/left-arrow.svg"/>
-                </div>
-                <p>Page 1 of 2</p>
-                <div class="arrow">
-                    <img src="assets/images/right-arrow-angle.svg"/>
-                </div>
-            </div>
             
-        </ion-col>
-    </ion-row>
+                </ion-col>
+
+                <ion-col size="6" class="d-flex ion-align-items-center relative Lp-bg">
+                    <div id="privew_s" class="back_white privew_ipads privew_desktop">
+
+                        <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
+                            <ion-col size="5">
+                            <div class="innerr_b ipad_bs">
+                                <p><strong>John Anderson</strong></p>
+                                <p>Park Hall Aveneues</p>
+                                <p>8726 Kassel</p>
+
+                                <div class="mail_deta">
+                                <p>john.anderson@gmail.com</p>
+                                <p>December 11, 2020</p>
+                                </div>
+                            </div>
+                            </ion-col>
+                            <ion-col size="5">
+                            <div class="innerr_b_right">
+                                <p><strong>John Anderson</strong></p>
+                                <p>Park Hall Aveneues</p>
+                                <p>8726 Kassel</p>
+
+                                <div class="mail_deta">
+                                <p>john.anderson@gmail.com</p>
+                                <p>December 11, 2020</p>
+                                </div>
+                            </div>
+                            </ion-col>
+
+
+                        </ion-row>
+
+                        <ion-row class="ion-padding-top ion-padding-bottom">
+                            <ion-col size="12" class="">
+                                <h5 class="desktop-request-title">Address Change</h5>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="privew_r ion-padding-bottom">
+                            <ion-col size="12">
+                                <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
+
+                                <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row class="desktop_row_sinc">
+                            <ion-col size="6">
+                                <div class="sincerely">
+                                    <p>Sincerely,</p>
+                                    <p><strong>Justin Shepp</strong></p>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </div>
+                
+                    <div class="desktop_pages_of">
+                        <div class="arrow">
+                            <img src="assets/images/left-arrow.svg"/>
+                        </div>
+                        <p>Page 1 of 2</p>
+                        <div class="arrow">
+                            <img src="assets/images/right-arrow-angle.svg"/>
+                        </div>
+                    </div>
+                    
+                </ion-col>
+            </ion-row>
+        </div>
+            
+    </div>
 
     
   </ion-content>

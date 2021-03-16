@@ -180,7 +180,7 @@
           </ion-col>
       </ion-row>
 
-      <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+      <ion-row class="ion-justify-content-center ion-padding">
         <ion-col size="3">
           <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
         </ion-col>
