@@ -397,7 +397,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-<ion-header class="ipad_topbar bordes_ipad">
+<ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
@@ -452,10 +452,10 @@
                 </ion-col>
                 <ion-col size="4">
                     <div class="peint_inner_headings">
-                        <h3>243 Park Hall Aveneues Kassel 11015 Germany</h3>
+                        <h5>243 Park Hall Aveneues Kassel 11015 Germany</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3" class="ion-padding-horizontal">
+                <ion-col size="3" class="">
                     <div class="fax_num custom_fax_jm SendFax-phoneNumber">
                         <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
@@ -477,10 +477,10 @@
                 </ion-col>
                 <ion-col size="4">
                     <div class="peint_inner_headings">
-                        <h3>13 Green Park Avenues Kassel 11015 Germany</h3>
+                        <h5>13 Green Park Avenues Kassel 11015 Germany</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3" class="ion-padding-horizontal">
+                <ion-col size="3" class="">
                     <div class="fax_num custom_fax_jm SendFax-phoneNumber">
                         <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
@@ -502,10 +502,10 @@
                 </ion-col>
                 <ion-col size="4">
                     <div class="peint_inner_headings">
-                        <h3>12 Model Town Road Berlin 11017 Germany</h3>
+                        <h5>12 Model Town Road Berlin 11017 Germany</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3" class="ion-padding-horizontal">
+                <ion-col size="3" class="">
                     <div class="fax_num custom_fax_jm SendFax-phoneNumber">
                         <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
@@ -527,10 +527,10 @@
                 </ion-col>
                 <ion-col size="4">
                     <div class="peint_inner_headings">
-                        <h3>133 Civil Lines GT Road Munich 11013 Germany</h3>
+                        <h5>133 Civil Lines GT Road Munich 11013 Germany</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3" class="ion-padding-horizontal">
+                <ion-col size="3" class="">
                     <div class="fax_num custom_fax_jm SendFax-phoneNumber">
                         <img src="assets/images/call.svg"/>
                         <ion-input type="text"></ion-input>
@@ -544,7 +544,7 @@
                 </ion-col>
             </ion-row>
 
-            <ion-row class="border_bm fill_colortotal">
+            <ion-row class="border_bm bg-white-light">
                 <ion-col size="6">
                 </ion-col>
                 <ion-col size="6"> 
@@ -567,13 +567,13 @@
                 </ion-col>
             </ion-row>
         </div>
-        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
-            <ion-col size="3">
-                <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
-            </ion-col>
-
-            <ion-col size="3">
-                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+        
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+            <ion-col size="12">
+                <div class="BtnBlock">
+                    <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
             </ion-col>
         </ion-row>
     </div>

@@ -301,7 +301,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-<ion-header class="ipad_topbar bordes_ipad">
+<ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
@@ -344,7 +344,7 @@
                     </div>
                 </ion-col>
                 <ion-col size="2"> 
-                    <div class="peint_data_headings ion-text-center">
+                    <div class="peint_data_headings ion-text-right">
                         <h3>Cost</h3>
                     </div>
                 </ion-col>
@@ -359,21 +359,21 @@
             <ion-row class="border_bm">
                 <ion-col size="2">
                     <div class="peint_inner_headings">
-                        <h3>12009</h3>
+                        <h3><strong>12009</strong></h3>
                     </div>
                 </ion-col>
                 <ion-col size="3">
                     <div class="peint_inner_headings">
-                        <h3>10 January 2021</h3>
+                        <h5>10 January 2021</h5>
                     </div>
                 </ion-col>
                 <ion-col size="3">
                      <div class="peint_inner_headings">
-                        <h3>Fax 4 Recipients</h3>
+                        <h5>Fax 4 Recipients</h5>
                     </div>
                 </ion-col>
                 <ion-col size="2">
-                    <div class="peint_inner_headings ion-text-center">
+                    <div class="peint_inner_headings ion-text-right">
                         <h3><span class="red_p">- €2.50</span></h3>
                     </div>
                 </ion-col>
@@ -388,21 +388,21 @@
             <ion-row class="border_bm">
                 <ion-col size="2">
                     <div class="peint_inner_headings">
-                        <h3>12009</h3>
+                        <h3><strong>12009</strong></h3>
                     </div>
                 </ion-col>
                 <ion-col size="3">
                     <div class="peint_inner_headings">
-                        <h3>10 January 2021</h3>
+                        <h5>10 January 2021</h5>
                     </div>
                 </ion-col>
                 <ion-col size="3">
                      <div class="peint_inner_headings">
-                        <h3>Fax 4 Recipients</h3>
+                        <h5>Fax 4 Recipients</h5>
                     </div>
                 </ion-col>
                 <ion-col size="2">
-                    <div class="peint_inner_headings ion-text-center">
+                    <div class="peint_inner_headings ion-text-right">
                         <h3><span class="green_p">+ €20.00</span></h3>
                     </div>
                 </ion-col>

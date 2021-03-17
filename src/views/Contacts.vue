@@ -847,13 +847,12 @@
             </div>
         </div>
 
-        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
-            <ion-col size="3">
-                <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
-            </ion-col>
-
-            <ion-col size="3">
-                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+            <ion-col size="12">
+                <div class="BtnBlock">
+                    <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
             </ion-col>
         </ion-row>
 
@@ -932,13 +931,12 @@
             </div>
         </div>
 
-        <ion-row class="ion-justify-content-center ion-margin-vertical ion-padding">
-            <ion-col size="3">
-                <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
-            </ion-col>
-
-            <ion-col size="3">
-                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+            <ion-col size="12">
+                <div class="BtnBlock">
+                    <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
             </ion-col>
         </ion-row>
     </div>

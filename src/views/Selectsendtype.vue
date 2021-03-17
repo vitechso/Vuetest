@@ -152,7 +152,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-    <ion-header class="ipad_topbar bordes_ipad">
+    <ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">

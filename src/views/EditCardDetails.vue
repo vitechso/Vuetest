@@ -4,7 +4,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-  <ion-header class="ipad_topbar bordes_ipad">
+  <ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
@@ -45,15 +45,15 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="ion-justify-content-center ion-margin-bottom ion-padding">
-      <ion-col size="3">
-          <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
-      </ion-col>
-
-      <ion-col size="3">
-          <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
-      </ion-col>
+    <ion-row class="ion-justify-content-center ion-padding ion-margin-bottom">
+        <ion-col size="12">
+            <div class="BtnBlock">
+                <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+            </div>
+        </ion-col>
     </ion-row>
+
   </div>
 </ion-content>
 </ion-page>

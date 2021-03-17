@@ -152,7 +152,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="">
+  <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax" class="change_sign_ipad">
 
       <ion-row class="custom_row ion-padding-top ion-padding-bottom">
@@ -162,7 +162,10 @@
           </ion-col>
           <ion-col size="3">
               <div class="mark_toggle">
-                  <ion-toggle color="primary"></ion-toggle>
+                  <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                  </label>
               </div>
           </ion-col>
       </ion-row>
@@ -180,11 +183,13 @@
           </ion-col>
       </ion-row>
 
-      <ion-row class="ion-justify-content-center ion-padding">
-        <ion-col size="3">
-          <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
-        </ion-col>
-      </ion-row> 
+      <ion-row class="ion-justify-content-center ion-padding Signature-Ok">
+          <ion-col size="12">
+              <div class="BtnBlock">
+                  <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+              </div>
+          </ion-col>
+      </ion-row>
     </div>
   </ion-content>
 </ion-page>

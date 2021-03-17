@@ -73,7 +73,7 @@
 
 <div v-if="isDesktop">
 <ion-page>
-    <ion-header class="ipad_topbar bordes_ipad">
+    <ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
@@ -91,7 +91,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
+  <ion-content :fullscreen="true" class="">
     <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
 
         <ion-row class="ion-margin-top ion-margin-bottom ion-justify-content-center ion-align-items-center">

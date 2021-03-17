@@ -673,7 +673,10 @@
                             <ion-col size="4"></ion-col>
                             <ion-col size="5" class="ion-padding-bottom">
                                 <div class="mark_toggle">
-                                    <ion-toggle color="primary"></ion-toggle>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
                                 </div>
                             </ion-col>
                         </ion-row>
