@@ -296,6 +296,7 @@ a {
     font-size: 21px;
     color: #333;
     font-weight: 700;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .slide {
     width: 100%;
@@ -374,14 +375,22 @@ ion-item {
 }
 .date {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 5px;
+}
+
+.date span {
     font-size: 19px;
     color: #959595;
     font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 300;
 }
 
+.sitebar-text-info .date {
+    position: inherit;
+    width: 100px;
+    text-align: right;
+}
 
 .bor_b{
     border-bottom: 1px solid #e2e4e6;
@@ -1358,7 +1367,7 @@ span.popup_title {
     background: #f1d000;
     color: #fff;
 }
-.active_letters span {
+.active_letters .date span {
     color: #fff;
 }
 .active_letters p {
@@ -1632,9 +1641,10 @@ img.delete_print_btns_01 {
 }
 
 #container_ipad .top_am{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 68px;
+    margin-bottom: 40px;
 }
+
 #container_ipad .user_nam{
     height: 63px;
     font-size: 22px;
@@ -1646,15 +1656,15 @@ img.delete_print_btns_01 {
     top: 20px;
 }
 #container_ipad .for_got a{
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Proxima Nova', sans-serif !important;
-    color: #6a6869;
+    color: #333;
     line-height: normal;
 }
 
 #container_ipad .sign_doens{
     font-size: 24px;
-    margin-top: 6% !important;
+    margin-top: 105px !important;
     font-family: 'Proxima Nova', sans-serif !important;
     line-height: normal;
 }
@@ -1673,17 +1683,13 @@ img.delete_print_btns_01 {
 
 #container_ipad_regi {
     text-align: center;
-    width: 900px;
+    width: 750px;
     margin: auto;
     overflow: hidden;
     transform: translateY(0%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
+
 #container_ipad_regi .logo img {
     width: 519px;
     margin: auto;
@@ -1705,8 +1711,8 @@ img.delete_print_btns_01 {
     top: 20px;
 }
 #container_ipad_regi .top_am{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 #container_ipad_regi .sign_ups{
     height: 65px;
@@ -1762,10 +1768,10 @@ img.delete_print_btns_01 {
 
 #container_intro {
     text-align: center;
-    width: 700px;
+    width: 800px;
     margin: auto;
     overflow: hidden;
-    transform: translateY(9%);
+    padding: 30px;
 }
 #container_intro .slide p{
     font-size: 28px;
@@ -1774,6 +1780,9 @@ img.delete_print_btns_01 {
     width: 192px;
   height: 65px;
   font-size: 25px;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 .hsma {
     display: flex;
@@ -2153,6 +2162,8 @@ p.user_ids.iad_spl {
     margin-bottom: 20px;
     font-family: 'Proxima Nova Extrabold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 800;
+    margin: 0 -23px 20px;
+    padding: 0 23px 10px;
 }
 
 .desktop_deletes .alert-sub-title {
@@ -2645,7 +2656,7 @@ img.paypal-logo {
 }
 
 .lettes_desk .texts_letts {
-    width: 85%;
+    width: calc(100% - 100px);
 }
 
 #container_write h5 {
@@ -2789,6 +2800,16 @@ input:checked + .slider {
 
 .active-type {
     border: 2px solid #f1d000;
+}
+.sitebar-text-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sitebar-text-info .date {
+    position: inherit;
+    width: 100px;
+    text-align: right;
 }
 
 @media (min-width: 1024px) {
