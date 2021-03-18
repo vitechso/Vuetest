@@ -2787,6 +2787,10 @@ input:checked + .slider {
     background: #fafafa;
 }
 
+.active-type {
+    border: 2px solid #f1d000;
+}
+
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
         width: 100%;

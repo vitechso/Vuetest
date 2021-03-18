@@ -1,6 +1,7 @@
 {
   "appId": "com.example.vuecapacitordemo",
   "appName": "Moreyouletter",
+  "description":"Easy letter writing and sending",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
@@ -8,6 +9,6 @@
     "SplashScreen": {
       "launchShowDuration": 0
     }
-  },
+  },    
   "cordova": {}
 }
