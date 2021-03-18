@@ -189,7 +189,7 @@
       </div>
       
         <div class="sign_with">
-          <h2>Sign Up with</h2>
+          <h2>Sign up with</h2>
           <div class="social_icons">
             <ul>
               <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
@@ -247,7 +247,7 @@
         </div>
   </div>
         <div lines="none" class="pdd_b top_am">
-          <ion-button type="submit" shape="round" class="sign_ups" @click="() => router.push('/home')">Sign Up</ion-button>
+          <ion-button type="submit" shape="round" class="sign_ups" @click="() => router.push('/intro')">Sign Up</ion-button>
         </div>
         <div lines="none" class="pdd_b">
           <div class="sign_doens mt-0">

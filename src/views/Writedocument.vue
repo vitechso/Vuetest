@@ -499,7 +499,7 @@
             </ion-row>
 
             <ion-row class="ion-align-items-center active_letters lettes lettes_desk">
-              <ion-col size="12">
+              <ion-col size="12" class="sitebar-text-info">
                 <div class="texts_letts">
                   <h3>Address Change</h3>
                   <p>Dear Sirs and Madames,<br>Lorem Ipsum...</p>
@@ -511,7 +511,7 @@
             </ion-row>
 
             <ion-row class="ion-align-items-center lettes lettes_desk">
-                <ion-col size="12">
+                <ion-col size="12" class="sitebar-text-info">
                     <div class="texts_letts">
                     <h3>Minutes of Meeting</h3>
                     <p>Dear Johnson Charles It has survived not only...</p>
@@ -523,7 +523,7 @@
             </ion-row>
 
             <ion-row class="ion-align-items-center lettes lettes_desk">
-                <ion-col size="12">
+                <ion-col size="12" class="sitebar-text-info">
                     <div class="texts_letts">
                     <h3>List of Appointments</h3>
                     <p>Dear Mr Miller There are many variations of passages...</p>
