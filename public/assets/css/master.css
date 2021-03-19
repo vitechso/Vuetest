@@ -2834,6 +2834,9 @@ input:checked + .slider {
     background: #fafafa;
 }
 
+.active-type {
+    border: 2px solid #f1d000;
+}
 .sitebar-text-info {
     display: flex;
     justify-content: space-between;

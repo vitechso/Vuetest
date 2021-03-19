@@ -174,9 +174,9 @@
     <div id="container_fax" class="ion-top_padds">
 
     <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="4" @click="sendprint">
-            <div class="inner_sends">
-                <div class="icon_mipad">
+        <ion-col size="4"  @click="selected('sendprint')">
+            <div  class="inner_sends">
+                <div :class="type=='sendprint'?'active-type':''" class="icon_mipad">
                     <img src="assets/images/yellow_print.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -185,9 +185,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4"  @click="sendfax">
+        <ion-col size="4"  @click="selected('sendfax')">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div :class="type=='sendfax'?'active-type':''" class="icon_mipad">
                     <img src="assets/images/yellow_fax.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -196,9 +196,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4"  @click="selected('pdf')">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div :class="type=='pdf'?'active-type':''"  class="icon_mipad">
                     <img src="assets/images/yellow_pdf.svg" />
                 </div>
 
@@ -212,7 +212,7 @@
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12">
             <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Next</ion-button>
+                <ion-button @click="next()" :disabled='isDisabled' shape="round" class="next_btn">Next</ion-button>
             </div>
         </ion-col>
     </ion-row>
@@ -247,6 +247,8 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
+          isDisabled:true,
+          type:"",
           isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
           isMobile: isPlatform('mobile'),
@@ -266,6 +268,31 @@ export default defineComponent({
           },
         })
       return modal.present();
+    },
+
+    selected(type: any){
+        this.isDisabled = false;
+        if(type == 'pdf'){
+            this.type = 'pdf'
+        }
+        if(type == 'sendprint'){
+            this.type = 'sendprint'
+        }
+        if(type == 'sendfax'){
+            this.type = 'sendfax'
+        }
+    },
+
+    next(){
+        if(this.type == 'pdf'){
+            modalController.dismiss()
+        }
+        if(this.type == 'sendprint'){
+            this.sendprint();
+        }
+        if(this.type == 'sendfax'){
+            this.sendfax();
+        }
     },
 
     async sendfax() {
