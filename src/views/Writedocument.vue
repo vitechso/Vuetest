@@ -572,43 +572,50 @@
                     </div>
 
                     <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin">
-                        <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="3">
-                                <h5>From</h5>
-                            </ion-col>
-                            <ion-col size="7">
-                                <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
-                            </ion-col>
-                            <ion-col size="2" class="ion-no-padding">
-                                <div class="contact_book contact_book-desk">
-                                    <img src="assets/images/contact_book.svg"/>
-                                </div>
-                            </ion-col>
-                        </ion-row>
 
-                        <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="3">
-                                <h5>To</h5>
-                            </ion-col>
-                            <ion-col size="7">
-                                <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
-                            </ion-col>
-                            <ion-col size="2" class="ion-no-padding">
-                                <div class="contact_book contact_book-desk icon-hover" @click="contact">
-                                    <img src="assets/images/contact_book.svg"/>
-                                </div>
-                            </ion-col>
-                        </ion-row>
+                        <div class="Form-subject-container">
+                            <ion-row class="Form-subject-row">
+                                <ion-col size="12" class="pr-0">
+                                    <div class="Form-subject-block">
+                                        <div class="Form-subject">
+                                            <h5>From</h5>
+                                            <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                                        </div>
 
-                        <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="3">
-                                <h5>Subject</h5>
-                            </ion-col>
-                            <ion-col size="9">
-                                <p class="fontlight">Address Change</p>
-                            </ion-col>
-                            
-                        </ion-row>
+                                        <div class="contact_book contact_book-desk">
+                                            <img src="assets/images/contact_book.svg"/>
+                                        </div>
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row class="Form-subject-row">
+                                <ion-col size="12" class="pr-0">
+                                    <div class="Form-subject-block">
+                                        <div class="Form-subject">
+                                            <h5>To</h5>
+                                            <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                                        </div>
+
+                                        <div class="contact_book contact_book-desk icon-hover" @click="contact">
+                                            <img src="assets/images/contact_book.svg"/>
+                                        </div>
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row class="Form-subject-row">
+                                <ion-col size="12">
+                                    <div class="Form-subject-block">
+                                        <div class="Form-subject">
+                                            <h5>Subject</h5>
+                                            <p class="fontlight">Address Change</p>
+                                        </div>
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+
 
                         <ion-row class="row_01 b_p bor_b">
                             <ion-col size="12">
@@ -938,7 +945,7 @@ export default defineComponent({
         })
       return popover.present();
     },
-
+ 
     async chossetamp() {
        modalController.dismiss()
       const modal = await modalController.create({

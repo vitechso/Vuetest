@@ -811,9 +811,9 @@ ion-segment {
 }
 .control_cin {
     display: flex;
-    width: 23px;
+    width: 22px;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 15px;
     height: 23px;
 }
 .list_cons ion-label {
@@ -1514,7 +1514,7 @@ span.popup_title {
 }
 .peint_data_headings h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
     padding: 20px 0px;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
@@ -1526,7 +1526,7 @@ span.popup_title {
     overflow: hidden;
 }
 .peint_inner_headings h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     color: #333;
     padding: 20px 0px;
@@ -1540,7 +1540,7 @@ span.popup_title {
 }
 
 .peint_inner_headings h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     color: #333;
     padding: 20px 0px;
@@ -1786,7 +1786,7 @@ img.delete_print_btns_01 {
 }
 .hsma {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .colsd {
@@ -1797,10 +1797,27 @@ img.delete_print_btns_01 {
 .main_conipad {
     background: #fff;
     border-bottom: 1px solid #e2e4e6;
+    padding: 10px 0;
 }
+
+.main-cont-desk {
+    display: flex;
+    align-items: center;
+}
+
+.create-groups-list ion-item {
+    height: 40px;
+    display: flex;
+}
+
 .main_conipad ion-col {
     margin: auto;
 }
+
+.main-cont-desk ion-col {
+    margin: unset;
+}
+
 .hans_ipad {
     height: 50px;
 }
@@ -1945,6 +1962,7 @@ p.user_ids.iad_spl {
     height: 48px;
     display: flex;
     align-items: center;
+    padding: 0 15px;
 }
 
 .user_avtar img{
@@ -2006,8 +2024,8 @@ p.user_ids.iad_spl {
 }
 
 .lettes_desk{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Desktop_cols:after {
@@ -2081,9 +2099,6 @@ p.user_ids.iad_spl {
 
 .fontlight {
     color: #959595;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .privew_desktop p {
@@ -2253,9 +2268,12 @@ p.user_ids.iad_spl {
 }
 
 .HeaderDropDown .popover-content {
-    top: 70px !important;
+    top: 58px !important;
     overflow: visible;
     border-radius: 10px;
+    right: 15px !important;
+    left: auto !important;
+    width: 200px;
 }
 
 .desktop_header_dropdownList {
@@ -2264,6 +2282,7 @@ p.user_ids.iad_spl {
 
 .desktop_header_dropdownList p {
     font-family: 'Proxima Nova', sans-serif !important;
+    margin: 0;
 }
 
 .HeaderDropDown .popover-content:after {
@@ -2274,7 +2293,7 @@ p.user_ids.iad_spl {
     border-bottom: 10px solid white;
     content: '';
     position: absolute;
-    right: 7px;
+    right: 12px;
     top: -10px;
 }
 
@@ -2581,13 +2600,15 @@ img.paypal-logo {
 }
 
 .HeaderDropDown.allLetterDropDown .popover-content {
-    top: 100px !important;
-    left: 150px !important;
+    top: 103px !important;
+    left: 20px !important;
+    width: 276px;
 }
 
 .HeaderDropDown.allLetterDropDown .popover-content:after {
-    left: 18px;
+    right: 28px;
 }
+
 
 .container_desktop {
     height: auto !important;
@@ -2687,7 +2708,17 @@ img.paypal-logo {
     height: 38px;
     font-size: 18px;
     text-transform: capitalize;
+    margin: 0 0 0 10px;
 }
+
+.contactlist-desk .contact_name_list ion-checkbox {
+    margin-right: 12px;
+}
+
+.Contacts-List-Info .contactlist-desk:first-child .alpha p {
+    padding-top: 0 !important;
+}
+
 
 .contactlist-desk .alpha p {
     margin: 0;
@@ -2696,18 +2727,23 @@ img.paypal-logo {
     color: #333333;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
-    padding: 10px 25px;
+    padding: 15px 54px 0;
 }
+
 
 .contactlist-desk ion-label {
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
-    color: #333333;
+    color: #333333 !important;
+    font-size: 18px !important;
 }
 
 .contactlist-desk .insd p {
     font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+
 }
 
 .account_desktop input, .account_desktop ion-select {
@@ -2807,6 +2843,61 @@ input:checked + .slider {
     position: inherit;
     width: 100px;
     text-align: right;
+}
+
+.Form-subject-container {
+    margin: 0 -10px;
+}
+
+.Form-subject-row {
+    border-bottom: 1px solid #e2e4e6;
+    padding: 0px 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.Form-subject-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Form-subject {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.Form-subject h5 {
+    margin: 0;
+    min-width: 105px;
+}
+
+.Form-subject p {
+    font-size: 20px;
+    font-family: 'Proxima Nova', sans-serif !important;
+    margin: 0;
+    color: #959595;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+.CG-title-row {
+    padding: 30px 0 15px;
+}
+
+.CG-title {
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #6a6869;
+    text-align: center;
+    line-height: 23px;
+    font-size: 25px;
 }
 
 @media (min-width: 1024px) {

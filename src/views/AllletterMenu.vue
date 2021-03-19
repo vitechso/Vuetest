@@ -13,7 +13,7 @@
             </ion-item>
 
             <ion-item button lines="none">
-                <img src="assets/images/black_send_share.svg"/>
+                <img src="assets/images/sent-icon.svg"/>
                 <p>Sent</p>
                 <p slot="end">15</p>
             </ion-item> 

@@ -1,7 +1,7 @@
 <template>
 
 <ion-page> 
-    <div v-if="isMobile">
+<div v-if="isMobile">
         <ion-page> 
     <ion-header class="header_am">
     <ion-toolbar>
@@ -73,7 +73,7 @@
     </div>
     </ion-content>
     </ion-page>
-    </div>
+</div>
 
 <div v-if="isDesktop">
     <ion-page> 
