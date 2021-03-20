@@ -355,6 +355,8 @@ ion-item {
     margin-bottom: 5px;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .texts_letts p {
     font-size: 20px;
@@ -363,6 +365,8 @@ ion-item {
     font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 300;
     line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .letter_pic {
     width: 53px;
@@ -1962,7 +1966,7 @@ p.user_ids.iad_spl {
     height: 48px;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .user_avtar img{
@@ -2005,6 +2009,8 @@ p.user_ids.iad_spl {
     font-size: 33px !important;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
+    white-space: nowrap;
+
 }
 
 .badgs_desks{
@@ -2026,6 +2032,7 @@ p.user_ids.iad_spl {
 .lettes_desk{
     padding-left: 15px;
     padding-right: 15px;
+    white-space: nowrap;
 }
 
 .Desktop_cols:after {
@@ -2271,7 +2278,7 @@ p.user_ids.iad_spl {
     top: 58px !important;
     overflow: visible;
     border-radius: 10px;
-    right: 15px !important;
+    right: 10px !important;
     left: auto !important;
     width: 200px;
 }
@@ -2665,11 +2672,13 @@ img.paypal-logo {
     width: 368px;
     background-color: #f9f9f9;
     height: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 
 .right-content-box {
     width: calc(100% - 368px);
+    transition: all 0.3s ease-in-out;
 }
 
 .welcome_desktop {
@@ -2678,6 +2687,7 @@ img.paypal-logo {
 
 .lettes_desk .texts_letts {
     width: calc(100% - 100px);
+    
 }
 
 #container_write h5 {
@@ -2901,6 +2911,14 @@ input:checked + .slider {
     text-align: center;
     line-height: 23px;
     font-size: 25px;
+}
+
+.menu-closed .SideBar {
+    width: 0;
+}
+
+.menu-closed .right-content-box {
+    width: 100%;
 }
 
 @media (min-width: 1024px) {

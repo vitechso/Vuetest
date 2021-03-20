@@ -514,7 +514,7 @@
                 <ion-col size="12" class="sitebar-text-info">
                     <div class="texts_letts">
                     <h3>Minutes of Meeting</h3>
-                    <p>Dear Johnson Charles It has survived not only...</p>
+                    <p>Dear Johnson Charles, <br> It has survived not only...</p>
                     </div>
                     <div class="date">
                     <span>10 Jan</span>
@@ -526,7 +526,7 @@
                 <ion-col size="12" class="sitebar-text-info">
                     <div class="texts_letts">
                     <h3>List of Appointments</h3>
-                    <p>Dear Mr Miller There are many variations of passages...</p>
+                    <p>Dear Mr Miller, <br> There are many variations of passages...</p>
                     </div>
                     <div class="date">
                     <span>09 Jan</span>

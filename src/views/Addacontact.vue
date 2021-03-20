@@ -82,7 +82,7 @@
                 <ion-row class="ion-align-items-center bar_c">
                     <ion-col size="6" class="ipad_cols">
                         <div class="ion-text-left ipad_flx">
-                            <img class="back-btn" src="assets/images/back-black.svg"/>
+                            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
                             <span class="popup_title">Add Contacts</span> 
                         </div>
                     </ion-col>

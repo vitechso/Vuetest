@@ -827,11 +827,11 @@
                     </div>
                 </ion-col>
             </ion-row>
-
         </div>
 
         <div v-if="selectedSegment == 'groups'" class="ion-padding-start">
-            <div class="contactlist contactlist-desk"> 
+            <div class="contactlist contactlist-desk">
+                
                 <div class="contact_name_list create-groups-list">
                     <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
                         <ion-col size="3">
