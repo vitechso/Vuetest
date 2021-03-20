@@ -598,12 +598,12 @@
             </ion-row>
         </ion-toolbar>
 
-        <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt desktop-segmnt">
-            <ion-segment-button value="contacts" >
+        <ion-segment value="contacts" class="segmnt desktop-segmnt">
+            <ion-segment-button @click="()=>selectedSegment='contacts'" value="contacts" >
                 <ion-label>Contacts</ion-label>
             </ion-segment-button>
 
-            <ion-segment-button value="groups">
+            <ion-segment-button @click="()=>selectedSegment='groups'" value="groups">
                 <ion-label>Groups</ion-label>
             </ion-segment-button>
         </ion-segment>
