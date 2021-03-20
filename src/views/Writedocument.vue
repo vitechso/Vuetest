@@ -430,7 +430,7 @@
 
             <!-- <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button> -->
 
-            <div class="desktop-header-icon MenuBar icon-hover">
+            <div @click="openMenu" class="desktop-header-icon MenuBar icon-hover">
                 <img src="assets/images/menu.svg"/>
             </div>
 
@@ -473,7 +473,7 @@
 
 
 <ion-content :fullscreen="true" class="ipad_write">
-    <div class="ipad_h destop-sitebar-container">
+    <div :class="isMenuOpen?'menu-open':'menu-closed'" class="ipad_h destop-sitebar-container">
         <div class="bg-white SideBar">
             <ion-row class="s_bar lettes_desk">
                 <ion-col size="12">
@@ -817,9 +817,14 @@ export default defineComponent({
         isIpad:isPlatform('ipad'),
         isDesktop: isPlatform('desktop'),
         isMobile: isPlatform('mobile'),
+        isMenuOpen:true
       }
   },
   methods:{
+
+      openMenu(){
+          this.isMenuOpen  = !this.isMenuOpen
+      },
       
       async presentAlert() {
         const alert = await alertController

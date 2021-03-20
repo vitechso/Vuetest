@@ -27,15 +27,15 @@
     <ion-row class="ion-padding">
         <ion-col size="12">
           <div class="AddPayment-MethodBlock">
-            <div class="PaymentCard-box" @click="paypal">
-              <div class="card-img-box active-Cardbox">
+            <div class="PaymentCard-box" @click="select('paypal')">
+              <div :class="type == 'paypal'?'active-Cardbox':''" class="card-img-box">
                 <img src="assets/images/PayPal.svg"/>
               </div>
               <h2>Paypal</h2>
             </div>
 
-            <div class="PaymentCard-box" @click="editcard">
-              <div class="card-img-box CreditCard-img">
+            <div class="PaymentCard-box" @click="select('editcard')">
+              <div :class="type == 'editcard'?'active-Cardbox':''" class="card-img-box CreditCard-img">
                 <img src="assets/images/paymemt.svg"/>
               </div>
               <h2>Credit/Debit Card</h2>
@@ -47,7 +47,7 @@
     <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
         <ion-col size="12">
             <div class="BtnBlock">
-                <ion-button shape="round" class="MakeDefault-btn">Next</ion-button>
+                <ion-button @click="next" :disabled="unselected" shape="round" class="MakeDefault-btn">Next</ion-button>
             </div>
         </ion-col>
     </ion-row>
@@ -85,11 +85,26 @@ export default defineComponent({
           isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
           isMobile: isPlatform('mobile'),
+          unselected:true,
+          type:''
       }
   },
   methods:{
       cancel() {
         modalController.dismiss()
+    },
+
+    select(type: any){
+      this.type = type;
+      this.unselected=false;
+    },
+
+    next(){
+      if(this.type ==  'paypal'){
+        this.paypal()
+      }else{
+        this.editcard()
+      }
     },
 
     async paypal() {
