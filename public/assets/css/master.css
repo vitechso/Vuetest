@@ -2921,6 +2921,14 @@ input:checked + .slider {
     width: 100%;
 }
 
+.GroupSearch .searchbar-search-icon {
+    display: none !important;
+}
+
+.GroupSearch input {
+    padding: 6px 20px !important;
+}
+
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
         width: 100%;

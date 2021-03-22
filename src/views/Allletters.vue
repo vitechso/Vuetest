@@ -191,7 +191,7 @@
   <ion-page>
 <ion-header class="header_am">
   <ion-toolbar class="header-top">
-    <ion-row class="ion-align-items-center bar_c ion-padding-horizontal">
+    <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols ion-no-padding">
 
         <div class="desktop_conn">

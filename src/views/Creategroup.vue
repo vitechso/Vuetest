@@ -24,7 +24,7 @@
 
             <ion-row class="ion-padding-top">
                 <ion-col size="12" class="ion-padding-start ion-padding-end">
-                    <ion-searchbar placeholder="Group Name" class="ion-no-padding search_bts hans_ipad cntct-search-desk"></ion-searchbar>
+                    <ion-searchbar placeholder="Group Name" class="ion-no-padding search_bts GroupSearch hans_ipad cntct-search-desk"></ion-searchbar>
                 </ion-col>
             </ion-row>
 
