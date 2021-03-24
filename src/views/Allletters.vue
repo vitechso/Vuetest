@@ -5,9 +5,9 @@
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="4">
-        <div class="ion-text-center">
-          <span class="title_top">All Letters</span> 
+      <ion-col size="4" class="ion-padding-start">
+        <div class="">
+          <span class="title_top title_top_mobo">All Letters</span> 
         </div>
       </ion-col>
       <ion-col size="2">
@@ -34,10 +34,10 @@
 </ion-header>
   <ion-content :fullscreen="true">
     <div id="full_width">
-      <ion-list>
+      <ion-list class="mobo-letter-list">
         <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -57,7 +57,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -83,7 +83,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -109,7 +109,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>

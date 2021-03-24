@@ -28,11 +28,11 @@
     <div id="container_01">
         <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
             <p>Start with a blank document, choose a</p>
-            <p>template or <strong>upload a pdf</strong></p>
+            <p>template or <strong @click="() => router.push('/Uploadpdf')">upload a pdf</strong></p>
         </div>
 
         <ion-row class="">
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pr-8">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -40,7 +40,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pl-8">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -51,7 +51,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pr-8">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -60,7 +60,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pl-8">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -71,7 +71,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pr-8">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -80,7 +80,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding pl-8">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>

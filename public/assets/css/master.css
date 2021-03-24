@@ -112,11 +112,11 @@ a {
     height: 4px;
     display: inline-block;
     border-radius: 0;
-    background: #000;
-    opacity: 0.2;
+    background: #a3a2a3;
+    opacity: 1;
 }
 .swiper-pagination-bullet-active {
-    background: #a3a2a3 !important;
+    background: #5c5c5c!important;
 }
 .logo img{
     display: block;
@@ -137,13 +137,13 @@ a {
     list-style: none;
     padding: 10px;
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 .face img {
     width: 15px !important;
@@ -160,6 +160,7 @@ a {
 .sign_with h2 {
     color: #333;
     font-size: 24px;
+    margin-top: 5px;
     margin-bottom: 20px !important;
     font-weight: 700;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
@@ -180,6 +181,7 @@ a {
     font-size: 28px;
     margin-bottom: 20px !important;
     font-weight: 700;
+    margin-top: 30px;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .user_nam {
@@ -193,11 +195,22 @@ a {
     border: 1px solid #797979;
     background: transparent;
     font-family: 'Proxima Nova', sans-serif !important;
+    transition: all 0.1s ease-in-out;
 }
+
+.user_nam:focus {
+    box-shadow: 0 0 0px 1px #797979;
+}
+
+.mobile-login-form .pdd_b {
+    margin-bottom: 16px;
+}
+
 .pdd_b {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     position: relative;
 }
+
 .button-solid {
     --background: #F1D000 !important;
     --box-shadow: none;
@@ -227,18 +240,24 @@ a {
     margin: auto;
 }
 .for_got a {
-    color: #888;
-    font-size: 20px;
+    color: #6a6869;
+    font-size: 18px;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
+
 .sign_doens {
     text-align: center;
     margin: auto;
-    margin-top: 20% !important;
+    margin-top: 110px !important;
     display: block;
     color: #333;
     font-size: 19px;
     font-family: 'Proxima Nova', sans-serif !important;
     line-height: normal;
+}
+
+.mt-4 {
+    margin-top: 40px !important;
 }
 .sign_doens a{
     color: #F1D000;
@@ -248,9 +267,21 @@ a {
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .top_am {
-    margin-top: 15%;
-    margin-bottom: 10%;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
+
+#mobo-container {
+    text-align: center;
+    padding: 20px 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.login-Info-box {
+    width: 100%;
+}
+
 #container_01 {
     text-align: center;
     padding: 0 15px;
@@ -293,9 +324,10 @@ a {
     margin-top: 0 !important;
 }
 .slide p {
-    font-size: 21px;
-    color: #333;
+    font-size: 21px !important;
+    color: #333 !important;
     font-weight: 700;
+    line-height: 25px !important;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .slide {
@@ -324,6 +356,12 @@ span.title_top {
     font-family: 'Proxima Nova', sans-serif !important;
 }
 
+span.title_top.title_top_mobo {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
 .badgs {
     width: 45px;
     height: 35px;
@@ -347,7 +385,37 @@ ion-list {
 ion-item {
     background: transparent !important;
     --background: transparent;
+    --ripple-color: transparent;
+    --background-hover: transparent;
 }
+
+.mobo-letter-list .texts_letts h3 {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.mobo-letter-list .texts_letts p {
+    font-family: 'Proxima Nova', sans-serif !important;
+    font-size: 16px;
+}
+
+.mobo-letter-list .date span {
+    font-size: 13px;
+    font-family: 'Proxima Nova', sans-serif !important;   
+}
+.mobo-letter-list .bor_b::part(native) {
+    padding: 0;
+}
+
+.mobo-letter-list .bor_b {
+    --inner-padding-end: 0px;
+}
+
+.mobo-letter-list .bor_b {
+    margin: 0 16px;
+}
+
 .texts_letts h3 {
     font-size: 20px;
     margin-top: 0;
@@ -371,7 +439,7 @@ ion-item {
 .letter_pic {
     width: 53px;
     height: 64px;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #d6d6d6;
     background-color: #ffffff;
     border-radius: 4px;
     overflow: hidden;
@@ -396,7 +464,7 @@ ion-item {
     text-align: right;
 }
 
-.bor_b{
+.bor_b {
     border-bottom: 1px solid #e2e4e6;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -407,10 +475,14 @@ ion-item {
 }
 .fixeds ion-fab-button {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 30px;
+    right: 16px;
     --background: #f1d000;
     --box-shadow: unset;
+    width: 65px;
+    height: 65px;
+    box-shadow: 5px 5px 15px 0px rgb(0 0 0 / 15%);
+    border-radius: 50%;
 }
 .text_top p {
     font-size: 17px;
@@ -432,6 +504,7 @@ ion-item {
     text-align: center;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
+    margin: 20px 0 40px;
 }
 .doc img {
     width: 100%;
@@ -812,17 +885,18 @@ ion-segment {
     font-size: 17px;
     font-weight: 700;
     color: #333333;
+    padding: 15px 0px 0;
 }
 .control_cin {
     display: flex;
-    width: 22px;
+    width: 21px;
     text-align: center;
     margin-left: 15px;
     height: 23px;
 }
 .list_cons ion-label {
     font-size: 17px !important;
-    color: #333;
+    color: #333 !important;
     font-weight: 700;
 }
 .header_am {
@@ -1679,6 +1753,8 @@ img.delete_print_btns_01 {
 #container_ipad .social_icons li{
     width: 55px;
     height: 55px;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
 }
 #container_ipad .sign_ups{
     height: 65px;
@@ -1715,8 +1791,8 @@ img.delete_print_btns_01 {
     top: 20px;
 }
 #container_ipad_regi .top_am{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 #container_ipad_regi .sign_ups{
     height: 65px;
@@ -1778,7 +1854,7 @@ img.delete_print_btns_01 {
     padding: 30px;
 }
 #container_intro .slide p{
-    font-size: 28px;
+    font-size: 28px !important;
 }
 #container_intro .get_st{
     width: 192px;
@@ -1883,6 +1959,19 @@ p.font_sels {
     width: 35px;
     margin-right: 20px;
 }
+
+.upload-pdf-mobo .pdf_icons img {
+    width: 26px;
+    margin-right: 12px;
+}
+
+.upload-pdf-mobo p.font_sels {
+    font-size: 17px;
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
 .pdf_icons {
     display: flex;
     align-items: center;
@@ -2577,7 +2666,7 @@ img.paypal-logo {
     font-family: 'Proxima Nova', sans-serif !important;
 }
 
-.MakeDefault-btn._gary-outline-btn.button-solid {
+._gary-outline-btn.button-solid {
     --background: transparent !important;
     --color: #888;
     border: 1px solid;
@@ -2726,6 +2815,10 @@ img.paypal-logo {
 }
 
 .Contacts-List-Info .contactlist-desk:first-child .alpha p {
+    padding-top: 0 !important;
+}
+
+.Contacts-List-Info .contactlist:first-child .alpha p {
     padding-top: 0 !important;
 }
 
@@ -2929,9 +3022,63 @@ input:checked + .slider {
     padding: 6px 20px !important;
 }
 
+.pr-8 {
+    padding-right: 8px !important;
+}
+
+.pl-8 {
+    padding-left: 8px !important;
+}
+
+.select-upload-text {
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #6a6869;
+    line-height: 23px;
+    font-size: 17px;
+}
+
+.select-pdf-btn {
+    width: 143px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+}
+
+.mt-7 {
+    margin-top: 70px !important;
+}
+
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
         width: 100%;
         max-width: 500px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    span.title_top {
+        font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+        font-weight: 700;
+    }
+
+    .title_doc h3 {
+        margin: 11px 0 16px;
+    }
+
+    .BtnBlock ion-button {
+        margin: 0 5px;
+    }
+
+    .import_csv {
+        margin: 0 5px;
+    }
+
+    .contactlist ion-checkbox {
+        margin-right: 15px;
     }
 }

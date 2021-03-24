@@ -3,47 +3,51 @@
 <div v-if="isMobile">
 <ion-page> 
 <ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-                <div class="ion-text-center">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                </div>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Contacts</span> 
-        </div>
-      </ion-col>
-      
-    </ion-row>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center">
+            <ion-col size="1">
+                    <div class="ion-text-center">
+                        <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                    </div>
+            </ion-col>
 
-  <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt">
-    <ion-segment-button value="contacts" >
-      <ion-label>Contacts</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="groups">
-      <ion-label>Groups</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+            <ion-col size="9">
+                <div class="ion-text-left">
+                <span class="title_top">Contacts</span> 
+                </div>
+            </ion-col>
+        
+        </ion-row>
+    </ion-toolbar>
+
+    <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt">
+        <ion-segment-button value="contacts" >
+            <ion-label>Contacts</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="groups">
+            <ion-label>Groups</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12" class="ion-padding-start ion-padding-end">
             <ion-searchbar class="ion-no-padding search_bts"></ion-searchbar>
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-start ion-padding-end ion-text-center">
-        <ion-col size="6">
-            <ion-button class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
-        </ion-col>
-        <ion-col size="6">
-            <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+    <ion-row class="ion-justify-content-center ion-padding-start ion-padding-end ion-padding-bottom">
+        <ion-col size="12">
+            <div class="BtnBlock">
+                <ion-button class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
+                <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+            </div>
         </ion-col>
     </ion-row>
 </ion-header>
-  <ion-content :fullscreen="true">
-    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end ion-padding-top">
+
+<ion-content :fullscreen="true">
+    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end ion-padding-top Contacts-List-Info">
         <div class="contactlist"> 
             <div class="alpha"><p>A</p></div>
             <div class="contact_name_list">
