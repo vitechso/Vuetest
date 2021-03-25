@@ -5,30 +5,20 @@
 <ion-header class="header_am">
   <ion-toolbar>
     <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="4" class="ion-padding-start">
-        <div class="">
-          <span class="title_top title_top_mobo">All Letters</span> 
+      <ion-col size="12" class="ion-padding-horizontal">
+        <div class="Page-header">
+          <div class="Page-Title">
+            <span class="title_top title_top_mobo">All Letters</span>
+            <ion-badge class="badgs">8</ion-badge>
+          </div>
+          <div class="TopHeader-icon">
+            <img src="assets/images/search.svg"/>
+            <ion-buttons class="menu-btn header-icon">
+              <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+            </ion-buttons>
+          </div>
         </div>
       </ion-col>
-      <ion-col size="2">
-      <ion-badge class="badgs">8</ion-badge>
-      </ion-col>
-
-      <ion-col size="2">
-      </ion-col>
-
-      <ion-col size="2">
-        <div class="search_icon">
-          <img src="assets/images/search.svg"/>
-        </div>
-      </ion-col>
-
-      <ion-col size="2">
-        <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
-
     </ion-row>
   </ion-toolbar>
 </ion-header>

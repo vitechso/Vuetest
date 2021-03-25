@@ -25,7 +25,7 @@
     </ion-header>
 
     <ion-content :fullscreen="true" class="back_white">
-      <div id="container_fax" class="ion-padding-end ion-padding-start fdfs upload-pdf-mobo">
+      <div id="container_fax" class="ion-padding-top ion-padding-end ion-padding-start fdfs upload-pdf-mobo">
         <ion-row class="ion-margin-top ion-margin-bottom">
             <ion-col size="7" class="opas">
                 <p class="select-upload-text">Please select a file to upload</p>

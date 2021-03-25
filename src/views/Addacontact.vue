@@ -13,7 +13,7 @@
             </ion-col>
             <ion-col size="9">
                 <div class="ion-text-left">
-                    <span class="title_top">Account</span> 
+                    <span class="title_top">Add Contacts</span> 
                 </div>
             </ion-col>
             <ion-col size="2">

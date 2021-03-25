@@ -22,34 +22,36 @@
   </ion-toolbar>
 </ion-header>
   <ion-content :fullscreen="true" class="back_white">
-    <div class="ion-padding-top ion-padding-start ion-padding-end">
+    <div id="container_fax" class="ion-padding-end ion-padding-start fdfs upload-pdf-mobo">
 
-    <ion-row class="privew_r slide_fils ion-padding-bottom">
-        <ion-col size="8">
-          <p class="heading_m">Please select a file to upload</p>
+    <ion-row class="ion-margin-top ion-margin-bottom slide_fils">
+        <ion-col size="7">
+          <p class="select-upload-text">Please select a file to upload</p>
         </ion-col>
-        <ion-col size="4">
-            <ion-button class="selct_file" shape="round" type="button">Select File</ion-button>
+        <ion-col size="5">
+            <ion-button class="next_btn select-pdf-btn" shape="round" type="button">Select File</ion-button>
         </ion-col>
     </ion-row>
     <ion-row class="slide_fils">
-        <ion-col size="2">
-            <img src="assets/images/csv.svg"/>
-        </ion-col>
-        <ion-col>
-            <p class="heading_m">Contacts.csv</p>
+      <ion-col size="6">
+          <div class="pdf_icons">
+              <img src="assets/images/csv.svg"/>
+              <p class="font_sels">Contacts.csv</p>
+          </div>
+      </ion-col>
+      <ion-col size="6">
+          
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ion-padding ion-margin-bottom mt-5">
+        <ion-col size="12">
+            <div class="BtnBlock">
+                <ion-button shape="round" class="next_btn">Done</ion-button>
+                <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="next_btn _gary-outline-btn">Cancel</ion-button>
+            </div>
         </ion-col>
     </ion-row>
-    <ion-row class="ion-padding-top">
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Done</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-            </ion-col>
-        </ion-row>
-    
-
 
     </div>
   </ion-content>

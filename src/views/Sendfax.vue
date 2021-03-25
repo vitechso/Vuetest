@@ -76,7 +76,7 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
@@ -123,7 +123,7 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
@@ -171,26 +171,26 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
             </div>
 
             <div class="total_nu">
-                <ion-row class="num_tols">
-                    <ion-col size="6">
+                <ion-row class="num_tols row_01">
+                    <ion-col size="4">
                         <p>Total number of recipients</p>
                     </ion-col>
-                    <ion-col size="6">
+                    <ion-col size="8">
                         <p>3</p>
                     </ion-col>
                 </ion-row>
-                <ion-row class="g_total">
-                    <ion-col size="6">
+                <ion-row class="g_total row_01">
+                    <ion-col size="4">
                         <p><strong>Grand Total</strong></p>
                     </ion-col>
-                    <ion-col size="6">
+                    <ion-col size="8">
                         <p><strong>€1.50</strong></p>
                     </ion-col>
                 </ion-row>

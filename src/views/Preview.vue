@@ -51,7 +51,7 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="row_sinc">
+    <ion-row class="row_sinc privew_r">
       <ion-col size="6">
         <div class="sincerely">
           <p>Sincerely,</p>
