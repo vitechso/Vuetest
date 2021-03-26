@@ -25,6 +25,7 @@ import Drawsignature from '../views/Drawsignature.vue';
 import ImportCSVExcel from '../views/ImportCSVExcel.vue';
 import Addacontact from '../views/Addacontact.vue';
 import Uploadpdf from '../views/Uploadpdf.vue';
+import Creategroup from '../views/Creategroup.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -155,6 +156,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/uploadpdf',
     name: 'Uploadpdf',
     component: Uploadpdf
+  },
+
+  {
+    path: '/create-group',
+    name: 'Creategroup',
+    component: Creategroup
   }
   
 ]

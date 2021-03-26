@@ -2,42 +2,32 @@
 <ion-page>
 <div v-if="isMobile">
 <ion-page>
-<ion-header class="header_am">
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
     <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="4">
-        <div class="ion-text-center">
-          <span class="title_top">All Letters</span> 
+      <ion-col size="12" class="ion-padding-horizontal">
+        <div class="Page-header">
+          <div class="Page-Title">
+            <span class="title_top title_top_mobo">All Letters</span>
+            <ion-badge class="badgs">8</ion-badge>
+          </div>
+          <div class="TopHeader-icon">
+            <img src="assets/images/search.svg" class="header-icon"/>
+            <ion-buttons class="menu-btn header-icon">
+              <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+            </ion-buttons>
+          </div>
         </div>
       </ion-col>
-      <ion-col size="2">
-      <ion-badge class="badgs">8</ion-badge>
-      </ion-col>
-
-      <ion-col size="2">
-      </ion-col>
-
-      <ion-col size="2">
-        <div class="search_icon">
-          <img src="assets/images/search.svg"/>
-        </div>
-      </ion-col>
-
-      <ion-col size="2">
-        <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
-
     </ion-row>
   </ion-toolbar>
 </ion-header>
   <ion-content :fullscreen="true">
     <div id="full_width">
-      <ion-list>
+      <ion-list class="mobo-letter-list">
         <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -57,7 +47,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -83,7 +73,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>
@@ -109,7 +99,7 @@
         <ion-item-sliding>
         <ion-item lines="none" class="bor_b">
           <ion-row class="ion-align-items-center">
-              <ion-col size="2">
+              <ion-col size="2" class="ion-no-padding">
                 <div class="letter_pic">
                   <img src="assets/images/normal_u4831.jpg"/>
                 </div>

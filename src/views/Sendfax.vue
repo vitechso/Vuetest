@@ -1,28 +1,27 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Send Fax</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-         <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-header>
+<ion-page>
+<ion-header class="header_am Mobo-header">
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+            <ion-col size="12" class="ion-padding-horizontal">
+                <div class="Page-header">
+                    <div class="Page-Title">
+                        <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                        <span class="title_top title_top_mobo">Send Fax</span>
+                    </div>
+                    <div class="TopHeader-icon">
+                        <ion-buttons class="menu-btn header-icon">
+                            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                        </ion-buttons>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-header> 
+
   <ion-content :fullscreen="true" >
     <div id="container_fax">
         <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
@@ -76,7 +75,7 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
@@ -123,7 +122,7 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
@@ -171,26 +170,26 @@
                     </ion-col>
                     <ion-col size="8">
                         <div class="delete_btn">
-                            <a href="#"><img src="assets/images/delete_black.svg"/> Delete Recipient</a>
+                            <a href="#"><img src="assets/images/delete_black.svg"/><span>Delete Recipient</span></a>
                         </div>
                     </ion-col>
                 </ion-row>
             </div>
 
             <div class="total_nu">
-                <ion-row class="num_tols">
-                    <ion-col size="6">
+                <ion-row class="num_tols row_01">
+                    <ion-col size="4">
                         <p>Total number of recipients</p>
                     </ion-col>
-                    <ion-col size="6">
+                    <ion-col size="8">
                         <p>3</p>
                     </ion-col>
                 </ion-row>
-                <ion-row class="g_total">
-                    <ion-col size="6">
+                <ion-row class="g_total row_01">
+                    <ion-col size="4">
                         <p><strong>Grand Total</strong></p>
                     </ion-col>
-                    <ion-col size="6">
+                    <ion-col size="8">
                         <p><strong>€1.50</strong></p>
                     </ion-col>
                 </ion-row>

@@ -1,49 +1,52 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-                <div class="ion-text-center">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                </div>
+<ion-page>
+<ion-header class="header_am Mobo-header">
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+        <ion-col size="12" class="ion-padding-horizontal">
+            <div class="Page-header">
+            <div class="Page-Title">
+                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                <span class="title_top title_top_mobo">Contacts</span>
+            </div>
+            <div class="TopHeader-icon">
+            </div>
+            </div>
         </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Contacts</span> 
-        </div>
-      </ion-col>
-      
-    </ion-row>
-  </ion-toolbar>
+        </ion-row>
+    </ion-toolbar>
 
-  <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt">
-    <ion-segment-button value="contacts" >
-      <ion-label>Contacts</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="groups">
-      <ion-label>Groups</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+    <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt mobo-segmnt">
+        <ion-segment-button value="contacts" >
+            <ion-label>Contacts</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="groups">
+            <ion-label>Groups</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12" class="ion-padding-start ion-padding-end">
             <ion-searchbar class="ion-no-padding search_bts"></ion-searchbar>
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-start ion-padding-end ion-text-center">
-        <ion-col size="6">
-            <ion-button class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
-        </ion-col>
-        <ion-col size="6">
-            <ion-button class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+    <ion-row class="ion-justify-content-center ion-padding-start ion-padding-end ion-padding-bottom">
+        <ion-col size="12">
+            <div class="BtnBlock">
+                <ion-button v-if="selectedSegment == 'contacts'" class="import_csv" @click="() => router.push('/import-CSVExcel')">Import CSV/Excel</ion-button>
+                <ion-button v-if="selectedSegment == 'contacts'" class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+                <ion-button v-if="selectedSegment == 'groups'" class="import_csv craete-group-btn" @click="() => router.push('/create-group')">Create Group</ion-button>
+            </div>
         </ion-col>
     </ion-row>
 </ion-header>
-  <ion-content :fullscreen="true">
-    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end ion-padding-top">
+
+<ion-content :fullscreen="true">
+    <div v-if="selectedSegment == 'contacts'" class="ion-padding Contacts-List-Info">
         <div class="contactlist"> 
             <div class="alpha"><p>A</p></div>
             <div class="contact_name_list">
@@ -176,7 +179,7 @@
                 <ion-list>
                     <ion-item lines="none" class="list_cons">
                         <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-                        <ion-label>Andrew Symonds</ion-label>
+                        <ion-label>Company</ion-label>
                         <div slot="end" class="control_cin">
                             <img src="assets/images/edit.svg"/>
                         </div>
@@ -188,7 +191,7 @@
 
                     <ion-item lines="none" class="list_cons">
                         <ion-checkbox color="primary" slot="start"></ion-checkbox>
-                        <ion-label>Andy Bickel</ion-label>
+                        <ion-label>CEO</ion-label>
                         <div slot="end" class="control_cin">
                             <img src="assets/images/edit.svg"/>
                         </div>
@@ -200,17 +203,81 @@
 
                     <ion-item lines="none" class="list_cons">
                         <ion-checkbox color="primary" slot="start"></ion-checkbox>
-                        <ion-label>Jon Snow</ion-label>
+                        <ion-label>Directors</ion-label>
                         <slot end>
-                        <div class="control_cin sddsd">
-                            <img src="assets/images/edit.svg"/>
-                        </div>
+                            <div class="control_cin sddsd">
+                                <img src="assets/images/edit.svg"/>
+                            </div>
                         </slot> 
 
                         <slot end>
-                             <div class="control_cin">
-                            <img src="assets/images/delete_black.svg"/>
-                        </div>
+                            <div class="control_cin">
+                                <img src="assets/images/delete_black.svg"/>
+                            </div>
+                        </slot>
+                    </ion-item>
+
+                    <ion-item lines="none" class="list_cons">
+                        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                        <ion-label>Designers</ion-label>
+                        <slot end>
+                            <div class="control_cin sddsd">
+                                <img src="assets/images/edit.svg"/>
+                            </div>
+                        </slot> 
+
+                        <slot end>
+                            <div class="control_cin">
+                                <img src="assets/images/delete_black.svg"/>
+                            </div>
+                        </slot>
+                    </ion-item>
+
+                    <ion-item lines="none" class="list_cons">
+                        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                        <ion-label>Marketing</ion-label>
+                        <slot end>
+                            <div class="control_cin sddsd">
+                                <img src="assets/images/edit.svg"/>
+                            </div>
+                        </slot> 
+
+                        <slot end>
+                            <div class="control_cin">
+                                <img src="assets/images/delete_black.svg"/>
+                            </div>
+                        </slot>
+                    </ion-item>
+
+                    <ion-item lines="none" class="list_cons">
+                        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                        <ion-label>SEO</ion-label>
+                        <slot end>
+                            <div class="control_cin sddsd">
+                                <img src="assets/images/edit.svg"/>
+                            </div>
+                        </slot> 
+
+                        <slot end>
+                            <div class="control_cin">
+                                <img src="assets/images/delete_black.svg"/>
+                            </div>
+                        </slot>
+                    </ion-item>
+
+                    <ion-item lines="none" class="list_cons">
+                        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+                        <ion-label>ZXY</ion-label>
+                        <slot end>
+                            <div class="control_cin sddsd">
+                                <img src="assets/images/edit.svg"/>
+                            </div>
+                        </slot> 
+
+                        <slot end>
+                            <div class="control_cin">
+                                <img src="assets/images/delete_black.svg"/>
+                            </div>
                         </slot>
                     </ion-item>
                 </ion-list>
@@ -222,15 +289,14 @@
 
   <ion-footer class="ion-no-border">
     <ion-toolbar>
-        <ion-row>
-            <ion-col size="6">
-                <ion-button shape="round" class="ok_btn">Ok</ion-button>
-            </ion-col>
-            <ion-col size="6">
-                <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+        <ion-row class="ion-justify-content-center contact-footer">
+            <ion-col size="12">
+                <div class="BtnBlock">
+                    <ion-button shape="round" class="next_btn">Ok</ion-button>
+                    <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="next_btn _gary-outline-btn">Cancel</ion-button>
+                </div>
             </ion-col>
         </ion-row>
-      
     </ion-toolbar>
   </ion-footer>
 </ion-page>

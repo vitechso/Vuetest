@@ -1,78 +1,68 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
+<ion-page>
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-        </ion-col>
-      <ion-col size="7">
-        <div class="ion-text-left">
-          <span class="title_top">Select Send Type</span> 
+    <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="12" class="ion-padding-horizontal">
+        <div class="Page-header">
+          <div class="Page-Title">
+            <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+            <span class="title_top title_top_mobo">Select Send Type</span>
+          </div>
+          <div class="TopHeader-icon">
+          </div>
         </div>
-      </ion-col>
-      <ion-col size="4">
-        <!-- <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner">Menu</ion-menu-button>
-        </ion-buttons> -->
       </ion-col>
     </ion-row>
   </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax">
+        <ion-row class="ion-padding-vertical ion-margin-top">
+            <ion-col size="12"  @click="selected('sendprint')" class="mb-1" >
+                <div  class="send_shares" :class="type=='sendprint'?'active-type':''">
+                    <div>
+                        <img src="assets/images/yellow_print.svg" />
+                    </div>
+                    <div class="text_share">
+                        <h3>Printed Letter</h3>
+                    </div>
+                </div>
+            </ion-col>
 
-    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top" @click="() => router.push('/sendprintedletter')">
-        <ion-col size="4">
-            <div class="icon_m">
-                <img src="assets/images/yellow_print.svg" />
-            </div>
-        </ion-col>
-        <ion-col size="8">
-            <div class="text_share">
-                <h3>Printed Letter</h3>
-            </div>
-        </ion-col>
-    </ion-row>
+            <ion-col size="12"  @click="selected('sendfax')" class="mb-1" >
+                <div  class="send_shares" :class="type=='sendfax'?'active-type':''">
+                    <div>
+                        <img src="assets/images/yellow_fax.svg" />
+                    </div>
+                    <div class="text_share">
+                        <h3>Fax</h3>
+                    </div>
+                </div>
+            </ion-col>
 
-    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top" @click="() => router.push('/sendfax')">
-        <ion-col size="4">
-            <div class="icon_m">
-                <img src="assets/images/yellow_fax.svg" />
-            </div>
-        </ion-col>
-        <ion-col size="8">
-            <div class="text_share">
-                <h3>Fax</h3>
-            </div>
-        </ion-col>
-    </ion-row>
+            <ion-col size="12"  @click="selected('pdf')" class="mb-1" >
+                <div  class="send_shares" :class="type=='pdf'?'active-type':''">
+                    <div>
+                        <img src="assets/images/yellow_pdf.svg" />
+                    </div>
+                    <div class="text_share">
+                        <h3>Pdf</h3>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
 
-    <ion-row class="custom_row send_shares ion-padding-top ion-padding-bottom ion-margin-top">
-        <ion-col size="4">
-            <div class="icon_m">
-                <img src="assets/images/yellow_pdf.svg" />
-            </div>
-        </ion-col>
-        <ion-col size="8">
-            <div class="text_share">
-                <h3>Pdf</h3>
-            </div>
-        </ion-col>
-    </ion-row>
-
-    <ion-row class="ion-padding-top ion-padding-bottom">
-        <ion-col size="12">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Next</ion-button>
-            </div>
-        </ion-col>
-    </ion-row>
-
+        <ion-row class="ion-padding-top ion-padding-bottom">
+            <ion-col size="12">
+                <div class="ion_btn_next">
+                    <ion-button @click="nextMobile()" :disabled='isDisabled' shape="round" class="next_btn next_btn_mobo">Next</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
     </div>
   </ion-content>
 </ion-page>
@@ -292,6 +282,16 @@ export default defineComponent({
         }
         if(this.type == 'sendfax'){
             this.sendfax();
+        }
+    },
+
+    nextMobile(){
+        
+        if(this.type == 'sendprint'){
+            this.router.push('/sendprintedletter')
+        }
+        if(this.type == 'sendfax'){
+            this.router.push('/sendfax')
         }
     },
 

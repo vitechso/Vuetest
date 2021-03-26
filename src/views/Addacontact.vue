@@ -2,26 +2,26 @@
 
 <ion-page> 
 <div v-if="isMobile">
-        <ion-page> 
-    <ion-header class="header_am">
-    <ion-toolbar>
-        <ion-row class="ion-align-items-center">
-            <ion-col size="1">
-                <div class="ion-text-center">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="9">
-                <div class="ion-text-left">
-                    <span class="title_top">Account</span> 
-                </div>
-            </ion-col>
-            <ion-col size="2">
-                
-            </ion-col>
-        </ion-row>
-    </ion-toolbar>
-    </ion-header>
+<ion-page>
+<ion-header class="header_am Mobo-header">
+  <ion-toolbar>
+      <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ion-padding-horizontal">
+              <div class="Page-header">
+                  <div class="Page-Title">
+                      <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                      <span class="title_top title_top_mobo">Add Contacts</span>
+                  </div>
+                  <div class="TopHeader-icon">
+                      
+                  </div>
+              </div>
+          </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
     <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
         <div class="account_m">
@@ -61,12 +61,13 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
-                <ion-col size="6">
-                    <ion-button shape="round" class="ok_btn">Add Contact</ion-button>
-                </ion-col>
-                <ion-col size="6">
-                    <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+
+            <ion-row class="ion-justify-content-center ion-padding-top">
+                <ion-col size="12" class="ion-no-padding">
+                    <div class="BtnBlock">
+                        <ion-button shape="round" class="MakeDefault-btn btn50">Add Contact</ion-button>
+                        <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="MakeDefault-btn btn50 _gary-outline-btn">Cancel</ion-button>
+                    </div>
                 </ion-col>
             </ion-row>
         </div>

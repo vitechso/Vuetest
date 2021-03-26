@@ -242,37 +242,31 @@
 </div>
 <!---------------Mobile Code--------------->
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-        </ion-col>
-      <ion-col size="7">
-        <div class="ion-text-left">
-          <span class="title_top">Address Change</span> 
-        </div>
-      </ion-col>
-    
-      <ion-col size="2">
-        <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
+<ion-page>
+<ion-header class="header_am Mobo-header">
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+            <ion-col size="12" class="ion-padding-horizontal">
+                <div class="Page-header">
+                    <div class="Page-Title">
+                        <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                        <span class="title_top title_top_mobo">Address Change</span>
+                    </div>
+                    <div class="TopHeader-icon">
+                        <ion-buttons class="menu-btn header-icon">
+                            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                        </ion-buttons>
 
-      <ion-col size="2">
-        <div class="search_icon">
-          <img @click="documentSend" src="assets/images/send_share.svg"/>
-        </div>
-      </ion-col>
+                        <div class="search_icon header-icon">
+                            <img @click="()=>router.push('/preview')" src="assets/images/send_share.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
 
-      
-    </ion-row>
-  </ion-toolbar>
-  <div class="lock_unlock">
+    <div class="lock_unlock">
         <ion-row>
             <ion-col size="6">
                 <div class="img_unloacks" @click="addclass($event)">
@@ -284,48 +278,51 @@
     </div>
 </ion-header>
   <ion-content :fullscreen="true" >
-    <div :class="styleClass" id="container_write">
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>From</strong></p>
-            </ion-col>
-            <ion-col size="8">
-                <p>John Anderson 243 Park Hall...</p>
-            </ion-col>
-            <ion-col size="1">
-                <div class="contact_book">
-                    <img src="assets/images/contact_book.svg"/>
+    <div :class="styleClass" id="container_write" class="">
+        <ion-row class="Form-subject-row">
+            <ion-col size="12" class="pr-0">
+                <div class="Form-subject-block">
+                    <div class="Form-subject">
+                        <h5>From</h5>
+                        <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                    </div>
+
+                    <div class="contact_book contact_book-desk">
+                        <img src="assets/images/contact_book.svg"/>
+                    </div>
                 </div>
             </ion-col>
         </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>To</strong></p>
-            </ion-col>
-            <ion-col size="8">
-                <p>John Anderson 243 Park Hall...</p>
-            </ion-col>
-            <ion-col size="1">
-                <div class="contact_book" @click="contact">
-                    <img src="assets/images/contact_book.svg"/>
+        <ion-row class="Form-subject-row">
+            <ion-col size="12" class="pr-0">
+                <div class="Form-subject-block">
+                    <div class="Form-subject">
+                        <h5>To</h5>
+                        <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                    </div>
+
+                    <div class="contact_book contact_book-desk icon-hover" @click="() => router.push('/contacts')">
+                        <img src="assets/images/contact_book.svg"/>
+                    </div>
                 </div>
             </ion-col>
         </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>Subject</strong></p>
+        <ion-row class="Form-subject-row">
+            <ion-col size="12">
+                <div class="Form-subject-block">
+                    <div class="Form-subject">
+                        <h5>Subject</h5>
+                        <p class="fontlight">Address Change</p>
+                    </div>
+                </div>
             </ion-col>
-            <ion-col size="9">
-                <p>Address Change</p>
-            </ion-col>
-            
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="12">
-                <p><strong>Dear Sirs and Madames,</strong></p>
+                <h5>Dear Sirs and Madames,</h5>
             </ion-col>
             <ion-col size="12">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -334,20 +331,20 @@
 
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="3">
-                <p><strong>Footer</strong></p>
+                <h5>Footer</h5>
             </ion-col>
             <ion-col size="9">
-                <p>Sincerely, <br> Justin Shepp</p>
+                <p class="fontlight">Sincerely, <br> Justin Shepp</p>
             </ion-col>
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="5">
-                <p><strong>Signature</strong></p>
+                <h5>Signature</h5>
             </ion-col>
             <ion-col size="2"></ion-col>
             <ion-col size="5">
-                <div class="btn_ajj">
+                <div class="btn_ajj ion-text-right">
                     <ion-button shape="round" type="button" @click="() => router.push('/changesignature')">Adjust</ion-button>
                 </div>
             </ion-col>
@@ -355,62 +352,68 @@
 
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="3">
-                <p><strong>Letter Size</strong></p>
+                <h5>Letter Size</h5>
             </ion-col>
             <ion-col size="4"></ion-col>
             <ion-col size="5">
                 <div class="lett_selct">
-                    <ion-select value="DIN 5008 A">
-                        <ion-select-option value="DIN 5008 A">DIN 5008 A</ion-select-option>
-                        <ion-select-option value="DIN 5008 A">DIN 5008 A</ion-select-option>
-                        <ion-select-option value="DIN 5008 A">DIN 5008 A</ion-select-option>
-                        <ion-select-option value="DIN 5008 A">DIN 5008 A</ion-select-option>
-                    </ion-select>
+                    <ion-item lines="none">
+                        <ion-label class="select-label">Letter Size</ion-label>
+                        <ion-select value="DIN 5001 A" class="DIN-select">
+                            <ion-select-option value="DIN 5001 A">DIN 5001 A</ion-select-option>
+                            <ion-select-option value="DIN 5002 A">DIN 5002 A</ion-select-option>
+                            <ion-select-option value="DIN 5003 A">DIN 5003 A</ion-select-option>
+                            <ion-select-option value="DIN 5008 A">DIN 5008 A</ion-select-option>
+                        </ion-select>
+                    </ion-item>
                 </div>
             </ion-col>
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
             <ion-col size="3">
-                <p><strong>Markers</strong></p>
+                <h5>Markers</h5>
             </ion-col>
             <ion-col size="4"></ion-col>
             <ion-col size="5">
                 <div class="mark_toggle">
-                    <ion-toggle color="primary"></ion-toggle>
+                    <ion-toggle slot="end"></ion-toggle>
                 </div>
             </ion-col>
         </ion-row>
     </div>
   </ion-content>
+
   <ion-footer class="ion-no-border back_foo">
     <ion-toolbar>
-      <ion-row>
-            <ion-col size="1">
-                <div class="icon_bn">
-                    <img src="assets/images/bold.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="1">
-                <div class="icon_bn">
-                    <img src="assets/images/itelic.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="1">
-                <div class="icon_bn">
-                    <img src="assets/images/underline.svg"/>
-                </div>
-            </ion-col>
+        <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+                <div class="board-icon">
+                    <div class="board-left">
+                        <div class="icon_bn icon-hover">
+                            <img src="assets/images/bold.svg"/>
+                        </div>
 
-            <ion-col size="6">
-                <div class="icon_bn" @click="() => router.push('/preview')">
-                    <img src="assets/images/view_black.svg"/>
-                </div>
-            </ion-col>
+                        <div class="icon_bn icon-hover">
+                            <img src="assets/images/itelic.svg"/>
+                        </div>
 
-            <ion-col size="3">
-                <div class="icon_bn right_km">
-                    <img @click="presentAlert" src="assets/images/delete_black.svg"/>
+                        <div class="icon_bn icon-hover">
+                            <img src="assets/images/underline.svg"/>
+                        </div>
+                    </div>
+
+                    <div class="board-center">
+                        <div class="icon_bn icon-hover" @click="() => router.push('/preview')">
+                            <img src="assets/images/view_black.svg"/>
+                        </div>
+                    </div>
+
+                    <div class="board-right">
+                        <div class="icon_bn icon-hover" @click="sendtype">
+                            <img @click="presentAlert" class="dlt-icon" src="assets/images/delete_black.svg"/>
+                        </div>
+                    </div>
                 </div>
             </ion-col>
         </ion-row>
