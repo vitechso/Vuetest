@@ -1,30 +1,28 @@
 <template>
 <ion-page>
 
-<div v-if="!isIpad">
-<ion-page> 
-
-<ion-header class="header_am">
+<div v-if="isMobile">
+<ion-page>
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Security</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-        <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
-    </ion-row>
+      <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ion-padding-horizontal">
+              <div class="Page-header">
+                  <div class="Page-Title">
+                      <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                      <span class="title_top title_top_mobo">Security</span>
+                  </div>
+                  <div class="TopHeader-icon">
+                      <ion-buttons class="menu-btn header-icon">
+                          <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                      </ion-buttons>
+                  </div>
+              </div>
+          </ion-col>
+      </ion-row>
   </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
         
@@ -33,6 +31,7 @@
                 <img src="assets/images/Dark_mode.svg"/>
             </div> -->
             <ion-label>Activate/Deactivate Passcode</ion-label>
+            
             <ion-toggle slot="end"></ion-toggle>
         </ion-item>
 
@@ -165,7 +164,9 @@ export default defineComponent({
   data(){
       return{
         styleClass:"",
-        isIpad:isPlatform('ipad')
+        isIpad:isPlatform('ipad'),
+        isDesktop: isPlatform('desktop'),
+        isMobile: isPlatform('mobile'),
     }
   }
 });

@@ -242,30 +242,31 @@
 </div>
 <!---------------Mobile Code--------------->
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="12" class="ion-padding-horizontal">
-            <div class="Page-header">
-                <div class="Page-Title">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                    <span class="title_top">Address Change</span>
-                </div>
-                <div class="TopHeader-icon">
-                    <ion-buttons class="menu-btn header-icon">
-                        <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-                    </ion-buttons>
+<ion-page>
+<ion-header class="header_am Mobo-header">
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+            <ion-col size="12" class="ion-padding-horizontal">
+                <div class="Page-header">
+                    <div class="Page-Title">
+                        <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                        <span class="title_top title_top_mobo">Address Change</span>
+                    </div>
+                    <div class="TopHeader-icon">
+                        <ion-buttons class="menu-btn header-icon">
+                            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                        </ion-buttons>
 
-                    <div class="search_icon header-icon">
-                        <img @click="()=>router.push('/preview')" src="assets/images/send_share.svg"/>
+                        <div class="search_icon header-icon">
+                            <img @click="()=>router.push('/preview')" src="assets/images/send_share.svg"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </ion-col>
-    </ion-row>
-  </ion-toolbar>
-  <div class="lock_unlock">
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+
+    <div class="lock_unlock">
         <ion-row>
             <ion-col size="6">
                 <div class="img_unloacks" @click="addclass($event)">
@@ -343,7 +344,7 @@
             </ion-col>
             <ion-col size="2"></ion-col>
             <ion-col size="5">
-                <div class="btn_ajj">
+                <div class="btn_ajj ion-text-right">
                     <ion-button shape="round" type="button" @click="() => router.push('/changesignature')">Adjust</ion-button>
                 </div>
             </ion-col>
@@ -376,10 +377,7 @@
             <ion-col size="4"></ion-col>
             <ion-col size="5">
                 <div class="mark_toggle">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                    </label>
+                    <ion-toggle slot="end"></ion-toggle>
                 </div>
             </ion-col>
         </ion-row>

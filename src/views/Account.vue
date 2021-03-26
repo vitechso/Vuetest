@@ -3,27 +3,26 @@
 <ion-page>
 <div v-if="isMobile">
 <ion-page>
-<ion-header class="header_am">
-    <ion-toolbar>
-        <ion-row class="ion-align-items-center">
-            <ion-col size="1">
-                <div class="ion-text-center">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="9">
-                <div class="ion-text-left">
-                    <span class="title_top">Account</span> 
-                </div>
-            </ion-col>
-            <ion-col size="2">
-                <ion-buttons>
-                    <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-                </ion-buttons>
-            </ion-col>
-        </ion-row>
-    </ion-toolbar>
+<ion-header class="header_am Mobo-header">
+  <ion-toolbar>
+      <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ion-padding-horizontal">
+              <div class="Page-header">
+                  <div class="Page-Title">
+                      <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                      <span class="title_top title_top_mobo">Account</span>
+                  </div>
+                  <div class="TopHeader-icon">
+                      <ion-buttons class="menu-btn header-icon">
+                          <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                      </ion-buttons>
+                  </div>
+              </div>
+          </ion-col>
+      </ion-row>
+  </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
         <div class="account_m">
@@ -36,7 +35,7 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
+            <ion-row class="mb-1">
                 <ion-col size="6">
                     <div class="upload">
                         <img src="assets/images/upload_icon.svg" /> <p><strong>Upload Picture</strong></p>
@@ -50,7 +49,7 @@
             </ion-row>
 
             <ion-row>
-                <ion-col size="12">
+                <ion-col size="12" class="ion-no-padding">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="Justin" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/normal_u41.svg"/></div>
@@ -85,14 +84,16 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
-                <ion-col size="6">
-                    <ion-button shape="round" class="ok_btn">Update</ion-button>
-                </ion-col>
-                <ion-col size="6">
-                    <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
+
+            <ion-row class="ion-justify-content-center ion-padding-top">
+                <ion-col size="12" class="ion-no-padding">
+                    <div class="BtnBlock">
+                        <ion-button shape="round" class="next_btn">Update</ion-button>
+                        <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="next_btn _gary-outline-btn">Cancel</ion-button>
+                    </div>
                 </ion-col>
             </ion-row>
+            
             <ion-row>
                 <ion-col size="12">
                     <p class="user_ids">User ID: MU-73993</p>

@@ -1,30 +1,27 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
-  <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-            <router-link to="/all-letters">
-                <img src="assets/images/back_btn.svg"/>
-            </router-link>
-            </div>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Settings</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-        <ion-buttons>
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar> 
+<ion-page>
+<ion-header class="header_am Mobo-header">
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center bar_c">
+            <ion-col size="12" class="ion-padding-horizontal">
+                <div class="Page-header">
+                    <div class="Page-Title">
+                        <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                        <span class="title_top title_top_mobo">Settings</span>
+                    </div>
+                    <div class="TopHeader-icon">
+                       <ion-buttons class="menu-btn header-icon">
+                            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                        </ion-buttons>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
             <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
@@ -120,6 +117,13 @@
                 <img src="assets/images/Dark_mode.svg"/>
             </div>
             <ion-label>Dark Mode</ion-label>
+
+            <!-- <div class="mark_toggle">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div> -->
             <ion-toggle @ionChange="changeTheme($event)"  id="themeToggle" slot="end"></ion-toggle>
         </ion-item>
 
@@ -128,7 +132,7 @@
                 <div class="suppoets">
                     <img src="assets/images/support_icon.svg"/>
                     <h3>Help & Support</h3>
-                    <ion-button shape="round" class="ok_btn">Logout</ion-button>
+                    <ion-button shape="round" class="next_btn">Logout</ion-button>
                     <p class="app_vers">App Version: 1879.2021</p>
                 </div>
             </ion-col>

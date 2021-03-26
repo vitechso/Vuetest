@@ -1,28 +1,25 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
+<ion-page>
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <router-link to="/all-letters">    
-                <div class="ion-text-center">
-                    <img src="assets/images/back_btn.svg"/>
-                </div>
-            </router-link>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-            <span class="title_top">Transaction History</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-         
-      </ion-col>
-    </ion-row>
+      <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ion-padding-horizontal">
+              <div class="Page-header">
+                  <div class="Page-Title">
+                      <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                      <span class="title_top title_top_mobo">Transaction History</span>
+                  </div>
+                  <div class="TopHeader-icon">
+                      
+                  </div>
+              </div>
+          </ion-col>
+      </ion-row>
   </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true" >
     <div id="container_fax">
         <div class="text_top ion-text-left ion-padding-top ion-padding-bottom">

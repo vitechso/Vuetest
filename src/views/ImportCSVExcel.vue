@@ -1,26 +1,25 @@
 <template>
 <ion-page>
 <div v-if="isMobile">
-<ion-page> 
-<ion-header class="header_am">
+<ion-page>
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
-    <ion-row class="ion-align-items-center">
-        <ion-col size="1">
-            <div class="ion-text-center">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-        </ion-col>
-      <ion-col size="9">
-        <div class="ion-text-left">
-          <span class="title_top">Import CSV/Excel</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-        
-      </ion-col>
-    </ion-row>
+      <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ion-padding-horizontal">
+              <div class="Page-header">
+                  <div class="Page-Title">
+                      <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                      <span class="title_top title_top_mobo">Import CSV/Excel</span>
+                  </div>
+                  <div class="TopHeader-icon">
+                      
+                  </div>
+              </div>
+          </ion-col>
+      </ion-row>
   </ion-toolbar>
 </ion-header>
+
   <ion-content :fullscreen="true" class="back_white">
     <div id="container_fax" class="ion-padding-end ion-padding-start fdfs upload-pdf-mobo">
 

@@ -2,7 +2,7 @@
 <ion-page>
 <div v-if="isMobile">
 <ion-page>
-<ion-header class="header_am">
+<ion-header class="header_am Mobo-header">
   <ion-toolbar>
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="12" class="ion-padding-horizontal">
@@ -12,7 +12,7 @@
             <ion-badge class="badgs">8</ion-badge>
           </div>
           <div class="TopHeader-icon">
-            <img src="assets/images/search.svg"/>
+            <img src="assets/images/search.svg" class="header-icon"/>
             <ion-buttons class="menu-btn header-icon">
               <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
             </ion-buttons>

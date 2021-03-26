@@ -84,7 +84,7 @@
         <img src="assets/images/logo.svg">
       </div>
         <div class="sign_with">
-          <h2>Sign In With Social</h2>
+          <h2>Sign in with</h2>
           <div class="social_icons">
             <ul>
               <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
@@ -133,7 +133,7 @@
       </div>
     </ion-content>
   </ion-page>
-  </div>
+</div>
 
 <div v-if="isDesktop">
   <ion-page class="logins_nms">

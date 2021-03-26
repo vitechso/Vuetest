@@ -83,8 +83,8 @@
 }
 
 ion-content {
-    --background: #f2f2f2;
-    background: #f2f2f2;
+    --background: #f7f7f7;
+    background: #f7f7f7;
     height: 100vh;
 }
 
@@ -106,6 +106,8 @@ a {
     height: 56px;
     font-weight: 600;
     text-transform: inherit;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    line-height: normal;
 }
 .swiper-pagination-bullet {
     width: 14px;
@@ -191,6 +193,7 @@ a {
     margin: auto;
     display: block;
     padding: 0px 20px;
+    font-size: 16px;
     color: #999;
     border: 1px solid #797979;
     background: transparent;
@@ -287,7 +290,7 @@ a {
     padding: 0 15px;
 }
 #container_fax {
-    padding: 0 10px;
+    padding: 0 11px;
 }
 #container {
     text-align: center;
@@ -492,6 +495,18 @@ ion-item {
     text-decoration: underline;
     cursor: pointer;
 }
+
+p.credit_bal {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #333333;
+}
+
+p.credit_bal strong {
+    font-weight: 800;
+    text-decoration: none;
+}
+
 .title_doc h3 {
     color: #333;
     font-size: 16px;
@@ -601,6 +616,11 @@ ion-item {
     background-color: #f1d000;
     width: 151px;
     font-size: 25px;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    line-height: normal;
 }
 .send_btn {
     float: right;
@@ -631,13 +651,18 @@ ion-item {
     margin: auto;
 }
 .btn_ajj ion-button {
-    width: 100%;
+    width: 145px;
     height: 38px;
     font-size: 18px;
     text-transform: capitalize;
     letter-spacing: normal;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
+}
+
+.change-s-block .btn_ajj ion-button {
+    font-size: 17px;
+    width: 100%;
 }
 
 .adjust-btn-desktop ion-button {
@@ -774,26 +799,42 @@ ion-item {
 .send_shares {
     border-radius: 15px;
     border: 1px solid #d7d7d7;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 125px;
 }
+
+.send_shares img {
+    width: 63px;
+    margin-right: 30px;
+}
+
 .text_share h3 {
     margin: 0;
     font-size: 23px;
     color: #333333;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    line-height: 36px;
 }
 .ion_btn_next {
     text-align: center;
 }
 .next_btn {
     width: 151px;
-    height: 55px;
+    height: 56px;
     font-size: 25px;
     text-transform: inherit;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
     letter-spacing: normal;
 }
+
+.next_btn_mobo {
+    width: 176px;
+}
+
 .search_icon {
     text-align: center;
     display: flex;
@@ -936,6 +977,12 @@ ion-segment {
     color: #333 !important;
     font-weight: 700;
 }
+
+.setting_bs ion-label {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-size: 19px !important;
+}
+
 .header_am {
     background: #f7f7f7;
 }
@@ -973,6 +1020,7 @@ ion-segment {
     display: flex;
     width: 30px;
     height: 30px;
+    margin-right: 15px;
 }
 .ens_sd {
     display: flex;
@@ -990,10 +1038,24 @@ ion-segment {
 .suppoets {
     text-align: center;
 }
+
+.suppoets h3 {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #333333;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.suppoets img {
+    margin-top: 15px;
+}
+
 .app_vers {
     margin-bottom: 0;
     font-size: 15px;
     color: #959595;
+    margin-top: 21px;
     font-family: 'Proxima Nova', sans-serif !important;
 }
 
@@ -1027,12 +1089,18 @@ p.red_c {
 .privacy_description h6 {
     margin: 0 0 5px;
     font-size: 17px;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
+    color: #333333;
+    line-height: 23px;
 }
 
 .privacy_description p {
     margin: 0;
     font-size: 17px;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #333333;
+    line-height: 25px;
 }
 
 .description-list-view {
@@ -1067,6 +1135,11 @@ p.red_c {
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
 }
+
+.upload p strong {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+}
+
 .pdd_b input::placeholder {
     color: #000;
     opacity: 0.35;
@@ -1083,9 +1156,12 @@ p.red_c {
     background: transparent;
 }
 .user_ids {
-    text-align: center;
+    font-size: 15px;
+    font-family: 'Proxima Nova', sans-serif !important;
     color: #959595;
-    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+    margin: 20px 0 0;
 }
 .pass_code {
     width: 40px;
@@ -1532,9 +1608,9 @@ span.popup_title {
     line-height: 34px;
 }
 
-.change_sign_ipad .signature-image-alert {
+.signature-image-alert {
     font-size: 15px;
-    margin: 6px 0;
+    margin: 5px 0 !important;
 }
 
 .chosse_ipad {
@@ -2607,6 +2683,7 @@ p.up_load_c {
 .BtnBlock {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .BtnBlock ion-button {
@@ -2618,7 +2695,7 @@ p.up_load_c {
     text-transform: capitalize;
     letter-spacing: normal;
     display: flex;
-    height: 55px;
+    height: 56px;
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -3091,6 +3168,18 @@ input:checked + .slider {
     margin-top: 70px !important;
 }
 
+.mt-3 {
+    margin-top: 30px !important;
+}
+
+.mb-1 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
 ion-checkbox::part(container) {
     border: 1px solid #aaaaaa;
     width: 24px;
@@ -3168,17 +3257,57 @@ ion-checkbox::part(container) {
 .menu-btn ion-menu-button {
     display: flex;
     width: 30px;
+    align-items: center;
+    height: 30px;
 }
 
 .menu-btn ion-menu-button::part(native) {
     padding: 0;
     display: flex;
     width: 30px;
+    border-radius: 0;
 }
 
 .mt-5 {
     margin-top: 50px !important;
 }
+
+.forgot-with h2 {
+    margin-bottom: 7px !important;
+}
+
+.forgot-with p {
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #6a6869 !important;
+    line-height: 24px !important;
+    margin-bottom: 28px !important;
+}
+
+.forgot-btn-info .sign_doens {
+    margin-top: 190px !important;
+}
+
+.change-s-block p {
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #959595;
+    line-height: 22px;
+}
+
+.change-s-block p strong {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #333333;
+    line-height: 24px;
+}
+
+.passcode-title {
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #333333;
+    font-size: 23px;
+}
+
 /* ios css */
 
 .ios .segment-button-checked::part(native) {
@@ -3197,10 +3326,63 @@ ion-checkbox::part(container) {
 .ios .mobo-segmnt {
     margin: 0;
 }
+.ios .toggle-checked::part(handle) {
+    transform: translateX(-5px);
+    background: #fff;
+}
 
 /* ios css */
 
+.ruler-line {
+    position: relative;
+}
 
+.ruler-line:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #797979;
+    left: -100px;
+    bottom: -8px;
+}
+
+/* toggle switch css */
+
+ion-toggle::part(track) {
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #d8d8d8;
+}
+
+ion-toggle {
+    padding: 0;
+    height: 40px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ion-toggle::part(handle) {
+    background: #fff;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+    box-shadow: none;
+}
+
+.toggle-checked::part(handle) {
+    transform: translateX(-12px);
+    background: #fff;
+}
+
+.toggle-checked::part(track) {
+    background: #f1d000;
+}
+
+/* toggle switch css */
 
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
@@ -3209,7 +3391,16 @@ ion-checkbox::part(container) {
     }
 }
 
+
 @media (max-width: 767.98px) {
+
+    .Mobo-header ion-toolbar {
+        height: 50px;
+        background: #f1d000;
+        display: flex;
+        align-items: center;
+    }
+
     span.title_top {
         font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
         font-weight: 700;
@@ -3222,6 +3413,10 @@ ion-checkbox::part(container) {
 
     .BtnBlock ion-button {
         margin: 0 5px;
+    }
+
+    .btn50 {
+        width: 47%;
     }
 
     .import_csv {
@@ -3296,6 +3491,10 @@ ion-checkbox::part(container) {
         height: 22px;
     }
 
+    input:checked + .slider:before {
+        transform: translate(34px, -50%);
+    }
+
     .board-icon .icon_bn {
         margin-right: 5px;
     }
@@ -3320,5 +3519,11 @@ ion-checkbox::part(container) {
         font-weight: 700;
         color: #333333;
         line-height: 23px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .sign_with h2 {
+        margin-bottom: 25px !important;
     }
 }

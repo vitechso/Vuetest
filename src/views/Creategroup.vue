@@ -4,24 +4,23 @@
 
 <div v-if="isMobile">
     <ion-page>
-        <ion-header class="header_am">
+        <ion-header class="header_am Mobo-header">
             <ion-toolbar>
-                <ion-row class="ion-align-items-center">
-                    <ion-col size="1">
-                            <div class="ion-text-center">
+                <ion-row class="ion-align-items-center bar_c">
+                    <ion-col size="12" class="ion-padding-horizontal">
+                        <div class="Page-header">
+                            <div class="Page-Title">
                                 <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                                <span class="title_top title_top_mobo">Create Group</span>
                             </div>
-                    </ion-col>
-
-                    <ion-col size="9">
-                        <div class="ion-text-left">
-                        <span class="title_top">Create Group</span> 
+                            <div class="TopHeader-icon">
+                                
+                            </div>
                         </div>
                     </ion-col>
-                
                 </ion-row>
             </ion-toolbar>
-
+            
             <ion-row class="ion-padding-top">
                 <ion-col size="12" class="ion-padding-start ion-padding-end">
                     <ion-searchbar placeholder="Group Name" class="ion-no-padding search_bts GroupSearch"></ion-searchbar>
@@ -170,8 +169,8 @@
                 <ion-row class="ion-justify-content-center contact-footer">
                     <ion-col size="12">
                         <div class="BtnBlock">
-                            <ion-button shape="round" class="MakeDefault-btn">Create Group</ion-button>
-                            <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                            <ion-button shape="round" class="MakeDefault-btn btn50">Create Group</ion-button>
+                            <ion-button shape="round" type="default" @click="()=>router.push('/choose-template')" class="MakeDefault-btn btn50 _gary-outline-btn">Cancel</ion-button>
                         </div>
                     </ion-col>
                 </ion-row>
