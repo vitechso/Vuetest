@@ -53,12 +53,12 @@
         <img src="assets/images/logo.svg">
       </div>
         <form @submit.prevent="handleLogin">
-        <div class="sign_with">
+        <div class="sign_with forgot-with">
           <h2>Forgot your password?</h2>
           <p>Confirm your email and we'll send the instructions to reset your password.</p>
         </div>
         
-      <div>
+      <div class="forgot-btn-info">
         <div lines="none" class="pdd_b">
           <input  v-model="form.username" type="text" id="username" placeholder="Email" class="user_nam" />
           <div class="icon_in"><img src="assets/images/mail.png"/></div>

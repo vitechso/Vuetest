@@ -1296,77 +1296,7 @@ p.red_c {
     padding-top: 30px;
 } */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    #container_ipad_regi .top_am {
-        margin-top: 5% !important;
-        margin-bottom: 5% !important;
-    }
-    #container_intro {
-        text-align: center;
-        width: 450px !important;
-        margin: auto;
-        overflow: hidden;
-        transform: translateY(0%) !important;
-    }
-    .pdd_b{
-        margin-bottom: 10px !important;
-    }
-    #container{
-        width: 550px;
-        margin: auto;
-    }
-    #container_01{
-        width: 550px;
-        margin: auto;
-    }
-    .user_nam{
-        height: 63px;
-    }
-    .icon_in{
-        top: 20px;
-    }
-    .sign_doens, .for_got a, #container p{
-        font-size: 22px;
-    }
-    .sign_ups{
-        height: 65px;
-        width: 176px;
-        font-size: 25px;
-    }
-    .sign_with h2{
-        font-size: 28px;
-    }
-    /* .pdd_b {
-        margin-top: 50px;
-    } */
-    /* .tow_part {
-        display: inline-block;
-        width: 100%;
-    } */
-    /* .tow_part .pdd_b {
-        width: 50%;
-        float: left;
-    } */
-    .ion_tabs .icon_in {
-        right: 30px;
-    }
-    .ion-p-end {
-        padding-right: 10px;
-    }
-    .ion-p-start {
-        padding-left: 10px;
-    }
-    .selects_ins ion-select{
-        height: 63px;
-    }
-    .header_am ion-toolbar {
-        height: 70px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
 
-}
 
 .segmnt ion-segment-button {
     height: 45px;
@@ -1849,7 +1779,7 @@ img.delete_print_btns_01 {
 #container_ipad .for_got a{
     font-size: 24px;
     font-family: 'Proxima Nova', sans-serif !important;
-    color: #333;
+    color: #6a6869;
     line-height: normal;
 }
 
@@ -1881,6 +1811,9 @@ img.delete_print_btns_01 {
     overflow: hidden;
     transform: translateY(0%);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container_ipad_regi .logo img {
@@ -1926,7 +1859,7 @@ img.delete_print_btns_01 {
 
 #container_forgot {
     text-align: center;
-    width: 700px;
+    width: 720px;
     margin: auto;
     overflow: hidden;
     transform: translateY(25%);
@@ -1944,13 +1877,11 @@ img.delete_print_btns_01 {
     width: 439px;
 }
 #container_forgot .icon_in{
-    right: 153px;
+    right: 165px;
     top: 20px;
 }
-#container_forgot .top_am{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+
+
 #container_forgot .sign_ups{
     height: 65px;
     width: 176px;
@@ -3522,8 +3453,77 @@ ion-toggle::part(handle) {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023.98px) {
-    .sign_with h2 {
-        margin-bottom: 25px !important;
+@media (min-width: 768px) and (max-width: 1366px) {
+    
+    #container_ipad_regi .top_am {
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
     }
+    #container_intro {
+        text-align: center;
+        width: 450px !important;
+        margin: auto;
+        overflow: hidden;
+        transform: translateY(0%) !important;
+    }
+    
+    #container{
+        width: 550px;
+        margin: auto;
+    }
+    #container_01{
+        width: 550px;
+        margin: auto;
+    }
+    .user_nam{
+        height: 63px;
+    }
+    .icon_in{
+        top: 20px;
+    }
+    .for_got a, #container p{
+        font-size: 22px !important;
+    }
+    .sign_ups{
+        height: 65px;
+        width: 176px;
+        font-size: 25px;
+    }
+    
+    .ion_tabs .icon_in {
+        right: 30px;
+    }
+    .ion-p-end {
+        padding-right: 10px;
+    }
+    .ion-p-start {
+        padding-left: 10px;
+    }
+    .selects_ins ion-select{
+        height: 63px;
+    }
+    .header_am ion-toolbar {
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #container_forgot .sign_with p {
+        margin: 0 0 50px;
+    }
+
+    .forgot-with h2 {
+        margin-bottom: 20px !important;
+    }
+
+    .forgot-btn-info .top_am {
+        margin-top: 68px;
+        margin-bottom: 0;
+    }
+
+    .forgot-btn-info .sign_doens {
+        margin-top: 80px !important;
+    }
+
 }

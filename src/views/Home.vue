@@ -117,7 +117,7 @@
         <div lines="none" class="pdd_b top_am">
           <ion-button type="submit" shape="round" class="sign_ups">Sign In</ion-button>
         </div>
-        <div lines="none" class="pdd_b">
+        <div lines="none" class="">
           <div class="for_got">
             <a @click="() => router.push('/forgot')">Forgot your password?</a>
           </div>
@@ -125,7 +125,7 @@
        <!-- <div v-if="invalid" class="error_mesg_invalid">
           <p>Invalid Email and Password</p>
         </div>-->
-         <div class="sign_doens pdd_b">
+         <div class="sign_doens">
             Don't have account <a @click="() => router.push('/register')">Sign Up ?</a>
           </div>
       </div>
