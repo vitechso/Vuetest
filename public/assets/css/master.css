@@ -120,9 +120,7 @@ a {
 .swiper-pagination-bullet-active {
     background: #5c5c5c!important;
 }
-.logo img{
-    display: block;
-}
+
 :focus{
     outline: none;
 }
@@ -159,14 +157,6 @@ a {
 .lin_d {
     background: #0674B0;
 }
-.sign_with h2 {
-    color: #333;
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 20px !important;
-    font-weight: 700;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
-}
 /* .main_self {
     display: flex;
     flex-direction: column;
@@ -178,32 +168,7 @@ a {
 /* ion-header {
     display: none;
 } */
-.or h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px !important;
-    font-weight: 700;
-    margin-top: 30px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
-}
-.user_nam {
-    width: 100%;
-    height: 50px;
-    border-radius: 30px;
-    margin: auto;
-    display: block;
-    padding: 0px 20px;
-    font-size: 16px;
-    color: #999;
-    border: 1px solid #797979;
-    background: transparent;
-    font-family: 'Proxima Nova', sans-serif !important;
-    transition: all 0.1s ease-in-out;
-}
 
-.user_nam:focus {
-    box-shadow: 0 0 0px 1px #797979;
-}
 
 .mobile-login-form .pdd_b {
     margin-bottom: 16px;
@@ -218,35 +183,8 @@ a {
     --background: #F1D000 !important;
     --box-shadow: none;
 }
-.icon_in {
-    position: absolute;
-    right: 20px;
-    top: 13px;
-    display: flex;
-}
-.sign_ups {
-    display: block;
-    margin: auto;
-    text-align: center;
-    color: #fff !important;
-    height: 56px;
-    width: 151px;
-    font-size: 25px;
-    box-shadow: none;
-    text-transform: inherit;
-    font-weight: 600;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
-    letter-spacing: normal;
-}
-.for_got {
-    text-align: center;
-    margin: auto;
-}
-.for_got a {
-    color: #6a6869;
-    font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif !important;
-}
+
+
 
 .sign_doens {
     text-align: center;
@@ -272,17 +210,6 @@ a {
 .top_am {
     margin-top: 40px;
     margin-bottom: 20px;
-}
-
-#mobo-container {
-    text-align: center;
-    padding: 20px 20px 30px;
-    display: flex;
-    align-items: center;
-}
-
-.login-Info-box {
-    width: 100%;
 }
 
 #container_01 {
@@ -3315,6 +3242,159 @@ ion-toggle::part(handle) {
 
 /* toggle switch css */
 
+
+/* login page css */
+
+.login-container {
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.login-Info-box .logo {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    display: block;
+}
+
+.sign_with {
+    margin-bottom: 30px;
+}
+
+.sign_with h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px !important;
+    font-weight: 700;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+}
+
+.or h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px !important;
+    font-weight: 700;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+}
+
+.inputs-group {
+    margin-bottom: 15px;
+}
+
+.inputs-icon-group {
+    position: relative;
+}
+
+.user_nam {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #999;
+    border: 1px solid #797979;
+    background: transparent;
+    font-family: 'Proxima Nova', sans-serif !important;
+    transition: all 0.1s ease-in-out;
+}
+
+.user_nam:focus {
+    box-shadow: 0 0 0px 1px #797979;
+}
+
+.icon_in {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    display: flex;
+    transform: translateY(-50%);
+}
+
+.Login-btn-box {
+    margin: 40px 0 40px;
+}
+
+#Login-page .Login-btn-box {
+    margin: 40px 0 100px;
+}
+
+.sign_ups {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #fff !important;
+    height: 56px;
+    width: 151px;
+    font-size: 25px;
+    box-shadow: none;
+    text-transform: inherit;
+    font-weight: 600;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    letter-spacing: normal;
+}
+
+.for_got {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.for_got a {
+    color: #6a6869;
+    font-size: 18px;
+    font-family: 'Proxima Nova', sans-serif !important;
+}
+
+.have-accout-box h5 a {
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #f1d000;
+}
+.have-accout-box h5 {
+    font-family: 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    color: #333333;
+    line-height: normal;
+    font-size: 19px;
+}
+
+#forgot-page {
+    padding: 0 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_with p {
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #6a6869;
+    text-align: center;
+    line-height: 24px;
+    font-size: 17px;
+    margin: 0;
+}
+
+#forgot-page .mobile-login-form {
+    width: 440px;
+    margin: auto;
+}
+
+
+.login-Info-box {
+    width: 100%;
+}
+
+#forgot-page .login-Info-box {
+    width: 720px;
+}
+
+/* login page css */
+
+
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
         width: 100%;
@@ -3324,13 +3404,6 @@ ion-toggle::part(handle) {
 
 
 @media (max-width: 767.98px) {
-
-    /* .Mobo-header ion-toolbar {
-        height: 50px;
-        background: #f1d000;
-        display: flex;
-        align-items: center;
-    } */
 
     span.title_top {
         font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
@@ -3451,14 +3524,74 @@ ion-toggle::part(handle) {
         color: #333333;
         line-height: 23px;
     }
+
+    #forgot-page .login-Info-box {
+        width: 100%;
+    }
+
+    #forgot-page .mobile-login-form {
+        width: 100%;
+        margin: auto;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1366px) {
-    
-    #container_ipad_regi .top_am {
-        margin-top: 5% !important;
-        margin-bottom: 5% !important;
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    #forgot-page .login-Info-box {
+        width: 600px;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #Login-page {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Login-page .Login-btn-box {
+        margin: 40px 0 40px;
+    }
+
+    #signup-page {
+        display: flex;
+        justify-content: center;
+    }
+
+    #signup-page .Login-btn-box {
+        margin: 40px 0 100px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+    
+    #Login-page .login-Info-box {
+        width: 440px;
+    }
+
+    #signup-page .login-Info-box {
+        width: 800px;
+    }
+
+    .sign_with h2, .or h2 {
+        font-size: 28px;
+    }
+
+    .for_got a {
+        font-size: 22px;
+    }
+
+    .have-accout-box h5 {
+        font-size: 24px;
+    }
+
+    .inputs-group {
+        margin-bottom: 20px;
+    }
+
     #container_intro {
         text-align: center;
         width: 450px !important;
@@ -3477,13 +3610,9 @@ ion-toggle::part(handle) {
     }
     .user_nam{
         height: 63px;
+        font-size: 22px;
     }
-    .icon_in{
-        top: 20px;
-    }
-    .for_got a, #container p{
-        font-size: 22px !important;
-    }
+    
     .sign_ups{
         height: 65px;
         width: 176px;
@@ -3524,6 +3653,76 @@ ion-toggle::part(handle) {
 
     .forgot-btn-info .sign_doens {
         margin-top: 80px !important;
+    }
+
+    .logo img {
+        width: 520px;
+    }
+
+    .sign_with p {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 1366px)  {
+
+    #Login-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Login-page .login-Info-box {
+        width: 440px;
+    }
+
+    #signup-page .login-Info-box {
+        width: 900px;
+    }
+
+    #forgot-page .login-Info-box {
+        width: 720px;
+    }
+
+    #signup-page {
+        display: flex;
+        justify-content: center;
+    }
+
+    #signup-page .Login-btn-box {
+        margin: 40px 0 100px;
+    }
+
+    
+
+    .sign_with h2, .or h2 {
+        font-size: 28px;
+    }
+
+    .for_got a {
+        font-size: 22px;
+    }
+
+    .have-accout-box h5 {
+        font-size: 24px;
+    }
+
+    .inputs-group {
+        margin-bottom: 20px;
+    }
+
+    .user_nam{
+        height: 63px;
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 520px;
+    }
+
+    .sign_with p {
+        font-size: 22px;
     }
 
 }
