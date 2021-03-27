@@ -3325,12 +3325,12 @@ ion-toggle::part(handle) {
 
 @media (max-width: 767.98px) {
 
-    .Mobo-header ion-toolbar {
+    /* .Mobo-header ion-toolbar {
         height: 50px;
         background: #f1d000;
         display: flex;
         align-items: center;
-    }
+    } */
 
     span.title_top {
         font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
