@@ -7,7 +7,7 @@
         <div class="login-Info-box">     
           <form @submit.prevent="handleLogin">
             <div class="drak_mode">
-              <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+              <img class="w-100" src="assets/images/darklogo.svg"/>
             </div>
 
             <div class="logo">
@@ -84,7 +84,7 @@
         <div class="login-Info-box">     
           <form @submit.prevent="handleLogin">
             <div class="drak_mode">
-              <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+              <img class="w-100" src="assets/images/darklogo.svg"/>
             </div>
 
             <div class="logo">
@@ -172,7 +172,7 @@
         <div class="login-Info-box">     
           <form @submit.prevent="handleLogin">
             <div class="drak_mode">
-              <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+              <img class="w-100" src="assets/images/darklogo.svg"/>
             </div>
 
             <div class="logo">

@@ -11,7 +11,8 @@
 .dark h4,
 .dark h5,
 .dark h6,
-.dark a {
+.dark a,
+.dark strong {
     color: #fff;
 }
 
@@ -150,7 +151,7 @@ body.dark {
     color: #959595;
 }
 .dark .alert-radio-label{
-    color: #fff !important;
+    color: #fff;
 }
 .dark .lock_unlock{
     border: 1px solid #4a4a4a;
@@ -176,9 +177,15 @@ body.dark {
 .dark .innerr_b p {
     color: #333;
 }
-.dark .privew_r p {
+.dark .privew_r p,
+.dark .privew_r p strong {
     color: #333;
 }
+
+.dark .pages_of p {
+    color: #fff;
+}
+
 .dark .sincerely p {
     color: #333;
 }
@@ -196,6 +203,16 @@ body.dark {
 .dark .send_shares{
     background: #333333;
 }
+
+.dark .send_shares {
+    border-color: #797979;
+}
+
+.dark .active-type {
+    box-shadow: 0 0 0 1px #f1d000;
+    border-color: #f1d000;
+}
+
 .dark .fax_box {
     background: #333;
     border-color: #4a4a4a;
@@ -269,4 +286,67 @@ ion-backdrop {
 
 .dark ion-segment {
     border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .Form-subject p {
+    color: #bbb !important;
+}
+
+.dark .Form-subject-row {
+    border-bottom: 1px solid #333;
+}
+
+
+.dark .contact_name_list ion-list {
+    background: #333 !important;
+}
+
+.dark .contact-footer {
+    background: #111;
+}
+
+.dark p.red_c {
+    color: #ff5f57 !important;
+}
+
+.dark .green_p {
+    color: #29c83f !important;
+}
+
+.dark .inner_history_details {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark #container_write h5 {
+    color: #fff;
+}
+
+.dark .row_01 p strong {
+    color: #fff;
+}
+
+.dark .mobo-sitebar ion-item.active {
+    --background: #797979;
+}
+
+.dark .user_name_email .email {
+    color: #bbbbbb;
+}
+
+.dark .change-s-block p strong {
+    color: #fff; 
+}
+
+.dark .change-s-block p {
+    color: #bbb;  
+}
+
+.dark .upload-pdf-mobo .pdf_icons img {
+    filter: brightness(100);
+}
+
+@media (max-width: 767.98px) {
+    .dark .ion-overlay-wrapper {
+        background: #333;
+    }
 }

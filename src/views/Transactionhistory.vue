@@ -103,7 +103,7 @@
                         <p><strong>Cost:</strong></p>
                     </ion-col>
                     <ion-col size="8">
-                        <p class="red_c">+ €20.00</p>
+                        <p class="green_p">+ €20.00</p>
                     </ion-col>
                 </ion-row>
                 <ion-row class="row_01">

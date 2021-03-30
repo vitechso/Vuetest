@@ -268,7 +268,7 @@
 
     <div class="lock_unlock">
         <ion-row>
-            <ion-col size="6">
+            <ion-col size="2">
                 <div class="img_unloacks" @click="addclass($event)">
                     <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
                     <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
@@ -280,7 +280,7 @@
   <ion-content :fullscreen="true" >
     <div :class="styleClass" id="container_write" class="">
         <ion-row class="Form-subject-row">
-            <ion-col size="12" class="pr-0">
+            <ion-col size="12">
                 <div class="Form-subject-block">
                     <div class="Form-subject">
                         <h5>From</h5>
@@ -295,7 +295,7 @@
         </ion-row>
 
         <ion-row class="Form-subject-row">
-            <ion-col size="12" class="pr-0">
+            <ion-col size="12">
                 <div class="Form-subject-block">
                     <div class="Form-subject">
                         <h5>To</h5>
@@ -389,7 +389,7 @@
         <ion-row>
             <ion-col size="12" class="ion-no-padding">
                 <div class="board-icon">
-                    <div class="board-left">
+                    <div :class="styleClass!=''?'hideBottom':''" class="board-left">
                         <div class="icon_bn icon-hover">
                             <img src="assets/images/bold.svg"/>
                         </div>
