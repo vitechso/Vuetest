@@ -18,7 +18,7 @@
         </ion-row>
     </ion-toolbar>
 
-    <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt mobo-segmnt">
+    <ion-segment mode="ios" value="contacts" @ionChange="segmentChanged($event)" class="segmnt mobo-segmnt">
         <ion-segment-button value="contacts" >
             <ion-label>Contacts</ion-label>
         </ion-segment-button>
