@@ -802,7 +802,7 @@ ion-row.top_menu_sl ion-col {
 }
 
 .kdh img {
-    width: 70%;
+    width: 80%;
 }
 .icon_menus img {
     width: 28px;
@@ -3569,14 +3569,6 @@ ion-toggle::part(handle) {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    #Login-page {
-        height: 100vh;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     #Login-page .Login-btn-box {
         margin: 40px 0 40px;
     }
@@ -3593,6 +3585,14 @@ ion-toggle::part(handle) {
 }
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
+
+    #Login-page {
+        height: 100vh;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     #Login-page .login-Info-box {
         width: 440px;
@@ -3644,6 +3644,7 @@ ion-toggle::part(handle) {
         width: 176px;
         font-size: 25px;
     }
+
     
     .ion_tabs .icon_in {
         right: 30px;
@@ -3691,11 +3692,10 @@ ion-toggle::part(handle) {
 
 }
 
-@media (min-width: 1366px)  {
+@media only screen and (min-width: 1366px)  {
 
     #Login-page {
         display: flex;
-        align-items: center;
         justify-content: center;
     }
     

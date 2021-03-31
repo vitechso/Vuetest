@@ -2,10 +2,10 @@
   <ion-app v-if="isMobile" class="mobile_menus">
 
   <ion-menu side="start" menu-id="first" content-id="main">
-    <ion-row class="top_menu_sl ion-padding ion-margin-top">
+    <ion-row class="top_menu_sl ion-padding mt-4">
       <ion-col size="10" class="ion-no-padding">
         <div class="drak_mode">
-          <img class="w-100" src="assets/images/darklogo.svg"/>
+          <img class="" src="assets/images/darklogo.svg"/>
         </div>
         <div class="kdh">
           <img src="assets/images/logo.svg"/>

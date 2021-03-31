@@ -89,7 +89,7 @@ body.dark {
     filter: brightness(50);
 }
 .drak_mode img{
-    width: 70%;
+    width: 80%;
 }
 .dark .kdh {
     display: none;
@@ -343,6 +343,14 @@ ion-backdrop {
 
 .dark .upload-pdf-mobo .pdf_icons img {
     filter: brightness(100);
+}
+
+.dark .mobo-segmnt ion-label {
+    color: #fff;  
+}
+
+.dark .segment-button-checked ion-label {
+    color: #f1d000;
 }
 
 @media (max-width: 767.98px) {

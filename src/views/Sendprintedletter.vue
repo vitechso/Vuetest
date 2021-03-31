@@ -52,7 +52,7 @@
                         <p><strong>Cost:</strong></p>
                     </ion-col>
                     <ion-col size="8">
-                        <p>€0.50</p>
+                        <p class="green_p">€0.50</p>
                     </ion-col>
                 </ion-row>
                 <ion-row class="row_01">
@@ -88,7 +88,7 @@
                         <p><strong>Cost:</strong></p>
                     </ion-col>
                     <ion-col size="8">
-                        <p>€0.50</p>
+                        <p class="red_c">-€0.50</p>
                     </ion-col>
                 </ion-row>
                 <ion-row class="row_01">
@@ -125,7 +125,7 @@
                         <p><strong>Cost:</strong></p>
                     </ion-col>
                     <ion-col size="8">
-                        <p>€0.50</p>
+                        <p class="green_p">€0.50</p>
                     </ion-col>
                 </ion-row>
                 <ion-row class="row_01">
