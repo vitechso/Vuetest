@@ -844,6 +844,10 @@ ion-row.top_menu_sl ion-col {
     align-items: center;
 }
 
+.sitemenu-bottom-block .user_name_email {
+    width: calc(100% - 81px);
+}
+
 .user_short_name {
     width: 57px;
     height: 57px;
