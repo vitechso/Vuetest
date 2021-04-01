@@ -18,12 +18,12 @@
         </ion-row>
     </ion-toolbar>
 
-    <ion-segment mode="ios" swipe-gesture="true" value="contacts" @ionChange="segmentChanged($event)" class="segmnt mobo-segmnt">
-        <ion-segment-button value="contacts" >
+    <ion-segment  value="contacts"  class="segmnt mobo-segmnt">
+        <ion-segment-button @click="segmentChangedDesktop('contacts')" value="contacts" >
             <ion-label>Contacts</ion-label>
         </ion-segment-button>
 
-        <ion-segment-button value="groups">
+        <ion-segment-button @click="segmentChangedDesktop('groups')" value="groups">
             <ion-label>Groups</ion-label>
         </ion-segment-button>
     </ion-segment>
@@ -321,11 +321,11 @@
     </ion-row>
         </ion-toolbar>
 
-          <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt">
-    <ion-segment-button value="contacts" >
-      <ion-label>Contacts</ion-label>
+          <ion-segment value="contacts" class="segmnt">
+    <ion-segment-button value="contacts" @click="segmentChangedDesktop('contacts')">
+      <ion-label>Contacts</ion-label> 
     </ion-segment-button>
-    <ion-segment-button value="groups">
+    <ion-segment-button value="groups" @click="segmentChangedDesktop('groups')">
       <ion-label>Groups</ion-label>
     </ion-segment-button>
   </ion-segment>
@@ -664,12 +664,12 @@
             </ion-row>
         </ion-toolbar>
 
-        <ion-segment value="contacts" @ionChange="segmentChanged($event)" class="segmnt desktop-segmnt">
-            <ion-segment-button value="contacts" >
+        <ion-segment value="contacts"  class="segmnt desktop-segmnt">
+            <ion-segment-button @click="segmentChangedDesktop('contacts')" value="contacts" >
                 <ion-label>Contacts</ion-label>
             </ion-segment-button>
 
-            <ion-segment-button value="groups">
+            <ion-segment-button @click="segmentChangedDesktop('groups')"  value="groups">
                 <ion-label>Groups</ion-label>
             </ion-segment-button>
         </ion-segment>
@@ -1099,6 +1099,11 @@ export default defineComponent({
     segmentChanged(ev: CustomEvent) {
       console.log('Segment changed', ev.detail.value);
       this.$data.selectedSegment = ev.detail.value;
+    },
+
+    segmentChangedDesktop(ev: any) {
+     // console.log('Segment changed gvdfgdf', ev.detail.value);
+      this.$data.selectedSegment = ev;
     },
 
     async excel() {
