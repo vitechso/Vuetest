@@ -386,17 +386,17 @@
     </div>
     <div class="back_fooipad">
         <ion-row>
-            <ion-col size="1">
+            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
                 <div class="icon_bn">
                     <img src="assets/images/bold.svg"/>
                 </div>
             </ion-col>
-            <ion-col size="1">
+            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
                 <div class="icon_bn">
                     <img src="assets/images/itelic.svg"/>
                 </div>
             </ion-col>
-            <ion-col size="1">
+            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
                 <div class="icon_bn">
                     <img src="assets/images/underline.svg"/>
                 </div>

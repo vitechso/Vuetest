@@ -92,9 +92,9 @@
     <div id="container_fax" class="ion-top_padds">
 
     <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/sendprintedletter')}">
+        <ion-col size="4" @click="selected('sendprint')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='sendprint'?'active-type':''">
                     <img src="assets/images/yellow_print.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -103,9 +103,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/sendfax')}">
+        <ion-col size="4" @click="selected('sendfax')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='sendfax'?'active-type':''">
                     <img src="assets/images/yellow_fax.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -114,9 +114,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4" @click="selected('pdf')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='pdf'?'active-type':''">
                     <img src="assets/images/yellow_pdf.svg" />
                 </div>
 
@@ -130,7 +130,7 @@
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12">
             <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Next</ion-button>
+                <ion-button @click="nextMobile()" :class="isDisabled?'_gary-outline-btn':'md button button-round button-solid ion-activatable ion-focusable hydrated'" :disabled='isDisabled' shape="round" class="next_btn next_btn_mobo ">Next</ion-button>
             </div>
         </ion-col>
     </ion-row>
@@ -289,9 +289,11 @@ export default defineComponent({
     nextMobile(){
         
         if(this.type == 'sendprint'){
+            modalController.dismiss()
             this.router.push('/sendprintedletter')
         }
         if(this.type == 'sendfax'){
+            modalController.dismiss()
             this.router.push('/sendfax')
         }
     },

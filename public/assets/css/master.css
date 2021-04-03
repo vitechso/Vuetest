@@ -308,9 +308,9 @@ ion-list {
 }
 ion-item {
     background: transparent !important;
-    --background: transparent;
-    --ripple-color: transparent;
-    --background-hover: transparent;
+    --background: transparent !important;
+    --ripple-color: transparent !important;
+    --background-hover: transparent !important;
 }
 
 .mobo-letter-list .texts_letts h3 {
@@ -675,12 +675,15 @@ p.credit_bal strong {
 .mail_deta {
     padding-top: 25px;
 }
+.foo_bottom {
+    border-top: 1px solid #E2E4E6;
+}
 .privew_r p {
     margin: 0;
     color: #333;
     font-size: 17px;
     font-family: 'Proxima Nova', sans-serif !important;
-    line-height: 23px;
+    line-height: 30px;
 }
 
 .pages_of p {
@@ -1554,10 +1557,11 @@ span.popup_title {
     align-items: center;
 }
 .bars_hms .ins_han {
-    width: 50px;
+    /* width: 50px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 15px;
 }
 .ins_han img {
     display: flex;
@@ -3239,6 +3243,19 @@ ion-checkbox::part(container) {
 }
 
 /* ios css */
+.ruler-line_tab {
+    position: relative;
+}
+
+.ruler-line_tab:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #797979;
+    left: -100px;
+    bottom: 8px;
+}
 
 .ruler-line {
     position: relative;
@@ -3815,4 +3832,7 @@ ion-toggle::part(handle) {
 }
 .raduis{
     border-radius: 30px;
+}
+.border_tabs{
+    border-bottom: 1px solid #E2E4E6;
 }
