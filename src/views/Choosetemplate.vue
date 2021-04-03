@@ -322,7 +322,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController, IonRow, IonCol  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -335,7 +335,10 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButtons,
-    IonMenuButton
+    IonMenuButton,
+    IonRow,
+    IonCol,
+    
   },
   setup() {
       const router = useRouter();
@@ -368,7 +371,3 @@ export default defineComponent({
   }
 });
 </script>
-
-<style scoped>
-
-</style>
