@@ -108,7 +108,7 @@
 <div v-if="isIpad">
 <ion-page>
     <ion-header class="header_am">
-  <ion-toolbar class="">
+  <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center">
       <ion-col size="4" class="bars_hms">
         <div class="ion-text-center ins_han">
