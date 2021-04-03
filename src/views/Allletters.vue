@@ -9,7 +9,7 @@
         <div class="Page-header">
           <div class="Page-Title">
             <span class="title_top title_top_mobo">All Letters</span>
-            <ion-badge class="badgs">8</ion-badge>
+            <ion-badge class="badgs raduis">8</ion-badge>
           </div>
           <div class="TopHeader-icon">
             <img src="assets/images/search.svg" class="header-icon"/>

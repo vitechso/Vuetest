@@ -149,7 +149,7 @@
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform, modalController  } from '@ionic/vue';
+import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform,getPlatforms, modalController  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { Plugins } from '@capacitor/core';
@@ -213,9 +213,10 @@ SplashScreen.show({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-          isMobile: isPlatform('mobile'),
-          isDesktop:isPlatform('desktop')
+         isDesktop: isPlatform('desktop'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
+      
       }
   },
 });

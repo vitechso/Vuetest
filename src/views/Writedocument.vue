@@ -816,9 +816,10 @@ export default defineComponent({
     IonLabel,
     IonItem
   },
+
+  
   setup() {
       const router = useRouter();
-      console.log(isPlatform('tablet'),isPlatform('mobile'),isPlatform('desktop'),getPlatforms())
       return { router, add };
   },
   data() {
@@ -862,7 +863,6 @@ export default defineComponent({
      },
 
      async openModal() {
-         modalController.dismiss()
       const modal = await modalController.create({
           component: Changesignature,
           cssClass: 'choosetem',
@@ -870,7 +870,7 @@ export default defineComponent({
             title: 'New Title'
           },
         })
-      return modal.present();
+      return await  modal.present();
     },
 
 

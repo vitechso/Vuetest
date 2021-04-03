@@ -346,7 +346,7 @@ ion-item {
     color: #333;
     margin-bottom: 5px;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
-    font-weight: 600;
+    font-weight: revert;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -3812,4 +3812,7 @@ ion-toggle::part(handle) {
 }
 .padd_mobils ion-row{
     padding-left: 10px;
+}
+.raduis{
+    border-radius: 30px;
 }
