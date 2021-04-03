@@ -169,7 +169,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController   } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController, getPlatforms   } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Selectsendtype from './Selectsendtype.vue'
@@ -190,8 +190,8 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
