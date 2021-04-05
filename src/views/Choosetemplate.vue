@@ -123,7 +123,7 @@
         </div>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -131,7 +131,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
+            <ion-col size="4"  class="ion-padding" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -140,7 +140,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -151,7 +151,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -159,7 +159,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -168,7 +168,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -179,7 +179,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -187,7 +187,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -196,7 +196,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>

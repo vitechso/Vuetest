@@ -217,7 +217,7 @@ a {
     padding: 0 15px;
 }
 #container_fax {
-    padding: 0 11px;
+    padding: 0 20px;
 }
 #container {
     text-align: center;
@@ -290,7 +290,7 @@ span.title_top {
     width: 45px;
     height: 35px;
     opacity: 0.7;
-    border-radius: 10px;
+    border-radius: 55px;
     background-color: #ffffff;
     text-align: center;
     line-height: normal;
@@ -357,12 +357,12 @@ ion-item {
     margin: 0;
     font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 24px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    /* padding-right: 50px; */
+    padding-right: 55px;
 }
 
 .letter_pic {
@@ -1275,10 +1275,17 @@ ion-row.top_menu_sl.ios {
 .right_ipad {
     float: right;
 }
+
 .edit_icon {
     display: flex;
     padding-right: 15px;
 }
+
+.ipad-header .edit_icon {
+    display: flex;
+    padding-right: 0;
+}
+
 .ipad_flx {
     display: flex;
     align-items: center;
@@ -1290,7 +1297,6 @@ ion-row.top_menu_sl.ios {
     justify-content: center;
     background: #fff;
     padding: 70px;
-    border-left: 1px solid #e2e4e6;
 }
 .ipad_h {
     height: 100%;
@@ -1339,7 +1345,7 @@ span.popup_title {
     cursor: pointer;
 }
 .ipad_topbar ion-toolbar {
-    height: 64px;
+    height: 69px;
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -1351,7 +1357,7 @@ span.popup_title {
     /* --height: 700px; */
 }
 .ipad_docs .doc{
-    width: 263px;
+    width: 100%;
     height: 288px;
     margin: auto;
     cursor: pointer;
@@ -1379,24 +1385,26 @@ span.popup_title {
     line-height: 30px;
 }
 .back_fooipad {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    width: 75%;
+    width: 100%;
     z-index: 111;
     background: #f2f2f2;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 12px;
 }
 .ion-padds-l {
     padding-left: 15px;
 }
-.ipad_cols:after {
+
+.left-header:after {
     position: absolute;
     content: '';
-    height: 100%;
+    height: 200%;
     width: 1px;
     background: #fff;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .ipad_borders {
     border-left: 1px solid #e2e4e6;
@@ -1412,13 +1420,18 @@ span.popup_title {
     width: 25px;
 }
 .search_bar ion-searchbar {
-    padding: 0;
-    --border-radius: 30px;
-    border-radius: 30px;
+    padding: 0 10px;
     margin: 0;
     line-height: 0;
-    height: 35px;
+    height: 37px;
+    border-radius: 35px;
+    border: 1px solid #c8c8c8;
 }
+
+.search_bar input {
+    background-color: #f9f9f9 !important;
+}
+
 .s_bar {
     height: 55px;
     display: flex;
@@ -1631,6 +1644,7 @@ img.delete_print_btns {
 img.delete_print_btns_01 {
     margin-left: 25px;
     width: 40px;
+    height: 35px;
 }
 .fill_colortotal {
     background: #f2f2f2;
@@ -1958,6 +1972,13 @@ img.delete_print_btns_01 {
 .hnas_ipads .ens_sd img {
     width: 15px;
 }
+
+.send-fax-btn ion-button {
+    width: 176px;
+    height: 65px;
+    margin: 0 !important;
+}
+
 p.font_sels {
     font-size: 20px;
     color: #959595;
@@ -2504,7 +2525,7 @@ p.up_load_c {
     justify-content: space-between;
 }
 .desk_top_fless p {
-    margin: 0;
+    margin: 10px 0;
     color: #333;
     font-size: 25px;
 }
@@ -2757,6 +2778,8 @@ img.paypal-logo {
     justify-content: center;
     display: flex;
     align-items: center;
+    position: relative;
+    right: -5px;
 }
 
 .contact_book-desk img {
@@ -2778,16 +2801,18 @@ img.paypal-logo {
     background-color: #f9f9f9;
     height: auto;
     transition: all 0.3s ease-in-out;
+    border-right: 1px solid #e2e4e6;
 }
 
 
 .right-content-box {
     width: calc(100% - 368px);
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .welcome_desktop {
-    height: calc(100vh - 48px);
+    height: calc(100vh - 70px);
 }
 
 .lettes_desk .texts_letts {
@@ -2969,12 +2994,11 @@ input:checked + .slider {
 }
 
 .Form-subject-container {
-    margin: 0 -10px;
+    
 }
 
 .Form-subject-row {
     border-bottom: 1px solid #e2e4e6;
-    padding: 0px 10px;
     height: 55px;
     display: flex;
     align-items: center;
@@ -2997,6 +3021,14 @@ input:checked + .slider {
     min-width: 105px;
 }
 
+.Form-subject._Full {
+    width: 100%;
+}
+
+.Form-subject._Full h5 {
+    min-width: 120px;
+}
+
 .Form-subject p {
     font-size: 20px;
     font-family: 'Proxima Nova', sans-serif !important;
@@ -3010,6 +3042,11 @@ input:checked + .slider {
 .pr-0 {
     padding-right: 0;
 }
+
+.pl-0 {
+    padding-left: 0;
+}
+
 .CG-title-row {
     padding: 30px 0 15px;
 }
@@ -3155,7 +3192,7 @@ ion-checkbox::part(container) {
 }
 
 .TopHeader-icon .header-icon {
-    margin-left: 20px;
+    margin: 0 0 0 20px;
 }
 
 .menu-btn ion-menu-button {
@@ -3523,6 +3560,59 @@ ion-toggle::part(handle) {
     overflow: hidden;
 }
 
+.text_colortabs {
+    color: #959595;
+}
+.padd_mobils ion-row{
+    padding-left: 10px;
+}
+
+.raduis{
+    border-radius: 30px;
+}
+
+.border_tabs{
+    border-bottom: 1px solid #E2E4E6;
+}
+
+.ipad-header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    align-items: center;
+}
+
+.ipad-header .left-header {
+    width: 368px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.right-header {
+    width: calc(100% - 368px);
+}
+
+.board-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.board-center .icon_bn {
+    margin: 0;
+}
+.dlt-icon {
+    width: 22px;
+}
+
+.letter-heading {
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 33px !important;
+}
 
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
@@ -3633,21 +3723,6 @@ ion-toggle::part(handle) {
         margin-right: 5px;
     }
 
-    .board-center {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        top: 50%;
-    }
-
-    .board-center .icon_bn {
-        margin: 0;
-    }
-
-    .dlt-icon {
-        width: 22px;
-    }
-
     .row_01 p strong {
         font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
         font-weight: 700;
@@ -3689,6 +3764,10 @@ ion-toggle::part(handle) {
         padding: 0;
         margin: 10px 0;
     }
+
+    #container_fax {
+        padding: 0 15px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -3709,6 +3788,10 @@ ion-toggle::part(handle) {
 
     #signup-page .Login-btn-box {
         margin: 40px 0 100px;
+    }
+
+    .choosetem .modal-wrapper {
+        width: 90%;
     }
     
 }
@@ -3752,10 +3835,7 @@ ion-toggle::part(handle) {
         width: 550px;
         margin: auto;
     }
-    #container_01{
-        width: 550px;
-        margin: auto;
-    }
+    
     .user_nam{
         height: 63px;
         font-size: 22px;
@@ -3785,6 +3865,7 @@ ion-toggle::part(handle) {
         align-items: center;
         justify-content: center;
         display: flex;
+        padding: 0;
     }
 
     #container_forgot .sign_with p {
@@ -3812,6 +3893,71 @@ ion-toggle::part(handle) {
         font-size: 22px;
     }
 
+    .title_doc h3 {
+        margin: 20px 0;
+    }
+
+    .lock_unlock {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #container_write {
+        padding: 0px 15px 55px 20px;
+    }
+
+    ion-toggle::part(track) {
+        height: 38px;
+        width: 80px;
+    }
+
+    ion-toggle::part(handle) {
+        width: 26px;
+        height: 26px;
+        left: 6px;
+    }
+
+    .ios .toggle-checked::part(handle) {
+        transform: translateX(-10px);
+        background: #fff;
+    }
+
+    span.ipad_title_top {
+        font-size: 33px !important;
+        font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 25px;
+    }
+
+    .user_short_name {
+        width: 70px;
+        height: 70px;
+    }
+
+    .sitemenu-bottom-block .user_name_email {
+        width: calc(100% - 88px);
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px)  {
+    .user_name {
+        font-size: 26px;
+        font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .email {
+        font-size: 26px;
+        font-weight: normal;
+        font-family: 'Proxima Nova', sans-serif !important;
+    }
+
+    .user_logout {
+        height: 30px;
+    }
 }
 
 @media only screen and (min-width: 1366px)  {
@@ -3873,16 +4019,44 @@ ion-toggle::part(handle) {
         font-size: 22px;
     }
 
-}
-.text_colortabs {
-    color: #959595;
-}
-.padd_mobils ion-row{
-    padding-left: 10px;
-}
-.raduis{
-    border-radius: 30px;
-}
-.border_tabs{
-    border-bottom: 1px solid #E2E4E6;
+    .header_am ion-toolbar {
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0;
+    }
+
+    .ipad_topbar ion-toolbar {
+        height: 64px;
+    }
+
+    .lock_unlock {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #container_write {
+        padding: 0px 15px 0 20px;
+    }
+
+    ion-toggle::part(track) {
+        height: 38px;
+        width: 80px;
+    }
+
+    ion-toggle::part(handle) {
+        width: 26px;
+        height: 26px;
+        left: 6px;
+    }
+
+    .ios .toggle-checked::part(handle) {
+        transform: translateX(-10px);
+    }
+
+    .toggle-checked::part(handle) {
+        transform: translateX(-18px);
+    }
+
 }

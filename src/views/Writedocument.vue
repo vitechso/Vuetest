@@ -183,52 +183,62 @@
 </div>
 <!---------------Ipad Code--------------->
 <div v-if="isIpad">
-<ion-page> 
+<ion-page>
 
-<ion-header class="header_am"> 
-  <ion-toolbar class="header-top">
-    <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="3" class="ipad_cols">
-        <div class="ion-text-left ipad_flx">
-          <span class="title_top ipad_title_top">All Letters</span> 
-          <ion-badge class="badgs">8</ion-badge>
-        </div>
-        <div class="edit_icon">
-          <img src="assets/images/edit_pencil.svg"/>
-        </div>
-      </ion-col>
-      <ion-col size="7">
-      <div class="ion-text-left ipad_flx ion-padds-l">
-          <span class="title_top ipad_title_top">Address Change</span> 
-        </div>
-      </ion-col>
-      <ion-col size="2">
-        <ion-buttons class="right_ipad">
-            <ion-menu-button class="primary_arrow_inner">
-                <img src="assets/images/menu.svg"/>
-            </ion-menu-button>
-        </ion-buttons>
-        
-      </ion-col>
-    </ion-row>
+<ion-header class="header_am">
+  <ion-toolbar class="header-top border_tabs">
+    <div class="ipad-header">
+      <div class="left-header">
+        <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ipad_cols">
+            <div class="ion-text-left ipad_flx">
+              <span class="letter-heading">All Letters</span> 
+              <ion-badge class="badgs">8</ion-badge>
+            </div>
+            <div class="edit_icon">
+              <img src="assets/images/edit_pencil.svg"/>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="right-header">
+        <ion-row class="ion-align-items-center bar_c">
+            <ion-col size="8">
+                <div class="ion-text-left ipad_flx ion-padds-l">
+                    <span class="letter-heading">Address Change</span> 
+                </div>
+            </ion-col>
+
+            <ion-col size="4" class="ion-padding-end">
+                <div class="TopHeader-icon ion-justify-content-end">
+                    <ion-buttons class="menu-btn header-icon">
+                        <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                    </ion-buttons>
+
+                    <div class="search_icon header-icon">
+                        <img src="assets/images/send_share.svg"/>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
+<ion-content :fullscreen="true" class="ipad_write">
+    <div class="ipad_h destop-sitebar-container">
+        <div class="SideBar">
+            <ion-row class="ion-padding">
+                <ion-col size="12" class="">
+                    <div class="search_bar">
+                        <ion-searchbar></ion-searchbar>
+                    </div>
+                </ion-col>
+            </ion-row>
 
-  <ion-content :fullscreen="true" class="ipad_write">
-
-  <ion-row class="ipad_h">
-  
-      <ion-col size="3" class="ion-no-padding">
-        <ion-row class="s_bar">
-            <ion-col size="12">
-                <div class="search_bar">
-                      <ion-searchbar></ion-searchbar>
-                </div>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="ion-align-items-center active_letters lettes">
+            <ion-row class="ion-align-items-center active_letters lettes">
               <ion-col size="12">
                 <div class="texts_letts">
                   <h3>Address Change</h3>
@@ -238,9 +248,9 @@
                   <span>15 Jan</span>
                 </div>
               </ion-col>
-          </ion-row>
+            </ion-row>
 
-          <ion-row class="ion-align-items-center lettes">
+            <ion-row class="ion-align-items-center lettes">
               <ion-col size="12">
                 <div class="texts_letts">
                   <h3>Address Change</h3>
@@ -250,9 +260,9 @@
                   <span>15 Jan</span>
                 </div>
               </ion-col>
-          </ion-row>
+            </ion-row>
 
-          <ion-row class="ion-align-items-center lettes">
+            <ion-row class="ion-align-items-center lettes">
               <ion-col size="12">
                 <div class="texts_letts">
                   <h3>Address Change</h3>
@@ -262,163 +272,168 @@
                   <span>15 Jan</span>
                 </div>
               </ion-col>
-          </ion-row>
-      </ion-col>
-      
-      <ion-col size="9" class="ion-no-padding">
-      <div class="lock_unlock">
-        <ion-row>
-            <ion-col size="6">
-                <div class="img_unloacks" @click="addclass($event)">
-                    <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
-                    <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
-                </div>
-            </ion-col>
-        </ion-row>
-    </div>
+            </ion-row>
+        </div>
 
-        <div :class="styleClass" id="container_write" class="ipad_borders">
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>From</strong></p>
-            </ion-col>
-            <ion-col size="8">
-                <p class="text_colortabs">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
-            </ion-col>
-            <ion-col size="1">
-                <div class="contact_book">
-                    <img src="assets/images/contact_book.svg"/>
-                </div>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>To</strong></p>
-            </ion-col>
-            <ion-col size="8">
-                <p class="text_colortabs">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
-            </ion-col>
-            <ion-col size="1">
-                <div class="contact_book"  @click="contact">
-                    <img src="assets/images/contact_book.svg"/>
-                </div>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>Subject</strong></p>
-            </ion-col>
-            <ion-col size="9">
-                <p class="text_colortabs">Address Change</p>
-            </ion-col>
-            
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="12">
-                <p><strong>Dear Sirs and Madames,</strong></p>
-            </ion-col>
-            <ion-col size="12">
-                <div class="tab_desc">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>Footer</strong></p>
-            </ion-col>
-            <ion-col size="9">
-                <p class="text_colortabs">Sincerely, <br> Justin Shepp</p>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="5">
-                <p><strong>Signature</strong></p>
-            </ion-col>
-            <ion-col size="5"></ion-col>
-            <ion-col size="2">
-                <div class="btn_ajj">
-                    <ion-button shape="round" type="button" @click="openModal">Adjust</ion-button>
-                </div>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>Letter Size</strong></p>
-            </ion-col>
-            <ion-col size="3"></ion-col>
-            <ion-col size="6">
-                <div class="letter_size">
-                    <div class="inner_sizes">
-                       <span>DIN 5008 A</span> 
+        <div class="right-content-box">
+            <ion-row>
+                <ion-col size="12" class="lock_unlock">
+                    <div class="img_unloacks icon-hover" @click="addclass($event)">
+                        <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
+                        <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
                     </div>
-                    <div class="inner_sizes">
-                       <span>DIN 5008 B</span> 
-                    </div>
-                    <div class="inner_sizes">
-                       <span>US Letter</span> 
-                    </div>
-                </div>
-            </ion-col>
-        </ion-row>
+                </ion-col>
+            </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
-                <p><strong>Markers</strong></p>
-            </ion-col>
-            <ion-col size="4"></ion-col>
-            <ion-col size="5">
-                <div class="mark_toggle">
-                    <ion-toggle color="primary"></ion-toggle>
+            <div :class="styleClass" id="container_write" class="">
+                <div class="Form-subject-container">
+                    <ion-row class="Form-subject-row">
+                        <ion-col size="12" class="pr-0 pl-0">
+                            <div class="Form-subject-block">
+                                <div class="Form-subject">
+                                    <h5>From</h5>
+                                    <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                                </div>
+
+                                <div class="contact_book contact_book-desk">
+                                    <img src="assets/images/contact_book.svg"/>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="Form-subject-row">
+                        <ion-col size="12" class="pr-0 pl-0">
+                            <div class="Form-subject-block">
+                                <div class="Form-subject">
+                                    <h5>To</h5>
+                                    <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                                </div>
+
+                                <div class="contact_book contact_book-desk icon-hover" @click="contact">
+                                    <img src="assets/images/contact_book.svg"/>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="Form-subject-row">
+                        <ion-col size="12" class="pr-0 pl-0">
+                            <div class="Form-subject-block">
+                                <div class="Form-subject">
+                                    <h5>Subject</h5>
+                                    <p class="fontlight">Address Change</p>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
                 </div>
-            </ion-col>
-        </ion-row>
+
+                <ion-row class="row_01 b_p bor_b">
+                    <ion-col size="12" class="pr-0 pl-0">
+                        <h5>Dear Sirs and Madames,</h5>
+                    </ion-col>
+                    <ion-col size="12" class="pr-0 pl-0">
+                        <div class="tab_desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="row_01 b_p bor_b">
+                    <ion-col size="12" class="pr-0 pl-0">
+                        <div class="Form-subject-block ">
+                            <div class="Form-subject _Full">
+                                <h5>Footer</h5>
+                                <p class="fontlight">Sincerely, <br> Justin Shepp</p>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="row_01 b_p ion-padding-top">
+                    <ion-col size="6" class="pl-0">
+                        <h5>Signature</h5>
+                    </ion-col>
+                    
+                    <ion-col size="6" class="pr-0">
+                        <div class="btn_ajj adjust-btn-desktop ion-text-right">
+                            <ion-button shape="round" type="button" @click="openModal">Adjust</ion-button>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="row_01 b_p">
+                    <ion-col size="3" class="pl-0">
+                        <h5>Letter Size</h5>
+                    </ion-col>
+                    
+                    <ion-col size="9" class="pr-0">
+                        <div class="letter_size">
+                            <div class="inner_sizes">
+                            <span>DIN 5008 A</span> 
+                            </div>
+                            <div class="inner_sizes">
+                            <span>DIN 5008 B</span> 
+                            </div>
+                            <div class="inner_sizes">
+                            <span>US Letter</span> 
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row class="b_p ion-padding-bottom">
+                    <ion-col size="3" class="ion-padding-bottom pl-0">
+                        <h5>Markers</h5>
+                    </ion-col>
+                    <ion-col size="4"></ion-col>
+                    <ion-col size="5" class="ion-padding-bottom pr-0">
+                        <div class="mark_toggle">
+                            <ion-toggle slot="end"></ion-toggle>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div class="back_fooipad">
+                <ion-row>
+                    <ion-col size="12" class="ion-no-padding">
+                        <div class="board-icon">
+                            <div :class="styleClass!=''?'hideBottom':''" class="board-left">
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/bold.svg"/>
+                                </div>
+
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/itelic.svg"/>
+                                </div>
+
+                                <div class="icon_bn icon-hover">
+                                    <img src="assets/images/underline.svg"/>
+                                </div>
+                            </div>
+
+                            <div class="board-center">
+                                <div class="icon_bn icon-hover" @click="preview">
+                                    <img src="assets/images/view_black.svg"/>
+                                </div>
+                            </div>
+
+                            <div class="board-right">
+                                <div class="icon_bn icon-hover">
+                                    <img @click="presentAlert" class="dlt-icon" src="assets/images/delete_black.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </div>
     </div>
-    <div class="back_fooipad">
-        <ion-row>
-            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
-                <div class="icon_bn">
-                    <img src="assets/images/bold.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
-                <div class="icon_bn">
-                    <img src="assets/images/itelic.svg"/>
-                </div>
-            </ion-col>
-            <ion-col size="1" :class="styleClass!=''?'hideBottom':''">
-                <div class="icon_bn">
-                    <img src="assets/images/underline.svg"/>
-                </div>
-            </ion-col>
-
-            <ion-col size="6">
-                <div class="icon_bn" @click="preview">
-                    <img src="assets/images/view_black.svg"/>
-                </div>
-            </ion-col>
-
-            <ion-col size="3">
-                <div class="icon_bn right_km">
-                    <img @click="presentAlert" src="assets/images/delete_black.svg"/>
-                </div>
-            </ion-col>
-        </ion-row>
-    </div>
-      </ion-col>
-    </ion-row>
-
-    
   </ion-content>
 </ion-page>
 </div>
@@ -581,7 +596,7 @@
 
                         <div class="Form-subject-container">
                             <ion-row class="Form-subject-row">
-                                <ion-col size="12" class="pr-0">
+                                <ion-col size="12" class="pr-0 pl-0">
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>From</h5>
@@ -596,7 +611,7 @@
                             </ion-row>
 
                             <ion-row class="Form-subject-row">
-                                <ion-col size="12" class="pr-0">
+                                <ion-col size="12" class="pr-0 pl-0">
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>To</h5>
@@ -611,7 +626,7 @@
                             </ion-row>
 
                             <ion-row class="Form-subject-row">
-                                <ion-col size="12">
+                                <ion-col size="12" class="pr-0 pl-0">
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>Subject</h5>
@@ -624,10 +639,10 @@
 
 
                         <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="12">
+                            <ion-col size="12" class="pr-0 pl-0">
                                 <h5>Dear Sirs and Madames,</h5>
                             </ion-col>
-                            <ion-col size="12">
+                            <ion-col size="12" class="pr-0 pl-0">
                                 <div class="tab_desc">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 
@@ -639,20 +654,20 @@
                         </ion-row>
 
                         <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="3">
+                            <ion-col size="3" class="pr-0">
                                 <h5>Footer</h5>
                             </ion-col>
-                            <ion-col size="9">
+                            <ion-col size="9" class="pl-0">
                                 <p class="fontlight">Sincerely, <br> Justin Shepp</p>
                             </ion-col>
                         </ion-row>
 
                         <ion-row class="row_01 b_p ion-padding-top">
-                            <ion-col size="6">
+                            <ion-col size="6" class="pr-0">
                                 <h5>Signature</h5>
                             </ion-col>
                             
-                            <ion-col size="6">
+                            <ion-col size="6" class="pl-0">
                                 <div class="btn_ajj adjust-btn-desktop ion-text-right">
                                     <ion-button shape="round" type="button" @click="openModal">Adjust</ion-button>
                                 </div>
@@ -660,11 +675,11 @@
                         </ion-row>
 
                         <ion-row class="row_01 b_p">
-                            <ion-col size="3">
+                            <ion-col size="3" class="pr-0">
                                 <h5>Letter Size</h5>
                             </ion-col>
                             
-                            <ion-col size="9">
+                            <ion-col size="9" class="pl-0">
                                 <div class="letter_size">
                                     <div class="inner_sizes">
                                     <span>DIN 5008 A</span> 
@@ -680,16 +695,13 @@
                         </ion-row>
 
                         <ion-row class="b_p ion-padding-bottom">
-                            <ion-col size="3" class="ion-padding-bottom">
+                            <ion-col size="3" class="ion-padding-bottom pr-0">
                                 <h5>Markers</h5>
                             </ion-col>
                             <ion-col size="4"></ion-col>
-                            <ion-col size="5" class="ion-padding-bottom">
+                            <ion-col size="5" class="ion-padding-bottom pl-0">
                                 <div class="mark_toggle">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider"></span>
-                                    </label>
+                                    <ion-toggle slot="end"></ion-toggle>
                                 </div>
                             </ion-col>
                         </ion-row>

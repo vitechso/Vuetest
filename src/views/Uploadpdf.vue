@@ -66,6 +66,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Upload PDF</span> 
         </div>
       </ion-col>
@@ -126,6 +127,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Upload PDF</span> 
         </div>
       </ion-col>

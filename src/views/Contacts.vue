@@ -335,7 +335,7 @@
     </ion-row>
         </ion-toolbar>
 
-          <ion-segment value="contacts" class="segmnt">
+          <ion-segment value="contacts" class="segmnt desktop-segmnt">
     <ion-segment-button value="contacts" @click="segmentChangedDesktop('contacts')">
       <ion-label>Contacts</ion-label> 
     </ion-segment-button>

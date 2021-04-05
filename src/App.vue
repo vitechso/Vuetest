@@ -118,18 +118,20 @@
     <ion-footer class="ion-no-border clas_bn">
       <ion-toolbar>
         <ion-row class="row_foo ion-padding-start ion-padding-end">
-          <ion-col size="2">
-            <div class="user_short_name">
-              <p>JS</p>
+          <ion-col size="10">
+            <div class="sitemenu-bottom-block">
+              <div class="user_short_name">
+                <p>JS</p>
+              </div>
+
+              <div class="user_name_email">
+                <p class="user_name">Justin Shepp</p>
+                <p class="email">justin.shepp@gmail.com</p>
+              </div>
             </div>
           </ion-col>
-          <ion-col size="9">
-            <div class="user_name_email">
-              <p class="user_name">Justin Shepp</p>
-              <p class="email">justin.shepp@gmail.com</p>
-            </div>
-          </ion-col> 
-          <ion-col size="1">
+
+          <ion-col size="2">
             <div class="user_logout">
               <img src="assets/images/logout.svg" />
             </div>

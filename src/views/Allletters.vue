@@ -9,7 +9,7 @@
         <div class="Page-header">
           <div class="Page-Title">
             <span class="title_top title_top_mobo">All Letters</span>
-            <ion-badge class="badgs raduis">8</ion-badge>
+            <ion-badge class="badgs">8</ion-badge>
           </div>
           <div class="TopHeader-icon">
             <img src="assets/images/search.svg" class="header-icon"/>
@@ -268,40 +268,58 @@
 <ion-page>
 <ion-header class="header_am">
   <ion-toolbar class="header-top border_tabs">
-    <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="3" class="ipad_cols">
-        <div class="ion-text-left ipad_flx">
-          <span class="title_top ipad_title_top">All Letters</span> 
-          <ion-badge class="badgs">8</ion-badge>
-        </div>
-        <div class="edit_icon">
-          <img src="assets/images/edit_pencil.svg"/>
-        </div>
-      </ion-col>
-      <ion-col size="7"></ion-col>
-      <ion-col size="2">
-        <ion-buttons class="right_ipad">
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
+    <div class="ipad-header">
+      <div class="left-header">
+        <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ipad_cols">
+            <div class="ion-text-left ipad_flx">
+              <span class="title_top ipad_title_top">All Letters</span> 
+              <ion-badge class="badgs">8</ion-badge>
+            </div>
+            <div class="edit_icon">
+              <img src="assets/images/edit_pencil.svg"/>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
 
-    </ion-row>
+      <div class="right-header">
+        <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="10"></ion-col>
+          <ion-col size="2" class="ion-padding-end">
+            <ion-buttons class="right_ipad">
+              <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+            </ion-buttons>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
   <ion-content>
-    <ion-row class="ipad_h">
-      <ion-col size="3"></ion-col>
-      <ion-col size="9" class="ion-no-padding">
-        <div class="welcome_ipad">
-          <h3>Welcome to moreyou.letters</h3>
-          <h4>Select an exisiting document from sidebar or create a new one</h4>
-          <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
-            <div class="mail_open">
-              <img src="assets/images/mail_open.svg"/>
+    <div class="ipad_h destop-sitebar-container">
+      <div class="SideBar">
+        <ion-row class="">
+            <ion-col size="12">
+                
+            </ion-col>
+        </ion-row>
+      </div>
+      <div class="right-content-box">
+        <ion-row>
+          <ion-col size="12" class="ion-no-padding custom-col-full">
+            <div class="welcome_ipad welcome_desktop">
+              <h3>Welcome to moreyou.letters</h3>
+              <h4>Select an exisiting document from sidebar or create a new one</h4>
+              <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
+                <div class="mail_open">
+                  <img src="assets/images/mail_open.svg"/>
+                </div>
             </div>
-        </div>
-      </ion-col>
-    </ion-row>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-content>
 </ion-page>
 </div>
