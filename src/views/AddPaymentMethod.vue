@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Paypal from './Paypal.vue';
@@ -82,9 +82,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
           unselected:true,
           type:''
       }

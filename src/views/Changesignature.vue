@@ -116,7 +116,7 @@
     <ion-row class="custom_row ion-padding-top ion-padding-bottom">
         <ion-col size="9">
             <p><strong>Draw a signature</strong></p>
-            <VueSignaturePad width="500px" height="500px" ref="signaturePad" />
+           
             <p class="text_colors">Manually draw a signature on device using pen or finger</p>
         </ion-col>
         <ion-col size="3">
@@ -197,7 +197,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonToggle, isPlatform, modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent,IonCol,IonRow, IonToolbar, IonButton, IonToggle, isPlatform, modalController, getPlatforms } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -207,6 +207,8 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
+    IonRow,
+    IonCol,
     IonToolbar,
     IonButton,
     IonToggle 
@@ -218,9 +220,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+          isDesktop: isPlatform('desktop'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{

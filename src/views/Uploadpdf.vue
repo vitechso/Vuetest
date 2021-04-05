@@ -80,14 +80,14 @@
   </ion-header>
 
   <ion-content :fullscreen="true" class="back_white">
-    <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
+    <div id="container_fax" class="ion-padding-end ion-padding-start fdfs">
 
     <ion-row class="ion-margin-top ion-margin-bottom">
         <ion-col size="4" class="opas">
             <p class="font_sels">Please select a file to upload</p>
         </ion-col>
         <ion-col size="3">
-            <ion-button shape="round" class="next_btn">Select PDF</ion-button>
+            <ion-button shape="round" class="ok_btn">Select PDF</ion-button>
         </ion-col>
     </ion-row>
 
@@ -103,21 +103,16 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-top ion-padding-bottom weddas">
-        <ion-col size="3"></ion-col>
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Done</ion-button>
-            </div>
-        </ion-col>
-
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Cancel</ion-button>
-            </div>
-        </ion-col>
-        <ion-col size="3"></ion-col>
-    </ion-row>
+     <ion-row class="ion-margin-top">
+                <ion-col size="4"></ion-col>
+                <ion-col size="2">
+                    <ion-button shape="round" class="ok_btn ion-padding-end">Update</ion-button>
+                </ion-col>
+                <ion-col size="2">
+                    <ion-button shape="round" @click="cancel" class="cancel_btn ion-padding-start">Cancel</ion-button>
+                </ion-col>
+                <ion-col size="4"></ion-col>
+            </ion-row>
 
     </div>
   </ion-content>
@@ -183,7 +178,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -203,9 +198,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+          isDesktop: isPlatform('desktop'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{

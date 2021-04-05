@@ -207,7 +207,7 @@
 <div v-if="isIpad">
 <ion-page>
 <ion-header class="header_am">
-  <ion-toolbar class="">
+  <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center">
       <ion-col size="4" class="bars_hms">
         <div class="ion-text-center ins_han">
@@ -584,7 +584,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController, getPlatforms } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -606,9 +606,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{

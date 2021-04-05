@@ -322,7 +322,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController, IonRow, IonCol, getPlatforms  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -335,7 +335,10 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButtons,
-    IonMenuButton
+    IonMenuButton,
+    IonRow,
+    IonCol,
+    
   },
   setup() {
       const router = useRouter();
@@ -343,9 +346,9 @@ export default defineComponent({
   },
   data() {
       return {
-        isIpad:isPlatform('ipad'),
         isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
@@ -368,7 +371,3 @@ export default defineComponent({
   }
 });
 </script>
-
-<style scoped>
-
-</style>

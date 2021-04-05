@@ -9,7 +9,7 @@
         <div class="Page-header">
           <div class="Page-Title">
             <span class="title_top title_top_mobo">All Letters</span>
-            <ion-badge class="badgs">8</ion-badge>
+            <ion-badge class="badgs raduis">8</ion-badge>
           </div>
           <div class="TopHeader-icon">
             <img src="assets/images/search.svg" class="header-icon"/>
@@ -267,7 +267,7 @@
 <div v-if="isIpad">
 <ion-page>
 <ion-header class="header_am">
-  <ion-toolbar class="">
+  <ion-toolbar class="header-top border_tabs">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
@@ -369,7 +369,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,modalController, popoverController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,getPlatforms,modalController, popoverController, IonRow, IonCol, IonButton  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -391,7 +391,10 @@ export default defineComponent({
     IonFab,
     IonFabButton,
     IonButtons,
-    IonMenuButton
+    IonButton,
+    IonMenuButton,
+    IonRow,
+    IonCol
   },
   setup() {
       const router = useRouter();
@@ -400,14 +403,16 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
+         
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms()[0]=='android'||getPlatforms()[0]=='iphone',
+        isIpad:getPlatforms()[0]=='ipad',
       }
   },
   methods:{
      async openModal() {
        modalController.dismiss()
+       //alert('sdsds');
       const modal = await modalController.create({
           component: Choosetemplate,
           cssClass: 'choosetem',
@@ -417,6 +422,7 @@ export default defineComponent({
         })
       return modal.present();
     },
+    
 
     async openPopover(ev: Event) {
       const popover = await popoverController

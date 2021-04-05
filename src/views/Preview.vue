@@ -131,9 +131,9 @@
 
     <ion-row class="privew_r ion-padding-bottom">
         <ion-col size="12">
-            <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
+            <p class="ion-padding-bottom ruler-line_tab"><strong>Dear Sirs and Madames,</strong></p>
 
-            <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p class="ion-padding-bottom ruler-line_tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
             <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </ion-col>
@@ -169,7 +169,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController   } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController, getPlatforms   } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Selectsendtype from './Selectsendtype.vue'
@@ -190,8 +190,8 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{

@@ -255,7 +255,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonContent, isPlatform } from '@ionic/vue'
+import { IonPage, IonContent, isPlatform, getPlatforms } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -277,9 +277,9 @@ export default defineComponent({
       },
       invalid:false,
       styleClass:"",
-      isIpad:isPlatform('ipad'),
       isDesktop: isPlatform('desktop'),
-      isMobile: isPlatform('mobile'),
+      isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+      isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
     };
   },
 });
