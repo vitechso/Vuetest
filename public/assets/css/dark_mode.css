@@ -353,6 +353,18 @@ ion-backdrop {
     color: #f1d000;
 }
 
+.dark .letters-description-block p {
+    color: #bbbbbb;
+}
+
+.dark .date span {
+    color: #bbbbbb;
+}
+
+.dark .letters-img-block {
+    box-shadow: 1px 1px 6px -1px #000;
+}
+
 @media (max-width: 767.98px) {
     .dark .ion-overlay-wrapper {
         background: #333;

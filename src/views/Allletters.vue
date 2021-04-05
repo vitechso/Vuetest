@@ -25,101 +25,230 @@
   <ion-content :fullscreen="true">
     <div id="full_width">
       <ion-list class="mobo-letter-list">
-        <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
-                </div>
-              </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Address Change</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-        </ion-item>
-
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Address Change</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>15 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+          </ion-item>
         </ion-item-sliding>
 
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Minutes of Meeting</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>12 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
         </ion-item-sliding>
 
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Project Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>11 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Intial Call Records</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>8 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Requirements Analysis</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>7 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>UI Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>6 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Requirements Analysis</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>6 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>UI Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>4 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
         </ion-item-sliding>
 
       </ion-list>

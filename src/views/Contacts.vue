@@ -46,6 +46,7 @@
 </ion-header>
 
 <ion-content :fullscreen="true">
+    
     <div v-if="selectedSegment == 'contacts'" class="ion-padding Contacts-List-Info">
         <div class="contactlist"> 
             <div class="alpha"><p>A</p></div>
