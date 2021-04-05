@@ -4037,7 +4037,7 @@ ion-toggle::part(handle) {
     }
 
     #container_write {
-        padding: 0px 15px 0 20px;
+        padding: 0px 15px 50px 20px;
     }
 
     ion-toggle::part(track) {
