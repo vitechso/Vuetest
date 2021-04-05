@@ -3687,7 +3687,7 @@ ion-toggle::part(handle) {
 
     .mobo-letter-list {
         padding: 0;
-        margin-top: 10px;
+        margin: 10px 0;
     }
 }
 
