@@ -267,7 +267,7 @@
 <div v-if="isIpad">
 <ion-page>
 <ion-header class="header_am">
-  <ion-toolbar class="header-top border_tabs">
+  <ion-toolbar class="header-top-ipad border_tabs">
     <div class="ipad-header">
       <div class="left-header">
         <ion-row class="ion-align-items-center bar_c">
@@ -308,7 +308,7 @@
       <div class="right-content-box">
         <ion-row>
           <ion-col size="12" class="ion-no-padding custom-col-full">
-            <div class="welcome_ipad welcome_desktop">
+            <div class="welcome_ipad">
               <h3>Welcome to moreyou.letters</h3>
               <h4>Select an exisiting document from sidebar or create a new one</h4>
               <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
@@ -326,7 +326,7 @@
 
 <div v-if="isDesktop">
   <ion-page>
-<ion-header class="header_am">
+<ion-header class="header_am desktop-header-main">
   <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols ion-no-padding">
@@ -368,7 +368,7 @@
     <div class="right-content-box">
       <ion-row>
         <ion-col size="12" class="ion-no-padding custom-col-full">
-          <div class="welcome_ipad welcome_desktop">
+          <div class="welcome_desktop">
             <h3>Welcome to moreyou.letters</h3>
             <h4>Select an exisiting document from sidebar or create a new one</h4>
             <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>

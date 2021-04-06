@@ -129,8 +129,8 @@
 
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12">
-            <div class="ion_btn_next">
-                <ion-button @click="nextMobile()" :class="isDisabled?'_gary-outline-btn':'md button button-round button-solid ion-activatable ion-focusable hydrated'" :disabled='isDisabled' shape="round" class="next_btn next_btn_mobo ">Next</ion-button>
+            <div class="ion_btn_next btn-176-tab">
+                <ion-button @click="nextMobile()" :class="isDisabled?'_gary-outline-btn':'md button button-round button-solid ion-activatable ion-focusable hydrated'" :disabled='isDisabled' shape="round" class="next_btn">Next</ion-button>
             </div>
         </ion-col>
     </ion-row>

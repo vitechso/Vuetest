@@ -318,36 +318,36 @@
 
 <div v-if="isIpad">
 <ion-page>
-<ion-header class="ipad_topbar">
+<ion-header class="ipad_topbar dark333">
         <ion-toolbar>
-        <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="6" class="ipad_cols">
-        <div class="ion-text-left ipad_flx">
-          <span class="popup_title">Contacts</span> 
-        </div>
-      </ion-col>
-      <ion-col size="4"></ion-col>
-      <ion-col size="2">
-        <div @click="cancel" class="close_popus">
-            <img src="assets/images/cross_icon.svg"/>
-        </div>
-      </ion-col>
-    </ion-row>
+            <ion-row class="ion-align-items-center bar_c">
+                <ion-col size="6" class="ipad_cols">
+                    <div class="ion-text-left ipad_flx">
+                    <span class="popup_title">Contacts</span> 
+                    </div>
+                </ion-col>
+                <ion-col size="4"></ion-col>
+                <ion-col size="2">
+                    <div @click="cancel" class="close_popus">
+                        <img src="assets/images/cross_icon.svg"/>
+                    </div>
+                </ion-col>
+            </ion-row>
         </ion-toolbar>
 
-          <ion-segment value="contacts" class="segmnt desktop-segmnt">
-    <ion-segment-button value="contacts" @click="segmentChangedDesktop('contacts')">
-      <ion-label>Contacts</ion-label> 
-    </ion-segment-button>
-    <ion-segment-button value="groups" @click="segmentChangedDesktop('groups')">
-      <ion-label>Groups</ion-label>
-    </ion-segment-button>
-  </ion-segment>
-    <ion-row class="ion-padding-top ion-padding-bottom">
-        <ion-col size="12" class="ion-padding-start ion-padding-end">
-            <ion-searchbar class="ion-no-padding search_bts hans_ipad"></ion-searchbar>
-        </ion-col>
-    </ion-row>
+        <ion-segment value="contacts" class="segmnt desktop-segmnt">
+            <ion-segment-button value="contacts" @click="segmentChangedDesktop('contacts')">
+            <ion-label>Contacts</ion-label> 
+            </ion-segment-button>
+            <ion-segment-button value="groups" @click="segmentChangedDesktop('groups')">
+            <ion-label>Groups</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+        <ion-row class="ion-padding-top">
+            <ion-col size="12" class="ion-padding-start ion-padding-end">
+                <ion-searchbar class="ion-no-padding search_bts hans_ipad"></ion-searchbar>
+            </ion-col>
+        </ion-row>
 
     <!--<ion-row class="ion-padding-start ion-padding-end ion-text-center">
         <ion-col size="6">
@@ -362,15 +362,15 @@
     <ion-row class="ContactList-btnBox ion-justify-content-end ion-padding">
             <ion-col size="6" class="d-flex ion-justify-content-end ion-no-padding">
                 <ion-button v-if="selectedSegment == 'contacts'" class="import_csv" @click="excel">Import CSV/Excel</ion-button>
-                <ion-button v-if="selectedSegment == 'contacts'" class="import_csv" @click="() => router.push('/add-contact')">Add Contact</ion-button>
+                <ion-button v-if="selectedSegment == 'contacts'" class="import_csv" @click="addacontact">Add Contact</ion-button>
                 <ion-button v-if="selectedSegment == 'groups'" class="import_csv" @click="creategroup">Create Group</ion-button>
             </ion-col>
         </ion-row>
   </ion-header>
 
   <ion-content :fullscreen="true">
-    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end ion-padding-top">
-        <div class="contactlist"> 
+    <div v-if="selectedSegment == 'contacts'" class="ion-padding-start ion-padding-end contacts-inner-box">
+        <div class="contactlist contactlist-ipad contactlist-desk"> 
             <div class="alpha"><p>A</p></div>
             <div class="contact_name_list">
 
@@ -444,7 +444,7 @@
             </div>
         </div>
 
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-ipad contactlist-desk"> 
             <div class="alpha"><p>B</p></div>
             <div class="contact_name_list">
                <ion-row class="main_conipad">
@@ -516,7 +516,7 @@
             </div>
         </div>
 
-        <div class="contactlist"> 
+        <div class="contactlist contactlist-ipad contactlist-desk"> 
             <div class="alpha"><p>C</p></div>
             <div class="contact_name_list">
                 <ion-row class="main_conipad">
@@ -587,16 +587,25 @@
                 </ion-row>
             </div>
         </div>
+
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+            <ion-col size="12">
+                <div class="BtnBlock btn-176-tab">
+                    <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
     </div>
-    <div v-if="selectedSegment == 'groups'" class="ion-padding-start ion-padding-end ion-padding-top">
-        <div class="contactlist"> 
+    <div v-if="selectedSegment == 'groups'" class="ion-padding-start ion-padding-end ion-padding-top contacts-inner-box">
+        <div class="contactlist contactlist-ipad contactlist-desk"> 
             <div class="contact_name_list create-groups-list padd_mobils">
                     <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
                         <ion-col size="3">
                             <ion-label>Company</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -613,7 +622,7 @@
                             <ion-label>CEO</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -630,7 +639,7 @@
                             <ion-label>Directors</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -647,7 +656,7 @@
                             <ion-label>Designers</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -664,7 +673,7 @@
                             <ion-label>Marketing</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -681,7 +690,7 @@
                             <ion-label>SEO</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -698,7 +707,7 @@
                             <ion-label>XYZ</ion-label>
                         </ion-col>
 
-                        <ion-col size="4" class="ion-padding-end">
+                        <ion-col size="4" class="">
                             <div class="colsd ion-justify-content-end">
                                 <div class="control_cin">
                                     <img src="assets/images/edit.svg"/>
@@ -709,8 +718,17 @@
                             </div>
                         </ion-col>
                     </ion-row>
-                </div>
+            </div>
         </div>
+
+        <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+            <ion-col size="12">
+                <div class="BtnBlock btn-176-tab">
+                    <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+                    <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
     </div>
     
   </ion-content>

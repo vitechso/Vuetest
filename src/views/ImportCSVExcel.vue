@@ -64,6 +64,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+          <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Import CSV/Excel</span> 
         </div>
       </ion-col>
@@ -77,15 +78,13 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
-    <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
+  <ion-content :fullscreen="true" class="back_white dark333">
+    <div id="container_fax" class="ion-padding-end ion-padding-start fdfs">
 
     <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="4" class="opas">
-            <p class="font_sels">Please select a file to upload</p>
-        </ion-col>
-        <ion-col size="3">
-            <ion-button shape="round" class="next_btn">Select File</ion-button>
+        <ion-col size="12" class="opas">
+            <p class="font_sels select-upload-text-ipad">Please select a file to upload</p>
+            <ion-button shape="round" class="next_btn upload-btn ion-margin-start">Select File</ion-button>
         </ion-col>
     </ion-row>
 
@@ -101,22 +100,14 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="ion-padding-top ion-padding-bottom weddas">
-        <ion-col size="3"></ion-col>
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Done</ion-button>
+    <ion-row class="ion-justify-content-center ion-padding mt-5">
+        <ion-col size="12">
+            <div class="BtnBlock btn-176-tab">
+                <ion-button shape="round" class="MakeDefault-btn">Done</ion-button>
+                <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
             </div>
         </ion-col>
-
-        <ion-col size="3">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Cancel</ion-button>
-            </div>
-        </ion-col>
-        <ion-col size="3"></ion-col>
     </ion-row>
-
     </div>
   </ion-content>
 </ion-page>

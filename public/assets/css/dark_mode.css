@@ -32,15 +32,9 @@ body.dark {
 .dark .slide_fils img {
     filter: brightness(50);
 }
-.dark .search_bts{
-    color: #aaa;
-}
+
 .dark ion-checkbox {
-    background: #333;
-    --background: #333;
-    box-shadow: none;
-    border-style: unset;
-    border-width: 1px !important;
+    --background: transparent;
 }
 .dark .control_cin img {
     filter: brightness(50);
@@ -88,9 +82,12 @@ body.dark {
 .dark .user_logout img {
     filter: brightness(50);
 }
-.drak_mode img{
-    width: 80%;
+
+
+.dark .slide p {
+    color: #fff !important;
 }
+
 .dark .kdh {
     display: none;
 }
@@ -104,7 +101,8 @@ body.dark {
     color: #fff;
 }
 .dark .user_nam{
-    border-color: #cccccc;
+    border-color: #888;
+    color: #999;
 }
 .dark .pdd_b input::placeholder {
     color: #fff;
@@ -131,9 +129,19 @@ body.dark {
     font-size: 21px;
     color: #fff;
 }
-.dark .texts_letts p{
+.dark .texts_letts p {
     color: #bbbbbb !important;
 }
+
+.dark .active_letters .texts_letts p {
+    color: #fff !important;
+}
+
+.dark .lettes {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+
 .dark .bor_b {
     border-bottom: 1px solid #4a4a4a;
 }
@@ -161,7 +169,7 @@ body.dark {
     filter: brightness(50);
 }
 .dark .contact_book img {
-    filter: brightness(50);
+    filter: contrast(0);
 }
 .dark .back_foo ion-toolbar{
     background: #333;
@@ -190,13 +198,15 @@ body.dark {
     color: #333;
 }
 .dark .foo_bottom ion-toolbar {
-    background: #333 !important;
-    --background: #333;
+    background: #4c4c4c !important;
+    --background: #4c4c4c;
 }
-.dark .custom_btn_export.button-solid {
-    background: #333;
-    --background: #333 !important;
+
+.dark .foo_bottom .custom_btn_export.button-solid {
+    background: #4c4c4c;
+    --background: #4c4c4c !important;
 }
+
 .dark .text_share h3 {
     color: #fff;
 }
@@ -361,8 +371,162 @@ ion-backdrop {
     color: #bbbbbb;
 }
 
+.dark .active_letters .date span {
+    color: #fff;
+}
+
 .dark .letters-img-block {
     box-shadow: 1px 1px 6px -1px #000;
+}
+
+
+.dark .SideBar {
+    background-color: #333;
+    border-right: 1px solid #4a4a4a;
+}
+
+.dark .welcome_ipad {
+    background: #111;
+}
+
+.dark .mail_open img {
+    opacity: 0.3;
+    filter: contrast(0.5);
+}
+
+
+.dark .ipad_topbar ion-toolbar {
+    border-bottom: 1px solid #222;
+    --background: #4c4c4c;
+}
+
+.dark #container_01 {
+    background: #333;
+}
+
+.dark span.popup_title {
+    color: #fff;
+}
+.dark .close_popus img {
+    filter: brightness(100);
+}
+
+.dark .main_iads {
+    border: 1px solid #4a4a4a;
+    background-color: #333;
+}
+
+.dark .border_bm {
+    border: 1px solid #4a4a4a;
+}
+
+.dark .bg-white-light {
+    background: #555;
+}
+
+.dark .fill_colortotal {
+    background: #666;
+}
+
+.dark img.delete_print_btns {
+    filter: invert(1);
+}
+
+.dark .search_bar input {
+    background: transparent !important;
+    color: #999 !important;
+}
+
+.dark .search_bar ion-searchbar {
+    border: 1px solid #ccc;
+}
+
+.dark .searchbar-input-container ion-icon {
+    color: #999 !important;
+}
+
+.dark .inner_sizes {
+    border: 1px solid #4a4a4a;
+    background-color: #333333;
+}
+
+.dark .back_fooipad {
+    background: #333333;
+}
+
+.dark .icon-hover:hover img {
+    filter: brightness(0.5);
+}
+
+
+.dark .change_sign_ipad p strong {
+    color: #fff;
+}
+
+.dark .change_sign_ipad p {
+    color: #bbb;
+}
+
+.dark .chosse_ipad {
+    border: 1px dashed #aaaaaa;
+    background-color: #4c4c4c;
+}
+
+.dark #container_fax {
+    background: #333;
+}
+
+.dark .privew-container {
+    background: #333;
+}
+
+.dark .icon_mipad {
+    border: 1px solid #797979;
+    background-color: #333333;
+}
+
+.dark .dark333 {
+    background: #333 !important;
+    --background: #333 !important;
+}
+
+.dark .contacts-inner-box {
+    background: #333;
+    display: inline-block;
+    width: 100%;
+}
+
+.dark .main_conipad {
+    background: #4c4c4c;
+    border-bottom: 1px solid #777;
+}
+
+.dark .contactlist-desk .alpha p,
+.dark .contactlist-desk ion-label, 
+.dark .contactlist-desk .insd p,
+.dark .desktop-segmnt ion-label {
+    color: #fff !important;
+}
+
+.dark img.back-btn {
+    filter: invert(1);
+}
+
+.dark .search_bts {
+    border: 1px solid #888;
+    color: #999;
+}
+
+.dark p.font_sels {
+    color: #bbb;  
+}
+
+.dark .select-upload-text-ipad {
+    color: #fff !important;
+}
+
+.dark .pdf_icons img {
+    filter: invert(1);
 }
 
 @media (max-width: 767.98px) {

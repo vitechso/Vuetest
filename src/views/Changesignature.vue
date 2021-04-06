@@ -104,7 +104,7 @@
         <ion-col size="9">
             <p><strong>Upload signature image</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
-            <p class="text_colors">300 px by 170 px</p>
+            <p class="text_colors signature-image-alert">300 px by 170 px</p>
         </ion-col>
         <ion-col size="3">
             <div class="btn_ajj chosse_ipad">
@@ -161,11 +161,8 @@
           </ion-col>
           <ion-col size="3">
               <div class="mark_toggle">
-                  <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider"></span>
-                  </label>
-              </div>
+                <ion-toggle color="primary"></ion-toggle>
+            </div>
           </ion-col>
       </ion-row>
 
@@ -173,7 +170,7 @@
           <ion-col size="9">
               <p><strong>Upload signature image</strong></p>
               <p class="text_colors">Enable this option to display the signature in the document</p>
-              <p class="signature-image-alert">300 px by 170 px</p>
+              <p class="text_colors signature-image-alert">300 px by 170 px</p>
           </ion-col>
           <ion-col size="3">
               <div class="btn_ajj chosse_ipad">

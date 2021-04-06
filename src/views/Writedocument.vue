@@ -185,8 +185,8 @@
 <div v-if="isIpad">
 <ion-page>
 
-<ion-header class="header_am">
-  <ion-toolbar class="header-top border_tabs">
+<ion-header class="header_am Hrd-ipad">
+  <ion-toolbar class="header-top-ipad border_tabs">
     <div class="ipad-header">
       <div class="left-header">
         <ion-row class="ion-align-items-center bar_c">
@@ -217,7 +217,7 @@
                     </ion-buttons>
 
                     <div class="search_icon header-icon">
-                        <img src="assets/images/send_share.svg"/>
+                        <img @click="preview" src="assets/images/send_share.svg"/>
                     </div>
                 </div>
             </ion-col>
@@ -230,9 +230,9 @@
 <ion-content :fullscreen="true" class="ipad_write">
     <div class="ipad_h destop-sitebar-container">
         <div class="SideBar">
-            <ion-row class="ion-padding">
+            <ion-row class="">
                 <ion-col size="12" class="">
-                    <div class="search_bar">
+                    <div class="search_bar SideBar-search">
                         <ion-searchbar></ion-searchbar>
                     </div>
                 </ion-col>
@@ -285,7 +285,7 @@
                 </ion-col>
             </ion-row>
 
-            <div :class="styleClass" id="container_write" class="">
+            <div :class="styleClass" id="container_write" class="container_write-ipad">
                 <div class="Form-subject-container">
                     <ion-row class="Form-subject-row">
                         <ion-col size="12" class="pr-0 pl-0">
@@ -374,8 +374,8 @@
                     
                     <ion-col size="9" class="pr-0">
                         <div class="letter_size">
-                            <div class="inner_sizes">
-                            <span>DIN 5008 A</span> 
+                            <div class="inner_sizes active">
+                                <span>DIN 5008 A</span> 
                             </div>
                             <div class="inner_sizes">
                             <span>DIN 5008 B</span> 
@@ -443,7 +443,7 @@
 <div v-if="isDesktop">
 <ion-page> 
 
-<ion-header class="header_am"> 
+<ion-header class="header_am Hrd-Desktop"> 
   <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols">
@@ -471,7 +471,7 @@
       </ion-col>
       <ion-col size="7" class="">
       <div class="ion-text-center ipad_flx ion-padds-l ion-justify-content-center">
-          <span class="title_top ipad_title_top">Address Change</span> 
+          <span class="title_top desktop-title-top">Address Change</span> 
         </div>
       </ion-col>
       <ion-col size="2">
@@ -592,8 +592,8 @@
                         </ion-row>
                     </div>
 
-                    <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin">
-
+                    <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin container_write-desktop">
+ 
                         <div class="Form-subject-container">
                             <ion-row class="Form-subject-row">
                                 <ion-col size="12" class="pr-0 pl-0">
@@ -749,9 +749,9 @@
 
                         <ion-row class="privew_r ion-padding-bottom">
                             <ion-col size="12">
-                                <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
+                                <p class="ion-padding-bottom ruler-line_tab"><strong>Dear Sirs and Madames,</strong></p>
 
-                                <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p class="ion-padding-bottom ruler-line_tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
                                 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </ion-col>

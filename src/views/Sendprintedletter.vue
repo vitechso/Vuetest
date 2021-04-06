@@ -168,46 +168,49 @@
 </div>
 
 <div v-if="isIpad">
-    <ion-page>
-    <ion-header class="header_am">
-    <ion-toolbar class="header-top">
-        <ion-row class="ion-align-items-center">
-        <ion-col size="4" class="bars_hms">
-            <div class="ion-text-center ins_han">
-                <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-            </div>
-            <div class="ion-text-left ipad_flx">
-            <span class="title_top ipad_title_top">Send Printed Letter</span> 
-            </div>
-        </ion-col>
-        <ion-col size="6">
-        </ion-col>
-        <ion-col size="2">
-            <ion-buttons class="right_ipad">
-                <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-            </ion-buttons>
-        </ion-col>
+<ion-page>
+<ion-header class="header_am ">
+    <ion-toolbar class="header-top-ipad">
+        <ion-row class="ion-align-items-center ion-padding-end ion-padding-start">
+            <ion-col size="10" class="bars_hms">
+                <div class="ion-text-center ins_han">
+                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
+                </div>
+                <div class="ion-text-left ipad_flx">
+                    <span class="title_top ipad_title_top">Send Printed Letter</span> 
+                </div>
+            </ion-col>
+      
+            <ion-col size="2" class="">
+                <ion-buttons class="right_ipad">
+                    <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+                </ion-buttons>
+            </ion-col>
         </ion-row>
     </ion-toolbar>
-    </ion-header>
+</ion-header>
+
     <ion-content :fullscreen="true" >
         <div id="container_fax">
             <div class="ipad_text_top ion-text-center ion-padding-top ion-padding-bottom">
                 <p>Below are the details of recipients of printed letter</p>
             </div>
 
-            <div class="main_iads">
+            <div class="main_iads fax_hn">
                 <ion-row class="border_bm">
                     <ion-col size="3">
                         <div class="peint_data_headings">
                             <h3>Name</h3>
                         </div>
                     </ion-col>
-                    <ion-col size="7">
+                    <ion-col size="5">
                         <div class="peint_data_headings">
                             <h3>Address</h3>
                         </div>
                     </ion-col>
+
+                    <ion-col size="2"></ion-col>
+
                     <ion-col size="2"> 
                         <div class="peint_data_headings ion-text-right">
                             <h3>Cost</h3>
@@ -221,11 +224,14 @@
                             <h3>Andrew Symonds</h3>
                         </div>
                     </ion-col>
-                    <ion-col size="7">
+                    <ion-col size="5" >
                         <div class="peint_inner_headings">
-                            <h3>243 Park Hall Aveneues Kassel 11015 Germany</h3>
+                            <h5>243 Park Hall Aveneues Kassel 11015 Germany</h5>
                         </div>
                     </ion-col>
+
+                    <ion-col size="2" class=""></ion-col>
+
                     <ion-col size="2"> 
                         <div class="peint_inner_headings ion-text-right delete_btns">
                             <h3>€0.50</h3>
@@ -240,11 +246,14 @@
                             <h3>Andy Bickel</h3>
                         </div>
                     </ion-col>
-                    <ion-col size="7">
+                    <ion-col size="5">
                         <div class="peint_inner_headings">
-                            <h3>13 Green Park Avenues Kassel 11015 Germany</h3>
+                            <h5>13 Green Park Avenues Kassel 11015 Germany</h5>
                         </div>
                     </ion-col>
+
+                    <ion-col size="2" class=""></ion-col>
+
                     <ion-col size="2"> 
                         <div class="peint_inner_headings ion-text-right delete_btns">
                             <h3>€0.50</h3>
@@ -259,11 +268,14 @@
                             <h3>Bryan Adams</h3>
                         </div>
                     </ion-col>
-                    <ion-col size="7">
+                    <ion-col size="5">
                         <div class="peint_inner_headings">
-                            <h3>12 Model Town Road Berlin 11017 Germany</h3>
+                            <h5>12 Model Town Road Berlin 11017 Germany</h5>
                         </div>
                     </ion-col>
+
+                    <ion-col size="2" class=""></ion-col>
+
                     <ion-col size="2"> 
                         <div class="peint_inner_headings ion-text-right delete_btns">
                             <h3>€0.50</h3>
@@ -278,11 +290,14 @@
                             <h3>Benjamin Williams</h3>
                         </div>
                     </ion-col>
-                    <ion-col size="7">
+                    <ion-col size="5">
                         <div class="peint_inner_headings">
-                            <h3>133 Civil Lines GT Road Munich 11013 Germany</h3>
+                            <h5>133 Civil Lines GT Road Munich 11013 Germany</h5>
                         </div>
                     </ion-col>
+
+                    <ion-col size="2" class=""></ion-col>
+
                     <ion-col size="2"> 
                         <div class="peint_inner_headings ion-text-right delete_btns">
                             <h3>€0.50</h3>
@@ -291,34 +306,32 @@
                     </ion-col>
                 </ion-row>
 
-                <ion-row class="border_bm fill_colortotal">
-                    <ion-col size="8">
+                <ion-row class="border_bm bg-white-light total-num-count">
+                    <ion-col size="10" class="ion-text-right">
+                        <h3>Total number of recipients</h3>
                     </ion-col>
-                    <ion-col size="4"> 
-                        <div class="total_num">
-                            <h3>Total number of recipients</h3>
-                            <h3>4</h3>
-                        </div>
+
+                    <ion-col size="2" class="ion-text-center ion-padding-start">
+                        <h3>4</h3>
                     </ion-col>
                 </ion-row>
 
 
-                <ion-row class="border_bm fill_colortotal">
-                    <ion-col size="8">
+                <ion-row class="border_bm fill_colortotal total-num-count">
+                    <ion-col size="10" class="ion-text-right">
+                        <h3><strong>Grand total</strong></h3>
                     </ion-col>
-                    <ion-col size="4"> 
-                        <div class="total_num">
-                            <h3><strong>Grand total</strong></h3>
-                            <h3><strong>€2.00</strong></h3>
-                        </div>
+
+                    <ion-col size="2" class="ion-text-center ion-padding-start">
+                        <h3><strong>€2.00</strong></h3>
                     </ion-col>
                 </ion-row>
             </div>
-            <ion-row class="ion-margin-top">
-                <ion-col size="8"></ion-col>
-                <ion-col size="4"> 
-                    <div class="ion_tabs_ipads">
-                        <ion-button type="sumbit" shape="round" class="send_btn_m">Send</ion-button>
+
+            <ion-row class="ion-justify-content-center ion-padding-vertical ion-margin-vertical">
+                <ion-col size="12" class="ion-no-padding">
+                    <div class="BtnBlock ion-justify-content-end btn-176-tab">
+                        <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
                     </div>
                 </ion-col>
             </ion-row>
