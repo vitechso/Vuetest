@@ -88,7 +88,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
+  <ion-content :fullscreen="true" class="back_white dark333">
     <div id="container_fax" class="ion-top_padds">
 
     <ion-row class="ion-margin-top ion-margin-bottom">

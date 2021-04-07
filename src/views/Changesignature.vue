@@ -23,11 +23,11 @@
     <div id="container_fax" class="">
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="9">
+        <ion-col size="9" class="ion-no-padding">
             <p><strong>Show signature</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
         </ion-col>
-        <ion-col size="3">
+        <ion-col size="3" class="ion-no-padding">
             <div class="mark_toggle">
                 <ion-toggle slot="end"></ion-toggle>
             </div>
@@ -35,12 +35,12 @@
     </ion-row>
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="7">
+        <ion-col size="7" class="ion-no-padding">
             <p><strong>Upload signature image</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
             <p class="text_colors signature-image-alert">300 px by 170 px</p>
         </ion-col>
-        <ion-col size="5">
+        <ion-col size="5" class="change-s-btn-block">
             <div class="btn_ajj ion-text-right">
                 <ion-button shape="round" type="button">Select Image</ion-button>
             </div>
@@ -48,11 +48,11 @@
     </ion-row>
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="7">
+        <ion-col size="7" class="ion-no-padding">
             <p><strong>Draw a signature</strong></p>
             <p class="text_colors">Manually draw a signature on device using pen or finger</p>
         </ion-col>
-        <ion-col size="5">
+        <ion-col size="5" class="change-s-btn-block">
             <div class="btn_ajj ion-text-right">
                 <ion-button shape="round" type="button" class="draw-sign-btn">Draw Signature</ion-button>
             </div>
@@ -85,7 +85,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="">
+  <ion-content :fullscreen="true" class="dark333">
     <div id="container_fax" class="change_sign_ipad">
 
     <ion-row class="custom_row ion-padding-top ion-padding-bottom">

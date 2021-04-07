@@ -116,7 +116,7 @@
     </ion-row>
         </ion-toolbar>
   </ion-header>
-  <ion-content :fullscreen="true">
+  <ion-content :fullscreen="true" class="dark333">
    <div id="container_01" class="ipad_docs">
         <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
             <p>Start with a blank document, choose a template or <strong  @click="uploadpdf">upload a PDF</strong></p>

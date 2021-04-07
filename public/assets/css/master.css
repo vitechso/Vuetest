@@ -573,8 +573,8 @@ p.credit_bal strong {
     width: 100%;
     display: flex;
     align-items: center;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .contact_book img {
     width: 28px;
@@ -582,7 +582,7 @@ p.credit_bal strong {
 }
 #container_write {
     background: #fff;
-    padding: 0px 11px;
+    padding: 0px 16px;
 }
 
 .container_write-ipad {
@@ -937,7 +937,7 @@ ion-segment {
     color: #333 !important;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
-    line-height: 23px;
+    line-height: 30px;
 }
 
 .setting_bs ion-label {
@@ -1107,6 +1107,13 @@ p.red_c {
     opacity: 0.35;
 }
 
+ion-select::part(placeholder) {
+    opacity: 0.8;
+    font-weight: normal;
+    font-family: 'Proxima Nova', sans-serif !important;
+    color: #999;
+}
+
 
 .selects_ins ion-select {
     width: 100%;
@@ -1114,7 +1121,8 @@ p.red_c {
     border-radius: 30px;
     margin: auto;
     padding: 0px 20px;
-    border: 1px solid #797979;
+    border: 1px solid #888;
+    color: #999;
     background: transparent;
 }
 .user_ids {
@@ -1135,6 +1143,7 @@ p.red_c {
     font-size: 25px;
     font-weight: 800;
     color: #333;
+    background: transparent;
 }
 .selct_file {
     width: 100%;
@@ -1667,6 +1676,11 @@ ion-searchbar input {
     border-bottom: 1px solid #e2e4e6;
     overflow: hidden;
 }
+
+.trng-page-ipad .border_bm:last-child {
+    border: 0;
+}
+
 .peint_inner_headings h3 {
     font-size: 20px;
     margin: 0;
@@ -1700,9 +1714,9 @@ img.delete_print_btns {
     width: 25px;
 }
 img.delete_print_btns_01 {
-    margin-left: 25px;
+    margin-left: 20px;
     width: 40px;
-    height: 35px;
+    height: 30px;
 }
 .fill_colortotal {
     background: #f2f2f2;
@@ -1759,6 +1773,15 @@ img.delete_print_btns_01 {
     /* position: relative;
     right: 25px; */
 }
+
+.sitebar-logo img {
+    width: 85%;
+}
+
+.sitebar-logo-block-ipad {
+    padding: 30px 16px;
+}
+
 .menus_ipad .icon_menus img{
     width: 35px;
     height: 35px;
@@ -1996,6 +2019,7 @@ img.delete_print_btns_01 {
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
     color: #333;
+    overflow: visible;
 }
 .hnas_ipads .icons_s {
     display: flex;
@@ -2006,9 +2030,20 @@ img.delete_print_btns_01 {
 .ipad_spot img {
     width: 100px;
 }
+
+.account-page-ipad p.user_ids.iad_spl {
+    font-size: 18px;
+}
+
+.ipad_spot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ipad_spot h3 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 20px;
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 700;
@@ -2026,9 +2061,11 @@ img.delete_print_btns_01 {
 }
 .ipad_spot .app_vers {
     font-size: 17px;
+    margin-top: 30px;
 }
 .hnas_ipads .ens_sd img {
-    width: 15px;
+    width: 17px;
+    height: 29px;
 }
 
 .ipad_topbar.bordes_ipad {
@@ -2079,11 +2116,17 @@ p.font_sels {
     align-items: center;
 }
 .ipad_secur .setting_bs{
-    height: 91px;
+    height: 90px;
 }
 .ipad_secur .list_cons ion-label {
     font-size: 30px !important;
+    overflow: visible;
 }
+
+img.scrty-arrow {
+    height: 29px;
+}
+
 span.red_p {
     color: #ff5f57;
 }
@@ -2092,9 +2135,11 @@ span.red_p {
 }
 .priy_ipad p{
     font-size: 21px;
+    line-height: 30px;
 }
 .priy_ipad h6{
     font-size: 21px;
+    line-height: 30px;
 }
 .account_ipads .inner_user_img{
     height: 215px;
@@ -2127,7 +2172,7 @@ span.red_p {
 p.user_ids.iad_spl {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
     font-size: 15px;
     font-family: 'Proxima Nova', sans-serif !important;
     color: #959595;
@@ -2140,11 +2185,11 @@ p.user_ids.iad_spl {
     padding-top: 5%;
 }
 .change_pass_ipads .user_nam{
-    height: 60px;
+    height: 57px;
     font-size: 22px;
 }
 .change_pass_ipads .icon_in{
-    top: 20px;
+    top: 50%;
 }
 
 /************************Desktop Css*************************************/
@@ -2688,6 +2733,7 @@ p.up_load_c {
     width: 200px;
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
+    border-radius: 53px;
 }
 
 .MakeDefault-btn._big {
@@ -2771,7 +2817,7 @@ img.paypal-logo {
     --background: transparent !important;
     --color: #888;
     border: 1px solid;
-    border-radius: 30px;
+    border-radius: 53px;
 }
 .EditCarD-block {
     height: 100%;
@@ -2856,7 +2902,7 @@ img.paypal-logo {
 .destop-sitebar-container {
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 100%;
 }
 
 .SideBar {
@@ -2963,6 +3009,7 @@ img.paypal-logo {
     width: 143px !important;
     height: 38px !important;
     font-size: 18px !important;
+    letter-spacing: 1px;
 }
 
 .account_desktop input, .account_desktop ion-select {
@@ -3317,6 +3364,10 @@ ion-checkbox::part(container) {
     line-height: 24px;
 }
 
+.change-s-btn-block {
+    padding: 0 0 0 10px;
+}
+
 .passcode-title {
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
@@ -3480,7 +3531,7 @@ ion-toggle::part(handle) {
     padding: 0px 20px;
     font-size: 16px;
     color: #999;
-    border: 1px solid #797979;
+    border: 1px solid #888;
     background: transparent;
     font-family: 'Proxima Nova', sans-serif !important;
     transition: all 0.1s ease-in-out;
@@ -3496,6 +3547,11 @@ ion-toggle::part(handle) {
     top: 50%;
     display: flex;
     transform: translateY(-50%);
+}
+
+
+.login-Info-box .icon_in img {
+    width: 30px;
 }
 
 .Login-btn-box {
@@ -3716,6 +3772,41 @@ ion-toggle::part(handle) {
     font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
+.passcode-header {
+    background: #fff !important;
+    --background: #fff !important;
+    border-bottom: 1px solid #e2e4e6;
+}
+
+.passcode-header .title {
+    font-size: 26px ;
+    color: #333 ;
+    font-family: 'Proxima Nova Extrabold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.passcode-header .title-2 {
+    font-size: 26px;
+    color: #333;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.passcode-page-ipad {
+    background: #f2f2f2;
+    --background: #f2f2f2;
+}
+
+.passcode-input input {
+    margin: 0 10px;
+}
+
+.fax_box.history_details .inner_history_details:last-child {
+    border: 0;
+}
+
 
 @media (min-width: 1024px) {
     .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
@@ -3735,6 +3826,14 @@ ion-toggle::part(handle) {
 
 @media (max-width: 767.98px) {
 
+    .login-Info-box .icon_in img {
+        width: 23px;
+    }
+
+    #signup-page .Login-btn-box {
+        margin: 40px 0 40px;
+    }
+
     span.title_top {
         font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
         font-weight: 700;
@@ -3744,6 +3843,16 @@ ion-toggle::part(handle) {
     .title_doc h3 {
         margin: 11px 0 16px;
     }
+
+    #privew_s {
+        overflow: visible;
+    }
+
+    ion-toolbar.contact-footer-toolbar {
+        background: #f7f7f7;
+        --background: #f7f7f7;
+    }
+
 
     .BtnBlock ion-button {
         margin: 0 5px 8px !important;
@@ -3799,11 +3908,6 @@ ion-toggle::part(handle) {
     .Form-subject p {
         font-size: 17px;
     }
-
-    .contact_book {
-        justify-content: flex-end;
-    }
-
     .switch {
         width: 60px;
         height: 30px;
@@ -3865,7 +3969,7 @@ ion-toggle::part(handle) {
     }
 
     #container_fax {
-        padding: 0 15px;
+        padding: 0 16px;
     }
 }
 
@@ -3973,22 +4077,6 @@ ion-toggle::part(handle) {
         padding-right: 12px;
     }
 
-    ion-toggle::part(track) {
-        height: 38px;
-        width: 80px;
-    }
-
-    ion-toggle::part(handle) {
-        width: 26px;
-        height: 26px;
-        left: 6px;
-    }
-
-    .ios .toggle-checked::part(handle) {
-        transform: translateX(-10px);
-        background: #fff;
-    }
-
     .user_short_name {
         width: 70px;
         height: 70px;
@@ -4050,6 +4138,49 @@ ion-toggle::part(handle) {
         font-family: 'Proxima Nova', sans-serif !important;
     }
 
+    .inputs_accounts .selects_ins ion-select{
+        font-size: 22px
+    }
+
+    .passcode-title {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    ion-toggle {
+        height: 40px;
+        width: 80px;
+    }
+
+    ion-toggle::part(track) {
+        height: 38px;
+        width: 79px;
+    }
+
+    ion-toggle::part(handle) {
+        width: 26px;
+        height: 26px;
+        left: 6px;
+    }
+
+    .ios .toggle-checked::part(handle) {
+        transform: translateX(-10px);
+        background: #fff;
+    }
+
+
+    .contactlist-ipad .contact_name_list ion-item::part(native) {
+        padding: 0 0 0 10px;
+    }
+
+    .contact_name_list .main_conipad:last-child {
+        border: 0;
+    }
+
+    .main_conipad {
+        padding: 13px 0;
+    }
+
 }
 
 @media only screen and (min-width: 1366px)  {
@@ -4100,21 +4231,6 @@ ion-toggle::part(handle) {
     .lock_unlock {
         padding-left: 12px;
         padding-right: 12px;
-    }
-
-    ion-toggle::part(track) {
-        height: 38px;
-        width: 80px;
-    }
-
-    ion-toggle::part(handle) {
-        width: 26px;
-        height: 26px;
-        left: 6px;
-    }
-
-    .ios .toggle-checked::part(handle) {
-        transform: translateX(-10px);
     }
 
     .toggle-checked::part(handle) {

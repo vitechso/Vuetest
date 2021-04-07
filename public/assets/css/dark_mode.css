@@ -39,11 +39,18 @@ body.dark {
 .dark .control_cin img {
     filter: brightness(50);
 }
+
 .dark .list_cons {
     background: #333;
     --background: #333;
     border-bottom: 1px solid #505050;
 }
+
+.dark .ipad_spot .app_vers {
+    color: #959595;
+}
+
+
 .dark .header_am{
     --background: #111 !important;
     background: #111 !important;
@@ -65,7 +72,7 @@ body.dark {
     color: #FFF;
 }
 .dark .ens_sd img {
-    filter: brightness(50);
+    filter: contrast(1);
 }
 .dark .menu_close img {
     filter: brightness(50);
@@ -110,7 +117,7 @@ body.dark {
 
 .dark .selects_ins ion-select {
     color: #999;
-    border-color: #cccccc;
+    border-color: #888;
 }
 
 .dark .for_got a{
@@ -287,8 +294,7 @@ ion-backdrop {
     height: 4px;
     display: inline-block;
     border-radius: 0;
-    background: #fff;
-    opacity: 0.2;
+    background: #a3a2a3;
 }
 .dark .swiper-pagination-bullet-active {
     opacity: 1;
@@ -336,7 +342,7 @@ ion-backdrop {
 }
 
 .dark .mobo-sitebar ion-item.active {
-    --background: #797979;
+    --background: #2a2a2a !important;
 }
 
 .dark .user_name_email .email {
@@ -400,10 +406,6 @@ ion-backdrop {
     --background: #4c4c4c;
 }
 
-.dark #container_01 {
-    background: #333;
-}
-
 .dark span.popup_title {
     color: #fff;
 }
@@ -417,7 +419,7 @@ ion-backdrop {
 }
 
 .dark .border_bm {
-    border: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
 }
 
 .dark .bg-white-light {
@@ -472,14 +474,6 @@ ion-backdrop {
     background-color: #4c4c4c;
 }
 
-.dark #container_fax {
-    background: #333;
-}
-
-.dark .privew-container {
-    background: #333;
-}
-
 .dark .icon_mipad {
     border: 1px solid #797979;
     background-color: #333333;
@@ -529,8 +523,75 @@ ion-backdrop {
     filter: invert(1);
 }
 
+.dark .setting-page-ipad .list_cons,
+.dark .security-page-ipad .list_cons,
+.dark .rating-page-ipad .list_cons {
+    border-bottom: 0;
+}
+
+.dark img.delete_print_btns_01 {
+    filter: invert(1);
+}
+
+.dark .account_ipads .inner_user_img {
+    background-color: #333333;
+}
+
+.dark .inner_user_img img {
+    width: 65%;
+    filter: contrast(0);
+}
+
+.dark .pass_code {
+    border-bottom: 4px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.dark .passcode-header .title,
+.dark .passcode-header .title-2 {
+    color: #fff;
+}
+
+.dark .passcode-header {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .login-Info-box .icon_in img {
+    filter: contrast(0);
+}
+
+.dark .main_setting .list_cons {
+    border-bottom: 0;
+}
+
+
+
 @media (max-width: 767.98px) {
     .dark .ion-overlay-wrapper {
+        background: #333;
+    }
+
+    .dark .foo_bottom ion-toolbar {
+        background: #333!important;
+        --background: #333;
+    }
+
+    .dark .foo_bottom .custom_btn_export.button-solid {
+        background: #333;
+        --background: #333 !important;
+    }
+
+    .dark ion-toolbar.contact-footer-toolbar {
+        background: #111111;
+        --background: #111111;
+    }
+
+    .dark  .app_vers {
+        color: #959595;
+    }
+
+    .dark .inner_user_img {
         background: #333;
     }
 }

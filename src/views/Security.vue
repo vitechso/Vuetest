@@ -72,9 +72,9 @@
 <div v-if="isIpad">
 <ion-page>
     <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center">
-      <ion-col size="4" class="bars_hms">
+  <ion-toolbar class="header-top-ipad">
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="8" class="bars_hms ion-no-padding">
         <div class="ion-text-center ins_han">
             <img @click="()=>router.push('/Settings')" src="assets/images/back_btn.svg"/>
         </div>
@@ -82,9 +82,8 @@
           <span class="title_top ipad_title_top">Security</span> 
         </div>
       </ion-col>
-      <ion-col size="6">
-      </ion-col>
-      <ion-col size="2">
+      
+      <ion-col size="4" class="ion-no-padding">
         <ion-buttons class="right_ipad">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
@@ -93,9 +92,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content :fullscreen="true">
-    <div class="main_setting ion-margin ipad_secur">
-        
+<ion-content :fullscreen="true" class="security-page-ipad">
+    <div class="main_setting ion-padding ion-margin-top ipad_secur">
         <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
             <!-- <div slot="start" class="icons_s">
                 <img src="assets/images/Dark_mode.svg"/>
@@ -110,7 +108,7 @@
             </div> -->
             <ion-label>Change Passcode</ion-label>
             <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
+                <img src="assets/images/right_arrow.svg" class="scrty-arrow"/>
             </div>
         </ion-item>
 
@@ -128,7 +126,7 @@
             </div> -->
             <ion-label>Locking</ion-label>
             <div slot="end" class="control_cin ens_sd">
-                <img src="assets/images/right_arrow.svg"/>
+                <img src="assets/images/right_arrow.svg" class="scrty-arrow"/>
             </div>
         </ion-item>
 

@@ -146,9 +146,10 @@
 
 <div v-if="isIpad">
 <ion-page>
+
 <ion-header class="header_am">
-    <ion-toolbar class="">
-        <ion-row class="ion-align-items-center ion-padding-end ion-padding-start">
+    <ion-toolbar class="header-top-ipad ">
+        <ion-row class="ion-align-items-center ion-padding-horizontal">
             <ion-col size="10" class="bars_hms">
                 <div class="ion-text-center ins_han">
                     <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
@@ -167,8 +168,8 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content :fullscreen="true">
-    <div class="main_setting ion-margin hnas_ipads">
+<ion-content :fullscreen="true" class="setting-page-ipad">
+    <div class="main_setting ion-padding ion-margin-top hnas_ipads">
         <ion-row>
             <ion-col size="6" class="ion-padding-end">
                 <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
@@ -287,10 +288,10 @@
                 
         <ion-row class="ion-margin-top">
             <ion-col size="12">
-                <div class="suppoets ipad_spot">
+                <div class="suppoets ipad_spot btn-176-tab">
                     <img src="assets/images/support_icon.svg"/>
                     <h3>Help & Support</h3>
-                    <ion-button shape="round" class="ok_btn">Logout</ion-button>
+                    <ion-button shape="round" class="sign_ups">Logout</ion-button>
                     <p class="app_vers">App Version: 1879.2021</p>
                 </div>
             </ion-col>

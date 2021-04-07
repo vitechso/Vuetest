@@ -165,7 +165,7 @@
         </ion-content>
 
         <ion-footer class="ion-no-border">
-            <ion-toolbar>
+            <ion-toolbar class="contact-footer-toolbar">
                 <ion-row class="ion-justify-content-center contact-footer">
                     <ion-col size="12">
                         <div class="BtnBlock">

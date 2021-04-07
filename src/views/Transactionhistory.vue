@@ -173,28 +173,28 @@
 
 <div v-if="isIpad">
 <ion-page>
+
 <ion-header class="header_am">
-    <ion-toolbar class="">
-        <ion-row class="ion-align-items-center ion-padding-end ion-padding-start">
-            <ion-col size="10" class="bars_hms">
-                <div class="ion-text-center ins_han">
-                    <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
-                </div>
-                <div class="ion-text-left ipad_flx">
-                    <span class="title_top ipad_title_top">Transaction History</span> 
-                </div>
-            </ion-col>
-      
-            <ion-col size="2" class="">
-                <ion-buttons class="right_ipad">
-                    <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-                </ion-buttons>
-            </ion-col>
-        </ion-row>
-    </ion-toolbar>
+  <ion-toolbar class="header-top-ipad">
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="8" class="bars_hms">
+        <div class="ion-text-center ins_han">
+            <img @click="()=>router.push('/settings')" src="assets/images/back_btn.svg"/>
+        </div>
+        <div class="ion-text-left ipad_flx">
+          <span class="title_top ipad_title_top">Transaction History</span> 
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <ion-buttons class="right_ipad">
+            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content :fullscreen="true" >
+<ion-content :fullscreen="true" class="trng-page-ipad" >
     <div id="container_fax">
         <div class="ipad_text_top ion-text-left ion-padding-top ion-padding-bottom desk_top_fless">
             <p>Credit Balance: €15.00</p>

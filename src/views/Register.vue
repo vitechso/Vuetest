@@ -259,6 +259,7 @@ import { IonPage, IonContent, isPlatform, getPlatforms } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
+
 export default defineComponent({
   name: 'Register',
   components: {

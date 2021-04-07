@@ -175,130 +175,84 @@
         </div>
     </div>
     <div v-if="selectedSegment == 'groups'" class="ion-padding-start ion-padding-end">
-        <div class="contactlist"> 
-            <div class="contact_name_list create-groups-list padd_mobils">
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>Company</ion-label>
-                        </ion-col>
+        <div class="contactlist contactlist-GROUP">
+            <div class="contact_name_list">
+                <ion-list>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>Company</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
 
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>CEO</ion-label>
-                        </ion-col>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>CEO</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
 
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>Directors</ion-label>
-                        </ion-col>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>Directors</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>Designers</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>Designers</ion-label>
-                        </ion-col>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>Marketing</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>JSEO</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
 
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>Marketing</ion-label>
-                        </ion-col>
-
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
-
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>SEO</ion-label>
-                        </ion-col>
-
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
-
-                    <ion-row class="main_conipad main-cont-desk ion-justify-content-between">
-                        <ion-col size="3">
-                            <ion-label>XYZ</ion-label>
-                        </ion-col>
-
-                        <ion-col size="4" class="ion-padding-end">
-                            <div class="colsd ion-justify-content-end">
-                                <div class="control_cin">
-                                    <img src="assets/images/edit.svg"/>
-                                </div>
-                                <div class="control_cin">
-                                    <img src="assets/images/delete_black.svg"/>
-                                </div>
-                            </div>
-                        </ion-col>
-                    </ion-row>
-                </div>
+                    <ion-item lines="none" class="list_cons">
+                        <ion-label>ZXY</ion-label>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/edit.svg"/>
+                        </div>
+                        <div slot="end" class="control_cin">
+                            <img src="assets/images/delete_black.svg"/>
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </div>
         </div>
     </div>
-    
   </ion-content>
 
   <ion-footer class="ion-no-border">

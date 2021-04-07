@@ -1,13 +1,13 @@
 <template>
-  <ion-app v-if="isMobile" class="mobile_menus">
+<ion-app v-if="isMobile" class="mobile_menus">
 
   <ion-menu side="start" menu-id="first" content-id="main">
     <ion-row class="top_menu_sl ion-padding mt-4">
-      <ion-col size="10" class="ion-no-padding">
+      <ion-col size="10" class="sitebar-logo">
         <div class="drak_mode">
           <img class="" src="assets/images/darklogo.svg"/>
         </div>
-        <div class="kdh">
+        <div class="logo">
           <img src="assets/images/logo.svg"/>
         </div> 
       </ion-col>
@@ -71,17 +71,17 @@
   </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
  
-  </ion-app>
+</ion-app>
 
-  <ion-app v-if="isIpad" class="menus_ipad">
+<ion-app v-if="isIpad" class="menus_ipad">
 
   <ion-menu side="start" menu-id="first" content-id="main">
-    <ion-row class="top_menu_sl">
-      <ion-col size="10">
+    <ion-row class="top_menu_sl sitebar-logo-block-ipad">
+      <ion-col size="10" class="sitebar-logo">
         <div class="drak_mode">
-          <img class="w-100" src="assets/images/darklogo.svg"/>
+          <img class="" src="assets/images/darklogo.svg"/>
         </div>
-        <div class="kdh">
+        <div class="logo">
           <img src="assets/images/logo.svg"/>
         </div> 
       </ion-col>

@@ -25,24 +25,21 @@
 
     <ion-content :fullscreen="true" class="back_white">
       <div id="container_fax" class="ion-padding-top ion-padding-end ion-padding-start fdfs upload-pdf-mobo">
-        <ion-row class="ion-margin-top ion-margin-bottom">
-            <ion-col size="7" class="opas">
+        <ion-row class="ion-margin-top ion-margin-bottom  d-flex ion-align-items-center">
+            <ion-col size="7" class="ion-no-padding">
                 <p class="select-upload-text">Please select a file to upload</p>
             </ion-col>
-            <ion-col size="5">
+            <ion-col size="5" class="ion-no-padding ion-text-right">
                 <ion-button shape="round" class="next_btn select-pdf-btn">Select PDF</ion-button>
             </ion-col>
         </ion-row>
 
         <ion-row class="ion-margin-top ion-margin-bottom">
-            <ion-col size="6">
+            <ion-col size="6" class="ion-no-padding">
                 <div class="pdf_icons">
                     <img src="assets/images/pdf_icon.svg" />
                     <p class="font_sels">document.pdf</p>
                 </div>
-            </ion-col>
-            <ion-col size="6">
-                
             </ion-col>
         </ion-row>
 
@@ -61,60 +58,54 @@
 
 <div v-if="isIpad">
 <ion-page>
-    <ion-header class="ipad_topbar bordes_ipad">
-        <ion-toolbar>
-        <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="6" class="ipad_cols">
+
+<ion-header class="ipad_topbar bordes_ipad">
+  <ion-toolbar>
+    <ion-row class="ion-align-items-center bar_c">
+      <ion-col size="8" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
-            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
+          <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Upload PDF</span> 
         </div>
       </ion-col>
-      <ion-col size="4"></ion-col>
-      <ion-col size="2">
+      
+      <ion-col size="4">
         <div @click="cancel" class="close_popus">
             <img src="assets/images/cross_icon.svg"/>
         </div>
       </ion-col>
     </ion-row>
-        </ion-toolbar>
-  </ion-header>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
+<ion-content :fullscreen="true" class="back_white dark333">
     <div id="container_fax" class="ion-padding-end ion-padding-start fdfs">
 
-    <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="4" class="opas">
-            <p class="font_sels">Please select a file to upload</p>
-        </ion-col>
-        <ion-col size="3">
-            <ion-button shape="round" class="ok_btn">Select PDF</ion-button>
-        </ion-col>
-    </ion-row>
+      <ion-row class="ion-margin-top ion-margin-bottom">
+          <ion-col size="12" class="opas">
+              <p class="font_sels select-upload-text-ipad">Please select a file to upload</p>
+              <ion-button shape="round" class="next_btn upload-btn ion-margin-start">Select PDF</ion-button>
+          </ion-col>
+      </ion-row>
 
-    <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="6">
-            <div class="pdf_icons">
-                <img src="assets/images/pdf_icon.svg" />
-                <p class="font_sels">document.pdf</p>
-            </div>
-        </ion-col>
-        <ion-col size="6">
-            
-        </ion-col>
-    </ion-row>
+      <ion-row class="ion-margin-top ion-margin-bottom">
+          <ion-col size="12">
+              <div class="pdf_icons">
+                  <img src="assets/images/pdf_icon.svg" />
+                  <p class="font_sels">document.pdf</p>
+              </div>
+          </ion-col>
+          
+      </ion-row>
 
-     <ion-row class="ion-margin-top">
-                <ion-col size="4"></ion-col>
-                <ion-col size="2">
-                    <ion-button shape="round" class="ok_btn ion-padding-end">Update</ion-button>
-                </ion-col>
-                <ion-col size="2">
-                    <ion-button shape="round" @click="cancel" class="cancel_btn ion-padding-start">Cancel</ion-button>
-                </ion-col>
-                <ion-col size="4"></ion-col>
-            </ion-row>
-
+      <ion-row class="ion-justify-content-center ion-padding mt-5">
+          <ion-col size="12">
+              <div class="BtnBlock btn-176-tab">
+                  <ion-button shape="round" class="MakeDefault-btn">Done</ion-button>
+                  <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+              </div>
+          </ion-col>
+      </ion-row>
     </div>
   </ion-content>
 </ion-page>

@@ -28,7 +28,7 @@
 
     <div class="lock_unlock">
         <ion-row>
-            <ion-col size="2">
+            <ion-col size="2" class="ion-no-padding">
                 <div class="img_unloacks" @click="addclass($event)">
                     <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
                     <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
@@ -40,7 +40,7 @@
   <ion-content :fullscreen="true" >
     <div :class="styleClass" id="container_write" class="">
         <ion-row class="Form-subject-row">
-            <ion-col size="12">
+            <ion-col size="12" class="ion-no-padding">
                 <div class="Form-subject-block">
                     <div class="Form-subject">
                         <h5>From</h5>
@@ -55,7 +55,7 @@
         </ion-row>
 
         <ion-row class="Form-subject-row">
-            <ion-col size="12">
+            <ion-col size="12" class="ion-no-padding">
                 <div class="Form-subject-block">
                     <div class="Form-subject">
                         <h5>To</h5>
@@ -70,7 +70,7 @@
         </ion-row>
 
         <ion-row class="Form-subject-row">
-            <ion-col size="12">
+            <ion-col size="12" class="ion-no-padding">
                 <div class="Form-subject-block">
                     <div class="Form-subject">
                         <h5>Subject</h5>
@@ -81,41 +81,39 @@
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
-            <ion-col size="12">
+            <ion-col size="12" class="ion-no-padding">
                 <h5>Dear Sirs and Madames,</h5>
             </ion-col>
-            <ion-col size="12">
+            <ion-col size="12" class="ion-no-padding">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </ion-col>
         </ion-row>
 
         <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
+            <ion-col size="3" class="ion-no-padding">
                 <h5>Footer</h5>
             </ion-col>
-            <ion-col size="9">
+            <ion-col size="9" class="ion-no-padding">
                 <p class="fontlight">Sincerely, <br> Justin Shepp</p>
             </ion-col>
         </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="5">
+        <ion-row class="row_01 b_p ion-padding-vertical">
+            <ion-col size="6" class="ion-no-padding">
                 <h5>Signature</h5>
             </ion-col>
-            <ion-col size="2"></ion-col>
-            <ion-col size="5">
+            <ion-col size="6" class="ion-no-padding">
                 <div class="btn_ajj ion-text-right">
                     <ion-button shape="round" type="button" @click="() => router.push('/changesignature')">Adjust</ion-button>
                 </div>
             </ion-col>
         </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
+        <ion-row class="row_01 b_p">
+            <ion-col size="6" class="ion-no-padding">
                 <h5>Letter Size</h5>
             </ion-col>
-            <ion-col size="4"></ion-col>
-            <ion-col size="5">
+            <ion-col size="6" class="ion-no-padding">
                 <div class="lett_selct">
                     <ion-item lines="none">
                         <ion-label class="select-label">Letter Size</ion-label>
@@ -130,12 +128,12 @@
             </ion-col>
         </ion-row>
 
-        <ion-row class="row_01 b_p bor_b">
-            <ion-col size="3">
+        <ion-row class="row_01 b_p ">
+            <ion-col size="6" class="ion-no-padding">
                 <h5>Markers</h5>
             </ion-col>
-            <ion-col size="4"></ion-col>
-            <ion-col size="5">
+            
+            <ion-col size="6" class="ion-no-padding">
                 <div class="mark_toggle">
                     <ion-toggle slot="end"></ion-toggle>
                 </div>

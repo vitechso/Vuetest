@@ -99,7 +99,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true">
+  <ion-content :fullscreen="true" class="dark333">
     <div class="privew-container">
       <div id="privew_s" class="back_white privew_ipads">
 

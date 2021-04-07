@@ -79,7 +79,7 @@
               </div>
 
               <div lines="none" class="Login-btn-box">
-                <ion-button type="submit" shape="round" class="sign_ups">Submit</ion-button>
+                <ion-button type="submit" shape="round" class="sign_ups" @click="openModal">Submit</ion-button>
               </div>
 
               <div class="have-accout-box">
@@ -98,9 +98,10 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonContent, alertController, isPlatform, getPlatforms } from '@ionic/vue'
+import { IonPage, IonContent, alertController, isPlatform, getPlatforms, modalController } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import EnterPasscode from './EnterPasscode.vue'
 
 export default defineComponent({
   name: 'Forgot',
@@ -156,7 +157,25 @@ export default defineComponent({
     validEmail: function (email: any) {
       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
+    },
+
+    async openModal() {
+       modalController.dismiss()
+       //alert('sdsds');
+      const modal = await modalController.create({
+          component: EnterPasscode,
+          cssClass: 'passcode-pop',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+    cancel() {
+        modalController.dismiss()
     }
-  }
+  },
+
 });
 </script>
