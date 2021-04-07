@@ -2987,6 +2987,13 @@ img.paypal-logo {
     padding: 15px 63px 5px;
 }
 
+.contactlist-ipad ion-label {
+    top: -2px !important;
+}
+
+.contactlist-desk .contact_name_list ion-item::part(native) {
+    padding: 0 0 0 6px;
+}
 
 .contactlist-desk ion-label {
     font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
@@ -2994,6 +3001,8 @@ img.paypal-logo {
     color: #333333 !important;
     font-size: 18px !important;
     margin: 0;
+    position: relative;
+    top: 3px;
 }
 
 .contactlist-desk .insd p {
