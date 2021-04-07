@@ -76,7 +76,7 @@
 <ion-app v-if="isIpad" class="menus_ipad">
 
   <ion-menu side="start" menu-id="first" content-id="main">
-    <ion-row class="top_menu_sl sitebar-logo-block-ipad">
+    <ion-row class="top_menu_sl sitebar-logo-block-ipad mt-2">
       <ion-col size="10" class="sitebar-logo">
         <div class="drak_mode">
           <img class="" src="assets/images/darklogo.svg"/>

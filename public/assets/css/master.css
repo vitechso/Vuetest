@@ -82,6 +82,16 @@
     src: url('../font/ProximaNova-SemiboldItalic.otf');
 }
 
+ion-backdrop {
+    background: #000;
+    opacity: 0.7 !important;
+}
+
+ion-modal {
+    background: rgb(0 0 0 / 60%);
+    transition: all 0.05s ease-in-out;
+}
+
 ion-content {
     --background: #f7f7f7;
     background: #f7f7f7;
@@ -363,6 +373,13 @@ ion-item {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     padding-right: 55px;
+}
+
+.ios .texts_letts p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .letter_pic {
@@ -1440,12 +1457,13 @@ ion-searchbar input {
     line-height: 30px;
 }
 .back_fooipad {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 368px);
     z-index: 111;
     background: #f2f2f2;
     padding: 8px 12px;
+    right: 0;
 }
 .ion-padds-l {
     padding-left: 15px;
@@ -2902,7 +2920,7 @@ img.paypal-logo {
 .destop-sitebar-container {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: max-content;
 }
 
 .SideBar {
@@ -3592,7 +3610,7 @@ ion-toggle::part(handle) {
 }
 
 .for_got a {
-    color: #6a6869;
+    color: #333;
     font-size: 18px;
     font-family: 'Proxima Nova', sans-serif !important;
 }
@@ -3620,7 +3638,7 @@ ion-toggle::part(handle) {
 
 .sign_with p {
     font-family: 'Proxima Nova', sans-serif !important;
-    color: #6a6869;
+    color: #333;
     text-align: center;
     line-height: 24px;
     font-size: 17px;
@@ -3715,15 +3733,19 @@ ion-toggle::part(handle) {
     border-bottom: 1px solid #E2E4E6;
 }
 
+.mt-2 {
+    margin-top: 20px;
+}
+
 .ipad-header {
     display: flex;
     flex-wrap: wrap;
-    height: 60px;
+    height: 75px;
     align-items: center;
 }
 
 .SideBar-search {
-    padding: 7px 15px;
+    padding: 8px 15px;
 }
 
 .ipad-header .left-header {
@@ -3763,7 +3785,7 @@ ion-toggle::part(handle) {
 }
 
 .header-top-ipad {
-    height: 60px;
+    height: 75px;
     display: flex;
     align-items: center;
 }
