@@ -3,9 +3,14 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --font-family-base: 'ProximaNova-Regular' !important;
+  --font-family-ios-base: 'ProximaNova-Regular' !important;
+  --font-family-md-base: 'ProximaNova-Regular' !important;
+  --font-family-wp-base: 'ProximaNova-Regular' !important;
   --font-family: 'ProximaNova-Regular' !important;
     font-family: 'ProximaNova-Regular' !important;
   /** primary **/
+  --ion-font-family: 'ProximaNova-Regular' !important;
   --ion-color-primary: #f1d000;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
