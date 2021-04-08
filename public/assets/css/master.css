@@ -12,6 +12,7 @@
 @font-face {
     font-family: 'ProximaNova-Bold';
     src: url('../font/ProximaNova-Bold.otf');
+    src: url('../font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
@@ -32,6 +33,7 @@
 @font-face {
     font-family: 'ProximaNovaCond-Regular';
     src: url('../font/ProximaNovaCond-Regular.otf');
+    src: url('../font/ProximaNovaCond-Regular.ttf');
 }
 
 @font-face {
