@@ -1,91 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-body {
-    font-family: 'Jost', sans-serif ;
+* {
+    font-family: 'ProximaNova-Regular' !important;
 }
 
-/* @font-face {
-    font-family: 'Proxima Nova Bl';
+@font-face {
+    font-family: 'ProximaNova-Black';
     src: url('../font/ProximaNova-Black.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'ProximaNova-Bold';
     src: url('../font/ProximaNova-Bold.otf');
-    src: url('../font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'ProximaNova-BoldIt';
     src: url('../font/ProximaNova-BoldIt.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Lt';
+    font-family: 'ProximaNovaCond-Light';
     src: url('../font/ProximaNovaCond-Light.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Lt';
+    font-family: 'ProximaNovaCond-LightIt';
     src: url('../font/ProximaNovaCond-LightIt.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Rg';
+    font-family: 'ProximaNovaCond-Regular';
     src: url('../font/ProximaNovaCond-Regular.otf');
-    src: url('../font/ProximaNovaCond-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Rg';
+    font-family: 'ProximaNovaCond-RegularIt';
     src: url('../font/ProximaNovaCond-RegularIt.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Lt';
+    font-family: 'ProximaNovaCond-Semibold';
     src: url('../font/ProximaNovaCond-Semibold.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cn Lt';
+    font-family: 'ProximaNovaCond-SemiboldIt';
     src: url('../font/ProximaNovaCond-SemiboldIt.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Th';
+    font-family: 'ProximaNova-Extrabold';
     src: url('../font/ProximaNova-Extrabold.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Lt';
+    font-family: 'ProximaNova-Light';
     src: url('../font/ProximaNova-Light.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Lt';
+    font-family: 'ProximaNova-LightItalic';
     src: url('../font/ProximaNova-LightItalic.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'ProximaNova-Regular';
     src: url('../font/ProximaNova-Regular.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'ProximaNova-RegularItalic';
     src: url('../font/ProximaNova-RegularItalic.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Lt';
+    font-family: 'ProximaNova-Semibold';
     src: url('../font/ProximaNova-Semibold.otf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Lt';
+    font-family: 'ProximaNova-SemiboldItalic';
     src: url('../font/ProximaNova-SemiboldItalic.otf');
-} */
+}
 
 ion-header {
     overflow: hidden;
@@ -3543,9 +3538,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Jost', sans-serif;
-
-    /* font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important; */
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .or h2 {
@@ -3553,8 +3546,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Jost', sans-serif;
-    /* font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important; */
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .inputs-group {
