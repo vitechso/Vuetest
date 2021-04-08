@@ -3,6 +3,8 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --font-family: 'ProximaNova-Regular' !important;
+    font-family: 'ProximaNova-Regular' !important;
   /** primary **/
   --ion-color-primary: #f1d000;
   --ion-color-primary-rgb: 56, 128, 255;

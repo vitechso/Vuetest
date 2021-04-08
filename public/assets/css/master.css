@@ -1,7 +1,9 @@
 * {
     font-family: 'ProximaNova-Regular' !important;
 }
-
+:host{
+    font-family: 'ProximaNova-Regular' !important;
+}
 @font-face {
     font-family: 'ProximaNova-Black';
     src: url('../font/ProximaNova-Black.otf');
