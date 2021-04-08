@@ -18,84 +18,84 @@ html {
 }
 @font-face {
     font-family: 'ProximaNova-Black';
-    src: url('../font/ProximaNova-Black.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Black.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Bold';
-    src: url('../font/ProximaNova-Bold.otf');
-    src: url('../font/ProximaNova-Bold.ttf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Bold.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-BoldIt';
-    src: url('../font/ProximaNova-BoldIt.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-BoldIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Light';
-    src: url('../font/ProximaNovaCond-Light.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-Light.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-LightIt';
-    src: url('../font/ProximaNovaCond-LightIt.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-LightIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Regular';
-    src: url('../font/ProximaNovaCond-Regular.otf');
-    src: url('../font/ProximaNovaCond-Regular.ttf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-Regular.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-Regular.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-RegularIt';
-    src: url('../font/ProximaNovaCond-RegularIt.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-RegularIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Semibold';
-    src: url('../font/ProximaNovaCond-Semibold.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-Semibold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-SemiboldIt';
-    src: url('../font/ProximaNovaCond-SemiboldIt.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNovaCond-SemiboldIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Extrabold';
-    src: url('../font/ProximaNova-Extrabold.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Extrabold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('../font/ProximaNova-Light.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Light.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-LightItalic';
-    src: url('../font/ProximaNova-LightItalic.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-LightItalic.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Regular';
-    src: url('../font/ProximaNova-Regular.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-RegularItalic';
-    src: url('../font/ProximaNova-RegularItalic.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-RegularItalic.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Semibold';
-    src: url('../font/ProximaNova-Semibold.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-Semibold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-SemiboldItalic';
-    src: url('../font/ProximaNova-SemiboldItalic.otf');
+    src: url('http://swadeshisetu.in/vue-font/ProximaNova-SemiboldItalic.otf');
 }
 
 ion-header {
