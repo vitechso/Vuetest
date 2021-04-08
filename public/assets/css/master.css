@@ -16,7 +16,7 @@ html {
     --ion-font-family: 'Proxima Nova', sans-serif !important;
      --ion-default-font: -apple-system, BlinkMacSystemFont, 'Proxima Nova', sans-serif !important;
 }
-@font-face {
+/* @font-face {
     font-family: 'Proxima Nova Bl';
     src: url('../font/ProximaNova-Black.otf');
 }
@@ -96,7 +96,7 @@ html {
 @font-face {
     font-family: 'Proxima Nova Lt';
     src: url('../font/ProximaNova-SemiboldItalic.otf');
-}
+} */
 
 ion-header {
     overflow: hidden;
