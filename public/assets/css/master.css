@@ -4,6 +4,12 @@
 :host{
     font-family: 'ProximaNova-Regular' !important;
 }
+html.ios {
+    --ion-default-font: -apple-system, BlinkMacSystemFont, 'ProximaNova-Regular', sans-serif !important;
+}
+html {
+    --ion-font-family: 'ProximaNova-Regular', sans-serif !important;
+}
 @font-face {
     font-family: 'ProximaNova-Black';
     src: url('../font/ProximaNova-Black.otf');
