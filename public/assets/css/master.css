@@ -1,19 +1,20 @@
 * {
-    font-family: 'ProximaNova-Regular' !important;
+    /* font-family: 'ProximaNova-Regular' !important; */
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 :host{
-    font-family: 'ProximaNova-Regular' !important;
+    font-family: 'Proxima Nova', sans-serif !important;
 }
 html.ios {
-    --ion-default-font: -apple-system, BlinkMacSystemFont, 'ProximaNova-Regular', sans-serif !important;
+    --ion-default-font: -apple-system, BlinkMacSystemFont, 'Proxima Nova', sans-serif !important;
 }
 html {
-    --ion-font-family: 'ProximaNova-Regular', sans-serif !important;
+    --ion-font-family: 'Proxima Nova', sans-serif !important;
 }
 #app{
-    font-family: 'ProximaNova-Regular' !important;
-    --ion-font-family: 'ProximaNova-Regular', sans-serif !important;
-    --ion-default-font: -apple-system, BlinkMacSystemFont, 'ProximaNova-Regular', sans-serif !important;
+    font-family: 'Proxima Nova', sans-serif !important;
+    --ion-font-family: 'Proxima Nova', sans-serif !important;
+     --ion-default-font: -apple-system, BlinkMacSystemFont, 'Proxima Nova', sans-serif !important;
 }
 @font-face {
     font-family: 'ProximaNova-Black';
