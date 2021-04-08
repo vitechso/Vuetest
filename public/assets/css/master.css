@@ -1,21 +1,10 @@
-* {
-    /* font-family: 'ProximaNova-Regular' !important; */
-    font-family: 'Proxima Nova', sans-serif !important;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Jost', sans-serif ;
 }
-:host{
-    font-family: 'Proxima Nova', sans-serif !important;
-}
-html.ios {
-    --ion-default-font: -apple-system, BlinkMacSystemFont, 'Proxima Nova', sans-serif !important;
-}
-html {
-    --ion-font-family: 'Proxima Nova', sans-serif !important;
-}
-#app{
-    font-family: 'Proxima Nova', sans-serif !important;
-    --ion-font-family: 'Proxima Nova', sans-serif !important;
-     --ion-default-font: -apple-system, BlinkMacSystemFont, 'Proxima Nova', sans-serif !important;
-}
+
 /* @font-face {
     font-family: 'Proxima Nova Bl';
     src: url('../font/ProximaNova-Black.otf');
@@ -3554,7 +3543,9 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Jost', sans-serif;
+
+    /* font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important; */
 }
 
 .or h2 {
@@ -3562,7 +3553,8 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important; */
 }
 
 .inputs-group {
