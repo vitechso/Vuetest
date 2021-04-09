@@ -4,7 +4,10 @@
         font-size: 20px !important;
     }
     .header-top-ipad {
-        height: 50px;
+        height: 60px;
+    }
+    .ipad-header{
+        height: 60px;
     }
     .texts_letts h3 {
         font-size: 17px;
@@ -248,7 +251,10 @@
         font-size: 20px;
     }
     .header-top-ipad {
-        height: 50px;
+        height: 60px;
+    }
+    .ipad-header{
+        height: 60px;
     }
     .badgs {
         width: 40px;
