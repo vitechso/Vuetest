@@ -1,0 +1,467 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2) 
+{ 
+    .letter-heading{
+        font-size: 20px !important;
+    }
+    .header-top-ipad {
+        height: 50px;
+    }
+    .texts_letts h3 {
+        font-size: 17px;
+    }
+    .texts_letts p {
+        font-size: 16px;
+    }
+    .date span {
+        font-size: 16px;
+    }
+    .SideBar {
+        width:250px;
+    }
+    .right-content-box {
+        width: calc(100% - 250px);
+    }
+    .right-header {
+        width: calc(100% - 250px);
+    }
+    .ipad-header .left-header {
+        width: 250px;
+    }
+    #container_write h5{
+        font-size: 16px;
+    }
+    .Form-subject p{
+        font-size: 16px;
+    }
+    .back_fooipad{
+        width: calc(100% - 250px);
+    }
+    .face img {
+        width: 10px !important;
+    }
+    .social_icons li{
+        width: 40px;
+        height: 40px;
+    }
+    .sign_with h2, .or h2 {
+        font-size: 20px;
+    }
+    .for_got a {
+        font-size: 18px;
+    }
+    .have-accout-box h5 {
+        font-size: 20px;
+    }
+    .user_nam {
+        height: 55px;
+        font-size: 18px;
+    }
+    .login-Info-box .logo img, #signup-page .dark-logo {
+        width: 350px;
+    }
+    .sign_ups {
+        height: 55px;
+        width: 150px;
+        font-size: 22px;
+    }
+    .ipad_title_top{
+        font-size: 20px !important;
+    }
+    .welcome_ipad h3{
+        font-size: 20px;
+    }
+    .welcome_ipad h4 {
+        font-size: 18px;
+    }
+    .create_letts {
+        height: 50px;
+        width: 165px;
+        font-size: 20px;
+    }
+    .menus_ipad ion-menu{
+        --width: 400px !important;
+    }
+    .menus_ipad .icon_menus{
+        font-size: 20px;
+    }
+    .menus_ipad .icon_menus img {
+        width: 22px;
+        height: 22px;
+    }
+    .menus_ipad .bans_sj {
+        font-size: 20px;
+    }
+    .user_short_name p {
+        margin: 0;
+        font-size: 25px;
+    }
+    .user_short_name {
+        width: 50px;
+        height: 50px;
+    }
+    .email {
+        font-size: 18px;
+    }
+    .user_name {
+        font-size: 20px;
+    }
+    .user_logout {
+        height: 25px;
+    }
+    span.popup_title {
+        font-size: 20px;
+    }
+    .ipad_docs .text_top p {
+        font-size: 20px;
+    }
+    .btn-176-tab ion-button {
+        width: 150px !important;
+        height: 55px !important;
+    }
+    .change_sign_ipad p {
+        font-size: 18px;
+    }
+    .import_csv{
+        font-size: 16px;
+    }
+    .desktop-segmnt ion-label{
+        font-size: 20px;
+    }
+    .hans_ipad {
+        height: 45px;
+    }
+    .contactlist-desk ion-label{
+        font-size: 16px !important;
+    }
+    .contactlist-desk .insd p{
+        font-size: 15px;
+    }
+    .MakeDefault-btn{
+        font-size: 22px;
+    }
+    .account_desktop input, .account_desktop ion-select {
+        font-size: 18px;
+    }
+    .selects_ins ion-select {
+        height: 55px;
+        font-size: 18px;
+    }
+    .account_ipads .inner_user_img {
+        height: 170px;
+        width: 169px;
+    }
+    .upload.right p {
+        font-size: 18px;
+    }
+    .upload.left p {
+        font-size: 18px;
+    }
+    .hnas_ipads .setting_bs {
+        height: 70px;
+    }
+    .hnas_ipads .list_cons ion-label {
+        font-size: 20px !important;
+    }
+    .hnas_ipads .icons_s {
+        width: 27px;
+        height: 27px;
+    }
+    .hnas_ipads .ens_sd img {
+        width: 12px;
+    }
+    ion-toggle::part(handle) {
+        width: 20px;
+        height: 20px;
+        left: 6px;
+    }
+    ion-toggle::part(track) {
+        height: 30px;
+        width: 70px;
+    }
+    .ipad_spot h3 {
+        font-size: 25px;
+    }
+    .desk_top_fless p{
+        font-size: 20px;
+    }
+    .peint_data_headings h3{
+        font-size: 16px;
+    }
+    .peint_inner_headings h3{
+        font-size: 16px;
+    }
+    img.delete_print_btns_01 {
+        margin-left: 20px;
+        width: 30px;
+        height: 25px;
+    }
+    .ipad_secur .list_cons ion-label {
+        font-size: 20px !important;
+    }
+    .ipad_secur .setting_bs {
+        height: 75px;
+    }
+    .priy_ipad h6 {
+        font-size: 18px;
+    }
+    .priy_ipad p {
+        font-size: 16px;
+    }
+    .privew_ipads p {
+        font-size: 16px;
+    }
+    .text_shareipad h3{
+        font-size: 20px;
+    }
+    .ipad_text_top p {
+        font-size: 23px;
+    }
+    .peint_inner_headings h5 {
+        font-size: 17px;
+    }
+    img.delete_print_btns{
+        width: 18px;
+    }
+    .total-num-count h3{
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) 
+{ 
+    .letter-heading{
+        font-size: 22px !important;
+    }
+    .ipad_title_top{
+        font-size: 22px !important;
+    }
+    .welcome_ipad h3{
+        font-size: 25px;
+    }
+    .welcome_ipad h4 {
+        font-size: 20px;
+    }
+    .create_letts {
+        height: 50px;
+        width: 165px;
+        font-size: 20px;
+    }
+    .header-top-ipad {
+        height: 50px;
+    }
+    .badgs {
+        width: 40px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .texts_letts h3 {
+        font-size: 17px;
+    }
+    .texts_letts p {
+        font-size: 16px;
+    }
+    .date span {
+        font-size: 16px;
+    }
+    .ipad-header .left-header {
+        width: 290px;
+    }
+    .SideBar {
+        width: 290px;
+    }
+    .right-content-box {
+        width: calc(100% - 290px);
+    }
+    .right-header {
+        width: calc(100% - 290px);
+    }
+    #container_write h5{
+        font-size: 16px;
+    }
+    .Form-subject p{
+        font-size: 16px;
+    }
+    .ipad_write .row_01 p {
+        font-size: 16px;
+    }
+    .back_fooipad{
+        width: calc(100% - 290px);
+    }
+    .face img {
+        width: 10px !important;
+    }
+    .social_icons li{
+        width: 40px;
+        height: 40px;
+    }
+    .sign_with h2, .or h2 {
+        font-size: 20px;
+    }
+    .for_got a {
+        font-size: 18px;
+    }
+    .have-accout-box h5 {
+        font-size: 20px;
+    }
+    .user_nam {
+        height: 55px;
+        font-size: 18px;
+    }
+    .selects_ins ion-select {
+        height: 55px;
+        font-size: 18px;
+    }
+    .login-Info-box .logo img, #signup-page .dark-logo {
+        width: 350px;
+    }
+    .sign_ups {
+        height: 55px;
+        width: 150px;
+        font-size: 22px;
+    }
+    .menus_ipad ion-menu{
+        --width: 400px !important;
+    }
+    .menus_ipad .icon_menus{
+        font-size: 20px;
+    }
+    .menus_ipad .icon_menus img {
+        width: 22px;
+        height: 22px;
+    }
+    .menus_ipad .bans_sj {
+        font-size: 20px;
+    }
+    .user_short_name p {
+        margin: 0;
+        font-size: 25px;
+    }
+    .user_short_name {
+        width: 50px;
+        height: 50px;
+    }
+    .email {
+        font-size: 18px;
+    }
+    .user_name {
+        font-size: 20px;
+    }
+    .user_logout {
+        height: 25px;
+    }
+    span.popup_title {
+        font-size: 20px;
+    }
+    .ipad_docs .text_top p {
+        font-size: 20px;
+    }
+    .btn-176-tab ion-button {
+        width: 150px !important;
+        height: 55px !important;
+    }
+    .change_sign_ipad p {
+        font-size: 18px;
+    }
+    .import_csv{
+        font-size: 16px;
+    }
+    .desktop-segmnt ion-label{
+        font-size: 20px;
+    }
+    .hans_ipad {
+        height: 45px;
+    }
+    .contactlist-desk ion-label{
+        font-size: 16px !important;
+    }
+    .contactlist-desk .insd p{
+        font-size: 15px;
+    }
+    .MakeDefault-btn{
+        font-size: 22px;
+    }
+    .account_desktop input, .account_desktop ion-select {
+        font-size: 18px;
+    }
+    .account_ipads .inner_user_img {
+        height: 170px;
+        width: 169px;
+    }
+    .upload.right p {
+        font-size: 18px;
+    }
+    .upload.left p {
+        font-size: 18px;
+    }
+    .hnas_ipads .setting_bs {
+        height: 70px;
+    }
+    .hnas_ipads .list_cons ion-label {
+        font-size: 20px !important;
+    }
+    .hnas_ipads .icons_s {
+        width: 27px;
+        height: 27px;
+    }
+    .hnas_ipads .ens_sd img {
+        width: 12px;
+    }
+    ion-toggle::part(handle) {
+        width: 20px;
+        height: 20px;
+        left: 6px;
+    }
+    ion-toggle::part(track) {
+        height: 30px;
+        width: 70px;
+    }
+    .ipad_spot h3 {
+        font-size: 25px;
+    }
+    .desk_top_fless p{
+        font-size: 20px;
+    }
+    .peint_data_headings h3{
+        font-size: 16px;
+    }
+    .peint_inner_headings h3{
+        font-size: 16px;
+    }
+    img.delete_print_btns_01 {
+        margin-left: 20px;
+        width: 30px;
+        height: 25px;
+    }
+    .ipad_secur .list_cons ion-label {
+        font-size: 20px !important;
+    }
+    .ipad_secur .setting_bs {
+        height: 75px;
+    }
+    .priy_ipad h6 {
+        font-size: 18px;
+    }
+    .priy_ipad p {
+        font-size: 16px;
+    }
+    .privew_ipads p {
+        font-size: 16px;
+    }
+    .text_shareipad h3{
+        font-size: 20px;
+    }
+    .ipad_text_top p {
+        font-size: 23px;
+    }
+    .peint_inner_headings h5 {
+        font-size: 17px;
+    }
+    img.delete_print_btns{
+        width: 18px;
+    }
+    .total-num-count h3{
+        font-size: 18px;
+    }
+
+}
