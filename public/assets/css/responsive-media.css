@@ -228,11 +228,37 @@
     .total-num-count h3{
         font-size: 18px;
     }
+    #signup-page .login-Info-box{
+        margin: auto;
+    display: block;
+    }
+    #signup-page{
+        margin: auto;
+    }
+    #container_intro .logo img {
+        width: 350px;
+        margin: auto;
+    }
+    #container_intro .slide p {
+        font-size: 20px !important;
+    }
+    #container_intro .get_st{
+        height: 55px;
+        font-size: 20px;
+        width: 170px;
+    }
 
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) 
 { 
+    #signup-page .login-Info-box{
+        margin: auto;
+        display: block;
+    }
+    #signup-page{
+        margin: auto;
+    }
     .letter-heading{
         font-size: 22px !important;
     }
@@ -468,6 +494,17 @@
     }
     .total-num-count h3{
         font-size: 18px;
+    }
+    #container_intro .logo img {
+        width: 350px;
+    }
+    #container_intro .slide p {
+        font-size: 20px !important;
+    }
+    #container_intro .get_st{
+        height: 55px;
+        font-size: 20px;
+        width: 170px;
     }
 
 }
