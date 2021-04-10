@@ -4,87 +4,87 @@
 
 @font-face {
     font-family: 'Proxima Nova Rg';
-    src: url('../font/Proxima Nova Font.otf');
+    src: url('../proxima_font/Proxima Nova Font.otf');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Black';
-    src: url('../font/ProximaNova-Black.otf');
+    font-family: 'Proxima Nova Bl';
+    src: url('../proxima_font/ProximaNova-Black.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Bold';
-    src: url('../font/ProximaNova-Bold.otf');
+    src: url('../proxima_font/ProximaNova-Bold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-BoldIt';
-    src: url('../font/ProximaNova-BoldIt.otf');
+    src: url('../proxima_font/ProximaNova-BoldIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Light';
-    src: url('../font/ProximaNovaCond-Light.otf');
+    src: url('../proxima_font/ProximaNovaCond-Light.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-LightIt';
-    src: url('../font/ProximaNovaCond-LightIt.otf');
+    src: url('../proxima_font/ProximaNovaCond-LightIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Regular';
-    src: url('../font/ProximaNovaCond-Regular.otf');
+    src: url('../proxima_font/ProximaNovaCond-Regular.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-RegularIt';
-    src: url('../font/ProximaNovaCond-RegularIt.otf');
+    src: url('../proxima_font/ProximaNovaCond-RegularIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Semibold';
-    src: url('../font/ProximaNovaCond-Semibold.otf');
+    src: url('../proxima_font/ProximaNovaCond-Semibold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-SemiboldIt';
-    src: url('../font/ProximaNovaCond-SemiboldIt.otf');
+    src: url('../proxima_font/ProximaNovaCond-SemiboldIt.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Extrabold';
-    src: url('../font/ProximaNova-Extrabold.otf');
+    src: url('../proxima_font/ProximaNova-Extrabold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('../font/ProximaNova-Light.otf');
+    src: url('../proxima_font/ProximaNova-Light.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-LightItalic';
-    src: url('../font/ProximaNova-LightItalic.otf');
+    src: url('../proxima_font/ProximaNova-LightItalic.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Regular';
-    src: url('../font/ProximaNova-Regular.otf');
+    src: url('../proxima_font/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-RegularItalic';
-    src: url('../font/ProximaNova-RegularItalic.otf');
+    src: url('../proxima_font/ProximaNova-RegularItalic.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Semibold';
-    src: url('../font/ProximaNova-Semibold.otf');
+    src: url('../proxima_font/ProximaNova-Semibold.otf');
 }
 
 @font-face {
     font-family: 'ProximaNova-SemiboldItalic';
-    src: url('../font/ProximaNova-SemiboldItalic.otf');
+    src: url('../proxima_font/ProximaNova-SemiboldItalic.otf');
 }
 
 ion-header {
@@ -3551,7 +3551,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bl' !important;
 }
 
 .inputs-group {
