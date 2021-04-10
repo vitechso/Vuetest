@@ -436,11 +436,11 @@ ion-backdrop {
 
 .dark .search_bar input {
     background: transparent !important;
-    color: #999 !important;
+    color: #9C9C9C !important;
 }
 
 .dark .search_bar ion-searchbar {
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
 }
 
 .dark .searchbar-input-container ion-icon {

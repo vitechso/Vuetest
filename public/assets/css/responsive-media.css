@@ -247,11 +247,64 @@
         font-size: 20px;
         width: 170px;
     }
+    .lettes{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .Form-subject-row{
+        height: 45px;
+    }
+    .contact_book-desk {
+        width: 30px;
+        height: 30px;
+    }
+    .SideBar-search {
+        padding: 0px 15px;
+    }
+    .SideBar-search ion-searchbar{
+        height: 35px;
+    }
+    .SideBar-search input {
+        font-size: 18px !important;
+    }
+    .lock_unlock {
+        height: 45px;
+    }
+    .edit_icon img {
+        width: 25px;
+    }
 
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) 
 { 
+    .lettes{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .edit_icon img {
+        width: 25px;
+    }
+    .lock_unlock {
+        height: 45px;
+    }
+    .SideBar-search input {
+        font-size: 18px !important;
+    }
+    .SideBar-search ion-searchbar{
+        height: 35px;
+    }
+    .SideBar-search {
+        padding: 0px 15px;
+    }
+    .contact_book-desk {
+        width: 30px;
+        height: 30px;
+    }
+    .Form-subject-row{
+        height: 45px;
+    }
+
     #signup-page .login-Info-box{
         margin: auto;
         display: block;

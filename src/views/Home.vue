@@ -184,7 +184,7 @@
       </div>
     </ion-content>
   </ion-page>
-  </div>
+</div>
   
   </ion-page>
 </template>
