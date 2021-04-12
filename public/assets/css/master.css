@@ -1,10 +1,10 @@
 * {
-    font-family: 'ProximaNova-Regular' !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
-    src: url('../proxima_font/Proxima Nova Font.otf');
+    font-family: 'Proxima Nova';
+    src: url('../proxima_font/Proxima Nova Font.ttf');
 }
 
 @font-face {
@@ -13,78 +13,78 @@
 }
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url('../proxima_font/ProximaNova-Bold.otf');
+    font-family: 'Proxima Nova Regular';
+    src: url('../proxima_font/ProximaNovaCond-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../proxima_font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-BoldIt';
-    src: url('../proxima_font/ProximaNova-BoldIt.otf');
+    src: url('../proxima_font/ProximaNova-BoldIt.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Light';
-    src: url('../proxima_font/ProximaNovaCond-Light.otf');
+    src: url('../proxima_font/ProximaNovaCond-Light.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-LightIt';
-    src: url('../proxima_font/ProximaNovaCond-LightIt.otf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-Regular';
-    src: url('../proxima_font/ProximaNovaCond-Regular.otf');
+    src: url('../proxima_font/ProximaNovaCond-LightIt.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-RegularIt';
-    src: url('../proxima_font/ProximaNovaCond-RegularIt.otf');
+    src: url('../proxima_font/ProximaNovaCond-RegularIt.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-Semibold';
-    src: url('../proxima_font/ProximaNovaCond-Semibold.otf');
+    src: url('../proxima_font/ProximaNovaCond-Semibold.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNovaCond-SemiboldIt';
-    src: url('../proxima_font/ProximaNovaCond-SemiboldIt.otf');
+    src: url('../proxima_font/ProximaNovaCond-SemiboldIt.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Extrabold';
-    src: url('../proxima_font/ProximaNova-Extrabold.otf');
+    src: url('../proxima_font/ProximaNova-Extrabold.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('../proxima_font/ProximaNova-Light.otf');
+    src: url('../proxima_font/ProximaNova-Light.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-LightItalic';
-    src: url('../proxima_font/ProximaNova-LightItalic.otf');
+    src: url('../proxima_font/ProximaNova-LightItalic.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Regular';
-    src: url('../proxima_font/ProximaNova-Regular.otf');
+    src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-RegularItalic';
-    src: url('../proxima_font/ProximaNova-RegularItalic.otf');
+    src: url('../proxima_font/ProximaNova-RegularItalic.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-Semibold';
-    src: url('../proxima_font/ProximaNova-Semibold.otf');
+    src: url('../proxima_font/ProximaNova-Semibold.ttf');
 }
 
 @font-face {
     font-family: 'ProximaNova-SemiboldItalic';
-    src: url('../proxima_font/ProximaNova-SemiboldItalic.otf');
+    src: url('../proxima_font/ProximaNova-SemiboldItalic.ttf');
 }
 
 ion-header {
@@ -3551,7 +3551,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Bl' !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 
 .inputs-group {
@@ -3625,17 +3625,18 @@ ion-toggle::part(handle) {
 .for_got a {
     color: #333;
     font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova' !important;
 }
 
 .have-accout-box h5 a {
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova' !important;
     color: #f1d000;
     cursor: pointer;
+    font-weight: 600;
 }
 .have-accout-box h5 {
-    font-family: 'Proxima Nova', sans-serif !important;
-    font-weight: 600;
+    font-family: 'Proxima Nova' !important;
+    font-weight: 500;
     color: #333333;
     line-height: normal;
     font-size: 19px;
