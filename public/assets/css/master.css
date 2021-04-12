@@ -809,6 +809,7 @@ ion-row.top_menu_sl ion-col {
     background: transparent;
     color: #333;
     font-size: 19px;
+    font-family: 'Proxima Nova Extrabold' !important;
 }
 .user_logout {
     display: flex;
@@ -888,7 +889,7 @@ ion-segment {
     margin: 0;
     font-size: 17px;
     padding: 15px 0px 5px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
     font-weight: 700;
     color: #333333;
     text-align: left;
@@ -1063,12 +1064,12 @@ p.red_c {
     font-size: 17px;
     color: #333;
     margin-left: 14px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
     font-weight: 700;
 }
 
 .upload p strong {
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 
 .pdd_b input::placeholder {
@@ -1079,7 +1080,7 @@ p.red_c {
 ion-select::part(placeholder) {
     opacity: 0.8;
     font-weight: normal;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #999;
 }
 
@@ -1096,7 +1097,7 @@ ion-select::part(placeholder) {
 }
 .user_ids {
     font-size: 15px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #959595;
     text-align: center;
     line-height: 22px;
@@ -2710,7 +2711,7 @@ p.up_load_c {
     align-items: center;
     justify-content: center;
     width: 200px;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabold' !important;
     font-weight: 600;
     border-radius: 53px;
 }
@@ -2935,7 +2936,7 @@ img.paypal-logo {
 }
 
 .import_csv {
-    font-family: 'Proxima Nova Semibold' !important;
+    font-family: 'Proxima Nova Extrabold' !important;
     font-weight: 600;
     letter-spacing: normal;
     height: 38px;
@@ -2975,7 +2976,7 @@ img.paypal-logo {
 }
 
 .contactlist-desk ion-label {
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabold' !important;
     font-weight: 600;
     color: #333333 !important;
     font-size: 18px !important;
