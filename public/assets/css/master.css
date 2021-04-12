@@ -1,5 +1,5 @@
 * {
-    font-family: 'Proxima Nova Regular' !important;
+    font-family: 'Proxima Nova' !important;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Proxima Nova Regular';
-    src: url('../proxima_font/ProximaNovaCond-Regular.ttf');
+    src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
 
 @font-face {
@@ -3543,7 +3543,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 .or h2 {
@@ -3629,7 +3629,7 @@ ion-toggle::part(handle) {
 }
 
 .have-accout-box h5 a {
-    font-family: 'Proxima Nova' !important;
+    font-family: 'Proxima Nova Bold' !important;
     color: #f1d000;
     cursor: pointer;
     font-weight: 600;
