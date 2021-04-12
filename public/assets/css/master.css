@@ -1,5 +1,5 @@
 * {
-    font-family: 'Proxima Nova' !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 @font-face {
@@ -1847,7 +1847,7 @@ img.delete_print_btns_01 {
     height: 63px;
     font-size: 22px;
     width: 439px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 #container_ipad .icon_in{
     right: 20px;
@@ -1855,7 +1855,7 @@ img.delete_print_btns_01 {
 }
 #container_ipad .for_got a{
     font-size: 24px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #6a6869;
     line-height: normal;
 }
@@ -1863,7 +1863,7 @@ img.delete_print_btns_01 {
 #container_ipad .sign_doens{
     font-size: 24px;
     margin-top: 105px !important;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     line-height: normal;
 }
 
