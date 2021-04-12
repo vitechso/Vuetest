@@ -1,5 +1,5 @@
 * {
-    font-family: 'Proxima Nova' !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 @font-face {
@@ -8,13 +8,8 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Bl';
+    font-family: 'Proxima Nova Black';
     src: url('../proxima_font/ProximaNova-Black.ttf');
-}
-
-@font-face {
-    font-family: 'Proxima Nova Regular';
-    src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
 
 @font-face {
@@ -23,69 +18,22 @@
 }
 
 @font-face {
-    font-family: 'ProximaNova-BoldIt';
-    src: url('../proxima_font/ProximaNova-BoldIt.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-Light';
-    src: url('../proxima_font/ProximaNovaCond-Light.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-LightIt';
-    src: url('../proxima_font/ProximaNovaCond-LightIt.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-RegularIt';
-    src: url('../proxima_font/ProximaNovaCond-RegularIt.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-Semibold';
-    src: url('../proxima_font/ProximaNovaCond-Semibold.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNovaCond-SemiboldIt';
-    src: url('../proxima_font/ProximaNovaCond-SemiboldIt.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNova-Extrabold';
-    src: url('../proxima_font/ProximaNova-Extrabold.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNova-Light';
-    src: url('../proxima_font/ProximaNova-Light.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNova-LightItalic';
-    src: url('../proxima_font/ProximaNova-LightItalic.ttf');
-}
-
-@font-face {
-    font-family: 'ProximaNova-Regular';
+    font-family: 'Proxima Nova Regular';
     src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
-
 @font-face {
-    font-family: 'ProximaNova-RegularItalic';
-    src: url('../proxima_font/ProximaNova-RegularItalic.ttf');
+    font-family: 'Proxima Nova Light';
+    src: url('../proxima_font/ProximaNova-Light.ttf');
 }
-
 @font-face {
-    font-family: 'ProximaNova-Semibold';
+    font-family: 'Proxima Nova Semibold';
     src: url('../proxima_font/ProximaNova-Semibold.ttf');
 }
-
 @font-face {
-    font-family: 'ProximaNova-SemiboldItalic';
-    src: url('../proxima_font/ProximaNova-SemiboldItalic.ttf');
+    font-family: 'Proxima Nova Extrabld';
+    src: url('../proxima_font/ProximaNova-Extrabld.ttf');
 }
+
 
 ion-header {
     overflow: hidden;
@@ -277,7 +225,7 @@ a {
     color: #333 !important;
     font-weight: 700;
     line-height: 25px !important;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 .slide {
     width: 100%;
@@ -365,7 +313,7 @@ ion-item {
     margin-top: 0;
     color: #333;
     margin-bottom: 5px;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabld' !important;
     font-weight: 600;
     line-height: normal;
     overflow: hidden;
@@ -375,7 +323,7 @@ ion-item {
     font-size: 20px;
     color: #959595;
     margin: 0;
-    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Light' !important;
     font-weight: 300;
     line-height: 22px;
     overflow: hidden;
@@ -439,18 +387,18 @@ ion-item {
     color: #6a6869;
     margin: 0;
     font-weight: normal;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 .text_top p strong {
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Semibold' !important;
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
 }
 
 p.credit_bal {
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
     font-weight: 600;
     color: #333333;
 }
@@ -1353,14 +1301,14 @@ ion-row.top_menu_sl.ios {
     color: #333;
     font-weight: 700;
     margin: 0 0 15px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 
 .welcome_ipad h4 {
     font-size: 25px;
     color: #959595;
     font-weight: 300;
-    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Light' !important;
     margin: 0 0 20px;
     line-height: 22px;
 }
@@ -1371,14 +1319,14 @@ ion-row.top_menu_sl.ios {
     color: #333;
     font-weight: 700;
     margin: 0 0 10px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 
 .welcome_desktop h4 {
     font-size: 25px;
     color: #959595;
     font-weight: 300;
-    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Light' !important;
     margin: 0 0 20px;
     line-height: 22px;
 }
@@ -1388,7 +1336,7 @@ ion-row.top_menu_sl.ios {
     font-size: 25px;
     text-align: center;
     text-transform: inherit;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabld' !important;
     font-weight: 600;
     line-height: normal;
     letter-spacing: normal;
@@ -1405,7 +1353,7 @@ span.popup_title {
     font-size: 26px;
     font-weight: 800;
     color: #333;
-    font-family: 'Proxima Nova Extrabold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabold' !important;
 }
 .close_popus {
     float: right;
@@ -1448,7 +1396,7 @@ ion-searchbar input {
 }
 .ipad_write .row_01 p{
     font-size: 20px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 .ipad_write .contact_book {
     float: right;
@@ -1566,7 +1514,7 @@ ion-searchbar input {
     font-weight: 400;
     margin-left: 10px;
     text-transform: uppercase;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 .inner_sizes.active {
@@ -1847,7 +1795,7 @@ img.delete_print_btns_01 {
     height: 63px;
     font-size: 22px;
     width: 439px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 #container_ipad .icon_in{
     right: 20px;
@@ -1855,7 +1803,7 @@ img.delete_print_btns_01 {
 }
 #container_ipad .for_got a{
     font-size: 24px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #6a6869;
     line-height: normal;
 }
@@ -1863,7 +1811,7 @@ img.delete_print_btns_01 {
 #container_ipad .sign_doens{
     font-size: 24px;
     margin-top: 105px !important;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     line-height: normal;
 }
 
@@ -1998,7 +1946,7 @@ img.delete_print_btns_01 {
     width: 192px;
   height: 65px;
   font-size: 25px;
-  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+  font-family: 'Proxima Nova Extrabld' !important;
     font-weight: 600;
     letter-spacing: normal;
 }
@@ -2966,7 +2914,7 @@ img.paypal-logo {
 }
 
 #container_write h5 {
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
     font-weight: 700;
     color: #333333;
     line-height: 23px;
@@ -2983,11 +2931,11 @@ img.paypal-logo {
 
 .cntct-search-desk input {
     font-size: 22px !important;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 .import_csv {
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Semibold' !important;
     font-weight: 600;
     letter-spacing: normal;
     height: 38px;
@@ -3005,7 +2953,7 @@ img.paypal-logo {
     font-size: 22px;
     font-weight: 700;
     color: #333333;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Semibold' !important;
     font-weight: 600;
     padding: 15px 56px 5px;
 }
@@ -3193,7 +3141,7 @@ input:checked + .slider {
 
 .Form-subject p {
     font-size: 20px;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     margin: 0;
     color: #959595;
     text-overflow: ellipsis;
@@ -3380,7 +3328,7 @@ ion-checkbox::part(container) {
 }
 
 .forgot-with p {
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #6a6869 !important;
     line-height: 24px !important;
     margin-bottom: 28px !important;
@@ -3392,7 +3340,7 @@ ion-checkbox::part(container) {
 
 .change-s-block p {
     margin: 0;
-    font-family: 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
     color: #959595;
     line-height: 22px;
 }
@@ -3543,7 +3491,7 @@ ion-toggle::part(handle) {
     font-size: 24px;
     margin-bottom: 20px !important;
     font-weight: 700;
-    font-family: 'Proxima Nova Regular' !important;
+    font-family: 'Proxima Nova Bold' !important;
 }
 
 .or h2 {
@@ -3613,7 +3561,7 @@ ion-toggle::part(handle) {
     box-shadow: none;
     text-transform: inherit;
     font-weight: 600;
-    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Extrabld' !important;
     letter-spacing: normal;
 }
 
@@ -3625,7 +3573,7 @@ ion-toggle::part(handle) {
 .for_got a {
     color: #333;
     font-size: 18px;
-    font-family: 'Proxima Nova' !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 
 .have-accout-box h5 a {
@@ -3635,7 +3583,7 @@ ion-toggle::part(handle) {
     font-weight: 600;
 }
 .have-accout-box h5 {
-    font-family: 'Proxima Nova' !important;
+    font-family: 'Proxima Nova Regular' !important;
     font-weight: 500;
     color: #333333;
     line-height: normal;
@@ -3787,7 +3735,7 @@ ion-toggle::part(handle) {
 }
 
 .letter-heading {
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+    font-family: 'Proxima Nova Bold' !important;
     font-weight: 700;
     color: #ffffff;
     line-height: 25px;
@@ -4151,7 +4099,7 @@ ion-toggle::part(handle) {
     .email {
         font-size: 26px;
         font-weight: normal;
-        font-family: 'Proxima Nova', sans-serif !important;
+        font-family: 'Proxima Nova Regular', sans-serif !important;
     }
 
     .user_logout {
@@ -4172,7 +4120,7 @@ ion-toggle::part(handle) {
 
     .ipad_title_top {
         font-size: 33px !important;
-        font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+        font-family: 'Proxima Nova Bold' !important;
         font-weight: 700 !important;
         line-height: 25px;
     }
