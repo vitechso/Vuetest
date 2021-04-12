@@ -3365,7 +3365,10 @@ ion-checkbox::part(container) {
 }
 
 /* ios css */
-.ios span.popup_title{
+ion-modal span.popup_title{
+    font-family: 'Proxima Nova Extrabold' !important;
+}
+ion-menu .bans_sj{
     font-family: 'Proxima Nova Extrabold' !important;
 }
 .ios .segment-button-checked::part(native) {
