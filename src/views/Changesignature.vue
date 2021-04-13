@@ -231,5 +231,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+span.popup_title {
+    font-family: 'Proxima Nova Extrabold' !important;
+}
 </style>
