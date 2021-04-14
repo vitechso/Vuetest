@@ -566,7 +566,9 @@
                                             <img v-if="styleClass==''" src="assets/images/un_lock.svg"/>
                                             <img v-if="styleClass!=''" src="assets/images/lock.svg"/>
                                         </div>
-
+                                        
+                                        <div :class="styleClass!=''?'hideBottom':''" class="align_icons">
+                                        
                                         <div class="icon_bn icon-hover">
                                             <img src="assets/images/bold.svg"/>
                                         </div>
@@ -577,6 +579,7 @@
 
                                         <div class="icon_bn icon-hover">
                                             <img src="assets/images/underline.svg"/>
+                                        </div>
                                         </div>
                                     </div>
 
