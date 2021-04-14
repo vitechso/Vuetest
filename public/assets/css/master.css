@@ -1305,7 +1305,7 @@ ion-row.top_menu_sl.ios {
     color: #333;
     font-weight: 700;
     margin: 0 0 15px;
-    font-family: 'Proxima Nova Bold' !important;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
 }
 
 .welcome_ipad h4 {
