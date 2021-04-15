@@ -1,5 +1,5 @@
 * {
-    font-family: 'Proxima Nova Regular', sans-serif !important;
+    font-family: 'Proxima Nova Regular' !important;
 }
 html.ios {
     --ion-default-font: -apple-system, BlinkMacSystemFont, "Proxima Nova Regular", sans-serif !important;
@@ -10,25 +10,25 @@ html.ios {
 }
 
 @font-face {
-    font-family: 'Proxima Nova Black', sans-serif;
+    font-family: 'Proxima Nova Black';
     src: url('../proxima_font/ProximaNova-Black.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Bold', sans-serif;
+    font-family: 'Proxima Nova Bold';
     src: url('../proxima_font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: 'Proxima Nova Regular';
     src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
 @font-face {
-    font-family: 'Proxima Nova Light', sans-serif;
+    font-family: 'Proxima Nova Light';
     src: url('../proxima_font/ProximaNova-Light.ttf');
 }
 @font-face {
-    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-family: 'Proxima Nova Semibold';
     src: url('../proxima_font/ProximaNova-Semibold.ttf');
 }
 @font-face {
