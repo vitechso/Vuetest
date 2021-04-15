@@ -1,5 +1,5 @@
 * {
-    font-family: 'Proxima Nova Regular' !important;
+    font-family: 'Proxima Nova Regular', sans-serif !important;
 }
 html.ios {
     --ion-default-font: -apple-system, BlinkMacSystemFont, "Proxima Nova Regular", sans-serif !important;
@@ -10,25 +10,25 @@ html.ios {
 }
 
 @font-face {
-    font-family: 'Proxima Nova Black';
+    font-family: 'Proxima Nova Black', sans-serif;
     src: url('../proxima_font/ProximaNova-Black.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Bold';
+    font-family: 'Proxima Nova Bold', sans-serif;
     src: url('../proxima_font/ProximaNova-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Proxima Nova Regular';
+    font-family: 'Proxima Nova Regular', sans-serif;
     src: url('../proxima_font/ProximaNova-Regular.ttf');
 }
 @font-face {
-    font-family: 'Proxima Nova Light';
+    font-family: 'Proxima Nova Light', sans-serif;
     src: url('../proxima_font/ProximaNova-Light.ttf');
 }
 @font-face {
-    font-family: 'Proxima Nova Semibold';
+    font-family: 'Proxima Nova Semibold', sans-serif;
     src: url('../proxima_font/ProximaNova-Semibold.ttf');
 }
 @font-face {
@@ -268,7 +268,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Proxima Nova Semibold' !important;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     font-weight: 600;
 }
 ion-list {
@@ -811,7 +811,7 @@ ion-row.top_menu_sl ion-col {
     background: transparent;
     color: #333;
     font-size: 19px;
-    font-family: 'Proxima Nova Extrabold', sans-serif !important;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .user_logout {
     display: flex;
@@ -1305,14 +1305,14 @@ ion-row.top_menu_sl.ios {
     color: #333;
     font-weight: 700;
     margin: 0 0 15px;
-    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 
 .welcome_ipad h4 {
     font-size: 25px;
     color: #959595;
     font-weight: 300;
-    font-family: 'Proxima Nova Light' !important;
+    font-family: 'Proxima Nova Light', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
     margin: 0 0 20px;
     line-height: 22px;
 }
@@ -4137,7 +4137,7 @@ ion-toggle::part(handle) {
 
     .ipad_title_top {
         font-size: 33px !important;
-        font-family: 'Proxima Nova Bold' !important;
+        font-family: 'Proxima Nova Bold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
         font-weight: 700 !important;
         line-height: 25px;
     }
