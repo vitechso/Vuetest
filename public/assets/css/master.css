@@ -2,38 +2,34 @@
     font-family: 'Proxima Nova Regular' !important;
 }
 html.ios {
-    --ion-default-font: -apple-system, BlinkMacSystemFont, "Proxima Nova Regular", sans-serif !important;
-}
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('../proxima_font/Proxima Nova Font.ttf');
+    --ion-default-font: -apple-system, BlinkMacSystemFont, "Proxima Nova Regular" !important;
 }
 
 @font-face {
     font-family: 'Proxima Nova Black';
-    src: url('../proxima_font/ProximaNova-Black.ttf');
+    src: url('../proxima_font/ProximaNova-Black.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Proxima Nova Bold';
-    src: url('../proxima_font/ProximaNova-Bold.ttf');
+    src: url('../proxima_font/ProximaNova-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Proxima Nova Regular';
-    src: url('../proxima_font/ProximaNova-Regular.ttf');
+    src: url('../proxima_font/ProximaNova-Regular.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Proxima Nova Light';
-    src: url('../proxima_font/ProximaNova-Light.ttf');
+    src: url('../proxima_font/ProximaNova-Light.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Proxima Nova Semibold';
-    src: url('../proxima_font/ProximaNova-Semibold.ttf');
+    src: url('../proxima_font/ProximaNova-Semibold.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Proxima Nova Extrabold', sans-serif;
-    src: url('../proxima_font/ProximaNova-Extrabold.ttf');
+    src: url('../proxima_font/ProximaNova-Extrabold.ttf') format('woff2');
 }
 
 
