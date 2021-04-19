@@ -7,29 +7,29 @@ html.ios {
 
 @font-face {
     font-family: 'Proxima Nova Black';
-    src: url('../proxima_font/ProximaNova-Black.woff2') format('woff2');
+    src: url('../font/woff2/ProximaNova-Black.woff2') format('woff2'), url('../font/woff/ProximaNova-Black.woff') format('woff'), url('../font/eot/ProximaNova-Black.eot') format('eot'), url('../font/svg/ProximaNova-Black.svg') format('svg'), url('../font/ttf/ProximaNova-Black.ttf') format('ttf');
 }
 
 @font-face {
     font-family: 'Proxima Nova Bold';
-    src: url('../proxima_font/ProximaNova-Bold.woff2') format('woff2');
+    src: url('../font/woff2/ProximaNova-Bold.woff2') format('woff2') , url('../font/woff/ProximaNova-Bold.woff') format('woff'), url('../font/eot/ProximaNova-Bold.eot') format('eot'), url('../font/svg/ProximaNova-Bold.svg') format('svg'), url('../font/ttf/ProximaNova-Bold.ttf') format('ttf');
 }
 
 @font-face {
     font-family: 'Proxima Nova Regular';
-    src: url('../proxima_font/ProximaNova-Regular.woff2') format('woff2');
+    src: url('../font/woff2/ProximaNova-Regular.woff2') format('woff2') , url('../font/woff/ProximaNova-Regular.woff') format('woff'), url('../font/eot/ProximaNova-Regular.eot') format('eot'), url('../font/svg/ProximaNova-Regular.svg') format('svg'), url('../font/ttf/ProximaNova-Regular.ttf') format('ttf');
 }
 @font-face {
     font-family: 'Proxima Nova Light';
-    src: url('../proxima_font/ProximaNova-Light.woff2') format('woff2');
+    src: url('../font/woff2/ProximaNova-Light.woff2') format('woff2'), url('../font/woff/ProximaNova-Light.woff') format('woff'), url('../font/eot/ProximaNova-Light.eot') format('eot'), url('../font/svg/ProximaNova-Light.svg') format('svg'), url('../font/ttf/ProximaNova-Light.ttf') format('ttf');
 }
 @font-face {
     font-family: 'Proxima Nova Semibold';
-    src: url('../proxima_font/ProximaNova-Semibold.woff2') format('woff2');
+    src: url('../font/woff2/ProximaNova-Semibold.woff2') format('woff2'), url('../font/woff/ProximaNova-Semibold.woff') format('woff'), url('../font/eot/ProximaNova-Semibold.eot') format('eot'), url('../font/svg/ProximaNova-Semibold.svg') format('svg'), url('../font/ttf/ProximaNova-Semibold.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'Proxima Nova Extrabold', sans-serif;
-    src: url('../proxima_font/ProximaNova-Extrabold.ttf') format('woff2');
+    font-family: 'Proxima Nova Extrabold';
+    src: url('../font/woff2/ProximaNova-Extrabold.ttf') format('woff2');
 }
 
 
