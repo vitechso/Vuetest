@@ -1,0 +1,14 @@
+{
+  "integrations": {
+    "capacitor": {
+      "link": [
+        "Proxima Nova Black",
+        "Proxima Nova Bold",
+        "Proxima Nova Regular",
+        "Proxima Nova Light",
+        "Proxima Nova Semibold",
+        "Proxima Nova Extrabold"
+      ]
+    }
+  }
+}
