@@ -116,14 +116,14 @@
     </ion-row>
         </ion-toolbar>
   </ion-header>
-  <ion-content :fullscreen="true">
+  <ion-content :fullscreen="true" class="dark333">
    <div id="container_01" class="ipad_docs">
         <div class="text_top ion-text-center ion-padding-top ion-padding-bottom">
             <p>Start with a blank document, choose a template or <strong  @click="uploadpdf">upload a PDF</strong></p>
         </div>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -131,7 +131,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
+            <ion-col size="4"  class="ion-padding" @click="() => {modalController.dismiss(); router.push('/writedocument')}">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -140,7 +140,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -151,7 +151,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -159,7 +159,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -168,7 +168,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -179,7 +179,7 @@
         </ion-row>
 
         <ion-row>
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                 </div>
                 <div class="title_doc">
@@ -187,7 +187,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -196,7 +196,7 @@
                 </div>
             </ion-col>
 
-            <ion-col size="4">
+            <ion-col size="4" class="ion-padding">
                 <div class="doc">
                     <img src="assets/images/normal_u1310.jpg"/>
                 </div>
@@ -322,7 +322,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton,isPlatform,modalController, IonRow, IonCol, getPlatforms  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -335,7 +335,10 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButtons,
-    IonMenuButton
+    IonMenuButton,
+    IonRow,
+    IonCol,
+    
   },
   setup() {
       const router = useRouter();
@@ -343,9 +346,9 @@ export default defineComponent({
   },
   data() {
       return {
-        isIpad:isPlatform('ipad'),
         isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
@@ -368,7 +371,3 @@ export default defineComponent({
   }
 });
 </script>
-
-<style scoped>
-
-</style>

@@ -23,11 +23,11 @@
     <div id="container_fax" class="">
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="9">
+        <ion-col size="9" class="ion-no-padding">
             <p><strong>Show signature</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
         </ion-col>
-        <ion-col size="3">
+        <ion-col size="3" class="ion-no-padding">
             <div class="mark_toggle">
                 <ion-toggle slot="end"></ion-toggle>
             </div>
@@ -35,12 +35,12 @@
     </ion-row>
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="7">
+        <ion-col size="7" class="ion-no-padding">
             <p><strong>Upload signature image</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
             <p class="text_colors signature-image-alert">300 px by 170 px</p>
         </ion-col>
-        <ion-col size="5">
+        <ion-col size="5" class="change-s-btn-block">
             <div class="btn_ajj ion-text-right">
                 <ion-button shape="round" type="button">Select Image</ion-button>
             </div>
@@ -48,11 +48,11 @@
     </ion-row>
 
     <ion-row class="custom_row change-s-block ion-padding-top ion-padding-bottom">
-        <ion-col size="7">
+        <ion-col size="7" class="ion-no-padding">
             <p><strong>Draw a signature</strong></p>
             <p class="text_colors">Manually draw a signature on device using pen or finger</p>
         </ion-col>
-        <ion-col size="5">
+        <ion-col size="5" class="change-s-btn-block">
             <div class="btn_ajj ion-text-right">
                 <ion-button shape="round" type="button" class="draw-sign-btn">Draw Signature</ion-button>
             </div>
@@ -85,7 +85,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="">
+  <ion-content :fullscreen="true" class="dark333">
     <div id="container_fax" class="change_sign_ipad">
 
     <ion-row class="custom_row ion-padding-top ion-padding-bottom">
@@ -104,7 +104,7 @@
         <ion-col size="9">
             <p><strong>Upload signature image</strong></p>
             <p class="text_colors">Enable this option to display the signature in the document</p>
-            <p class="text_colors">300 px by 170 px</p>
+            <p class="text_colors signature-image-alert">300 px by 170 px</p>
         </ion-col>
         <ion-col size="3">
             <div class="btn_ajj chosse_ipad">
@@ -116,7 +116,7 @@
     <ion-row class="custom_row ion-padding-top ion-padding-bottom">
         <ion-col size="9">
             <p><strong>Draw a signature</strong></p>
-            <VueSignaturePad width="500px" height="500px" ref="signaturePad" />
+           
             <p class="text_colors">Manually draw a signature on device using pen or finger</p>
         </ion-col>
         <ion-col size="3">
@@ -161,11 +161,8 @@
           </ion-col>
           <ion-col size="3">
               <div class="mark_toggle">
-                  <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider"></span>
-                  </label>
-              </div>
+                <ion-toggle color="primary"></ion-toggle>
+            </div>
           </ion-col>
       </ion-row>
 
@@ -173,7 +170,7 @@
           <ion-col size="9">
               <p><strong>Upload signature image</strong></p>
               <p class="text_colors">Enable this option to display the signature in the document</p>
-              <p class="signature-image-alert">300 px by 170 px</p>
+              <p class="text_colors signature-image-alert">300 px by 170 px</p>
           </ion-col>
           <ion-col size="3">
               <div class="btn_ajj chosse_ipad">
@@ -197,7 +194,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonToggle, isPlatform, modalController } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent,IonCol,IonRow, IonToolbar, IonButton, IonToggle, isPlatform, modalController, getPlatforms } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -207,6 +204,8 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
+    IonRow,
+    IonCol,
     IonToolbar,
     IonButton,
     IonToggle 
@@ -218,9 +217,9 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+          isDesktop: isPlatform('desktop'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
@@ -232,5 +231,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+span.popup_title {
+    font-family: 'Proxima Nova Extrabold' !important;
+}
 </style>

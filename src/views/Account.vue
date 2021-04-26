@@ -107,10 +107,11 @@
 
 <div v-if="isIpad">
 <ion-page>
-    <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center">
-      <ion-col size="4" class="bars_hms">
+
+<ion-header class="header_am">
+  <ion-toolbar class="header-top-ipad">
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="8" class="bars_hms">
         <div class="ion-text-center ins_han">
             <img @click="()=>router.push('/all-letters')" src="assets/images/back_btn.svg"/>
         </div>
@@ -118,9 +119,7 @@
           <span class="title_top ipad_title_top">Account</span> 
         </div>
       </ion-col>
-      <ion-col size="6">
-      </ion-col>
-      <ion-col size="2">
+      <ion-col size="4">
         <ion-buttons class="right_ipad">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
@@ -129,17 +128,16 @@
   </ion-toolbar>
 </ion-header>
 
-
-<ion-content :fullscreen="true">
+<ion-content :fullscreen="true" class="account-page-ipad">
     <div class="main_setting ion-margin account_ipads">
         <div class="account_m">
             <ion-row>
-                <ion-col size="12">
+                <ion-col size="12" class="ion-padding-end">
                     <p class="user_ids iad_spl">User ID: MU-73993</p>
                 </ion-col>
             </ion-row>
             <ion-row>
-                <ion-col size="12">
+                <ion-col size="12" class="ion-padding-start">
                     <div class="user_image">
                         <div class="inner_user_img">
                             <img src="assets/images/user_avtar.svg" />
@@ -149,12 +147,12 @@
             </ion-row>
             
             <ion-row>
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-end">
                     <div class="upload right">
                         <img src="assets/images/upload_icon.svg" /> <p><strong>Upload Picture</strong></p>
                     </div>
                 </ion-col>
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-start">
                     <div class="upload left">
                         <img src="assets/images/take_picture.svg" /> <p><strong>Take Picture</strong></p>
                     </div>
@@ -162,13 +160,13 @@
             </ion-row>
 
             <ion-row class="inputs_accounts">
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="Justin" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/normal_u41.svg"/></div>
                     </div>
                 </ion-col>
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-start">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="Shepp" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/normal_u41.svg"/></div>
@@ -177,13 +175,13 @@
             </ion-row>
 
             <ion-row class="inputs_accounts">
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="justin.shepp@gmail.com" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/mail.png"/></div>
                     </div>
                 </ion-col>
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-start">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="Street" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/home.svg"/></div>
@@ -192,13 +190,13 @@
             </ion-row>
 
             <ion-row class="inputs_accounts">
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b">
                         <input type="text" id="first_name" placeholder="Zip" class="user_nam" />
                         <div class="icon_in"><img src="assets/images/map_lo.svg"/></div>
                     </div>
                 </ion-col>
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-start">
                     <div lines="none" class="pdd_b selects_ins">
                         <ion-select placeholder="City">
                             <ion-select-option value="f">Female</ion-select-option>
@@ -209,7 +207,7 @@
             </ion-row>
             
             <ion-row class="inputs_accounts">
-                <ion-col size="6">
+                <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b selects_ins">
                         <ion-select placeholder="Country">
                             <ion-select-option value="f">Female</ion-select-option>
@@ -219,17 +217,14 @@
                 </ion-col>
             </ion-row>
 
-            <ion-row class="ion-margin-top">
-                <ion-col size="4"></ion-col>
-                <ion-col size="2">
-                    <ion-button shape="round" class="ok_btn">Update</ion-button>
+            <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
+                <ion-col size="12">
+                    <div class="BtnBlock btn-176-tab">
+                        <ion-button shape="round" class="MakeDefault-btn">Update</ion-button>
+                        <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
+                    </div>
                 </ion-col>
-                <ion-col size="2">
-                    <ion-button shape="round" class="cancel_btn">Cancel</ion-button>
-                </ion-col>
-                <ion-col size="4"></ion-col>
             </ion-row>
-            
         </div>
     </div>
   </ion-content>
@@ -365,7 +360,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -392,9 +387,9 @@ cancel() {
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
 });

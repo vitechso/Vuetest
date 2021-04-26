@@ -11,7 +11,8 @@
 .dark h4,
 .dark h5,
 .dark h6,
-.dark a {
+.dark a,
+.dark strong {
     color: #fff;
 }
 
@@ -31,24 +32,25 @@ body.dark {
 .dark .slide_fils img {
     filter: brightness(50);
 }
-.dark .search_bts{
-    color: #aaa;
-}
+
 .dark ion-checkbox {
-    background: #333;
-    --background: #333;
-    box-shadow: none;
-    border-style: unset;
-    border-width: 1px !important;
+    --background: transparent;
 }
 .dark .control_cin img {
     filter: brightness(50);
 }
+
 .dark .list_cons {
     background: #333;
     --background: #333;
     border-bottom: 1px solid #505050;
 }
+
+.dark .ipad_spot .app_vers {
+    color: #959595;
+}
+
+
 .dark .header_am{
     --background: #111 !important;
     background: #111 !important;
@@ -70,7 +72,7 @@ body.dark {
     color: #FFF;
 }
 .dark .ens_sd img {
-    filter: brightness(50);
+    filter: contrast(1);
 }
 .dark .menu_close img {
     filter: brightness(50);
@@ -87,9 +89,12 @@ body.dark {
 .dark .user_logout img {
     filter: brightness(50);
 }
-.drak_mode img{
-    width: 70%;
+
+
+.dark .slide p {
+    color: #fff !important;
 }
+
 .dark .kdh {
     display: none;
 }
@@ -103,7 +108,8 @@ body.dark {
     color: #fff;
 }
 .dark .user_nam{
-    border-color: #cccccc;
+    border-color: #888;
+    color: #999;
 }
 .dark .pdd_b input::placeholder {
     color: #fff;
@@ -111,7 +117,7 @@ body.dark {
 
 .dark .selects_ins ion-select {
     color: #999;
-    border-color: #cccccc;
+    border-color: #888;
 }
 
 .dark .for_got a{
@@ -130,9 +136,19 @@ body.dark {
     font-size: 21px;
     color: #fff;
 }
-.dark .texts_letts p{
+.dark .texts_letts p {
     color: #bbbbbb !important;
 }
+
+.dark .active_letters .texts_letts p {
+    color: #fff !important;
+}
+
+.dark .lettes {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+
 .dark .bor_b {
     border-bottom: 1px solid #4a4a4a;
 }
@@ -150,7 +166,7 @@ body.dark {
     color: #959595;
 }
 .dark .alert-radio-label{
-    color: #fff !important;
+    color: #fff;
 }
 .dark .lock_unlock{
     border: 1px solid #4a4a4a;
@@ -160,7 +176,7 @@ body.dark {
     filter: brightness(50);
 }
 .dark .contact_book img {
-    filter: brightness(50);
+    filter: contrast(0);
 }
 .dark .back_foo ion-toolbar{
     background: #333;
@@ -176,26 +192,44 @@ body.dark {
 .dark .innerr_b p {
     color: #333;
 }
-.dark .privew_r p {
+.dark .privew_r p,
+.dark .privew_r p strong {
     color: #333;
 }
+
+.dark .pages_of p {
+    color: #fff;
+}
+
 .dark .sincerely p {
     color: #333;
 }
 .dark .foo_bottom ion-toolbar {
-    background: #333 !important;
-    --background: #333;
+    background: #4c4c4c !important;
+    --background: #4c4c4c;
 }
-.dark .custom_btn_export.button-solid {
-    background: #333;
-    --background: #333 !important;
+
+.dark .foo_bottom .custom_btn_export.button-solid {
+    background: #4c4c4c;
+    --background: #4c4c4c !important;
 }
+
 .dark .text_share h3 {
     color: #fff;
 }
 .dark .send_shares{
     background: #333333;
 }
+
+.dark .send_shares {
+    border-color: #797979;
+}
+
+.dark .active-type {
+    box-shadow: 0 0 0 1px #f1d000;
+    border-color: #f1d000;
+}
+
 .dark .fax_box {
     background: #333;
     border-color: #4a4a4a;
@@ -260,8 +294,7 @@ ion-backdrop {
     height: 4px;
     display: inline-block;
     border-radius: 0;
-    background: #fff;
-    opacity: 0.2;
+    background: #a3a2a3;
 }
 .dark .swiper-pagination-bullet-active {
     opacity: 1;
@@ -269,4 +302,296 @@ ion-backdrop {
 
 .dark ion-segment {
     border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .Form-subject p {
+    color: #bbb !important;
+}
+
+.dark .Form-subject-row {
+    border-bottom: 1px solid #333;
+}
+
+
+.dark .contact_name_list ion-list {
+    background: #333 !important;
+}
+
+.dark .contact-footer {
+    background: #111;
+}
+
+.dark p.red_c {
+    color: #ff5f57 !important;
+}
+
+.dark .green_p {
+    color: #29c83f !important;
+}
+
+.dark .inner_history_details {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark #container_write h5 {
+    color: #fff;
+}
+
+.dark .row_01 p strong {
+    color: #fff;
+}
+
+.dark .mobo-sitebar ion-item.active {
+    --background: #2a2a2a !important;
+}
+
+.dark .user_name_email .email {
+    color: #bbbbbb;
+}
+
+.dark .change-s-block p strong {
+    color: #fff; 
+}
+
+.dark .change-s-block p {
+    color: #bbb;  
+}
+
+.dark .upload-pdf-mobo .pdf_icons img {
+    filter: brightness(100);
+}
+
+.dark .mobo-segmnt ion-label {
+    color: #fff;  
+}
+
+.dark .segment-button-checked ion-label {
+    color: #f1d000;
+}
+
+.dark .letters-description-block p {
+    color: #bbbbbb;
+}
+
+.dark .date span {
+    color: #bbbbbb;
+}
+
+.dark .active_letters .date span {
+    color: #fff;
+}
+
+.dark .letters-img-block {
+    box-shadow: 1px 1px 6px -1px #000;
+}
+
+
+.dark .SideBar {
+    background-color: #333;
+    border-right: 1px solid #4a4a4a;
+}
+
+.dark .welcome_ipad {
+    background: #111;
+}
+
+.dark .mail_open img {
+    opacity: 0.3;
+    filter: contrast(0.5);
+}
+
+
+.dark .ipad_topbar ion-toolbar {
+    border-bottom: 1px solid #222;
+    --background: #4c4c4c;
+}
+
+.dark span.popup_title {
+    color: #fff;
+}
+.dark .close_popus img {
+    filter: brightness(100);
+}
+
+.dark .main_iads {
+    border: 1px solid #4a4a4a;
+    background-color: #333;
+}
+
+.dark .border_bm {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .bg-white-light {
+    background: #555;
+}
+
+.dark .fill_colortotal {
+    background: #666;
+}
+
+.dark img.delete_print_btns {
+    filter: invert(1);
+}
+
+.dark .search_bar input {
+    background: transparent !important;
+    color: #9C9C9C !important;
+}
+
+.dark .search_bar ion-searchbar {
+    border: 1px solid #CCCCCC;
+}
+
+.dark .searchbar-input-container ion-icon {
+    color: #999 !important;
+}
+
+.dark .inner_sizes {
+    border: 1px solid #4a4a4a;
+    background-color: #333333;
+}
+
+.dark .back_fooipad {
+    background: #333333;
+}
+
+.dark .icon-hover:hover img {
+    filter: brightness(0.5);
+}
+
+
+.dark .change_sign_ipad p strong {
+    color: #fff;
+}
+
+.dark .change_sign_ipad p {
+    color: #bbb;
+}
+
+.dark .chosse_ipad {
+    border: 1px dashed #aaaaaa;
+    background-color: #4c4c4c;
+}
+
+.dark .icon_mipad {
+    border: 1px solid #797979;
+    background-color: #333333;
+}
+
+.dark .dark333 {
+    background: #333 !important;
+    --background: #333 !important;
+}
+
+.dark .contacts-inner-box {
+    background: #333;
+    display: inline-block;
+    width: 100%;
+}
+
+.dark .main_conipad {
+    background: #4c4c4c;
+    border-bottom: 1px solid #777;
+}
+
+.dark .contactlist-desk .alpha p,
+.dark .contactlist-desk ion-label, 
+.dark .contactlist-desk .insd p,
+.dark .desktop-segmnt ion-label {
+    color: #fff !important;
+}
+
+.dark img.back-btn {
+    filter: invert(1);
+}
+
+.dark .search_bts {
+    border: 1px solid #888;
+    color: #999;
+}
+
+.dark p.font_sels {
+    color: #bbb;  
+}
+
+.dark .select-upload-text-ipad {
+    color: #fff !important;
+}
+
+.dark .pdf_icons img {
+    filter: invert(1);
+}
+
+.dark .setting-page-ipad .list_cons,
+.dark .security-page-ipad .list_cons,
+.dark .rating-page-ipad .list_cons {
+    border-bottom: 0;
+}
+
+.dark img.delete_print_btns_01 {
+    filter: invert(1);
+}
+
+.dark .account_ipads .inner_user_img {
+    background-color: #333333;
+}
+
+.dark .inner_user_img img {
+    width: 65%;
+    filter: contrast(0);
+}
+
+.dark .pass_code {
+    border-bottom: 4px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.dark .passcode-header .title,
+.dark .passcode-header .title-2 {
+    color: #fff;
+}
+
+.dark .passcode-header {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .login-Info-box .icon_in img {
+    filter: contrast(0);
+}
+
+.dark .main_setting .list_cons {
+    border-bottom: 0;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .dark .ion-overlay-wrapper {
+        background: #333;
+    }
+
+    .dark .foo_bottom ion-toolbar {
+        background: #333!important;
+        --background: #333;
+    }
+
+    .dark .foo_bottom .custom_btn_export.button-solid {
+        background: #333;
+        --background: #333 !important;
+    }
+
+    .dark ion-toolbar.contact-footer-toolbar {
+        background: #111111;
+        --background: #111111;
+    }
+
+    .dark  .app_vers {
+        color: #959595;
+    }
+
+    .dark .inner_user_img {
+        background: #333;
+    }
 }

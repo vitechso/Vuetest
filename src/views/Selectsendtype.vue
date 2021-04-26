@@ -59,7 +59,7 @@
         <ion-row class="ion-padding-top ion-padding-bottom">
             <ion-col size="12">
                 <div class="ion_btn_next">
-                    <ion-button @click="nextMobile()" :disabled='isDisabled' shape="round" class="next_btn next_btn_mobo">Next</ion-button>
+                    <ion-button @click="nextMobile()" :class="isDisabled?'_gary-outline-btn':'md button button-round button-solid ion-activatable ion-focusable hydrated'" :disabled='isDisabled' shape="round" class="next_btn next_btn_mobo ">Next</ion-button>
                 </div>
             </ion-col>
         </ion-row>
@@ -88,13 +88,13 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
+  <ion-content :fullscreen="true" class="back_white dark333">
     <div id="container_fax" class="ion-top_padds">
 
     <ion-row class="ion-margin-top ion-margin-bottom">
-        <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/sendprintedletter')}">
+        <ion-col size="4" @click="selected('sendprint')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='sendprint'?'active-type':''">
                     <img src="assets/images/yellow_print.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -103,9 +103,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4" @click="() => {modalController.dismiss(); router.push('/sendfax')}">
+        <ion-col size="4" @click="selected('sendfax')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='sendfax'?'active-type':''">
                     <img src="assets/images/yellow_fax.svg" />
                 </div>
                 <div class="text_shareipad">
@@ -114,9 +114,9 @@
             </div>
         </ion-col>
 
-        <ion-col size="4">
+        <ion-col size="4" @click="selected('pdf')" class="mb-1">
             <div class="inner_sends">
-                <div class="icon_mipad">
+                <div class="icon_mipad" :class="type=='pdf'?'active-type':''">
                     <img src="assets/images/yellow_pdf.svg" />
                 </div>
 
@@ -129,8 +129,8 @@
 
     <ion-row class="ion-padding-top ion-padding-bottom">
         <ion-col size="12">
-            <div class="ion_btn_next">
-                <ion-button shape="round" class="next_btn">Next</ion-button>
+            <div class="ion_btn_next btn-176-tab">
+                <ion-button @click="nextMobile()" :class="isDisabled?'_gary-outline-btn':'md button button-round button-solid ion-activatable ion-focusable hydrated'" :disabled='isDisabled' shape="round" class="next_btn">Next</ion-button>
             </div>
         </ion-col>
     </ion-row>
@@ -215,7 +215,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Sendprintedletter from './Sendprintedletter.vue'
@@ -239,9 +239,9 @@ export default defineComponent({
           styleClass:"",
           isDisabled:true,
           type:"",
-          isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
@@ -265,6 +265,7 @@ export default defineComponent({
         if(type == 'pdf'){
             this.type = 'pdf'
         }
+    
         if(type == 'sendprint'){
             this.type = 'sendprint'
         }
@@ -288,9 +289,11 @@ export default defineComponent({
     nextMobile(){
         
         if(this.type == 'sendprint'){
+            modalController.dismiss()
             this.router.push('/sendprintedletter')
         }
         if(this.type == 'sendfax'){
+            modalController.dismiss()
             this.router.push('/sendfax')
         }
     },

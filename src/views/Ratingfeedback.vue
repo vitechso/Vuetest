@@ -61,20 +61,19 @@
 
 <div v-if="isIpad">
 <ion-page>
-  <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center">
-      <ion-col size="4" class="bars_hms">
+
+<ion-header class="header_am">
+  <ion-toolbar class="header-top-ipad">
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="8" class="bars_hms">
         <div class="ion-text-center ins_han">
-            <img @click="()=>router.push('/Settings')" src="assets/images/back_btn.svg"/>
+            <img @click="()=>router.push('/settings')" src="assets/images/back_btn.svg"/>
         </div>
         <div class="ion-text-left ipad_flx">
           <span class="title_top ipad_title_top">Rating & Feedback</span> 
         </div>
       </ion-col>
-      <ion-col size="6">
-      </ion-col>
-      <ion-col size="2">
+      <ion-col size="4">
         <ion-buttons class="right_ipad">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
@@ -83,10 +82,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content :fullscreen="true">
-    <div class="main_setting ion-margin hnas_ipads">
+
+<ion-content :fullscreen="true" class="rating-page-ipad">
+    <div class="main_setting ion-padding ion-margin-top hnas_ipads">
     <ion-row>
-        <ion-col size="6">
+        <ion-col size="6" class="ion-padding-end">
             <ion-item lines="none" class="list_cons setting_bs ion-margin-bottom">
                 <div slot="start" class="icons_s">
                     <img src="assets/images/ratting.svg"/>
@@ -98,7 +98,7 @@
             </ion-item>
         </ion-col>
 
-        <ion-col size="6">
+        <ion-col size="6" class="ion-padding-start">
             <ion-item @click="() => router.push('/transaction-history')" lines="none" class="list_cons setting_bs ion-margin-bottom">
                 <div slot="start" class="icons_s">
                     <img src="assets/images/share.svg"/>
@@ -112,7 +112,7 @@
     </ion-row>
             
     <ion-row>
-        <ion-col size="6">
+        <ion-col size="6" class="ion-padding-end">
             <ion-item @click="() => router.push('/change-password')" lines="none" class="list_cons setting_bs ion-margin-bottom">
                 <div slot="start" class="icons_s">
                     <img src="assets/images/send_feedback.svg"/>
@@ -133,7 +133,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -154,9 +154,9 @@ export default defineComponent({
   data(){
       return{
       styleClass:"",
-        isIpad:isPlatform('ipad'),
         isDesktop: isPlatform('desktop'),
-        isMobile: isPlatform('mobile'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   }
 });

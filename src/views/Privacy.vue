@@ -96,21 +96,19 @@
 </div>
 
 <div>
-<ion-page v-if="isIpad"> 
+<ion-page v-if="isIpad">
 <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center">
-      <ion-col size="4" class="bars_hms">
+  <ion-toolbar class="header-top-ipad">
+    <ion-row class="ion-align-items-center ion-padding-horizontal">
+      <ion-col size="8" class="bars_hms">
         <div class="ion-text-center ins_han">
-            <img @click="()=>router.push('/Settings')" src="assets/images/back_btn.svg"/>
+            <img @click="()=>router.push('/settings')" src="assets/images/back_btn.svg"/>
         </div>
         <div class="ion-text-left ipad_flx">
           <span class="title_top ipad_title_top">Privacy</span> 
         </div>
       </ion-col>
-      <ion-col size="6">
-      </ion-col>
-      <ion-col size="2">
+      <ion-col size="4">
         <ion-buttons class="right_ipad">
             <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
         </ion-buttons>
@@ -118,8 +116,9 @@
     </ion-row>
   </ion-toolbar>
 </ion-header>
-  <ion-content :fullscreen="true">
-    <div class="main_setting ion-margin priy_ipad">
+
+  <ion-content :fullscreen="true" class="privacy-page-ipad">
+    <div class="main_setting ion-padding priy_ipad">
         <ion-row class="ion-padding-bottom">
             <ion-col>
               <div class="privacy_description">
@@ -192,7 +191,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonMenuButton, isPlatform, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -213,9 +212,9 @@ export default defineComponent({
    data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
 });

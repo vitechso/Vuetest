@@ -1,18 +1,18 @@
 <template>
-  <ion-app v-if="!isIpad" class="mobile_menus">
+<ion-app v-if="isMobile" class="mobile_menus">
 
   <ion-menu side="start" menu-id="first" content-id="main">
-    <ion-row class="top_menu_sl">
-      <ion-col size="10">
+    <ion-row class="top_menu_sl ion-padding mt-4">
+      <ion-col size="10" class="sitebar-logo">
         <div class="drak_mode">
-          <img src="assets/images/dark_mode_logo.svg"/>
+          <img class="" src="assets/images/darklogo.svg"/>
         </div>
-        <div class="kdh">
+        <div class="logo">
           <img src="assets/images/logo.svg"/>
         </div> 
       </ion-col>
-      <ion-col size="2">
-        <div class="menu_close">
+      <ion-col size="2" class="ion-no-padding">
+        <div class="menu_close ion-text-right">
           <img @click="closeMenu" src="assets/images/close_menu.svg"/>
         </div>
         <!-- <ion-button @click="closeMenu" >Close</ion-button> -->
@@ -54,7 +54,7 @@
               </div>
 
               <div class="user_name_email">
-                <p class="user_name"><strong>Justin Shepp</strong></p>
+                <p class="user_name">Justin Shepp</p>
                 <p class="email">justin.shepp@gmail.com</p>
               </div>
             </div>
@@ -71,17 +71,17 @@
   </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
  
-  </ion-app>
+</ion-app>
 
-  <ion-app v-if="isIpad" class="menus_ipad">
+<ion-app v-if="isIpad" class="menus_ipad">
 
   <ion-menu side="start" menu-id="first" content-id="main">
-    <ion-row class="top_menu_sl">
-      <ion-col size="10">
+    <ion-row class="top_menu_sl sitebar-logo-block-ipad mt-2">
+      <ion-col size="10" class="sitebar-logo">
         <div class="drak_mode">
-          <img src="assets/images/dark_mode_logo.svg"/>
+          <img class="" src="assets/images/darklogo.svg"/>
         </div>
-        <div class="kdh">
+        <div class="logo">
           <img src="assets/images/logo.svg"/>
         </div> 
       </ion-col>
@@ -93,9 +93,9 @@
       </ion-col>
     </ion-row>
     <ion-content class="back_white">
-      <ion-list>
+      <ion-list class="mobo-sitebar">
       
-        <ion-item @click="() => {router.push('/all-letters');closeMenu()}" lines="none" class="icon_menus"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
+        <ion-item @click="() => {router.push('/all-letters');closeMenu()}" lines="none" class="icon_menus active"><img src="assets/images/menu_icon01.svg"/> All Letters <ion-badge class="bans_sj" slot="end">25</ion-badge></ion-item>
       
       
         <ion-item lines="none" class="icon_menus"><img src="assets/images/menu_icon02.svg"/> Drafts <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item>
@@ -118,18 +118,20 @@
     <ion-footer class="ion-no-border clas_bn">
       <ion-toolbar>
         <ion-row class="row_foo ion-padding-start ion-padding-end">
-          <ion-col size="3">
-            <div class="user_short_name">
-              <p>JS</p>
+          <ion-col size="10">
+            <div class="sitemenu-bottom-block">
+              <div class="user_short_name">
+                <p>JS</p>
+              </div>
+
+              <div class="user_name_email">
+                <p class="user_name">Justin Shepp</p>
+                <p class="email">justin.shepp@gmail.com</p>
+              </div>
             </div>
           </ion-col>
-          <ion-col size="8">
-            <div class="user_name_email">
-              <p class="user_name"><strong>Justin Shepp</strong></p>
-              <p class="email">justin.shepp@gmail.com</p>
-            </div>
-          </ion-col> 
-          <ion-col size="1">
+
+          <ion-col size="2">
             <div class="user_logout">
               <img src="assets/images/logout.svg" />
             </div>
@@ -138,14 +140,18 @@
       </ion-toolbar>
     </ion-footer>
   </ion-menu>
-    <ion-router-outlet id="main"></ion-router-outlet>
+  <ion-router-outlet id="main"></ion-router-outlet>
  
+  </ion-app>
+
+  <ion-app v-if="isDesktop">
+  <ion-router-outlet id="main"></ion-router-outlet>
   </ion-app>
 
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform, modalController  } from '@ionic/vue';
+import { IonApp, IonRouterOutlet, IonContent, IonItem, IonList, IonMenu, menuController, IonBadge, IonFooter, IonRow, IonCol, IonToolbar, isPlatform,getPlatforms, modalController  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { Plugins } from '@capacitor/core';
@@ -167,6 +173,7 @@ export default defineComponent({
   },
   setup() {
     const { SplashScreen } = Plugins;
+    //alert("here")
     // Hide the splash (you should do this on app launch)
 SplashScreen.hide();
 
@@ -208,9 +215,10 @@ SplashScreen.show({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-          isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+         isDesktop: isPlatform('desktop'),
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
+      
       }
   },
 });

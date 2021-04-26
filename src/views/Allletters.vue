@@ -25,101 +25,230 @@
   <ion-content :fullscreen="true">
     <div id="full_width">
       <ion-list class="mobo-letter-list">
-        <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
-                </div>
-              </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Address Change</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-        </ion-item>
-
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b" @click="() => router.push('/writedocument')">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Address Change</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>15 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+          </ion-item>
         </ion-item-sliding>
 
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Minutes of Meeting</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>12 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
-                </div>
-              </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
         </ion-item-sliding>
 
         <ion-item-sliding>
-        <ion-item lines="none" class="bor_b">
-          <ion-row class="ion-align-items-center">
-              <ion-col size="2" class="ion-no-padding">
-                <div class="letter_pic">
-                  <img src="assets/images/normal_u4831.jpg"/>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Project Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>11 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-              <ion-col size="10">
-                <div class="texts_letts">
-                  <h3>Minutes of Meeting</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div class="date">
-                  <span>15 Jan</span>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Intial Call Records</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>8 Jan</span>
+                  </div>
                 </div>
               </ion-col>
-          </ion-row>
-          <ion-item-options side="end" class="opths">
-            <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
-            <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
-          </ion-item-options>
-        </ion-item>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Requirements Analysis</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>7 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>UI Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>6 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>Requirements Analysis</h3>
+                    <p>Dear Johnson Charles It has survived not only Lorem Ipsum has been the industry's...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>6 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item lines="none" class="bor_b">
+            <ion-row class="ion-align-items-center">
+              <ion-col size="12" class="ion-no-padding">
+                <div class="all-letters-box">
+                  <div class="letters-img-block">
+                    <img src="assets/images/normal_u4831.jpg"/>
+                  </div>
+
+                  <div class="letters-description-block">
+                    <h3>UI Requirements</h3>
+                    <p>Dear Mr Miller It is a long established fact that It is a long established fact that...</p>
+                  </div>
+
+                  <div class="date">
+                    <span>4 Jan</span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-item-options side="end" class="opths">
+              <ion-item-option><img src="assets/images/view.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/share.svg"/></ion-item-option>
+              <ion-item-option><img src="assets/images/delete.svg"/></ion-item-option>
+            </ion-item-options>
+          </ion-item>
         </ion-item-sliding>
 
       </ion-list>
@@ -138,48 +267,66 @@
 <div v-if="isIpad">
 <ion-page>
 <ion-header class="header_am">
-  <ion-toolbar class="">
-    <ion-row class="ion-align-items-center bar_c">
-      <ion-col size="3" class="ipad_cols">
-        <div class="ion-text-left ipad_flx">
-          <span class="title_top ipad_title_top">All Letters</span> 
-          <ion-badge class="badgs">8</ion-badge>
-        </div>
-        <div class="edit_icon">
-          <img src="assets/images/edit_pencil.svg"/>
-        </div>
-      </ion-col>
-      <ion-col size="7"></ion-col>
-      <ion-col size="2">
-        <ion-buttons class="right_ipad">
-            <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
-        </ion-buttons>
-      </ion-col>
+  <ion-toolbar class="header-top-ipad border_tabs">
+    <div class="ipad-header">
+      <div class="left-header">
+        <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="12" class="ipad_cols">
+            <div class="ion-text-left ipad_flx">
+              <span class="title_top ipad_title_top">All Letters</span> 
+              <ion-badge class="badgs">8</ion-badge>
+            </div>
+            <div class="edit_icon">
+              <img src="assets/images/edit_pencil.svg"/>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
 
-    </ion-row>
+      <div class="right-header">
+        <ion-row class="ion-align-items-center bar_c">
+          <ion-col size="10"></ion-col>
+          <ion-col size="2" class="ion-padding-end">
+            <ion-buttons class="right_ipad">
+              <ion-menu-button class="primary_arrow_inner"><img src="assets/images/menu.svg"/></ion-menu-button>
+            </ion-buttons>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
   <ion-content>
-    <ion-row class="ipad_h">
-      <ion-col size="3"></ion-col>
-      <ion-col size="9" class="ion-no-padding">
-        <div class="welcome_ipad">
-          <h3>Welcome to moreyou.letters</h3>
-          <h4>Select an exisiting document from sidebar or create a new one</h4>
-          <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
-            <div class="mail_open">
-              <img src="assets/images/mail_open.svg"/>
+    <div class="ipad_h destop-sitebar-container">
+      <div class="SideBar">
+        <ion-row class="">
+            <ion-col size="12">
+                
+            </ion-col>
+        </ion-row>
+      </div>
+      <div class="right-content-box">
+        <ion-row>
+          <ion-col size="12" class="ion-no-padding custom-col-full">
+            <div class="welcome_ipad">
+              <h3>Welcome to moreyou.letters</h3>
+              <h4>Select an exisiting document from sidebar or create a new one</h4>
+              <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
+                <div class="mail_open">
+                  <img src="assets/images/mail_open.svg"/>
+                </div>
             </div>
-        </div>
-      </ion-col>
-    </ion-row>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
   </ion-content>
 </ion-page>
 </div>
 
 <div v-if="isDesktop">
   <ion-page>
-<ion-header class="header_am">
+<ion-header class="header_am desktop-header-main">
   <ion-toolbar class="header-top">
     <ion-row class="ion-align-items-center bar_c">
       <ion-col size="3" class="ipad_cols Desktop_cols ion-no-padding">
@@ -221,7 +368,7 @@
     <div class="right-content-box">
       <ion-row>
         <ion-col size="12" class="ion-no-padding custom-col-full">
-          <div class="welcome_ipad welcome_desktop">
+          <div class="welcome_desktop">
             <h3>Welcome to moreyou.letters</h3>
             <h4>Select an exisiting document from sidebar or create a new one</h4>
             <ion-button shape="round" @click="openModal" class="create_letts">Create letter</ion-button>
@@ -240,7 +387,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,modalController, popoverController  } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonBadge, IonItem, IonList, IonItemOption, IonItemOptions, IonItemSliding, IonFab, IonFabButton, IonMenuButton, IonButtons, isPlatform,getPlatforms,modalController, popoverController, IonRow, IonCol, IonButton  } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -262,7 +409,10 @@ export default defineComponent({
     IonFab,
     IonFabButton,
     IonButtons,
-    IonMenuButton
+    IonButton,
+    IonMenuButton,
+    IonRow,
+    IonCol
   },
   setup() {
       const router = useRouter();
@@ -271,14 +421,16 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
+         
           isDesktop: isPlatform('desktop'),
-          isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms()[0]=='android'||getPlatforms()[0]=='iphone',
+        isIpad:getPlatforms()[0]=='ipad',
       }
   },
   methods:{
      async openModal() {
        modalController.dismiss()
+       //alert('sdsds');
       const modal = await modalController.create({
           component: Choosetemplate,
           cssClass: 'choosetem',
@@ -288,6 +440,7 @@ export default defineComponent({
         })
       return modal.present();
     },
+    
 
     async openPopover(ev: Event) {
       const popover = await popoverController

@@ -23,47 +23,50 @@
 </ion-header>
 
   <ion-content :fullscreen="true">
-    <div id="privew_s" class="back_white">
+    <div class="privew-container">
+      <div id="privew_s" class="back_white">
 
-    <ion-row class="privew_r ion-padding-bottom">
-        <ion-col size="9">
-          <div class="innerr_b">
-            <p><strong>John Anderson</strong></p>
-            <p>Park Hall Aveneues</p>
-            <p>8726 Kassel</p>
+      <ion-row class="privew_r ion-padding-bottom">
+          <ion-col size="9">
+            <div class="innerr_b">
+              <p><strong>John Anderson</strong></p>
+              <p>Park Hall Aveneues</p>
+              <p>8726 Kassel</p>
 
-            <div class="mail_deta">
-              <p>john.anderson@gmail.com</p>
-              <p>December 11, 2020</p>
+              <div class="mail_deta">
+                <p>john.anderson@gmail.com</p>
+                <p>December 11, 2020</p>
+              </div>
             </div>
+          </ion-col>
+      </ion-row>
+
+      <ion-row class="privew_r ion-padding-bottom">
+          <ion-col size="12">
+              <p class="mb-15 ruler-line"><strong>Dear Sirs and Madames,</strong></p>
+
+              <p class="mb-15 ruler-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+              <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </ion-col>
+      </ion-row>
+
+      <ion-row class="row_sinc privew_r">
+        <ion-col size="6">
+          <div class="sincerely">
+            <p>Sincerely,</p>
+            <p><strong>Justin Shepp</strong></p>
           </div>
         </ion-col>
-    </ion-row>
-
-    <ion-row class="privew_r ion-padding-bottom">
-        <ion-col size="12">
-            <p class="mb-15 ruler-line"><strong>Dear Sirs and Madames,</strong></p>
-
-            <p class="mb-15 ruler-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <ion-col size="6">
+          <div class="pages_of">
+            <p>Page 1 of 1</p>
+          </div>
         </ion-col>
-    </ion-row>
+      </ion-row>
 
-    <ion-row class="row_sinc privew_r">
-      <ion-col size="6">
-        <div class="sincerely">
-          <p>Sincerely,</p>
-          <p><strong>Justin Shepp</strong></p>
-        </div>
-      </ion-col>
-      <ion-col size="6">
-        <div class="pages_of">
-          <p>Page 1 of 1</p>
-        </div>
-      </ion-col>
-    </ion-row>
 
+      </div>
 
     </div>
   </ion-content>
@@ -96,64 +99,100 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true">
-    <div id="privew_s" class="back_white privew_ipads">
+  <ion-content :fullscreen="true" class="dark333">
+    <div class="privew-container">
+      <div id="privew_s" class="back_white privew_ipads">
 
-    <ion-row class="privew_r ion-padding-bottom">
-        <ion-col size="4">
-          <div class="innerr_b ipad_bs">
-            <p><strong>John Anderson</strong></p>
-            <p>Park Hall Aveneues</p>
-            <p>8726 Kassel</p>
+        <ion-row class="privew_r ion-padding-bottom">
+          <ion-col size="4">
+            <div class="innerr_b ipad_bs">
+              <p><strong>John Anderson</strong></p>
+              <p>Park Hall Aveneues</p>
+              <p>8726 Kassel</p>
 
-            <div class="mail_deta">
-              <p>john.anderson@gmail.com</p>
-              <p>December 11, 2020</p>
+              <div class="mail_deta">
+                <p>john.anderson@gmail.com</p>
+                <p>December 11, 2020</p>
+              </div>
             </div>
-          </div>
-        </ion-col>
-        <ion-col size="4"></ion-col>
-        <ion-col size="4">
-          <div class="innerr_b_right">
-            <p><strong>John Anderson</strong></p>
-            <p>Park Hall Aveneues</p>
-            <p>8726 Kassel</p>
+          </ion-col>
+          <ion-col size="4"></ion-col>
+          <ion-col size="4">
+            <div class="innerr_b_right">
+              <p><strong>John Anderson</strong></p>
+              <p>Park Hall Aveneues</p>
+              <p>8726 Kassel</p>
 
-            <div class="mail_deta">
-              <p>john.anderson@gmail.com</p>
-              <p>December 11, 2020</p>
+              <div class="mail_deta">
+                <p>john.anderson@gmail.com</p>
+                <p>December 11, 2020</p>
+              </div>
             </div>
-          </div>
-        </ion-col>
+          </ion-col>
+        </ion-row>
 
+        <ion-row class="ion-padding-top ion-padding-bottom">
+            <ion-col size="12" class="">
+                <h5 class="desktop-request-title">Address Change</h5>
+            </ion-col>
+        </ion-row>
 
-    </ion-row>
+        <ion-row class="privew_r ion-padding-bottom">
+            <ion-col size="12">
+                <p class="ion-padding-bottom ruler-line_tab"><strong>Dear Sirs and Madames,</strong></p>
 
-    <ion-row class="privew_r ion-padding-bottom">
-        <ion-col size="12">
-            <p class="ion-padding-bottom"><strong>Dear Sirs and Madames,</strong></p>
+                <p class="ion-padding-bottom ruler-line_tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
-            <p class="ion-padding-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </ion-col>
+        </ion-row>
 
-            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </ion-col>
-    </ion-row>
+        <ion-row class="row_sinc">
+          <ion-col size="6">
+            <div class="sincerely">
+              <p>Sincerely,</p>
+              <p><strong>Justin Shepp</strong></p>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="pages_of">
+              <p>Page 1 of 1</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
 
-    <ion-row class="row_sinc">
-      <ion-col size="6">
-        <div class="sincerely">
-          <p>Sincerely,</p>
-          <p><strong>Justin Shepp</strong></p>
-        </div>
-      </ion-col>
-      <ion-col size="6">
-        <div class="pages_of">
-          <p>Page 1 of 1</p>
-        </div>
-      </ion-col>
-    </ion-row>
+      <div id="privew_s" class="back_white privew_ipads">
+        <ion-row class="ion-padding-top ion-padding-bottom">
+            <ion-col size="12" class="">
+                <h5 class="desktop-request-title">Address Change</h5>
+            </ion-col>
+        </ion-row>
 
+        <ion-row class="privew_r ion-padding-bottom">
+            <ion-col size="12">
+                <p class="ion-padding-bottom ruler-line_tab"><strong>Dear Sirs and Madames,</strong></p>
 
+                <p class="ion-padding-bottom ruler-line_tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="row_sinc">
+          <ion-col size="6">
+            <div class="sincerely">
+              <p>Sincerely,</p>
+              <p><strong>Justin Shepp</strong></p>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="pages_of">
+              <p>Page 1 of 1</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
     </div>
   </ion-content>
     <ion-footer class="ion-no-border foo_bottom">
@@ -169,7 +208,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController   } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonFooter, IonButton, isPlatform, modalController, getPlatforms   } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import Selectsendtype from './Selectsendtype.vue'
@@ -190,8 +229,8 @@ export default defineComponent({
   data() {
       return {
           styleClass:"",
-          isIpad:isPlatform('ipad'),
-        isMobile: isPlatform('mobile'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
       }
   },
   methods:{
