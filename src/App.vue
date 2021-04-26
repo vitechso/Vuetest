@@ -37,10 +37,6 @@
             ><img src="assets/images/menu_icon02.svg" /> Drafts
             <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item
           >
-          <ion-item lines="none"
-            ><img src="assets/images/menu_icon02.svg" /> Drafts
-            <ion-badge class="bans_sj" slot="end">15</ion-badge></ion-item
-          >
 
           <ion-item lines="none" class="icon_menus"
             ><img src="assets/images/menu_icon03.svg" /> Sent
