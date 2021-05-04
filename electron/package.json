@@ -25,7 +25,7 @@
   "author": "",
   "license": "MIT",
   "build": {
-    "appId": "com.moreyou.com",
+    "appId": "com.moreyouletter.com",
     "productName": "Moreyouletter",
     "files": [
       "assets/*",

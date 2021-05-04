@@ -1,4 +1,5 @@
 <template>
+<!--mobile -->
   <ion-app v-if="isMobile" class="mobile_menus">
     <ion-menu side="start" menu-id="first" content-id="main">
       <ion-row class="top_menu_sl ion-padding mt-4">
@@ -108,7 +109,7 @@
     </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
   </ion-app>
-
+<!--ipad-->
   <ion-app v-if="isIpad" class="menus_ipad">
     <ion-menu side="start" menu-id="first" content-id="main">
       <ion-row class="top_menu_sl sitebar-logo-block-ipad mt-2">
@@ -209,7 +210,7 @@
     </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
   </ion-app>
-
+<!---desktop--->
   <ion-app v-if="isDesktop">
     <ion-router-outlet id="main"></ion-router-outlet>
   </ion-app>
@@ -254,6 +255,7 @@ export default defineComponent({
   },
   setup() {
     const { SplashScreen } = Plugins;
+    console.log(getPlatforms())
     //alert("here")
     // Hide the splash (you should do this on app launch)
     SplashScreen.hide();
@@ -295,13 +297,12 @@ export default defineComponent({
   data() {
     return {
       styleClass: "",
-      isDesktop: isPlatform("desktop"),
+      isDesktop: getPlatforms().indexOf("desktop"),
       isMobile:
         getPlatforms().indexOf("iphone") > -1 ||
         getPlatforms().indexOf("android") > -1,
       isIpad:
-        getPlatforms().indexOf("ipad") > -1 ||
-        getPlatforms().indexOf("tablet") > -1,
+        getPlatforms().indexOf("ipad") > -1,
     };
   },
 });

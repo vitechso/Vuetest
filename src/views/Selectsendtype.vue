@@ -241,7 +241,7 @@ export default defineComponent({
           type:"",
           isDesktop: isPlatform('desktop'),
           isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
-          isIpad:getPlatforms().indexOf('ipad')>-1||getPlatforms().indexOf('tablet')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1,
       }
   },
   methods:{

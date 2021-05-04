@@ -423,8 +423,8 @@ export default defineComponent({
           styleClass:"",
          
           isDesktop: isPlatform('desktop'),
-          isMobile: getPlatforms()[0]=='android'||getPlatforms()[0]=='iphone',
-        isIpad:getPlatforms()[0]=='ipad',
+        isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+        isIpad:getPlatforms().indexOf('ipad')>-1,
       }
   },
   methods:{
