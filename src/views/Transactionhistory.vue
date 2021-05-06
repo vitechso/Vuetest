@@ -316,10 +316,10 @@
         </ion-toolbar>
   </ion-header>
 
-<ion-content :fullscreen="true" >
+<ion-content :fullscreen="true">
     <div id="container_fax">
         <div class="ipad_text_top ion-text-left ion-padding-top ion-padding-bottom desk_top_fless">
-            <p>Credit Balance: €15.00</p>
+            <p>Credit Balance: <strong>€15.00</strong></p>
             <ion-button class="add_credis import_csv" @click="addCredit">Add Credit</ion-button>
         </div>
 

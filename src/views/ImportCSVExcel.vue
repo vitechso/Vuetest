@@ -115,7 +115,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
-          <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
+          <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Import CSV/Excel</span> 
         </div>
       </ion-col>
@@ -129,7 +129,7 @@
         </ion-toolbar>
   </ion-header>
 
-  <ion-content :fullscreen="true" class="back_white">
+  <ion-content :fullscreen="true" class="back_white_f2">
     <div id="container_fax" class="ion-top_padds ion-padding-end ion-padding-start fdfs">
 
       <ion-row class="ion-margin-top ion-margin-bottom ion-padding-bottom ion-justify-content-center ion-align-items-center">
@@ -175,6 +175,7 @@
 import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import Contacts from './Contacts.vue';
 
 export default defineComponent({
   name: 'ImportCSVExcel',
@@ -197,8 +198,20 @@ export default defineComponent({
       }
   },
   methods:{
-    cancel() {
-        modalController.dismiss()
+    async back() {
+        modalController.dismiss();
+         const modal = await modalController.create({
+          component: Contacts,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
+
+    cancel(){
+      modalController.dismiss();
     }
   }
 });

@@ -733,7 +733,7 @@
         </ion-row>
     </ion-header>
 
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="back_white_f2">
         <div v-if="selectedSegment == 'contacts'" class="ion-padding-start Contacts-List-Info">
             <div class="contactlist contactlist-desk"> 
                 <div class="alpha"><p>A</p></div>

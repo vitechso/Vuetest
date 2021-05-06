@@ -143,7 +143,7 @@
                 </div>
                 <div class="maijn_uploads">
                     <div class="hnas">
-                        <img class="doc_pdf" src="assets/images/pdf_icon.svg" />
+                        <img class="doc_pdf" src="assets/images/desktoppdficon.svg" />
                         <div class="_jmaas">
                             <p class="doc_name">Document.pdf</p>
                             <div class="process_bar"></div>

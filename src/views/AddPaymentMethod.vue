@@ -26,7 +26,7 @@
 <ion-content :fullscreen="true">
     <ion-row class="ion-padding">
         <ion-col size="12">
-          <div class="AddPayment-MethodBlock">
+          <div class="AddPayment-MethodBlock top-paddings">
             <div class="PaymentCard-box" @click="select('paypal')">
               <div :class="type == 'paypal'?'active-Cardbox':''" class="card-img-box">
                 <img src="assets/images/PayPal.svg"/>

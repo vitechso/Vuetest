@@ -58,7 +58,7 @@ ion-header {
 
 ion-backdrop {
   background: #000;
-  opacity: 0.7 !important;
+  opacity: 67% !important;
 }
 
 ion-modal {
@@ -329,7 +329,7 @@ ion-item {
   margin-top: 0;
   color: #333;
   margin-bottom: 5px;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
   line-height: normal;
   overflow: hidden;
@@ -389,7 +389,7 @@ ion-item {
   font-size: 17px;
   margin: 0;
   font-family: "Proxima Nova", sans-serif !important;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #6a6869;
 }
 .opths ion-item-option {
@@ -409,7 +409,7 @@ ion-item {
 }
 
 .text_top p strong {
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
   text-decoration: underline;
   cursor: pointer;
@@ -587,7 +587,7 @@ p.credit_bal strong {
   font-size: 18px;
   text-transform: capitalize;
   letter-spacing: normal;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
 }
 
@@ -1572,8 +1572,8 @@ ion-searchbar input {
 }
 
 .change_sign_ipad p strong {
-  font-family: "Proxima Nova Semibold" !important;
-  font-weight: 600;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+  font-weight: 500;
   color: #333;
   line-height: 34px;
 }
@@ -1640,7 +1640,7 @@ ion-searchbar input {
   font-size: 27px;
   font-weight: 600;
   color: #333;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .bordes_ipad {
   border-bottom: 1px solid #e2e4e6;
@@ -1668,7 +1668,7 @@ ion-searchbar input {
   color: #6a6869;
   font-weight: 600;
   margin: 10px 0;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .main_iads {
   /* padding: 0px 15px; */
@@ -1684,7 +1684,7 @@ ion-searchbar input {
   font-size: 20px;
   color: #333;
   padding: 20px 0px;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
 }
 
@@ -1694,7 +1694,7 @@ ion-searchbar input {
   overflow: hidden;
 }
 .custom_row p strong {
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
 }
 .trng-page-ipad .border_bm:last-child {
   border: 0;
@@ -1709,7 +1709,7 @@ ion-searchbar input {
 }
 
 .peint_inner_headings h3 strong {
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -1986,7 +1986,7 @@ img.delete_print_btns_01 {
   width: 192px;
   height: 65px;
   font-size: 25px;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
   font-weight: 600;
   letter-spacing: normal;
 }
@@ -2352,7 +2352,7 @@ p.user_ids.iad_spl {
 }
 
 .fontlight {
-  color: #959595;
+  color: #959595 !important;
 }
 
 .privew_desktop p {
@@ -2618,9 +2618,6 @@ p.up_load_c {
   justify-content: center;
   align-items: center;
 }
-.maijn_uploads {
-  margin-top: 10px;
-}
 ._jmaas p {
   font-size: 20px;
   color: #959595;
@@ -2747,7 +2744,7 @@ p.up_load_c {
   align-items: center;
   justify-content: center;
   width: 200px;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
   border-radius: 53px;
 }
@@ -2979,6 +2976,8 @@ img.paypal-logo {
   font-family: "Proxima Nova Semibold", "Proxima Nova Regular", "Proxima Nova",
     sans-serif !important;
   color: #ffffff;
+  border-radius: 9px !important;
+  --border-radius: 9px !important;
 }
 
 .contactlist-desk .contact_name_list ion-checkbox {
@@ -3012,7 +3011,7 @@ img.paypal-logo {
 }
 
 .contactlist-desk ion-label {
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
   font-weight: 600;
   color: #333333 !important;
   font-size: 18px !important;
@@ -3602,7 +3601,7 @@ ion-toggle::part(handle) {
   box-shadow: none;
   text-transform: inherit;
   font-weight: 600;
-  font-family: "Proxima Nova Extrabold", sans-serif !important;
+  font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
   letter-spacing: normal;
 }
 
@@ -3615,7 +3614,7 @@ ion-toggle::part(handle) {
   font-size: 18px;
   font-family: "Proxima Nova", sans-serif !important;
   color: #6a6869;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .have-accout-box h5 a {
@@ -3627,8 +3626,8 @@ ion-toggle::part(handle) {
 .have-accout-box h5 {
   line-height: normal;
   font-size: 19px;
-  font-weight: bold;
-  color: #333333;
+  /* font-weight: bold; */
+  color: #6a6869;
   font-family: "Proxima Nova", sans-serif !important;
 }
 
@@ -3657,10 +3656,14 @@ ion-toggle::part(handle) {
 
 .login-Info-box {
   width: 100%;
+  margin: auto;
+  display: block;
 }
 
 #forgot-page .login-Info-box {
   width: 720px;
+  margin: auto;
+  display: block;
 }
 
 #intro-page {
@@ -4220,6 +4223,8 @@ ion-toggle::part(handle) {
 
   #signup-page .login-Info-box {
     width: 900px;
+    margin: auto;
+    display: block;
   }
 
   #forgot-page .login-Info-box {
@@ -4264,4 +4269,11 @@ ion-toggle::part(handle) {
 
 .align_icons {
   display: flex;
+}
+.back_white_f2{
+  background: #f2f2f2 !important;
+  --background: #f2f2f2 !important;
+}
+.top-paddings{
+  padding-top: 0px;
 }
