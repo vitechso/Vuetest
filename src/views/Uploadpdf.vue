@@ -118,7 +118,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
-            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
+            <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Upload PDF</span> 
         </div>
       </ion-col>
@@ -174,6 +174,7 @@
 import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import Choosetemplate from './Choosetemplate.vue'
 
 export default defineComponent({
   name: 'Uploadpdf',
@@ -199,7 +200,19 @@ export default defineComponent({
   methods:{
     cancel() {
         modalController.dismiss()
-    }
+    },
+    
+    async back() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: Choosetemplate,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
+    },
   }
 });
 </script>

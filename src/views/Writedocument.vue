@@ -465,14 +465,14 @@
                 <img src="assets/images/search.svg"/>
             </div>
 
-        </div>
+        </div> 
       </ion-col>
-      <ion-col size="7" class="">
+      <ion-col size="6" class="">
       <div class="ion-text-center ipad_flx ion-padds-l ion-justify-content-center">
           <span class="title_top desktop-title-top">Address Change</span> 
         </div>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="3">
         <div class="user_img">
           <div class="user_avtar">
             <img src="assets/images/userimage.png"/>
@@ -493,7 +493,7 @@
 
 <ion-content :fullscreen="true" class="ipad_write">
     <div :class="isMenuOpen?'menu-open':'menu-closed'" class="ipad_h destop-sitebar-container">
-        <div class="bg-white SideBar">
+        <div class="bg-white SideBar no_border">
             <ion-row class="s_bar lettes_desk">
                 <ion-col size="12">
                     <div class="ion-text-left ipad_flx desk_flx">
@@ -601,7 +601,7 @@
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>From</h5>
-                                            <p class="fontlight">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                                            <p class="fontlight f-20">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
                                         </div>
 
                                         <div class="contact_book contact_book-desk">
@@ -616,7 +616,7 @@
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>To</h5>
-                                            <p class="fontlight">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                                            <p class="fontlight f-20">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
                                         </div>
 
                                         <div class="contact_book contact_book-desk icon-hover" @click="contact">
@@ -631,7 +631,7 @@
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>Subject</h5>
-                                            <p class="fontlight">Address Change</p>
+                                            <p class="fontlight f-20">Address Change</p>
                                         </div>
                                     </div>
                                 </ion-col>
@@ -722,19 +722,19 @@
 
                                 <div class="mail_deta">
                                 <p>john.anderson@gmail.com</p>
-                                <p>December 11, 2020</p>
                                 </div>
                             </div>
                             </ion-col>
                             <ion-col size="5">
+
                             <div class="innerr_b_right">
-                                <p><strong>John Anderson</strong></p>
-                                <p>Park Hall Aveneues</p>
-                                <p>8726 Kassel</p>
+                                <p><strong>Justin Shepp</strong></p>
+                                <p>Urban Estate Phase 2</p>
+                                <p>2726 Kassel</p>
 
                                 <div class="mail_deta">
-                                <p>john.anderson@gmail.com</p>
-                                <p>December 11, 2020</p>
+                                <p>justin.shepp@gmail.com</p>
+                                <p>January 11, 2021</p>
                                 </div>
                             </div>
                             </ion-col>

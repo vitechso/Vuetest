@@ -9,7 +9,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
-          <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
+          <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Paypal</span> 
         </div>
       </ion-col>
@@ -68,6 +68,7 @@
 import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
+import AddPaymentMethod from './AddPaymentMethod.vue';
 
 export default defineComponent({
   name: 'Paypal',
@@ -92,6 +93,18 @@ export default defineComponent({
   methods:{
       cancel() {
         modalController.dismiss()
+    },
+
+    async back() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: AddPaymentMethod,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
     },
   }
 });

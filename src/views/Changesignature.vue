@@ -182,7 +182,7 @@
       <ion-row class="ion-justify-content-center ion-padding Signature-Ok">
           <ion-col size="12">
               <div class="BtnBlock">
-                  <ion-button shape="round" class="MakeDefault-btn">Ok</ion-button>
+                  <ion-button shape="round" class="MakeDefault-btn">OK</ion-button>
               </div>
           </ion-col>
       </ion-row>

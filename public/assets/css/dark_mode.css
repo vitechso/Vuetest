@@ -264,10 +264,7 @@ body.dark {
 .dark .alert-message{
     color: #fff;
 }
-ion-backdrop {
-    background: #000;
-    opacity: 67% !important;
-}
+
 .dark .clas_bn ion-toolbar {
     background: #111;
     --background: #111;

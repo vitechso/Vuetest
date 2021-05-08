@@ -55,16 +55,18 @@ html.ios {
 ion-header {
   overflow: hidden;
 }
-
-ion-backdrop {
-  background: #000;
+.sc-ion-modal-md-h:first-of-type {
+  --backdrop-opacity: var(--ion-backdrop-opacity, 0.67) !important;
+}
+/* ion-backdrop {
   opacity: 67% !important;
+  background-color: rgba(0, 0, 0, 0.67) !important;
 }
 
 ion-modal {
-  background: rgb(0 0 0 / 60%);
+  background-color: rgba(0, 0, 0, 0.67) !important;
   transition: all 0.05s ease-in-out;
-}
+} */
 
 ion-content {
   --background: #f7f7f7;
@@ -3612,7 +3614,7 @@ ion-toggle::part(handle) {
 
 .for_got a {
   font-size: 18px;
-  font-family: "Proxima Nova", sans-serif !important;
+  font-family: "Proxima Nova Regular", sans-serif !important;
   color: #6a6869;
   /* font-weight: bold; */
 }
@@ -3628,7 +3630,7 @@ ion-toggle::part(handle) {
   font-size: 19px;
   /* font-weight: bold; */
   color: #6a6869;
-  font-family: "Proxima Nova", sans-serif !important;
+  font-family: "Proxima Nova Regular", sans-serif !important;
 }
 
 #forgot-page {
@@ -3640,13 +3642,13 @@ ion-toggle::part(handle) {
 }
 
 .sign_with p {
-  font-family: "Proxima Nova", sans-serif !important;
+  font-family: "Proxima Nova Regular", sans-serif !important;
   color: #6a6869;
   text-align: center;
   line-height: 24px;
   font-size: 17px;
   margin: 0;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #forgot-page .mobile-login-form {
@@ -4276,4 +4278,10 @@ ion-toggle::part(handle) {
 }
 .top-paddings{
   padding-top: 0px;
+}
+.f-20{
+  font-size: 20px;
+}
+.no_border{
+  border: none;
 }

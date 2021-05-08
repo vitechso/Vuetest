@@ -382,7 +382,7 @@
                 <ion-row class="ion-align-items-center bar_c">
                     <ion-col size="6" class="ipad_cols">
                         <div class="ion-text-left ipad_flx">
-                            <img @click="cancel" class="back-btn" src="assets/images/back-black.svg"/>
+                            <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
                             <span class="popup_title">Create Group</span> 
                         </div>
                     </ion-col>
@@ -578,6 +578,8 @@ import { IonPage,IonHeader, IonContent, IonToolbar, modalController, getPlatform
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import { isPlatform } from '@ionic/vue';
+import Contacts from './Contacts.vue';
+
 export default defineComponent({
   name: 'Creategroup',
   components: {
@@ -601,6 +603,17 @@ export default defineComponent({
   methods: {
       cancel() {
         modalController.dismiss()
+    },
+    async back() {
+        modalController.dismiss();
+         const modal = await modalController.create({
+          component: Contacts,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
     },
   }
 });

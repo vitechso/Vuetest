@@ -8,7 +8,7 @@
               <ion-col size="6" class="ipad_cols">
                 <div class="ion-text-left ipad_flx">
                   <img
-                    @click="cancel"
+                    @click="back"
                     class="back-btn"
                     src="assets/images/back-black.svg"
                   />
@@ -90,6 +90,7 @@ import {
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
+import Transactionhistory from './Transactionhistory.vue';
 
 export default defineComponent({
   name: "AddCredits",
@@ -119,6 +120,17 @@ export default defineComponent({
   methods: {
     cancel() {
       modalController.dismiss();
+    },
+    async back() {
+        modalController.dismiss();
+         const modal = await modalController.create({
+          component: Transactionhistory,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      return modal.present();
     },
   },
 });
