@@ -733,7 +733,7 @@
                                 <p>2726 Kassel</p>
 
                                 <div class="mail_deta">
-                                <p>justin.shepp@gmail.com</p>
+                                <p>justin.shepp@gmail.com</p><br>
                                 <p>January 11, 2021</p>
                                 </div>
                             </div>

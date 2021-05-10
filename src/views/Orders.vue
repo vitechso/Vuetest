@@ -296,14 +296,15 @@
 </ion-page>
 </div>
 
-<div v-if="isDesktop">
+<div v-if="isDesktop"> 
 <ion-page>
 <ion-header class="ipad_topbar">
         <ion-toolbar>
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
-          <span class="popup_title">Transaction History</span> 
+            <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
+            <span class="popup_title">Orders</span> 
         </div>
       </ion-col>
       <ion-col size="4"></ion-col>
@@ -318,26 +319,16 @@
 
 <ion-content :fullscreen="true">
     <div id="container_fax">
-        <div class="ipad_text_top ion-text-left ion-padding-top ion-padding-bottom desk_top_fless">
-            <p>Credit Balance: <strong>€15.00</strong></p>
-            <ion-button class="add_credis import_csv" @click="addCredit">Add Credit</ion-button>
-        </div>
-
-        <div class="main_iads fax_hn">
+        <div class="main_iads fax_hn padding_top_orders">
             <ion-row class="border_bm"> 
-                <ion-col size="2">
-                    <div class="peint_data_headings">
-                        <h3>Order Number</h3>
-                    </div>
-                </ion-col>
                 <ion-col size="3">
                     <div class="peint_data_headings">
-                        <h3>Order Date</h3>
+                        <h3>Name</h3>
                     </div>
                 </ion-col>
-                <ion-col size="3">
+                <ion-col size="7">
                     <div class="peint_data_headings">
-                        <h3>Item</h3>
+                        <h3>Address</h3>
                     </div>
                 </ion-col>
                 <ion-col size="2"> 
@@ -345,71 +336,140 @@
                         <h3>Cost</h3>
                     </div>
                 </ion-col>
+            </ion-row>
 
-                <ion-col size="2"> 
-                    <div class="peint_data_headings ion-text-right">
-                        <h3>Action</h3>
+            <ion-row class="border_bm">
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h5>Andrew Symonds</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="7">
+                     <div class="peint_inner_headings">
+                        <h5>243 Park Hall Aveneues    Kassel 11015 Germany</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-right">
+                        <h3><span class="red_p">- €0.50</span></h3>
                     </div>
                 </ion-col>
             </ion-row>
 
             <ion-row class="border_bm">
-                <ion-col size="2">
-                    <div class="peint_inner_headings">
-                        <h3 @click="orders"><strong>12009</strong></h3>
-                    </div>
-                </ion-col>
                 <ion-col size="3">
                     <div class="peint_inner_headings">
-                        <h5>10 January 2021</h5>
+                        <h5>Andy Bickel</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3">
+                <ion-col size="7">
                      <div class="peint_inner_headings">
-                        <h5>Fax 4 Recipients</h5>
+                        <h5>13 Green Park Avenues    Kassel 11015 Germany</h5>
                     </div>
                 </ion-col>
                 <ion-col size="2">
                     <div class="peint_inner_headings ion-text-right">
-                        <h3><span class="red_p">- €2.50</span></h3>
-                    </div>
-                </ion-col>
-                <ion-col size="2"> 
-                    <div class="peint_inner_headings ion-text-right delete_btns">
-                        <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>router.push('/writedocument')" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <h3><span class="red_p">- €0.50</span></h3>
                     </div>
                 </ion-col>
             </ion-row>
 
             <ion-row class="border_bm">
-                <ion-col size="2">
-                    <div class="peint_inner_headings">
-                        <h3 @click="orders"><strong>12009</strong></h3>
-                    </div>
-                </ion-col>
                 <ion-col size="3">
                     <div class="peint_inner_headings">
-                        <h5>10 January 2021</h5>
+                        <h5>Bryan Adams</h5>
                     </div>
                 </ion-col>
-                <ion-col size="3">
+                <ion-col size="7">
                      <div class="peint_inner_headings">
-                        <h5>Fax 4 Recipients</h5>
+                        <h5>12 Model Town Road    Berlin 11017 Germany</h5>
                     </div>
                 </ion-col>
                 <ion-col size="2">
                     <div class="peint_inner_headings ion-text-right">
-                        <h3><span class="green_p">+ €20.00</span></h3>
-                    </div>
-                </ion-col>
-                <ion-col size="2"> 
-                    <div class="peint_inner_headings ion-text-right delete_btns">
-                        <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>router.push('/writedocument')" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <h3><span class="red_p">- €0.50</span></h3>
                     </div>
                 </ion-col>
             </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h5>Benjamin Williams</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="7">
+                     <div class="peint_inner_headings">
+                        <h5>133 Civil Lines GT Road     Munich 11013 Germany</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-right">
+                        <h3><span class="red_p">- €0.50</span></h3>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h5>Andy Bickel</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="7">
+                     <div class="peint_inner_headings">
+                        <h5>13 Green Park Avenues    Kassel 11015 Germany</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-right">
+                        <h3><span class="red_p">- €0.50</span></h3>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h5>Bryan Adams</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="7">
+                     <div class="peint_inner_headings">
+                        <h5>12 Model Town Road    Berlin 11017 Germany</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-right">
+                        <h3><span class="red_p">- €0.50</span></h3>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="border_bm">
+                <ion-col size="3">
+                    <div class="peint_inner_headings">
+                        <h5>Benjamin Williams</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="7">
+                     <div class="peint_inner_headings">
+                        <h5>133 Civil Lines GT Road     Munich 11013 Germany</h5>
+                    </div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="peint_inner_headings ion-text-right">
+                        <h3><span class="red_p">- €0.50</span></h3>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <div class="dis_end_totlebar">
+                <div class="bats">
+                    <p><strong>Total Cost</strong></p>
+                    <p><strong>- €2.00</strong></p>
+                </div>
+            </div>
         </div>
     </div>
 </ion-content>
@@ -424,11 +484,10 @@ import { IonPage,IonHeader, IonContent, IonToolbar, isPlatform, modalController,
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
-import AddCredits from './AddCredits.vue'
-import Orders from "./Orders.vue";
+import Transactionhistory from './Transactionhistory.vue';
 
 export default defineComponent({
-  name: 'Transactionhistory',
+  name: 'Orders',
   components: {
     IonContent,
     IonHeader,
@@ -452,22 +511,10 @@ export default defineComponent({
         modalController.dismiss()
     },
 
-    async addCredit() {
+    async back() {
          modalController.dismiss()
       const modal = await modalController.create({
-          component: AddCredits,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
-    },
-
-    async orders() {
-         modalController.dismiss()
-      const modal = await modalController.create({
-          component: Orders,
+          component: Transactionhistory,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'

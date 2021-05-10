@@ -251,7 +251,7 @@
                       >Sign In</ion-button
                     >
                     <div class="for_got">
-                      <a @click="() => router.push('/forgot')"
+                      <a href="javascript:void(0);" @click="() => router.push('/forgot')"
                         >Forgot your password?</a
                       >
                     </div>

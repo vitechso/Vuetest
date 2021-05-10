@@ -362,7 +362,7 @@
 </ion-header>
     <ion-content :fullscreen="true" >
         <div id="container_fax">
-            <div class="ipad_text_top ion-text-center">
+            <div class="ipad_text_top ion-text-center ion-padding-top ion-padding-bottom">
                 <p>Below are the details of recipients of printed letter</p>
             </div>
 

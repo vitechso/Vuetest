@@ -503,7 +503,7 @@ export default defineComponent({
     },
 
     async changepass() {
-         modalController.dismiss()
+         //modalController.dismiss()
       const modal = await modalController.create({
           component: Changepassword,
           cssClass: 'choosetem',
@@ -527,7 +527,7 @@ export default defineComponent({
     },
 
     async payment() {
-         modalController.dismiss()
+         //modalController.dismiss()
       const modal = await modalController.create({
           component: PaymentMethods,
           cssClass: 'choosetem',

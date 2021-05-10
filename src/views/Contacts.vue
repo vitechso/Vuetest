@@ -1145,9 +1145,10 @@ export default defineComponent({
     },
 
     async addacontact() {
-        modalController.dismiss()
+        //modalController.dismiss()
       const modal = await modalController.create({
           component: Addacontact,
+          //animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
@@ -1157,9 +1158,10 @@ export default defineComponent({
     },
 
     async creategroup() {
-        modalController.dismiss()
+       // modalController.dismiss()
       const modal = await modalController.create({
           component: Creategroup,
+          //animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'

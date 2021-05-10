@@ -249,7 +249,7 @@ export default defineComponent({
         modalController.dismiss()
     },
     async sendprint() {
-         modalController.dismiss()
+         //modalController.dismiss()
       const modal = await modalController.create({
           component: Sendprintedletter,
           cssClass: 'choosetem',
@@ -293,13 +293,13 @@ export default defineComponent({
             this.router.push('/sendprintedletter')
         }
         if(this.type == 'sendfax'){
-            modalController.dismiss()
+            //modalController.dismiss()
             this.router.push('/sendfax')
         }
     },
 
     async sendfax() {
-         modalController.dismiss()
+         //modalController.dismiss()
       const modal = await modalController.create({
           component: Sendfax,
           cssClass: 'choosetem',

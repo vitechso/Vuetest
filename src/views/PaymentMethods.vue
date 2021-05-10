@@ -132,7 +132,7 @@ export default defineComponent({
     },
 
     async addpay() {
-        modalController.dismiss()
+        //modalController.dismiss()
         const modal = await modalController.create({
           component: AddPaymentMethod,
           cssClass: 'choosetem',
@@ -143,7 +143,7 @@ export default defineComponent({
       return modal.present();
     },
     async back() {
-        modalController.dismiss()
+        //modalController.dismiss()
         const modal = await modalController.create({
           component: Settings,
           cssClass: 'choosetem',

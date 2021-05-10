@@ -311,14 +311,14 @@ export default defineComponent({
     },
     async back() {
         modalController.dismiss();
-         const modal = await modalController.create({
-          component: Contacts,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
+    //      const modal = await modalController.create({
+    //       component: Contacts,
+    //       cssClass: 'choosetem',
+    //       componentProps: {
+    //         title: 'New Title'
+    //       },
+    //     })
+    //   return modal.present();
     },
   }
 });

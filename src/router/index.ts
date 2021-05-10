@@ -26,6 +26,7 @@ import ImportCSVExcel from "../views/ImportCSVExcel.vue";
 import Addacontact from "../views/Addacontact.vue";
 import Uploadpdf from "../views/Uploadpdf.vue";
 import Creategroup from "../views/Creategroup.vue";
+import Orders from "../views/Orders.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -162,6 +163,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/create-group",
     name: "Creategroup",
     component: Creategroup,
+  },
+  {
+    path: "/orders",
+    name: "Orders",
+    component: Orders,
   },
 ];
 

@@ -667,6 +667,7 @@ p.credit_bal strong {
   border-radius: 12px;
   background-color: #f2f2f2;
   padding: 13px;
+  min-height: 185px;
 }
 .innerr_b p {
   margin: 0;
@@ -674,7 +675,7 @@ p.credit_bal strong {
   font-size: 17px;
 }
 .mail_deta {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .foo_bottom {
   border-top: 1px solid #e2e4e6;
@@ -1708,6 +1709,7 @@ ion-searchbar input {
   color: #333;
   padding: 20px 0px;
   font-family: "Proxima Nova Regular" !important;
+  cursor: pointer;
 }
 
 .peint_inner_headings h3 strong {
@@ -1737,6 +1739,7 @@ img.delete_print_btns {
 img.delete_print_btns_01 {
   margin-left: 20px;
   width: 40px;
+  cursor: pointer;
   height: 30px;
 }
 .fill_colortotal {
@@ -4284,4 +4287,27 @@ ion-toggle::part(handle) {
 }
 .no_border{
   border: none;
+}
+.padding_top_orders {
+  margin-top: 31px;
+  margin-bottom: 50px;
+}
+.dis_end_totlebar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 15px;
+}
+
+.bats {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.bats p {
+  font-size: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
 }

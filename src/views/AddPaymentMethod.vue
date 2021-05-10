@@ -109,7 +109,7 @@ export default defineComponent({
     },
 
     async paypal() {
-        modalController.dismiss()
+        //modalController.dismiss()
         const modal = await modalController.create({
           component: Paypal,
           cssClass: 'choosetem',
@@ -122,7 +122,7 @@ export default defineComponent({
 
 
   async editcard() {
-        modalController.dismiss()
+        //modalController.dismiss()
         const modal = await modalController.create({
           component: EditCardDetails,
           cssClass: 'choosetem',
@@ -133,7 +133,7 @@ export default defineComponent({
       return modal.present();
   },
   async back() {
-        modalController.dismiss()
+        //modalController.dismiss()
         const modal = await modalController.create({
           component: PaymentMethods,
           cssClass: 'choosetem',

@@ -187,7 +187,7 @@ export default defineComponent({
   },
   setup() {
       const router = useRouter();
-      return { router, modalController };
+      return { router, modalController }; 
   },
   data() {
       return {
@@ -199,7 +199,7 @@ export default defineComponent({
   },
   methods:{
     async back() {
-        modalController.dismiss();
+        //modalController.dismiss();
          const modal = await modalController.create({
           component: Contacts,
           cssClass: 'choosetem',
