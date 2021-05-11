@@ -8,10 +8,12 @@
           <form @submit.prevent="handleLogin">
             <div class="drak_mode">
               <img class="dark-logo" src="assets/images/darklogo.svg"/>
+              <span class="tag_line_desktop f15">powered by fino</span>
             </div>
 
             <div class="logo">
-              <img src="assets/images/logo.svg">
+              <img src="/assets/images/logo.svg">
+              <span class="tag_line_desktop f15">powered by fino</span>
             </div>
 
             <div class="sign_with">
@@ -83,12 +85,14 @@
       <div id="signup-page" class="login-container">
         <div class="login-Info-box">     
           <form @submit.prevent="handleLogin">
-            <div class="drak_mode">
+            <div class="drak_mode logo_withs">
               <img class="dark-logo" src="assets/images/darklogo.svg"/>
+              <span class="tag_line_desktop">powered by fino</span>
             </div>
 
-            <div class="logo">
+            <div class="logo logo_withs">
               <img src="assets/images/logo.svg">
+              <span class="tag_line_desktop">powered by fino</span>
             </div>
 
             <div class="sign_with">
@@ -175,8 +179,9 @@
               <img class="dark-logo" src="assets/images/darklogo.svg"/>
             </div>
 
-            <div class="logo">
+            <div class="logo logo_withs">
               <img src="assets/images/logo.svg">
+              <span class="tag_line_desktop">powered by fino</span>
             </div>
 
             <div class="sign_with">

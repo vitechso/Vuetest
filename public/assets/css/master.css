@@ -4311,3 +4311,37 @@ ion-toggle::part(handle) {
   display: flex;
   justify-content: flex-end;
 }
+
+/********desktop**********/
+.logo {
+  position: relative;
+}
+.logo_withs{
+  width: 520px;
+  margin: auto;
+}
+.drak_mode{
+  position: relative;
+}
+.tag_line_desktop {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  font-size: 18px;
+  font-family: 'Proxima Nova Regular', 'Proxima Nova', sans-serif !important;
+  color: #999999;
+  text-align: right;
+  line-height: normal;
+}
+.righ .tag_line_desktop{
+  right: 10px;
+}
+.dark .righ .tag_line_desktop {
+  right: 10px;
+}
+.f15{
+  font-size: 15px;
+}
+.icon_mipad{
+  cursor: pointer;
+}

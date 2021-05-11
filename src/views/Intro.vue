@@ -8,12 +8,14 @@
           <ion-row>
             <ion-col size="12">
               <div class="drak_mode">
-                <img class="logo-dark" src="assets/images/dark_mode_logo.svg"/>
-              </div>
+              <img class="dark-logo" src="assets/images/darklogo.svg"/>
+              <span class="tag_line_desktop f15">powered by fino</span>
+            </div>
 
               <div class="logo">
-                <img src="/assets/images/normal_u1.svg">
-              </div>
+              <img src="/assets/images/logo.svg">
+              <span class="tag_line_desktop f15">powered by fino</span>
+            </div>
             </ion-col>
           </ion-row>
       
@@ -72,15 +74,18 @@
       <div id="container_intro" class="main_self">
         <div class="intro-conty">
           <ion-row>
-          <ion-col size="12"> 
-          <div class="drak_mode">
-              <img class="logo-dark" src="assets/images/dark_mode_logo.svg"/>
+          <ion-col size="12" class="ion-padding-bottom"> 
+          <div class="drak_mode logo_withs righ">
+              <img class="logo-dark" src="assets/images/darklogo.svg"/>
+              <span class="tag_line_desktop">powered by fino</span>
           </div>
-            <div class="logo">
-              <img src="/assets/images/normal_u1.svg">
+            <div class="logo logo_withs righ">
+              <img src="assets/images/logo.svg">
+              <span class="tag_line_desktop">powered by fino</span>
             </div>
           </ion-col>
         </ion-row>
+        
         
           <ion-slides pager="true">
           <ion-slide>
@@ -138,11 +143,13 @@
         <div class="intro-conty">
           <ion-row>
             <ion-col size="12"> 
-            <div class="drak_mode">
-              <img class="w-100" src="assets/images/dark_mode_logo.svg"/>
+            <div class="drak_mode logo_withs righ">
+              <img class="logo-dark" src="assets/images/darklogo.svg"/>
+              <span class="tag_line_desktop">powered by fino</span>
             </div>
-              <div class="logo">
-                <img src="/assets/images/normal_u1.svg">
+              <div class="logo logo_withs righ">
+                <img src="/assets/images/logo.svg">
+                <span class="tag_line_desktop">powered by fino</span>
               </div>
             </ion-col>
           </ion-row>
