@@ -357,14 +357,22 @@ export default defineComponent({
     },
 
     async uploadpdf() {
-        modalController.dismiss()
+        //modalController.dismiss()
       const modal = await modalController.create({
           component: Uploadpdf,
           cssClass: 'choosetem',
+          animated:false,
           componentProps: {
             title: 'New Title'
           },
-        })
+        });
+     
+     modal.onDidDismiss().then((res)=>{
+         if(res.data === 'cancel'){
+             modalController.dismiss()
+         }
+     })
+      
       return modal.present();
     },
 

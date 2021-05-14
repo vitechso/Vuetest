@@ -55,6 +55,7 @@ export default defineComponent({
         const modal = await modalController.create({
           component: Settings,
           cssClass: 'choosetem',
+          animated: false,
           componentProps: {
             title: 'New Title'
           },

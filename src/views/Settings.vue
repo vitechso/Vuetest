@@ -515,14 +515,18 @@ export default defineComponent({
     },
 
     async transaction() {
-         modalController.dismiss()
+      //   modalController.dismiss()
       const modal = await modalController.create({
           component: Transactionhistory,
           cssClass: 'choosetem',
+          animated: false,
           componentProps: {
             title: 'New Title'
           },
-        })
+        });
+      modal.onDidDismiss().then((res)=>{
+          modalController.dismiss()
+      })
       return modal.present();
     },
 

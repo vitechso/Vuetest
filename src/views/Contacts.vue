@@ -1148,12 +1148,19 @@ export default defineComponent({
         //modalController.dismiss()
       const modal = await modalController.create({
           component: Addacontact,
-          //animated:false,
+          animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
           },
         })
+      modal.onDidDismiss().then((res)=>{
+          console.log(res);
+          if(res.data == 'cancel'){
+            modalController.dismiss()
+          }
+          
+      })
       return modal.present();
     },
 

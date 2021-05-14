@@ -380,8 +380,9 @@ export default defineComponent({
   },
   methods:{
 cancel() {
+    console.log("clicked")
     document.body.click()
-        modalController.dismiss()
+        modalController.dismiss('cancel')
     },
   },
   data() {

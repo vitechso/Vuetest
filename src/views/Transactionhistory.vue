@@ -377,7 +377,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>router.push('/writedocument')" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel();router.push('/writedocument')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>
@@ -406,7 +406,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>router.push('/writedocument')" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel();router.push('/writedocument')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>

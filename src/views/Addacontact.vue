@@ -307,7 +307,8 @@ export default defineComponent({
   },
   methods: {
       cancel() {
-        modalController.dismiss()
+          console.log('here')
+        modalController.dismiss('cancel')
     },
     async back() {
         modalController.dismiss();

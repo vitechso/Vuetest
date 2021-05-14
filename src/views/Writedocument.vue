@@ -932,7 +932,11 @@ export default defineComponent({
             title: 'New Title'
           },
         })
-      return modal.present();
+        modal.onDidDismiss().then((res)=>{
+            console.log(res)
+        })
+      modal.present();
+      
     },
 
      async documentSend() {
