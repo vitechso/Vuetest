@@ -128,7 +128,8 @@ export default defineComponent({
   },
   methods:{
       cancel() {
-        modalController.dismiss()
+        //alert("called")
+        modalController.dismiss('cancel')
     },
 
     async addpay() {
@@ -136,22 +137,28 @@ export default defineComponent({
         const modal = await modalController.create({
           component: AddPaymentMethod,
           cssClass: 'choosetem',
+          animated:false,
           componentProps: {
             title: 'New Title'
           },
+        });
+        modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+            modalController.dismiss('cancel')
+          }
         })
       return modal.present();
     },
     async back() {
-        //modalController.dismiss()
-        const modal = await modalController.create({
-          component: Settings,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
+      modalController.dismiss()
+      //   const modal = await modalController.create({
+      //     component: Settings,
+      //     cssClass: 'choosetem',
+      //     componentProps: {
+      //       title: 'New Title'
+      //     },
+      //   })
+      // return modal.present();
     },
 
   }

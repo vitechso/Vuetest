@@ -92,7 +92,7 @@ export default defineComponent({
   },
   methods:{
       cancel() {
-        modalController.dismiss()
+        modalController.dismiss('cancel')
     },
 
     select(type: any){
@@ -113,9 +113,15 @@ export default defineComponent({
         const modal = await modalController.create({
           component: Paypal,
           cssClass: 'choosetem',
+          animated:false,
           componentProps: {
             title: 'New Title'
           },
+        });
+        modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+            modalController.dismiss('cancel');
+          }
         })
       return modal.present();
   },
@@ -126,22 +132,28 @@ export default defineComponent({
         const modal = await modalController.create({
           component: EditCardDetails,
           cssClass: 'choosetem',
+          animated:false,
           componentProps: {
             title: 'New Title'
           },
+        });
+        modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+            modalController.dismiss('cancel');
+          }
         })
       return modal.present();
   },
   async back() {
-        //modalController.dismiss()
-        const modal = await modalController.create({
-          component: PaymentMethods,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
+      modalController.dismiss()
+      //   const modal = await modalController.create({
+      //     component: PaymentMethods,
+      //     cssClass: 'choosetem',
+      //     componentProps: {
+      //       title: 'New Title'
+      //     },
+      //   })
+      // return modal.present();
     },
 
 },

@@ -511,6 +511,11 @@ export default defineComponent({
             title: 'New Title'
           },
         })
+      modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+              modalController.dismiss()
+          }
+      })
       return modal.present();
     },
 
@@ -535,10 +540,16 @@ export default defineComponent({
       const modal = await modalController.create({
           component: PaymentMethods,
           cssClass: 'choosetem',
+          animated:false,
           componentProps: {
             title: 'New Title'
           },
         })
+      modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+              modalController.dismiss()
+          }
+      });
       return modal.present();
     },
 

@@ -91,19 +91,19 @@ export default defineComponent({
   },
   methods:{
       cancel() {
-        modalController.dismiss()
+        modalController.dismiss('cancel')
     },
 
     async back() {
         modalController.dismiss()
-        const modal = await modalController.create({
-          component: AddPaymentMethod,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
+      //   const modal = await modalController.create({
+      //     component: AddPaymentMethod,
+      //     cssClass: 'choosetem',
+      //     componentProps: {
+      //       title: 'New Title'
+      //     },
+      //   })
+      // return modal.present();
     },
   }
 });
