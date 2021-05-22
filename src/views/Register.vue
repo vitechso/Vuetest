@@ -216,10 +216,14 @@
                   </ion-col>
                 </ion-row>
 
-                <div lines="none" class="inputs-group inputs-icon-group">
-                  <input v-model="form.username" type="text" id="username" placeholder="Email" class="user_nam" />
-                  <div class="icon_in"><img src="assets/images/mail.png"/></div>
-                </div>
+                <ion-row>
+                  <ion-col size="12">
+                    <div lines="none" class="inputs-group inputs-icon-group">
+                    <input v-model="form.username" type="text" id="username" placeholder="Email" class="user_nam" />
+                    <div class="icon_in"><img src="assets/images/mail.png"/></div>
+                  </div>
+                  </ion-col>
+                </ion-row>
 
                 <ion-row>
                   <ion-col size="6" class="ion-padding-end">

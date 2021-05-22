@@ -303,6 +303,7 @@
         <ion-row class="ion-align-items-center bar_c">
       <ion-col size="6" class="ipad_cols">
         <div class="ion-text-left ipad_flx">
+            <img @click="back" class="back-btn" src="assets/images/back-black.svg"/>
           <span class="popup_title">Transaction History</span> 
         </div>
       </ion-col>
@@ -377,7 +378,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>{cancel();router.push('/writedocument')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel();router.push('/send-doc')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>
@@ -406,7 +407,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>{cancel();router.push('/writedocument')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel();router.push('/send-doc')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>
@@ -426,6 +427,8 @@ import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
 import AddCredits from './AddCredits.vue'
 import Orders from "./Orders.vue";
+import Settings from './Settings.vue';
+
 
 export default defineComponent({
   name: 'Transactionhistory',
@@ -474,6 +477,17 @@ export default defineComponent({
           },
         })
       return modal.present();
+    },
+    async back() {
+        modalController.dismiss()
+        const modal = await modalController.create({
+          component: Settings,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+     return modal.present();
     },
     
   }
