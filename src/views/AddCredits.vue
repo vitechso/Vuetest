@@ -119,7 +119,7 @@ export default defineComponent({
   },
   methods: {
     cancel() {
-      modalController.dismiss();
+      modalController.dismiss('cancel');
     },
     async back() {
         modalController.dismiss();

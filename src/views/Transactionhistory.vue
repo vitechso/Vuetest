@@ -452,18 +452,29 @@ export default defineComponent({
   },
   methods:{
       cancel() {
-        modalController.dismiss()
+            this.$emit("closed","popupClosed")
+          setTimeout(() =>  modalController.dismiss(), 100);
+       
+      
     },
 
     async addCredit() {
          modalController.dismiss()
       const modal = await modalController.create({
           component: AddCredits,
+           animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
           },
         })
+         modal.onDidDismiss().then((res)=>{
+          console.log(res);
+          if(res.data == 'cancel'){
+            modalController.dismiss()
+          }
+          
+      })
       return modal.present();
     },
 
@@ -472,6 +483,7 @@ export default defineComponent({
       const modal = await modalController.create({
           component: Orders,
           cssClass: 'choosetem',
+          animated: false,
           componentProps: {
             title: 'New Title'
           },
@@ -480,14 +492,14 @@ export default defineComponent({
     },
     async back() {
         modalController.dismiss()
-        const modal = await modalController.create({
-          component: Settings,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-     return modal.present();
+    //     const modal = await modalController.create({
+    //       component: Settings,
+    //       cssClass: 'choosetem',
+    //       componentProps: {
+    //         title: 'New Title'
+    //       },
+    //     })
+    //  return modal.present();
     },
     
   }

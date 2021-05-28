@@ -491,6 +491,9 @@ export default defineComponent({
     document.body.click()
         modalController.dismiss()
     },
+    onClosed(){
+        modalController.dismiss()
+    },
     changeTheme(event: any){
         console.log(event)
         if(event.detail.checked){
@@ -506,6 +509,7 @@ export default defineComponent({
          //modalController.dismiss()
       const modal = await modalController.create({
           component: Changepassword,
+           animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'

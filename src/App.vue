@@ -297,7 +297,7 @@ export default defineComponent({
   data() {
     return {
       styleClass: "",
-      isDesktop: getPlatforms().indexOf("desktop"),
+      isDesktop: isPlatform("desktop"),
       isMobile:
         getPlatforms().indexOf("iphone") > -1 ||
         getPlatforms().indexOf("android") > -1,

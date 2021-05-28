@@ -199,19 +199,19 @@ export default defineComponent({
   },
   methods:{
     async back() {
-        //modalController.dismiss();
-         const modal = await modalController.create({
-          component: Contacts,
-          cssClass: 'choosetem',
-          componentProps: {
-            title: 'New Title'
-          },
-        })
-      return modal.present();
+      modalController.dismiss();
+      //    const modal = await modalController.create({
+      //     component: Contacts,
+      //     cssClass: 'choosetem',
+      //     componentProps: {
+      //       title: 'New Title'
+      //     },
+      //   })
+      // return modal.present();
     },
 
     cancel(){
-      modalController.dismiss();
+      modalController.dismiss('cancel');
     }
   }
 });

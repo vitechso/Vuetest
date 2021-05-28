@@ -22,10 +22,14 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import mitt from 'mitt';
+
+const emitter = mitt();
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+app.config.globalProperties.emitter = emitter;
   
 router.isReady().then(() => {
   app.mount('#app');
