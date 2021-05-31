@@ -378,7 +378,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>{cancel();router.push('/send-doc')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel()}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>
@@ -407,7 +407,7 @@
                 <ion-col size="2"> 
                     <div class="peint_inner_headings ion-text-right delete_btns">
                         <!-- <h3>€0.50</h3> -->
-                        <img @click="()=>{cancel();router.push('/send-doc')}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
+                        <img @click="()=>{cancel();}" class="delete_print_btns_01" src="assets/images/view_black.svg"/>
                     </div>
                 </ion-col>
             </ion-row>
@@ -452,10 +452,8 @@ export default defineComponent({
   },
   methods:{
       cancel() {
-            this.$emit("closed","popupClosed")
-          setTimeout(() =>  modalController.dismiss(), 100);
-       
-      
+          modalController.dismiss('cancel');
+          this.$router.push('/send-doc')
     },
 
     async addCredit() {
@@ -488,6 +486,13 @@ export default defineComponent({
             title: 'New Title'
           },
         })
+        modal.onDidDismiss().then((res)=>{
+          console.log(res);
+          if(res.data == 'cancel'){
+            modalController.dismiss('cancel')
+          }
+          
+      })
       return modal.present();
     },
     async back() {

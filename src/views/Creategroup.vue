@@ -608,6 +608,7 @@ export default defineComponent({
         modalController.dismiss();
          const modal = await modalController.create({
           component: Contacts,
+          animated: false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'

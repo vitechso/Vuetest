@@ -492,6 +492,7 @@ export default defineComponent({
         modalController.dismiss()
     },
     onClosed(){
+      //  alert("valled")
         modalController.dismiss()
     },
     changeTheme(event: any){
@@ -534,7 +535,9 @@ export default defineComponent({
           },
         });
       modal.onDidDismiss().then((res)=>{
-          modalController.dismiss()
+          if(res.data === 'cancel'){
+            modalController.dismiss()
+          }       
       })
       return modal.present();
     },
