@@ -125,6 +125,7 @@ export default defineComponent({
         modalController.dismiss();
          const modal = await modalController.create({
           component: Transactionhistory,
+          animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
