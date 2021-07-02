@@ -806,4 +806,8 @@
     .Form-subject-block{
         height: 100%;
     }
+    .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 40%;
+    }
 }
