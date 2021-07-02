@@ -23,7 +23,7 @@
         </ion-toolbar>
   </ion-header>
 
-<ion-content :fullscreen="true">
+<ion-content :fullscreen="true ">
     <ion-row class="ion-padding">
         <ion-col size="12">
           <div class="AddPayment-MethodBlock top-paddings">

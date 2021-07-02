@@ -261,7 +261,7 @@
   </ion-page>
 </div>
 </ion-page>
-</template>
+</template> 
 
 <script lang="ts">
 import { IonPage, IonContent, isPlatform, getPlatforms } from '@ionic/vue'

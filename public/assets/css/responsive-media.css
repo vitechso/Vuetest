@@ -737,4 +737,73 @@
     #signup-page {
         padding: 50px 50px 50px;
     }
+    .icon_mipad img{
+        width: 120px;
+    }
+    .icon_mipad{
+        width: 190px;
+    height: 250px;
+    }
+    .text_shareipad h3{
+        font-size: 20px;
+    }
+    .ipad_text_top p{
+        font-size: 22px;
+    }
+    .peint_inner_headings h3 {
+        font-size: 17px;
+    }
+    .peint_inner_headings h5 {
+        font-size: 17px;
+    }
+    .total_num h3{
+        font-size: 15px;
+    }
+    img.delete_print_btns {
+        width: 17px;
+    }
+    .contact_name_list .control_cin {
+        width: 18px;
+        height: 18px;
+    }
+    .desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        position: relative;
+        border-radius: 10px;
+    }
+    .desktop_deletes .alert-title{
+        font-size: 22px;
+    }
+    .desktop_deletes .alert-sub-title{
+        font-size: 20px;
+    }
+    .desktop_deletes .alert-message{
+        font-size: 20px;
+    }
+    .desktop_deletes .alert-button-group{
+        padding: 20px;
+    }
+    .desktop_deletes .alert-button-group button{
+        height: 45px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .cards-details h2{
+        font-size: 20px;
+    }
+    .cards-details p{
+        font-size: 17px;
+    }
+    .card-img-box{
+        width: 250px;
+    height: 200px;
+    }
+    .desktop-header-icon {
+        margin-right: 5px;
+    }
+    .Form-subject-block{
+        height: 100%;
+    }
 }
