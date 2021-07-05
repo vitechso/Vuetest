@@ -593,7 +593,7 @@
                         </ion-row>
                     </div>
 
-                    <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin container_write-desktop">
+                    <div :class="styleClass" id="container_write" class="ipad_borders ion-no-margin container_write-desktop GFG">
  
                         <div class="Form-subject-container">
                             <ion-row class="Form-subject-row">
@@ -640,7 +640,7 @@
 
 
                         <ion-row class="row_01 b_p bor_b">
-                            <ion-col size="12" class="pr-0 pl-0">
+                            <ion-col size="12" class="pr-0 pl-0 SD">
                                 <h5>Dear Sirs and Madames,</h5>
                             </ion-col>
                             <ion-col size="12" class="pr-0 pl-0">
@@ -711,7 +711,7 @@
                 </ion-col>
 
                 <ion-col size="6" class="d-flex ion-align-items-center relative Lp-bg">
-                    <div id="privew_s" class="back_white privew_ipads privew_desktop">
+                    <div id="privew_s" class="back_white privew_ipads privew_desktop SDSD">
 
                         <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
                             <ion-col size="5">

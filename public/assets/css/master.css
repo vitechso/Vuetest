@@ -3314,6 +3314,7 @@ ion-checkbox::part(container) {
   color: #f2cd15;
   --height: 63px;
   --min-height: 63px;
+    outline: none;
 }
 
 .mobo-sitebar ion-item.active img {

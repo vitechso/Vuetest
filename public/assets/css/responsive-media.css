@@ -567,15 +567,15 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1250px){
     .SideBar {
         width: 250px;
     }
     .right-content-box {
         width: calc(100% - 250px);
     }
-    .welcome_desktop h3 {
-        font-size: 25px;
+    .welcome_desktop h3 { 
+        font-size: 25px;   
     }
     .welcome_desktop h4 {
         font-size: 20px;
