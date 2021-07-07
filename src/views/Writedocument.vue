@@ -555,6 +555,7 @@
         </div>
 
         <div class="right-content-box">
+
             <ion-row>
                 <ion-col size="6" class="ion-no-padding bg-white">
                     <div class="lock_unlock Desktop_lock_unlock">
@@ -568,8 +569,9 @@
                                         </div>
                                         
                                         <div :class="styleClass!=''?'hideBottom':''" class="align_icons">
-                                        
-                                        <div class="icon_bn icon-hover">
+
+                                    <!---                                        
+                                        <div  class="icon_bn icon-hover textEditor">
                                             <img src="assets/images/bold.svg"/>
                                         </div>
 
@@ -579,7 +581,8 @@
 
                                         <div class="icon_bn icon-hover">
                                             <img src="assets/images/underline.svg"/>
-                                        </div>
+                                        </div>   ---->
+                                        
                                         </div>
                                     </div>
 
@@ -644,15 +647,46 @@
                                 <h5>Dear Sirs and Madames,</h5>
                             </ion-col>
                             <ion-col size="12" class="pr-0 pl-0">
-                                <div class="tab_desc">
+          <!---                   <editor
+                             initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+    api-key="no-api-key"
+    :init="{
+      height: 500,  
+      menubar: false,
+      plugins: 'lists link image emoticons',
+      toolbar: 'bold italic underline'
+    }"
+  />  
+                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 
                                     <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div>
-                            </ion-col>
-                        </ion-row>
+
+  ---->
+                      <div class="tab_desc">
+ <editor
+                             initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+    api-key="no-api-key"
+    :init="{
+      height: 500,  
+      menubar: false,
+      plugins: 'lists link image emoticons',
+      toolbar: 'styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist | link image emoticons'
+    }"
+       />                   
+                      </div>  
+                      </ion-col>
+
+                    </ion-row>
 
                         <ion-row class="row_01 b_p bor_b">
                             <ion-col size="3" class="pr-0">
@@ -783,7 +817,6 @@
         </div>
             
     </div>
-
     
   </ion-content>
 </ion-page>
@@ -792,6 +825,7 @@
 
 </ion-page>
 </template>
+
 
 <script lang="ts">
 import { IonPage,IonHeader, IonFooter, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, IonSelectOption, IonSelect, IonToggle, IonCol, IonRow,
@@ -808,6 +842,8 @@ import Popover from './Popover.vue'
 import Choosetemplate from './Choosetemplate.vue'
 import Selectsendtype from './Selectsendtype.vue'
 import AllletterMenu from './AllletterMenu.vue'
+import Editor from '@tinymce/tinymce-vue'
+
 export default defineComponent({
   name: 'Writedocument',
   components: {
@@ -827,7 +863,9 @@ export default defineComponent({
     IonMenuButton,
     IonBadge,
     IonLabel,
-    IonItem
+    IonItem,
+    'editor': Editor
+    
   },
 
   
@@ -842,7 +880,8 @@ export default defineComponent({
         isDesktop: isPlatform('desktop'),
         isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
         isIpad:getPlatforms().indexOf('ipad')>-1,
-        isMenuOpen:true
+        isMenuOpen:true,
+        content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       }
   },
   methods:{
@@ -990,9 +1029,16 @@ export default defineComponent({
         })
       return modal.present();
     },
+
+ 
      
   }
 });
+
+
+
+
+
 
 </script>
 
