@@ -333,7 +333,7 @@
 
         <div class="desktop_conn">
             <!-- <ion-button class="MenuBar"><img src="assets/images/menu.svg"/></ion-button> -->
-            <div class="desktop-header-icon icon-hover" @click="chossetamp">
+            <div class="desktop-header-icon icon-hover" @click="openModal">
                 <img src="assets/images/edit_pencil.svg"/>
             </div>
         </div>

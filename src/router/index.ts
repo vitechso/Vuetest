@@ -27,6 +27,7 @@ import Addacontact from "../views/Addacontact.vue";
 import Uploadpdf from "../views/Uploadpdf.vue";
 import Creategroup from "../views/Creategroup.vue";
 import Orders from "../views/Orders.vue";
+import SendDoc from "../views/SendDoc.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -168,6 +169,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/orders",
     name: "Orders",
     component: Orders,
+  },
+  {
+    path: "/send-doc",
+    name: "SendDoc",
+    component: SendDoc,
   },
 ];
 

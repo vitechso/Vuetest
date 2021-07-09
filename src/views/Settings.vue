@@ -26,7 +26,7 @@
 
                 <ion-content :fullscreen="true">
                     <div class="main_setting ion-margin">
-                        
+
                         <div class="SettingBreak">
                             <h3 class="Setting-BreakLabel">App settings</h3>
                         </div>
@@ -471,124 +471,113 @@
     </ion-page>
 </template>
 <script lang="ts">
-    import {
-        IonPage,
-        IonHeader,
-        IonContent,
-        IonToolbar,
-        IonButton,
-        IonButtons,
-        IonMenuButton,
-        IonToggle,
-        isPlatform,
-        modalController,
-        getPlatforms
-    } from '@ionic/vue'
-    import {
-        defineComponent
-    } from 'vue';
-    import {
-        useRouter
-    } from 'vue-router';
-    import Changepassword from './Changepassword.vue'
-    import Transactionhistory from './Transactionhistory.vue'
-    import PaymentMethods from './PaymentMethods.vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButton, IonButtons, IonMenuButton, IonToggle, isPlatform, modalController, getPlatforms  } from '@ionic/vue'
+import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
+import Changepassword from './Changepassword.vue'
+import Transactionhistory from './Transactionhistory.vue'
+import PaymentMethods from './PaymentMethods.vue'
 
-    export default defineComponent({
-        name: 'Settings',
-        components: {
-            IonContent,
-            IonHeader,
-            IonPage,
-            IonToolbar,
-            IonButtons,
-            IonMenuButton,
-            IonToggle,
-            IonButton
-        },
-        setup() {
-            const router = useRouter();
-            return {
-                router
-            };
-        },
-        data() {
-            return {
-                styleClass: "",
-                isDesktop: isPlatform('desktop'),
-                isMobile: getPlatforms().indexOf('iphone') > -1 || getPlatforms().indexOf('android') > -1,
-                isIpad: getPlatforms().indexOf('ipad') > -1,
-            }
-        },
-        methods: {
-            cancel() {
-                document.body.click()
-                modalController.dismiss()
-            },
-            changeTheme(event: any) {
-                console.log(event)
-                if (event.detail.checked) {
-                    document.body.classList.remove('light');
-                    document.body.classList.add('dark')
-                } else {
-                    document.body.classList.remove('dark');
-                    document.body.classList.add('light')
-                }
-            },
-
-            async changepass() {
-                //modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Changepassword,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                modal.onDidDismiss().then((res) => {
-                    if (res.data === 'cancel') {
-                        modalController.dismiss()
-                    }
-                })
-                return modal.present();
-            },
-
-            async transaction() {
-                //   modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Transactionhistory,
-                    cssClass: 'choosetem',
-                    animated: false,
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                });
-                modal.onDidDismiss().then((res) => {
-                    modalController.dismiss()
-                })
-                return modal.present();
-            },
-
-            async payment() {
-                //modalController.dismiss()
-                const modal = await modalController.create({
-                    component: PaymentMethods,
-                    cssClass: 'choosetem',
-                    animated: false,
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                modal.onDidDismiss().then((res) => {
-                    if (res.data === 'cancel') {
-                        modalController.dismiss()
-                    }
-                });
-                return modal.present();
-            },
-
+export default defineComponent({
+  name: 'Settings',
+  components: {
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonToolbar,
+    IonButtons,
+    IonMenuButton,
+    IonToggle,
+    IonButton
+  },
+  setup() {
+      const router = useRouter();
+      return { router };
+  },
+  data(){
+      return{
+      styleClass:"",
+        isDesktop: isPlatform('desktop'),
+          isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
+          isIpad:getPlatforms().indexOf('ipad')>-1,
+      }
+  },
+  methods :{
+      cancel() {
+    document.body.click()
+        modalController.dismiss()
+    },
+    onClosed(){
+      //  alert("valled")
+        modalController.dismiss()
+    },
+    changeTheme(event: any){
+        console.log(event)
+        if(event.detail.checked){
+            document.body.classList.remove('light');
+            document.body.classList.add('dark')
+        }else{
+            document.body.classList.remove('dark');
+            document.body.classList.add('light')
         }
-    });
+    },
+
+    async changepass() {
+         //modalController.dismiss()
+      const modal = await modalController.create({
+          component: Changepassword,
+           animated:false,
+          cssClass: 'choosetem',
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+              modalController.dismiss()
+          }
+      })
+      return modal.present();
+    },
+
+    async transaction() {
+      //   modalController.dismiss()
+      const modal = await modalController.create({
+          component: Transactionhistory,
+          cssClass: 'choosetem',
+          animated: false,
+          componentProps: {
+            title: 'New Title'
+          },
+        });
+      modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+            modalController.dismiss()
+          }       
+      })
+      return modal.present();
+    },
+
+    async payment() {
+         //modalController.dismiss()
+      const modal = await modalController.create({
+          component: PaymentMethods,
+          cssClass: 'choosetem',
+          animated:false,
+          componentProps: {
+            title: 'New Title'
+          },
+        })
+      modal.onDidDismiss().then((res)=>{
+          if(res.data === 'cancel'){
+              modalController.dismiss()
+          }
+      });
+      return modal.present();
+    },
+
+  }
+});
 </script>
 
 <style scoped>

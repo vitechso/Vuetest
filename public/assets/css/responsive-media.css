@@ -274,6 +274,8 @@
         width: 25px;
     }
 
+    
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) 
@@ -560,4 +562,252 @@
         width: 170px;
     }
 
+   
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1250px){
+    .SideBar {
+        width: 250px;
+    }
+    .right-content-box {
+        width: calc(100% - 250px);
+    }
+    .welcome_desktop h3 { 
+        font-size: 25px;   
+    }
+    .welcome_desktop h4 {
+        font-size: 20px;
+    }
+    .create_letts {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .welcome_desktop {
+        height: calc(100vh - 50px);
+    }
+    .mail_open img {
+        bottom: 60px;
+        right: 75px;
+        width: 40%;
+        opacity: 0.06;
+    }
+    .choosetem{
+        --height: 450px !important;
+    }
+    .desktop_sizes {
+        width: 140px !important;
+        height: 160px !important;
+    }
+    .ipad_docs .text_top p {
+        font-size: 20px;
+    }
+    span.popup_title {
+        font-size: 20px;
+    }
+    .ipad_docs .title_doc h3 {
+        font-size: 15px;
+    }
+    .title_doc h3{
+        margin: 15px 0 15px;
+    }
+    .MakeDefault-btn{
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
+    }
+    img.doc_pdf {
+        width: 45px;
+        height: 60px;
+    }
+    .desk_flx .desktop_vs{
+        font-size: 20px !important;
+    }
+    .badgs{
+        width: 35px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .lettes_desk .texts_letts {
+        width: calc(100% - 60px);
+    }
+    .sitebar-text-info .date{
+        width: 60px;
+    }
+    .texts_letts h3 {
+        font-size: 15px;
+    }
+    .texts_letts p {
+        font-size: 15px;
+        height: auto;
+    }
+    .date span {
+        font-size: 15px;
+    }
+    .right-content-box ion-row {
+        flex-direction: column;
+    }
+    .right-content-box ion-col {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .Desktop_lock_unlock .img_unloacks img {
+        height: 22px !important;
+    }
+    .Desktop_lock_unlock ion-row ion-col .icon_bn img {
+        height: 20px;
+    }
+    #container_write h5{
+        font-size: 16px;
+    }
+    .f-20 {
+        font-size: 16px;
+    }
+    .contact_book-desk img {
+        width: 20px;
+    }
+    .ipad_write .row_01 p {
+        font-size: 15px;
+    }
+    .tab_desc p{
+        line-height: 25px;
+        padding-bottom: 20px;
+    }
+    .row_01 {
+        flex-direction: row !important;
+    }
+    .b_p{
+        flex-direction: row !important;
+    }
+    .contactlist-desk .insd p{
+        font-size: 14px;
+    }
+    .contactlist-desk ion-label{
+        font-size: 15px;
+    }
+    .user_nam{
+        height: 50px;
+    }
+    .account_desktop input, .account_desktop ion-select {
+        font-size: 20px;
+    }
+    .selects_ins ion-select {
+        height: 50px;
+    }
+    .account_ipads .inner_user_img {
+        height: 150px;
+        width: 150px;
+    }
+    .upload.right p {
+        font-size: 18px;
+    }
+    .upload.left p {
+        font-size: 18px;
+    }
+    .ipad_topbar ion-toolbar {
+        height: 50px;
+    }
+    .deskyop_hmma .list_cons ion-label {
+        font-size: 18px !important;
+    }
+    .control_cin {
+        width: 12px;
+        height: 12px;
+    }
+    .ipad_spot img {
+        width: 90px;
+    }
+    .desktop_spot h3 {
+        font-size: 22px;
+    }
+    .desk_top_fless p{
+        font-size: 20px;
+    }
+    .peint_data_headings h3{
+        font-size: 18px;    
+    }
+    .close_popus img {
+        width: 15px;
+    }
+    .login-inputs .user_nam {
+        height: 60px;
+    }
+    #signup-page {
+        padding: 50px 50px 50px;
+    }
+    .icon_mipad img{
+        width: 120px;
+    }
+    .icon_mipad{
+        width: 190px;
+    height: 250px;
+    }
+    .text_shareipad h3{
+        font-size: 20px;
+    }
+    .ipad_text_top p{
+        font-size: 22px;
+    }
+    .peint_inner_headings h3 {
+        font-size: 17px;
+    }
+    .peint_inner_headings h5 {
+        font-size: 17px;
+    }
+    .total_num h3{
+        font-size: 15px;
+    }
+    img.delete_print_btns {
+        width: 17px;
+    }
+    .contact_name_list .control_cin {
+        width: 18px;
+        height: 18px;
+    }
+    .desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        position: relative;
+        border-radius: 10px;
+    }
+    .desktop_deletes .alert-title{
+        font-size: 22px;
+    }
+    .desktop_deletes .alert-sub-title{
+        font-size: 20px;
+    }
+    .desktop_deletes .alert-message{
+        font-size: 20px;
+    }
+    .desktop_deletes .alert-button-group{
+        padding: 20px;
+    }
+    .desktop_deletes .alert-button-group button{
+        height: 45px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .cards-details h2{
+        font-size: 20px;
+    }
+    .cards-details p{
+        font-size: 17px;
+    }
+    .card-img-box{
+        width: 250px;
+    height: 200px;
+    }
+    .desktop-header-icon {
+        margin-right: 5px;
+    }
+    .Form-subject-block{
+        height: 100%;
+    }
+    .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 40%;
+    }
 }

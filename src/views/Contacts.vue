@@ -1133,14 +1133,22 @@ export default defineComponent({
     },
 
     async excel() {
-        modalController.dismiss()
+        //modalController.dismiss()
       const modal = await modalController.create({
           component: ImportCSVExcel,
+           animated: false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
           },
         })
+        modal.onDidDismiss().then((res)=>{
+          console.log(res);
+          if(res.data == 'cancel'){
+            modalController.dismiss()
+          }
+          
+      })
       return modal.present();
     },
 
@@ -1168,12 +1176,19 @@ export default defineComponent({
        // modalController.dismiss()
       const modal = await modalController.create({
           component: Creategroup,
-          //animated:false,
+          animated:false,
           cssClass: 'choosetem',
           componentProps: {
             title: 'New Title'
           },
         })
+         modal.onDidDismiss().then((res)=>{
+          console.log(res);
+          if(res.data == 'cancel'){
+            modalController.dismiss()
+          }
+          
+      })
       return modal.present();
     },
 
