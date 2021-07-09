@@ -4345,3 +4345,22 @@ ion-toggle::part(handle) {
 .icon_mipad{
   cursor: pointer;
 }
+
+.Setting-BreakLabel {
+  font-size: 20px;
+  font-family: 'Proxima Nova', sans-serif !important;
+  color: #959595;
+  text-align: left;
+  line-height: 22px;
+  margin: 0;
+}
+
+.SettingBreak {
+  padding: 5px 0;
+}
+
+@media (max-width: 767.98px) {
+  .Setting-BreakLabel {
+      font-size: 17px;
+  }
+}
