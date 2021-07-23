@@ -4445,6 +4445,10 @@ ion-toggle::part(handle) {
   display: none;
 }
 
+.container_write-ipad .Editor_sec .tox.tox-tinymce.tox-platform-touch {
+  height: 400px !important;
+}
+
 /* tooltip css  */
 
 .tooltip {

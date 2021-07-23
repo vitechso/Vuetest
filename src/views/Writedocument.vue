@@ -51,7 +51,8 @@
                                         </p>
                                     </div>
 
-                                    <div class="contact_book contact_book-desk icon-hover" @click="() => router.push('/contacts')">
+                                    <div class="contact_book contact_book-desk icon-hover"
+                                        @click="() => router.push('/contacts')">
                                         <img src="assets/images/contact_book.svg" />
                                     </div>
                                 </div>
@@ -91,14 +92,29 @@
                                 <h5>Dear Sirs and Madames,</h5>
                             </ion-col>
                             <ion-col size="12" class="ion-no-padding">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     It has survived not only five centuries, but also the leap into electronic
                                     typesetting, remaining essentially unchanged. It was popularised in the 1960s with
                                     the release of Letraset sheets containing Lorem Ipsum passages, and more recently
                                     with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
+                                    Ipsum.</p> -->
+
+                                <div class="tab_desc Editor_sec">
+                                    <editor
+                                        initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+                                        api-key="no-api-key" :init="{
+                                            height: 500,  
+                                            menubar: false,
+                                            plugins: 'lists link image emoticons',
+                                            toolbar: 'bold italic underline | alignleft aligncenter alignright alignjustify'
+                                        }" />
+                                </div>
                             </ion-col>
                         </ion-row>
 
@@ -353,7 +369,7 @@
                                         <h5>Dear Sirs and Madames,</h5>
                                     </ion-col>
                                     <ion-col size="12" class="pr-0 pl-0">
-                                        <div class="tab_desc">
+                                        <!-- <div class="tab_desc">
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                 industry. Lorem Ipsum has been the industry's standard dummy text ever
                                                 since the 1500s, when an unknown printer took a galley of type and
@@ -372,6 +388,21 @@
                                                 containing Lorem Ipsum passages, and more recently with desktop
                                                 publishing software like Aldus PageMaker including versions of Lorem
                                                 Ipsum.</p>
+                                        </div> -->
+
+                                        <div class="tab_desc Editor_sec">
+                                            <editor
+                                                initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+                                                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+                                                api-key="no-api-key" :init="{
+                                                    height: 500,  
+                                                    menubar: false,
+                                                    plugins: 'lists link image emoticons',
+                                                    toolbar: 'bold italic underline | alignleft aligncenter alignright alignjustify'
+                                                }" />
                                         </div>
                                     </ion-col>
                                 </ion-row>
@@ -482,21 +513,25 @@
                             <ion-col size="3" class="ipad_cols Desktop_cols">
                                 <div class="desktop_conn ">
 
-                                    <div @click="openMenu" class="desktop-header-icon MenuBar icon-hover tooltip right" data-before-content="Toggle Bar">
+                                    <div @click="openMenu" class="desktop-header-icon MenuBar icon-hover tooltip right"
+                                        data-before-content="Toggle Bar">
                                         <img src="assets/images/menu.svg" />
                                         <span class="Line"></span>
                                     </div>
 
 
-                                    <div class="desktop-header-icon icon-hover tooltip right" @click="chossetamp" data-before-content="Choose Template">
+                                    <div class="desktop-header-icon icon-hover tooltip right" @click="chossetamp"
+                                        data-before-content="Choose Template">
                                         <img src="assets/images/edit_pencil.svg" />
                                     </div>
 
-                                    <div class="desktop-header-icon icon-hover tooltip right" @click="desktopdelete" data-before-content="Delete Document">
+                                    <div class="desktop-header-icon icon-hover tooltip right" @click="desktopdelete"
+                                        data-before-content="Delete Document">
                                         <img src="assets/images/delete.svg" />
                                     </div>
 
-                                    <div class="desktop-header-icon icon-hover tooltip right" data-before-content="Search">
+                                    <div class="desktop-header-icon icon-hover tooltip right"
+                                        data-before-content="Search">
                                         <img src="assets/images/search.svg" />
                                     </div>
 
@@ -588,7 +623,8 @@
                                             <ion-col size="12" class="ion-no-padding">
                                                 <div class="board-icon">
                                                     <div class="board-left">
-                                                        <div class="icon_bn img_unloacks icon-hover tooltip right" data-before-content="Lock / Unlock"
+                                                        <div class="icon_bn img_unloacks icon-hover tooltip right"
+                                                            data-before-content="Lock / Unlock"
                                                             @click="addclass($event)">
                                                             <img v-if="styleClass==''"
                                                                 src="assets/images/un_lock.svg" />
@@ -615,7 +651,8 @@
                                                     </div>
 
                                                     <div class="board-right">
-                                                        <div class="icon_bn right_km icon-hover tooltip left" data-before-content="Send Type" @click="sendtype">
+                                                        <div class="icon_bn right_km icon-hover tooltip left"
+                                                            data-before-content="Send Type" @click="sendtype">
                                                             <img src="assets/images/black_send_share.svg" />
                                                         </div>
                                                     </div>
@@ -637,7 +674,8 @@
                                                                 Aveneues Kassel 11017 Germany</p>
                                                         </div>
 
-                                                        <div class="contact_book contact_book-desk icon-hover tooltip left" data-before-content="Contacts" @click="contact">
+                                                        <div class="contact_book contact_book-desk icon-hover tooltip left"
+                                                            data-before-content="Contacts" @click="contact">
                                                             <img src="assets/images/contact_book.svg" />
                                                         </div>
                                                     </div>
@@ -653,8 +691,8 @@
                                                                 Phase 2 Kassel 11017 Germany</p>
                                                         </div>
 
-                                                        <div class="contact_book contact_book-desk icon-hover tooltip left" data-before-content="Contacts"
-                                                            @click="contact">
+                                                        <div class="contact_book contact_book-desk icon-hover tooltip left"
+                                                            data-before-content="Contacts" @click="contact">
                                                             <img src="assets/images/contact_book.svg" />
                                                         </div>
                                                     </div>
@@ -704,15 +742,15 @@
                                                     <editor
                                                         initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 
-                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+                                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
                                                         api-key="no-api-key" :init="{
-      height: 500,  
-      menubar: false,
-      plugins: 'lists link image emoticons',
-      toolbar: 'bold italic underline | alignleft aligncenter alignright alignjustify'
-    }" />
+                                                            height: 500,  
+                                                            menubar: false,
+                                                            plugins: 'lists link image emoticons',
+                                                            toolbar: 'bold italic underline | alignleft aligncenter alignright alignjustify'
+                                                        }" />
                                                 </div>
                                             </ion-col>
 
@@ -844,7 +882,8 @@
                                     </div>
 
                                     <div class="desktop_pages_of">
-                                        <div class="arrow tooltip left" data-before-content="Previous" positionV="bottom" arrow>
+                                        <div class="arrow tooltip left" data-before-content="Previous"
+                                            positionV="bottom" arrow>
                                             <img src="assets/images/left-arrow.svg" />
                                         </div>
                                         <p>Page 1 of 2</p>
@@ -912,8 +951,8 @@
     import Selectsendtype from './Selectsendtype.vue'
     import AllletterMenu from './AllletterMenu.vue'
     import Editor from '@tinymce/tinymce-vue'
-//     import TooltipsModule from 'ionic-tooltips';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+    //     import TooltipsModule from 'ionic-tooltips';
+    // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     export default defineComponent({
         name: 'Writedocument',
@@ -960,7 +999,7 @@
             }
         },
         methods: {
-            
+
 
             openMenu() {
                 this.isMenuOpen = !this.isMenuOpen
