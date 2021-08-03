@@ -210,7 +210,7 @@
                 </ion-footer>
             </ion-page>
         </div>
-        <!---------------Ipad Code--------------->
+        <!---------------Ipad Code-------------->
         <div v-if="isIpad">
             <ion-page>
 
@@ -834,6 +834,22 @@
                                         </ion-row>
                                     </div>
 
+                                        </ion-col>
+                            </ion-row>
+                        </div>
+
+                    </div>
+
+                </ion-content>
+            </ion-page>
+        </div>
+
+    </ion-page>
+</template>
+
+
+
+
 <script lang="ts">
 import { IonPage,IonHeader, IonFooter, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, IonSelectOption, IonSelect, IonToggle, IonCol, IonRow,
 alertController, IonSearchbar, modalController, popoverController, IonLabel, IonItem, IonBadge  } from '@ionic/vue'
@@ -1045,263 +1061,7 @@ export default defineComponent({
   }
 });
 
-                                </ion-col>
-                            </ion-row>
-                        </div>
-
-                    </div>
-
-                </ion-content>
-            </ion-page>
-        </div>
-
-    </ion-page>
-</template>
-
-
-<script lang="ts">
-    import {
-        IonPage,
-        IonHeader,
-        IonFooter,
-        IonContent,
-        IonToolbar,
-        IonButtons,
-        IonButton,
-        IonMenuButton,
-        IonSelectOption,
-        IonSelect,
-        IonToggle,
-        IonCol,
-        IonRow,
-        alertController,
-        IonSearchbar,
-        modalController,
-        popoverController,
-        IonLabel,
-        IonItem,
-        IonBadge
-    } from '@ionic/vue'
-    import {
-        add
-    } from 'ionicons/icons';
-    import {
-        defineComponent
-    } from 'vue';
-    import {
-        useRouter
-    } from 'vue-router';
-    import {
-        isPlatform,
-        getPlatforms
-    } from '@ionic/vue';
-    import Changesignature from './Changesignature.vue'
-    import Preview from './Preview.vue'
-    import Contacts from './Contacts.vue';
-    import Account from './Account.vue'
-    import Popover from './Popover.vue'
-    import Choosetemplate from './Choosetemplate.vue'
-    import Selectsendtype from './Selectsendtype.vue'
-    import AllletterMenu from './AllletterMenu.vue'
-    import Editor from '@tinymce/tinymce-vue'
-    //     import TooltipsModule from 'ionic-tooltips';
-    // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-    export default defineComponent({
-        name: 'Writedocument',
-        components: {
-            IonContent,
-            IonFooter,
-            IonButton,
-            IonHeader,
-            IonPage,
-            IonToolbar,
-            IonButtons,
-            IonSelect,
-            IonSelectOption,
-            IonToggle,
-            IonCol,
-            IonSearchbar,
-            IonRow,
-            IonMenuButton,
-            IonBadge,
-            IonLabel,
-            IonItem,
-            'editor': Editor
-
-        },
-
-
-        setup() {
-            const router = useRouter();
-            return {
-                router,
-                add
-            };
-        },
-        data() {
-            return {
-                styleClass: "",
-                // TooltipsModule,
-                // BrowserAnimationsModule,
-                isDesktop: isPlatform('desktop'),
-                isMobile: getPlatforms().indexOf('iphone') > -1 || getPlatforms().indexOf('android') > -1,
-                isIpad: getPlatforms().indexOf('ipad') > -1,
-                isMenuOpen: true,
-                content: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            }
-        },
-        methods: {
-
-
-            openMenu() {
-                this.isMenuOpen = !this.isMenuOpen
-            },
-
-            async presentAlert() {
-                const alert = await alertController
-                    .create({
-                        cssClass: 'my-custom-class',
-                        header: 'Delete Document',
-                        subHeader: 'Do you really want to delete document',
-                        message: 'Address Change?',
-                        buttons: ['Cancel', 'Delete'],
-                    });
-                return alert.present();
-            },
-
-            async desktopdelete() {
-                const alert = await alertController
-                    .create({
-                        cssClass: 'desktop_deletes',
-                        header: 'Delete document',
-                        subHeader: 'Do you really want to delete document',
-                        message: 'Address Change?',
-                        buttons: ['Delete', 'Cancel'],
-                    });
-                return alert.present();
-            },
-
-            async openModal() {
-                const modal = await modalController.create({
-                    component: Changesignature,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                return await modal.present();
-            },
-
-
-            async sendtype() {
-                modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Selectsendtype,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                return modal.present();
-            },
-
-            async preview() {
-                modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Preview,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                return modal.present();
-            },
-
-            async contact() {
-                modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Contacts,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                return modal.present();
-            },
-
-            async account() {
-                modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Account,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                modal.onDidDismiss().then((res) => {
-                    console.log(res)
-                })
-                modal.present();
-
-            },
-
-            async documentSend() {
-                modalController.dismiss()
-                const alert = await alertController
-                    .create({
-                        cssClass: 'document_send',
-                        message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
-                    });
-                return alert.present();
-            },
-
-            addclass() {
-                if (this.$data.styleClass != "locked") {
-                    this.$data.styleClass = "locked"
-                } else {
-                    this.$data.styleClass = ""
-                }
-
-            },
-            async openPopover(ev: Event) {
-                const popover = await popoverController
-                    .create({
-                        component: Popover,
-                        cssClass: 'HeaderDropDown',
-                        event: ev,
-                        translucent: true
-                    })
-                return popover.present();
-            },
-
-            async allletterM(ev: Event) {
-                const popover = await popoverController
-                    .create({
-                        component: AllletterMenu,
-                        cssClass: 'HeaderDropDown allLetterDropDown',
-                        event: ev,
-                        translucent: true
-                    })
-                return popover.present();
-            },
-
-            async chossetamp() {
-                modalController.dismiss()
-                const modal = await modalController.create({
-                    component: Choosetemplate,
-                    cssClass: 'choosetem',
-                    componentProps: {
-                        title: 'New Title'
-                    },
-                })
-                return modal.present();
-            },
-
-
-
-        }
-    });
+                            
 </script>
 
 <style scoped>
