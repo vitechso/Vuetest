@@ -643,9 +643,10 @@
 
 
                         <ion-row class="row_01 b_p bor_b">
+                           <!---
                             <ion-col size="12" class="pr-0 pl-0 SD">
                                 <h5>Dear Sirs and Madames,</h5>
-                            </ion-col>
+                            </ion-col> ---->
                             <ion-col size="12" class="pr-0 pl-0">
           <!---                   <editor
                              initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
@@ -669,33 +670,23 @@
 
   ---->
                       <div class="tab_desc">
- <editor
-                             initial-value=" <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-    api-key="no-api-key"
-    :init="{
-      height: 500,  
-      menubar: false,
-      plugins: 'lists link image emoticons',
-      toolbar: 'styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist | link image emoticons'
-    }"
-       />                   
+               
                       </div>  
+
+                          <vue-editor v-model="content" :editorToolbar="customToolbar"></vue-editor>
+
                       </ion-col>
 
                     </ion-row>
 
-                        <ion-row class="row_01 b_p bor_b">
+                     <!---   <ion-row class="row_01 b_p bor_b">
                             <ion-col size="3" class="pr-0">
                                 <h5>Footer</h5>
                             </ion-col>
                             <ion-col size="9" class="pl-0">
                                 <p class="fontlight">Sincerely, <br> Justin Shepp</p>
                             </ion-col>
-                        </ion-row>
+                        </ion-row> ---->
 
                         <ion-row class="row_01 b_p ion-padding-top">
                             <ion-col size="6" class="pr-0">
@@ -842,7 +833,9 @@ import Popover from './Popover.vue'
 import Choosetemplate from './Choosetemplate.vue'
 import Selectsendtype from './Selectsendtype.vue'
 import AllletterMenu from './AllletterMenu.vue'
-import Editor from '@tinymce/tinymce-vue'
+
+import { VueEditor } from "vue3-editor";
+
 
 export default defineComponent({
   name: 'Writedocument',
@@ -863,8 +856,8 @@ export default defineComponent({
     IonMenuButton,
     IonBadge,
     IonLabel,
-    IonItem,
-    'editor': Editor
+    VueEditor,
+    IonItem
     
   },
 
@@ -881,7 +874,8 @@ export default defineComponent({
         isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
         isIpad:getPlatforms().indexOf('ipad')>-1,
         isMenuOpen:true,
-        content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        content:"<h5>Dear Sirs and Madames,</h5> <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br> <p class='fontlight'>Sincerely, <br /> Justin Shepp</p>",
+        customToolbar: [["bold", "italic", "underline"]]
       }
   },
   methods:{

@@ -1,7 +1,7 @@
 {
-  "name": "Moreyouletter",
+  "name": "moreyou.contracts",
   "version": "1.0.0",
-  "description": "Easy letter writing and sending",
+  "description": "moreyou.contracts app",
   "main": "./build/index.js",
   "scripts": {
     "build": "tsc",
@@ -22,11 +22,12 @@
     "capacitor",
     "electron"
   ],
-  "author": "",
+  "author": "fino data services",
   "license": "MIT",
   "build": {
-    "appId": "com.moreyouletter.com",
-    "productName": "Moreyouletter",
+    "appId": "com.moreyoucontracts.com",
+    "productName": "moreyou.contracts",
+	"copyright":"Copyright © 2021 ${author}",
     "files": [
       "assets/*",
       "build/*",
@@ -42,10 +43,10 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "appIcon.ico",
-	  "executableName":"Moreyouletter",
-	  "legalTrademarks":"Fino Data Service GmbH",
-	  "publisherName":"Fino Data Service GmbH"
+      "icon": "./assets/appIcon.ico",
+	  "executableName":"moreyou.contracts",
+	  "legalTrademarks":"fino data services GmbH",
+	  "publisherName":"fino data services GmbH"
     }
   }
 }
