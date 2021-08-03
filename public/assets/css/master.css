@@ -2237,9 +2237,14 @@ p.user_ids.iad_spl {
   align-items: center;
 }
 .arrow_ds {
-  transform: rotate(90deg);
   display: inline-block;
   margin-left: 5px;
+}
+
+.arrow_ds img {
+  transform: rotate( 
+90deg
+);
 }
 
 .desktop_conn ion-buttons {
@@ -2849,14 +2854,14 @@ img.paypal-logo {
   margin-right: 40px !important;
 }
 
-.MenuBar:after {
-  content: "";
-  position: absolute;
+.MenuBar .Line {
+  display: block;
   width: 1px;
   height: 30px;
-  right: -20px;
   background: #fff;
+  position: absolute;
   top: 50%;
+  right: -20px;
   transform: translateY(-50%);
 }
 
@@ -4430,3 +4435,117 @@ ion-toggle::part(handle) {
   top: 30px;
   transform: rotate(45deg);
 }
+
+
+.Editor_sec .tox .tox-statusbar {
+  border: 0;
+}
+
+.Editor_sec .tox .tox-statusbar__text-container {
+  display: none;
+}
+
+.container_write-ipad .Editor_sec .tox.tox-tinymce.tox-platform-touch {
+  height: 400px !important;
+}
+
+/* tooltip css  */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  position: absolute;
+  z-index: 999;
+  width: fit-content;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip.top::after {
+  content: attr(data-before-content);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+}
+
+.tooltip.bottom::after {
+  content: attr(data-before-content);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 10px));
+}
+
+.tooltip.right::after {
+  content: attr(data-before-content);
+  top: 50%;
+  right: 0;
+  transform: translateX(calc(100% + 10px)) translateY(-50%);
+}
+
+.tooltip.left::after {
+  content: attr(data-before-content);
+  top: 50%;
+  left: 0;
+  transform: translateX(calc(-100% - 10px)) translateY(-50%);
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* arrow */
+
+.tooltip::before {
+  content: "";
+  background-color: #eeeeee;
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  z-index: 999;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+}
+
+.tooltip.top::before {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
+
+.tooltip.bottom::before {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+}
+
+.tooltip.right::before {
+  top: 50%;
+  right: 0;
+  transform: translate(calc(100% + 5px), -50%) rotate(45deg);
+}
+
+.tooltip.left::before {
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% - 5px), -50%) rotate(45deg);
+}
+
+/* tooltip css  */
