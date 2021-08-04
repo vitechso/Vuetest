@@ -713,7 +713,7 @@
                                     <div class="inner_sizes">
                                     <span>DIN 5008 B</span> 
                                     </div>
-                                    <div class="inner_sizes">
+                                    <div class="inner_sizes active">
                                     <span>US Letter</span> 
                                     </div>
                                 </div>
@@ -874,7 +874,7 @@ export default defineComponent({
         isMobile: getPlatforms().indexOf('iphone')>-1||getPlatforms().indexOf('android')>-1,
         isIpad:getPlatforms().indexOf('ipad')>-1,
         isMenuOpen:true,
-        content:"<h5>Dear Sirs and Madames,</h5> <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br> <p class='fontlight'>Sincerely, <br /> Justin Shepp</p>",
+        content:"<h5>Dear Sirs and Madames,</h5> <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><p class='fontlight'>Sincerely, <br /> Justin Shepp</p>",
         customToolbar: [["bold", "italic", "underline"]]
       }
   },

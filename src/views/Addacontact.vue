@@ -243,10 +243,10 @@
 
                 <ion-col size="6" class="ion-padding-start">
                     <div lines="none" class="pdd_b selects_ins">
-                        <ion-select placeholder="City">
-                            <ion-select-option value="f">Female</ion-select-option>
-                            <ion-select-option value="m">Male</ion-select-option>
-                        </ion-select>
+                        <select placeholder="City">
+                            <option value="f">City</option>
+                            <option value="m">Male</option>
+                        </select>
                     </div>
                 </ion-col>
             </ion-row>
@@ -254,10 +254,10 @@
             <ion-row class="">
                 <ion-col size="6" class="ion-padding-end">
                     <div lines="none" class="pdd_b selects_ins">
-                        <ion-select placeholder="Country">
-                            <ion-select-option value="f">Female</ion-select-option>
-                            <ion-select-option value="m">Male</ion-select-option>
-                        </ion-select>
+                        <select placeholder="Country">
+                            <option value="f">Country</option>
+                            <option value="m">Male</option>
+                        </select>
                     </div>
                 </ion-col>
             </ion-row>
