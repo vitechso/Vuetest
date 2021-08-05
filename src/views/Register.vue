@@ -18,13 +18,30 @@
 
             <div class="sign_with">
               <h2>Sign up with</h2>
-              <div class="social_icons">
+              <!--<div class="social_icons">
                 <ul>
                   <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
                   <li class="twe"><a href="#"><img src="assets/images/u8.svg"/></a></li>
                   <li class="lin_d"><a href="#"><img src="assets/images/in.svg"/></a></li>
                 </ul>
-              </div>
+              </div>-->
+
+              <div class="new_social_icons">
+                  <ul>
+                      <li>
+                        <a href="#"><img src="assets/images/google_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/apple_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/facebook_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/twitter_icon.svg"></a>
+                      </li>
+                  </ul>
+                </div>
             </div>
 
             <div class="or"><h2>OR</h2></div>
@@ -97,13 +114,29 @@
 
             <div class="sign_with">
               <h2>Sign up with</h2>
-              <div class="social_icons">
+              <!--<div class="social_icons">
                 <ul>
                   <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
                   <li class="twe"><a href="#"><img src="assets/images/u8.svg"/></a></li>
                   <li class="lin_d"><a href="#"><img src="assets/images/in.svg"/></a></li>
                 </ul>
-              </div>
+              </div>-->
+              <div class="new_social_icons">
+                  <ul>
+                      <li>
+                        <a href="#"><img src="assets/images/google_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/apple_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/facebook_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/twitter_icon.svg"></a>
+                      </li>
+                  </ul>
+                </div>
             </div>
 
             <div class="or"><h2>OR</h2></div>
@@ -186,13 +219,30 @@
 
             <div class="sign_with">
               <h2>Sign up with</h2>
-              <div class="social_icons">
+              <!--<div class="social_icons">
                 <ul>
                   <li class="face"><a href="#"><img src="assets/images/facebook.svg"/></a></li>
                   <li class="twe"><a href="#"><img src="assets/images/u8.svg"/></a></li>
                   <li class="lin_d"><a href="#"><img src="assets/images/in.svg"/></a></li>
                 </ul>
-              </div>
+              </div>-->
+
+              <div class="new_social_icons">
+                  <ul>
+                      <li>
+                        <a href="#"><img src="assets/images/google_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/apple_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/facebook_icon.svg"></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="assets/images/twitter_icon.svg"></a>
+                      </li>
+                  </ul>
+                </div>
             </div>
 
             <div class="or"><h2>OR</h2></div>
