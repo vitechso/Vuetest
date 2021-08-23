@@ -604,7 +604,7 @@
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>From</h5>
-                                            <p class="fontlight f-20">John Anderson 243 Park Hall Aveneues Kassel 11017 Germany</p>
+                                            <p class="fontlight f-20 Include-Dot">John Anderson<span><h6></h6></span> 243 Park Hall Aveneues<span><h6></h6></span> Kassel 11017 Germany</p>
                                         </div>
 
                                         <div class="contact_book contact_book-desk">
@@ -619,7 +619,7 @@
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>To</h5>
-                                            <p class="fontlight f-20">Justin Shepp 564 Urban Estate Phase 2 Kassel 11017 Germany</p>
+                                            <p class="fontlight f-20 Include-Dot">Justin Shepp<span><h6></h6></span> 564 Urban Estate Phase 2<span><h6></h6></span> Kassel 11017 Germany</p>
                                         </div>
 
                                         <div class="contact_book contact_book-desk icon-hover" @click="contact">
@@ -735,36 +735,34 @@
             
                 </ion-col>
 
-                <ion-col size="6" class="d-flex ion-align-items-center relative Lp-bg">
+                <ion-col size="6" class="relative Lp-bg ion-no-padding customflex">
+                    <div class="Testtop"></div>
                     <div id="privew_s" class="back_white privew_ipads privew_desktop SDSD">
-
                         <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
-                            <ion-col size="5">
-                            <div class="innerr_b ipad_bs">
-                                <p><strong>John Anderson</strong></p>
-                                <p>Park Hall Aveneues</p>
-                                <p>8726 Kassel</p>
+                            <ion-col size="6">
+                                <div class="innerr_b ipad_bs">
+                                    <p><strong>John Anderson</strong></p>
+                                    <p>Park Hall Aveneues</p>
+                                    <p>8726 Kassel</p>
 
-                                <div class="mail_deta">
-                                <p>john.anderson@gmail.com</p>
+                                    <div class="mail_deta">
+                                    <p>john.anderson@gmail.com</p>
+                                    </div>
                                 </div>
-                            </div>
                             </ion-col>
-                            <ion-col size="5">
+ 
+                            <ion-col size="6">
+                                <div class="innerr_b_right">
+                                    <p><strong>Justin Shepp</strong></p>
+                                    <p>Urban Estate Phase 2</p>
+                                    <p>2726 Kassel</p>
 
-                            <div class="innerr_b_right">
-                                <p><strong>Justin Shepp</strong></p>
-                                <p>Urban Estate Phase 2</p>
-                                <p>2726 Kassel</p>
-
-                                <div class="mail_deta">
-                                <p>justin.shepp@gmail.com</p><br>
-                                <p>January 11, 2021</p>
+                                    <div class="mail_deta">
+                                    <p>justin.shepp@gmail.com</p>
+                                    <p>January 11, 2021</p>
+                                    </div>
                                 </div>
-                            </div>
                             </ion-col>
-
-
                         </ion-row>
 
                         <ion-row class="ion-padding-top ion-padding-bottom">
@@ -900,7 +898,7 @@ export default defineComponent({
         const alert = await alertController
             .create({
             cssClass: 'desktop_deletes',
-            header: 'Delete document',
+            header: 'Delete document2',
             subHeader: 'Do you really want to delete document',
             message: 'Address Change?',
             buttons: ['Delete', 'Cancel'],

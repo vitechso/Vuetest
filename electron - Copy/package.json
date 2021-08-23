@@ -1,7 +1,7 @@
 {
-  "name": "moreyou.contracts",
+  "name": "moreyou.letter",
   "version": "1.0.0",
-  "description": "moreyou.contracts app",
+  "description": "moreyou.letter app",
   "main": "./build/index.js",
   "scripts": {
     "build": "tsc",
@@ -25,8 +25,8 @@
   "author": "fino data services",
   "license": "MIT",
   "build": {
-    "appId": "com.moreyoucontracts.com",
-    "productName": "moreyou.contracts",
+    "appId": "com.moreyouletter.com",
+    "productName": "moreyou.letter",
 	"copyright":"Copyright © 2021 ${author}",
     "files": [
       "assets/*",

@@ -109,6 +109,7 @@
         <ion-col size="3">
             <div class="btn_ajj chosse_ipad">
                 <ion-button shape="round" type="button">Select Image</ion-button>
+                
             </div>
         </ion-col>
     </ion-row>
@@ -174,7 +175,9 @@
           </ion-col>
           <ion-col size="3">
               <div class="btn_ajj chosse_ipad">
-                  <ion-button shape="round" type="button">Select Image</ion-button>
+                  <!--<ion-button shape="round" type="button">Select Image</ion-button>-->
+                  <label class="SelectImage" for="SelectImage">Select Image</label>
+                  <input  type="file" shape="round" id="SelectImage" accept="image/*" />
               </div>
           </ion-col>
       </ion-row>
