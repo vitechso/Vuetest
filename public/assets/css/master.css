@@ -4632,3 +4632,31 @@ ion-toggle::part(handle) {
 .desktop_deletes button:first-child{
   background: #f1d000 !important;
 }
+
+.choosetemplate_hm{
+  --width: 1000px;
+  --height: 800px !important;
+}
+
+.MenuBar:after {
+  border-right: 1px solid #fff;
+  content: '';
+  position: absolute;
+  height: 40px;
+  right: -18px;
+}
+.fullwiths ion-chip {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background: #f8f8f8;
+  padding: 0px 10px;
+  font-size: 13px;
+  justify-content: space-between;
+}
+.onerows .Form-subject {
+  align-items: baseline;
+}
+.onerows {
+  height: auto;
+}

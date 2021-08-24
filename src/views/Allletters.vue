@@ -433,7 +433,7 @@ export default defineComponent({
        //alert('sdsds');
       const modal = await modalController.create({
           component: Choosetemplate,
-          cssClass: 'choosetem',
+          cssClass: 'choosetemplate_hm',
           componentProps: {
             title: 'New Title'
           },

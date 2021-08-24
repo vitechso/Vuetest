@@ -654,36 +654,35 @@
             
                 </ion-col>
 
-                <ion-col size="6" class="d-flex ion-align-items-center relative Lp-bg">
-                    <div id="privew_s" class="back_white privew_ipads privew_desktop">
+                <ion-col size="6" class="relative Lp-bg ion-no-padding customflex">
 
+                   <div class="Testtop"></div>
+                    <div id="privew_s" class="back_white privew_ipads privew_desktop SDSD">
                         <ion-row class="privew_r ion-padding-bottom ion-justify-content-between">
-                            <ion-col size="5">
-                            <div class="innerr_b ipad_bs">
-                                <p><strong>John Anderson</strong></p>
-                                <p>Park Hall Aveneues</p>
-                                <p>8726 Kassel</p>
+                            <ion-col size="6">
+                                <div class="innerr_b ipad_bs">
+                                    <p><strong>John Anderson</strong></p>
+                                    <p>Park Hall Aveneues</p>
+                                    <p>8726 Kassel</p>
 
-                                <div class="mail_deta">
-                                <p>john.anderson@gmail.com</p>
+                                    <div class="mail_deta">
+                                    <p>john.anderson@gmail.com</p>
+                                    </div>
                                 </div>
-                            </div>
                             </ion-col>
-                            <ion-col size="5">
+  
+                            <ion-col size="6">
+                                <div class="innerr_b_right">
+                                    <p><strong>Justin Shepp</strong></p>
+                                    <p>Urban Estate Phase 2</p>
+                                    <p>2726 Kassel</p>
 
-                            <div class="innerr_b_right">
-                                <p><strong>Justin Shepp</strong></p>
-                                <p>Urban Estate Phase 2</p>
-                                <p>2726 Kassel</p>
-
-                                <div class="mail_deta">
-                                <p>justin.shepp@gmail.com</p><br>
-                                <p>January 11, 2021</p>
+                                    <div class="mail_deta">
+                                    <p>justin.shepp@gmail.com</p>
+                                    <p>January 11, 2021</p>
+                                    </div>
                                 </div>
-                            </div>
                             </ion-col>
-
-
                         </ion-row>
 
                         <ion-row class="ion-padding-top ion-padding-bottom">
@@ -701,6 +700,7 @@
                                 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </ion-col>
                         </ion-row>
+                        
                     </div>
                 
                     <div class="desktop_pages_of">

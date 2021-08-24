@@ -28,11 +28,17 @@ import Uploadpdf from "../views/Uploadpdf.vue";
 import Creategroup from "../views/Creategroup.vue";
 import Orders from "../views/Orders.vue";
 import SendDoc from "../views/SendDoc.vue";
+import PDFView from "../views/Pdfview.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     redirect: "/home",
+  },
+  {
+    path: "/pdf-view",
+    name: "PDFView",
+    component: PDFView,
   },
   {
     path: "/home",

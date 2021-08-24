@@ -107,7 +107,7 @@
         </ion-toolbar>
       </ion-footer>
     </ion-menu>
-    <ion-router-outlet id="main"></ion-router-outlet>
+    <ion-router-outlet id="main" animated="false"></ion-router-outlet>
   </ion-app>
 <!--ipad-->
   <ion-app v-if="isIpad" class="menus_ipad">
@@ -208,11 +208,11 @@
         </ion-toolbar>
       </ion-footer>
     </ion-menu>
-    <ion-router-outlet id="main"></ion-router-outlet>
+    <ion-router-outlet id="main" animated="false"></ion-router-outlet>
   </ion-app>
 <!---desktop--->
   <ion-app v-if="isDesktop">
-    <ion-router-outlet id="main"></ion-router-outlet>
+    <ion-router-outlet id="main" animated="false"></ion-router-outlet>
   </ion-app>
 </template>
 

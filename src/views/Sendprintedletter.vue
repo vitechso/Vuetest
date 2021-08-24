@@ -488,7 +488,7 @@
             <ion-row class="ion-justify-content-center ion-padding ion-margin-vertical">
                 <ion-col size="12">
                     <div class="BtnBlock">
-                        <ion-button shape="round" class="MakeDefault-btn">Send</ion-button>
+                        <ion-button shape="round" class="MakeDefault-btn" @click="documentSend" >Send</ion-button>
                         <ion-button shape="round" type="default" @click="cancel" class="MakeDefault-btn _gary-outline-btn">Cancel</ion-button>
                     </div>
                 </ion-col>
@@ -503,7 +503,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, isPlatform, modalController, getPlatforms } from '@ionic/vue'
+import { IonPage,IonHeader, IonContent, IonToolbar, IonButtons, IonButton, IonMenuButton, isPlatform, modalController, getPlatforms, alertController } from '@ionic/vue'
 import {add} from 'ionicons/icons';
 import { defineComponent } from 'vue';
 import { useRouter } from 'vue-router';
@@ -534,7 +534,16 @@ export default defineComponent({
   methods:{
     cancel() {
         modalController.dismiss('cancel')
-    }
+    },
+    async documentSend() {
+         modalController.dismiss()
+        const alert = await alertController
+            .create({
+            cssClass: 'document_send',  
+            message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
+            });
+        return alert.present();
+     },
   }
 });
 </script>

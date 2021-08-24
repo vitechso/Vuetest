@@ -12,7 +12,7 @@
                 <p slot="end">10</p>
             </ion-item>
 
-            <ion-item button lines="none">
+            <ion-item button lines="none" @click="()=>router.push('/send-doc')">
                 <img src="assets/images/sent-icon.svg"/>
                 <p>Sent</p>
                 <p slot="end">15</p>

@@ -614,12 +614,27 @@
                                 </ion-col>
                             </ion-row>
 
-                            <ion-row class="Form-subject-row">
+                            <ion-row class="Form-subject-row onerows">
                                 <ion-col size="12" class="pr-0 pl-0">
                                     <div class="Form-subject-block">
                                         <div class="Form-subject">
                                             <h5>To</h5>
-                                            <p class="fontlight f-20 Include-Dot">Justin Shepp<span><h6></h6></span> 564 Urban Estate Phase 2<span><h6></h6></span> Kassel 11017 Germany</p>
+                                            <!-- <p class="fontlight f-20 Include-Dot">Justin Shepp<span><h6></h6></span> 564 Urban Estate Phase 2<span><h6></h6></span> Kassel 11017 Germany</p> -->
+                                            <div class="fullwiths">
+                                                <ion-chip>
+                                                    <ion-label class="fontlight Include-Dot">Justin Shepp<span><h6></h6></span> 564 Urban Estate Phase 2<span><h6></h6></span> Kassel 11017 Germany</ion-label>
+                                                      <ion-icon name="close"></ion-icon>
+                                                </ion-chip>
+                                                <ion-chip>
+                                                    <ion-label>Micheal Adams   56 Park Hall Avenues Street 6   Berlin 11017 Germany</ion-label>
+                                                      <ion-icon name="close"></ion-icon>
+                                                </ion-chip>
+                                                <ion-chip>
+                                                    <ion-label>Patrick Moya   67 Green Park Street 11   Berlin 11017 Germany</ion-label>
+                                                      <ion-icon name="close"></ion-icon>
+                                                </ion-chip>
+                                            </div>
+                                            
                                         </div>
 
                                         <div class="contact_book contact_book-desk icon-hover" @click="contact">
@@ -750,7 +765,7 @@
                                     </div>
                                 </div>
                             </ion-col>
- 
+  
                             <ion-col size="6">
                                 <div class="innerr_b_right">
                                     <p><strong>Justin Shepp</strong></p>
