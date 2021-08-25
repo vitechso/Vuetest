@@ -385,7 +385,7 @@ body.dark {
 
 .dark .SideBar {
     background-color: #333;
-    border-right: 1px solid #4a4a4a;
+    border-color: #4a4a4a;
 }
 
 .dark .welcome_ipad {
@@ -454,7 +454,7 @@ body.dark {
 }
 
 .dark .icon-hover:hover img {
-    filter: brightness(0.5);
+    filter: brightness(0.5) !important;
 }
 
 
@@ -561,6 +561,109 @@ body.dark {
 .dark .main_setting .list_cons {
     border-bottom: 0;
 }
+
+/* desktop  */
+
+.dark .tag_line_desktop {
+    color: #a0a0a0;
+}
+
+.dark .welcome_desktop {
+    background: #111;
+}
+
+.dark .choosetemplate_hm ion-content,
+.dark .choosetem ion-content {
+    --background: #333 !important;
+    background: #333 !important;
+}
+
+.dark .choosetemplate_hm .ipad_topbar,
+.dark .choosetem .ipad_topbar {
+    background: #4c4c4c;
+}
+
+.dark .ipad_topbar ion-toolbar {
+    border-bottom: 1px solid #666565;
+    --background: #4c4c4c;
+}
+
+.dark img.doc_pdf {
+    filter: brightness(100);
+}
+
+.dark .up_load_c {
+    color: #959595;
+}
+
+.dark .lettes_desk {
+    background-color: #333333;
+}
+
+.dark .lettes_desk.active_letters {
+    background: #f1d000;
+}
+
+.dark .desk_flx .desktop_vs {
+    color: #fff !important;
+}
+
+.dark .black-down-arrow .button-solid img {
+    filter: invert(0);
+}
+
+.dark .s_bar {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.dark .contact-book-desktop img {
+    filter: brightness(100) !important;
+}
+
+.dark .fullwiths ion-chip {
+    border: 1px solid #333;
+    background: #333;
+}
+
+.dark .fullwiths ion-chip ion-icon {
+    color: #fff;
+}
+
+.dark .ipad_borders {
+    border-left: 1px solid #4a4a4a;
+}
+
+.dark .ql-toolbar.ql-snow,
+.dark .ql-container.ql-snow {
+    border: 1px solid #4a4a4a;
+}
+
+.dark .quillWrapper .ql-snow .ql-stroke {
+    stroke: #fff;
+}
+
+.dark .ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill {
+    fill: #fff;
+}
+
+.dark .Lp-bg {
+    background: #444;
+}
+
+.dark .desktop_pages_of {
+    background: #333;
+}
+
+.dark .desktop_pages_of .arrow {
+    border-left: 1px solid #4a4a4a;
+    border-right: 1px solid #4a4a4a;
+}
+
+.dark .desktop_pages_of img {
+    filter: invert(1);
+}
+
+/* desktop  */
 
 
 
