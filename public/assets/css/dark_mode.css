@@ -1,8 +1,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
-      /* Dark mode variables go here */
+        /* Dark mode variables go here */
     }
-  }
+}
 
 .dark p,
 .dark h1,
@@ -17,18 +17,27 @@
 }
 
 body.dark {
-/* Dark mode variables go here */
+    /* Dark mode variables go here */
     --ion-background-color: #111 !important;
 }
+
 .dark .setting_bs {
     background: #333 !important;
     --background: #333 !important;
     border: none;
 }
+
+.dark .deskyop_hmma .setting_bs {
+    background: #4c4c4c !important;
+    --background: #4c4c4c !important;
+}
+
+
 .dark #container_write {
     --background: #111;
     background: #111;
 }
+
 .dark .slide_fils img {
     filter: brightness(50);
 }
@@ -36,6 +45,7 @@ body.dark {
 .dark ion-checkbox {
     --background: transparent;
 }
+
 .dark .control_cin img {
     filter: brightness(50);
 }
@@ -51,41 +61,52 @@ body.dark {
 }
 
 
-.dark .header_am{
+.dark .header_am {
     --background: #111 !important;
     background: #111 !important;
 }
+
 .dark ion-content {
     --background: #111 !important;
     background: #111 !important;
 }
+
 .dark .icons_s img {
     filter: brightness(50);
 }
+
 .dark .suppoets img {
     filter: brightness(50);
 }
-.dark .list_cons ion-label{
+
+.dark .list_cons ion-label {
     color: #fff !important;
 }
+
 .dark .suppoets h3 {
     color: #FFF;
 }
+
 .dark .ens_sd img {
     filter: contrast(1);
 }
+
 .dark .menu_close img {
     filter: brightness(50);
 }
+
 .dark .icon_menus img {
     filter: brightness(50);
 }
+
 .dark .icon_menus {
     color: #fff;
 }
+
 .dark .bans_sj {
     color: #fff;
 }
+
 .dark .user_logout img {
     filter: brightness(50);
 }
@@ -98,19 +119,24 @@ body.dark {
 .dark .kdh {
     display: none;
 }
+
 .dark .drak_mode {
     display: block;
 }
-.dark .sign_with h2{
+
+.dark .sign_with h2 {
     color: #fff;
 }
-.dark .or h2{
+
+.dark .or h2 {
     color: #fff;
 }
-.dark .user_nam{
+
+.dark .user_nam {
     border-color: #888;
     color: #999;
 }
+
 .dark .pdd_b input::placeholder {
     color: #fff;
 }
@@ -120,22 +146,27 @@ body.dark {
     border-color: #888;
 }
 
-.dark .for_got a{
+.dark .for_got a {
     color: #fff;
 }
-.dark .sign_doens{
+
+.dark .sign_doens {
     color: #fff;
 }
-.dark .logo{
+
+.dark .logo {
     display: none;
 }
-.w-100{
+
+.w-100 {
     width: 100% !important;
 }
-.dark #container p{
+
+.dark #container p {
     font-size: 21px;
     color: #fff;
 }
+
 .dark .texts_letts p {
     color: #bbbbbb !important;
 }
@@ -152,46 +183,59 @@ body.dark {
 .dark .bor_b {
     border-bottom: 1px solid #4a4a4a;
 }
-.dark .texts_letts h3{
+
+.dark .texts_letts h3 {
     color: #fff;
 }
-.dark .letter_pic{
+
+.dark .letter_pic {
     box-shadow: none;
 }
+
 .dark .upload img {
     filter: brightness(50);
 }
+
 .dark .user_ids {
     font-weight: 100;
     color: #959595;
 }
-.dark .alert-radio-label{
+
+.dark .alert-radio-label {
     color: #fff;
 }
-.dark .lock_unlock{
+
+.dark .lock_unlock {
     border: 1px solid #4a4a4a;
     background-color: #333333;
 }
+
 .dark .img_unloacks img {
     filter: brightness(50);
 }
+
 .dark .contact_book img {
     filter: contrast(0);
 }
-.dark .back_foo ion-toolbar{
+
+.dark .back_foo ion-toolbar {
     background: #333;
     --background: #333;
     border-top: 1px solid #111;
 }
+
 .dark .icon_bn img {
     filter: brightness(50);
 }
+
 .dark .title_doc h3 {
     color: #fff;
 }
+
 .dark .innerr_b p {
     color: #333;
 }
+
 .dark .privew_r p,
 .dark .privew_r p strong {
     color: #333;
@@ -204,6 +248,7 @@ body.dark {
 .dark .sincerely p {
     color: #333;
 }
+
 .dark .foo_bottom ion-toolbar {
     background: #4c4c4c !important;
     --background: #4c4c4c;
@@ -217,7 +262,8 @@ body.dark {
 .dark .text_share h3 {
     color: #fff;
 }
-.dark .send_shares{
+
+.dark .send_shares {
     background: #333333;
 }
 
@@ -234,34 +280,55 @@ body.dark {
     background: #333;
     border-color: #4a4a4a;
 }
+
 .dark .num_tols {
     background: #555555;
 }
+
 .dark .g_total {
     background: #666666;
 }
+
 .dark .inner_details {
     border-color: #4a4a4a;
 }
+
 .dark .delete_btn a {
     color: #fff;
 }
+
 .dark .delete_btn img {
     filter: brightness(50);
 }
+
 .dark .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
     width: 100%;
     max-width: 93%;
     background: #333333;
     color: #fff;
 }
+
+@media (min-width: 1024px) {
+    .dark .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+.dark .desktop_deletes .alert-wrapper.ion-overlay-wrapper.sc-ion-alert-md {
+    max-width: 630px;
+}
+
 .dark .alert-title {
     color: #fff;
+    border-color: #4a4a4a;
 }
-.dark .alert-sub-title{
+
+.dark .alert-sub-title {
     color: #fff;
 }
-.dark .alert-message{
+
+.dark .alert-message {
     color: #fff;
 }
 
@@ -293,6 +360,7 @@ body.dark {
     border-radius: 0;
     background: #a3a2a3;
 }
+
 .dark .swiper-pagination-bullet-active {
     opacity: 1;
 }
@@ -347,11 +415,11 @@ body.dark {
 }
 
 .dark .change-s-block p strong {
-    color: #fff; 
+    color: #fff;
 }
 
 .dark .change-s-block p {
-    color: #bbb;  
+    color: #bbb;
 }
 
 .dark .upload-pdf-mobo .pdf_icons img {
@@ -359,7 +427,7 @@ body.dark {
 }
 
 .dark .mobo-segmnt ion-label {
-    color: #fff;  
+    color: #fff;
 }
 
 .dark .segment-button-checked ion-label {
@@ -406,6 +474,7 @@ body.dark {
 .dark span.popup_title {
     color: #fff;
 }
+
 .dark .close_popus img {
     filter: brightness(100);
 }
@@ -453,8 +522,13 @@ body.dark {
     background: #333333;
 }
 
-.dark .icon-hover:hover img {
-    filter: brightness(0.5) !important;
+.dark .icon-hover:hover {
+    background: #555;
+}
+
+
+.dark ion-header .icon-hover:hover {
+    background: #fbdd25ab;
 }
 
 
@@ -493,7 +567,7 @@ body.dark {
 }
 
 .dark .contactlist-desk .alpha p,
-.dark .contactlist-desk ion-label, 
+.dark .contactlist-desk ion-label,
 .dark .contactlist-desk .insd p,
 .dark .desktop-segmnt ion-label {
     color: #fff !important;
@@ -509,7 +583,7 @@ body.dark {
 }
 
 .dark p.font_sels {
-    color: #bbb;  
+    color: #bbb;
 }
 
 .dark .select-upload-text-ipad {
@@ -580,7 +654,7 @@ body.dark {
 
 .dark .choosetemplate_hm .ipad_topbar,
 .dark .choosetem .ipad_topbar {
-    background: #4c4c4c;
+    background: #333;
 }
 
 .dark .ipad_topbar ion-toolbar {
@@ -590,10 +664,6 @@ body.dark {
 
 .dark img.doc_pdf {
     filter: brightness(100);
-}
-
-.dark .up_load_c {
-    color: #959595;
 }
 
 .dark .lettes_desk {
@@ -621,8 +691,12 @@ body.dark {
 }
 
 .dark .fullwiths ion-chip {
-    border: 1px solid #333;
+    border: 1px solid #4a4a4a;
     background: #333;
+}
+
+.dark .fullwiths ion-chip ion-label {
+    color: #bbb !important;
 }
 
 .dark .fullwiths ion-chip ion-icon {
@@ -642,7 +716,8 @@ body.dark {
     stroke: #fff;
 }
 
-.dark .ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill {
+.dark .ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
     fill: #fff;
 }
 
@@ -663,6 +738,54 @@ body.dark {
     filter: invert(1);
 }
 
+.dark .popover-content {
+    background: #333;
+}
+
+.dark .desktop_header_dropdownList img {
+    filter: brightness(100);
+}
+
+.dark .HeaderDropDown .popover-content:after {
+    border-bottom: 10px solid #333333;
+}
+
+.dark .HeaderDropDown.allLetterDropDown .popover-content {
+    background: #444 !important;
+}
+
+.dark .HeaderDropDown.allLetterDropDown .popover-content:after {
+    border-bottom: 10px solid #444444;
+}
+
+.dark .locked:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 60%);
+    left: 0;
+    top: 0;
+}
+
+.dark .locked {
+    opacity: 1;
+    position: relative;
+}
+
+.dark .Desktop-print-data {
+    background-color: #4c4c4c;
+    border: 1px solid #777777;
+}
+
+.dark .Desktop-print-data ion-row {
+    border-bottom: 1px solid #777777;
+}
+
+.dark .Desktop-print-data ion-row:last-child {
+    border: 0;
+  }
+
 /* desktop  */
 
 
@@ -673,7 +796,7 @@ body.dark {
     }
 
     .dark .foo_bottom ion-toolbar {
-        background: #333!important;
+        background: #333 !important;
         --background: #333;
     }
 
@@ -687,7 +810,7 @@ body.dark {
         --background: #111111;
     }
 
-    .dark  .app_vers {
+    .dark .app_vers {
         color: #959595;
     }
 

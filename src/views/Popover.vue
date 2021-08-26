@@ -2,22 +2,32 @@
     <ion-list class="desktop_header_dropdownList">
             <!-- <ion-list-header>Ionic</ion-list-header> -->
             <ion-item button @click="account" lines="none">
-                <img src="assets/images/user-account.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/user-account.svg"/>
+                </div>
                 <p>Account</p>
             </ion-item>
 
             <ion-item button lines="none"  @click="contact">
-                <img src="assets/images/contact_book.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/contact_book.svg"/>
+                </div>
+                
                 <p>Contacts</p>
             </ion-item>
 
             <ion-item button lines="none" @click="settings">
-                <img src="assets/images/setting.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/setting.svg"/>
+                </div>
+                
                 <p>Settings</p>
             </ion-item> 
 
             <ion-item button lines="none">
-                <img src="assets/images/logout.svg"/>
+                <div class="Icon-Box">
+                  <img class="logout-icon" src="assets/images/logout.svg"/>
+                </div>
                 <p>Logout</p>
             </ion-item>
             <!-- <ion-item lines="none" detail="false" button onClick="dismissPopover()">Close</ion-item> -->

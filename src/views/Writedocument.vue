@@ -1002,7 +1002,7 @@
             return alert.present();
          },
 
-         async desktopdelete() {
+         async desktopdelete () {
             const alert = await alertController
                .create({
                   cssClass: 'desktop_deletes',
@@ -1014,10 +1014,10 @@
             return alert.present();
          },
 
-         async openModal() {
+         async openModal () {
             const modal = await modalController.create({
                component: Changesignature,
-               cssClass: 'choosetem',
+               cssClass: 'choosetemplate_hm',
                componentProps: {
                   title: 'New Title'
                },
@@ -1026,7 +1026,7 @@
          },
 
 
-         async sendtype() {
+         async sendtype () {
             modalController.dismiss()
             const modal = await modalController.create({
                component: Selectsendtype,
@@ -1038,7 +1038,7 @@
             return modal.present();
          },
 
-         async preview() {
+         async preview () {
             modalController.dismiss()
             const modal = await modalController.create({
                component: Preview,
@@ -1050,7 +1050,7 @@
             return modal.present();
          },
 
-         async contact() {
+         async contact () {
             modalController.dismiss()
             const modal = await modalController.create({
                component: Contacts,
@@ -1062,7 +1062,7 @@
             return modal.present();
          },
 
-         async account() {
+         async account () {
             modalController.dismiss()
             const modal = await modalController.create({
                component: Account,
@@ -1078,7 +1078,7 @@
 
          },
 
-         async documentSend() {
+         async documentSend () {
             modalController.dismiss()
             const alert = await alertController
                .create({
@@ -1096,7 +1096,7 @@
             }
 
          },
-         async openPopover(ev: Event) {
+         async openPopover (ev: Event) {
             const popover = await popoverController
                .create({
                   component: Popover,
@@ -1107,7 +1107,7 @@
             return popover.present();
          },
 
-         async allletterM(ev: Event) {
+         async allletterM (ev: Event) {
             const popover = await popoverController
                .create({
                   component: AllletterMenu,
@@ -1118,11 +1118,11 @@
             return popover.present();
          },
 
-         async chossetamp() {
+         async chossetamp () {
             modalController.dismiss()
             const modal = await modalController.create({
                component: Choosetemplate,
-               cssClass: 'choosetem',
+               cssClass: 'choosetemplate_hm',
                componentProps: {
                   title: 'New Title'
                },
