@@ -25,7 +25,7 @@
 
   <ion-content :fullscreen="true">
     <div class="main_setting ion-margin">
-        <div class="account_m">
+        <div class="account_m account-desktop">
             <ion-row>
                 <ion-col size="12">
                     <div class="user_image">

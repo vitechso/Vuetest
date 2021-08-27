@@ -462,7 +462,7 @@
                            <h3>Help & Support</h3>
                         </div>
                         <div class="BtnBlock">
-                           <ion-button shape="round" class="MakeDefault-btn">Logout</ion-button>
+                           <ion-button @click="() => {router.push('/home');cancel();}" shape="round" class="MakeDefault-btn">Logout</ion-button>
                         </div>
                      </ion-col>
                   </ion-row>
@@ -515,12 +515,14 @@
          IonToggle,
          IonButton
       },
+
       setup() {
          const router = useRouter();
          return {
             router
          };
       },
+      
       data() {
          return {
             styleClass: "",

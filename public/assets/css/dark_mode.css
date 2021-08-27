@@ -60,7 +60,6 @@ body.dark {
     color: #959595;
 }
 
-
 .dark .header_am {
     --background: #111 !important;
     background: #111 !important;
@@ -784,7 +783,37 @@ body.dark {
 
 .dark .Desktop-print-data ion-row:last-child {
     border: 0;
-  }
+}
+
+.dark .account_desktop .inner_user_img {
+    background: #444;
+}
+
+.dark .card-details-block {
+    background: #4c4c4c;
+}
+
+.dark .card-info img {
+    filter: brightness(100);
+}
+
+.dark .card-action img {
+    filter: brightness(100);
+}
+
+.dark .card-img-box {
+    border: 1px solid #4c4c4c;
+    background: #4c4c4c;
+}
+
+.dark .active-Cardbox {
+    border: 2px solid #f1d000;
+}
+
+.dark .card-img-box img {
+    width: 65px;
+    filter: brightness(100);
+}
 
 /* desktop  */
 

@@ -55,21 +55,25 @@ const routes: Array<RouteRecordRaw> = [
     name: "Register",
     component: Register,
   },
+  
   {
     path: "/intro",
     name: "Intro",
     component: Intro,
   },
+
   {
     path: "/all-letters",
     name: "Allletters",
     component: Allletters,
   },
+
   {
     path: "/choose-template",
     name: "Choosetemplate",
     component: Choosetemplate,
   },
+
   {
     path: "/sendfax",
     name: "Sendfax",

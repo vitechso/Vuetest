@@ -1,19 +1,28 @@
 <template>
     <ion-list class="desktop_header_dropdownList">
             <ion-item button lines="none">
-                <img src="assets/images/allLetter.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/allLetter.svg"/>
+                </div>
+                
                 <p>All Letters</p>
                 <p slot="end">20</p>
             </ion-item>
 
             <ion-item button lines="none">
-                <img src="assets/images/Draft.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/Draft.svg"/>
+                </div>
+               
                 <p>Drafts</p>
                 <p slot="end">10</p>
             </ion-item>
 
             <ion-item button lines="none" @click="()=>router.push('/send-doc')">
-                <img src="assets/images/sent-icon.svg"/>
+                <div class="Icon-Box">
+                  <img src="assets/images/sent-icon.svg" class="send-doc"/>
+                </div>
+                
                 <p>Sent</p>
                 <p slot="end">15</p>
             </ion-item> 
@@ -34,7 +43,7 @@ export default defineComponent({
         IonItem
     }, 
     methods:{
-        cancel() {
+        cancel () {
         modalController.dismiss()
     },
         async account() {
@@ -50,7 +59,7 @@ export default defineComponent({
       return modal.present();
     },
 
-    async settings() {
+    async settings () {
         modalController.dismiss()
         const modal = await modalController.create({
           component: Settings,

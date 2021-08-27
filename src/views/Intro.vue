@@ -9,12 +9,12 @@
             <ion-col size="12">
               <div class="drak_mode">
               <img class="dark-logo" src="assets/images/darklogo.svg"/>
-              <span class="tag_line_desktop f15">powered by fino</span>
+               
             </div>
 
               <div class="logo">
               <img src="/assets/images/logo.svg">
-              <span class="tag_line_desktop f15">powered by fino</span>
+               
             </div>
             </ion-col>
           </ion-row>
@@ -77,11 +77,11 @@
           <ion-col size="12" class="ion-padding-bottom"> 
           <div class="drak_mode logo_withs righ">
               <img class="logo-dark" src="assets/images/darklogo.svg"/>
-              <span class="tag_line_desktop">powered by fino</span>
+               
           </div>
             <div class="logo logo_withs righ">
               <img src="assets/images/logo.svg">
-              <span class="tag_line_desktop">powered by fino</span>
+               
             </div>
           </ion-col>
         </ion-row>
@@ -145,11 +145,11 @@
             <ion-col size="12"> 
             <div class="drak_mode logo_withs righ">
               <img class="logo-dark" src="assets/images/darklogo.svg"/>
-              <span class="tag_line_desktop">powered by fino</span>
+               
             </div>
               <div class="logo logo_withs righ">
                 <img src="/assets/images/logo.svg">
-                <span class="tag_line_desktop">powered by fino</span>
+                 
               </div>
             </ion-col>
           </ion-row>

@@ -8,13 +8,13 @@
                      <form @submit.prevent="handleLogin">
                         <div class="drak_mode">
                            <img class="dark-logo" src="assets/images/darklogo.svg" />
-                           <span class="tag_line_desktop f15">powered by fino</span>
+                            
                         </div>
 
 
                         <div class="logo">
                            <img src="/assets/images/logo.svg">
-                           <span class="tag_line_desktop f15">powered by fino</span>
+                            
                         </div>
 
                         <div class="sign_with">
@@ -92,12 +92,12 @@
                      <form @submit.prevent="handleLogin">
                         <div class="drak_mode">
                            <img class="dark-logo" src="assets/images/darklogo.svg" />
-                           <span class="tag_line_desktop">powered by fino</span>
+                            
                         </div>
 
                         <div class="logo">
                            <img src="assets/images/logo.svg" />
-                           <span class="tag_line_desktop">powered by fino</span>
+                            
                         </div>
 
 
@@ -178,12 +178,12 @@
                      <form @submit.prevent="handleLogin">
                         <div class="drak_mode">
                            <img class="dark-logo" src="assets/images/darklogo.svg" />
-                           <span class="tag_line_desktop">powered by fino</span>
+                            
                         </div>
 
                         <div class="logo">
                            <img src="assets/images/logo.svg" />
-                           <span class="tag_line_desktop">powered by fino</span>
+                            
                         </div>
 
                         <div class="sign_with">
