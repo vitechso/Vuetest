@@ -210,7 +210,8 @@
     </ion-menu>
     <ion-router-outlet id="main" animated="false"></ion-router-outlet>
   </ion-app>
-<!---desktop--->
+
+<!---desktop---->
   <ion-app v-if="isDesktop">
     <ion-router-outlet id="main" animated="false"></ion-router-outlet>
   </ion-app>
@@ -258,18 +259,18 @@ export default defineComponent({
     console.log(getPlatforms())
     //alert("here")
     // Hide the splash (you should do this on app launch)
-    SplashScreen.hide();
+    // SplashScreen.hide();
 
     // Show the splash for an indefinite amount of time:
-    SplashScreen.show({
-      autoHide: false,
-    });
+    // SplashScreen.show({
+    //   autoHide: false,
+    // });
 
     // Show the splash for two seconds and then auto hide:
-    SplashScreen.show({
-      showDuration: 2000,
-      autoHide: true,
-    });
+    // SplashScreen.show({
+    //   showDuration: 2000,
+    //   autoHide: true,
+    // });
     const router = useRouter();
     return { router };
   },

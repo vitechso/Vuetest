@@ -1085,7 +1085,14 @@
                   cssClass: 'document_send',
                   message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
                });
-            return alert.present();
+           return alert.present();
+
+            // setTimeout(()=>{
+            //    alert.dismiss();
+            // }, 2000);
+
+
+
          },
 
          addclass() {

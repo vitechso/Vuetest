@@ -569,6 +569,7 @@
                   cssClass: 'document_send',
                   message: '<div class="send_doxs"><img src="assets/images/check_send.svg"/><p>Your Document has been <br> sucessfully sent</p></div>',
                });
+            setTimeout(()=>{alert.dismiss();modalController.dismiss();},2000)
             return alert.present();
          },
       }

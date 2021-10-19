@@ -272,16 +272,16 @@
             </ion-row>
             
             <ion-row>
-                <ion-col size="6">
-                    <div class="upload right">
+                <ion-col size="12">
+                    <div class="upload right centerupload">
                         <img src="assets/images/upload_icon.svg" /> <p>Upload Picture</p>
                     </div>
                 </ion-col>
-                <ion-col size="6">
+                <!--<ion-col size="6">
                     <div class="upload left">
                         <img src="assets/images/take_picture.svg" /> <p>Take Picture</p>
                     </div>
-                </ion-col>
+                </ion-col>-->
             </ion-row>
 
             <ion-row class="inputs_accounts">

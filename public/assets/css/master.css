@@ -5047,3 +5047,6 @@ ion-toggle::part(handle) {
 .account_desktop .inputs_accounts .user_nam {
   height: 55px;
 }
+.centerupload{
+  justify-content: center !important;
+}

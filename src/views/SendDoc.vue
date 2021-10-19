@@ -770,6 +770,10 @@ export default defineComponent({
       const router = useRouter();
       return { router, add };
   },
+  mounted(){
+      //alert("called")
+  },
+  
   data() {
       return {
         styleClass:"",

@@ -79,7 +79,8 @@
                      </div>
                      <ion-label>Dark Mode</ion-label>
 
-                     <ion-toggle @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
+                        <ion-toggle checked="checked" v-show="colorMode =='dark'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
+                        <ion-toggle v-show="colorMode =='light'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
                   </ion-item>
 
                   <div class="SettingBreak">
@@ -234,8 +235,8 @@
                               <img src="assets/images/Dark_mode.svg" />
                            </div>
                            <ion-label>Dark Mode</ion-label>
-                           <ion-toggle @ionChange="changeTheme($event)" id="themeToggle" slot="end">
-                           </ion-toggle>
+                           <ion-toggle checked="checked" v-show="colorMode =='dark'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
+                           <ion-toggle v-show="colorMode =='light'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
                         </ion-item>
                      </ion-col>
                   </ion-row>
@@ -395,7 +396,8 @@
                            </div>
                            <ion-label>Dark Mode</ion-label>
 
-                           <ion-toggle @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
+                           <ion-toggle checked="checked" v-show="colorMode =='dark'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
+                           <ion-toggle v-show="colorMode =='light'" @ionChange="changeTheme($event)" id="themeToggle" slot="end"></ion-toggle>
                         </ion-item>
                      </ion-col>
 
@@ -516,16 +518,28 @@
          IonButton
       },
 
-      setup() {
+
+
+      setup() { 
          const router = useRouter();
          return {
             router
          };
       },
+
+      mounted(){
+         const theme = localStorage.getItem('mode');
+         if(theme == '' || theme == undefined){
+            this.colorMode = 'light';
+         }else{
+            this.colorMode = theme;
+         }
+      },
       
       data() {
          return {
             styleClass: "",
+            colorMode: 'light',
             isDesktop: isPlatform('desktop'),
             isMobile: getPlatforms().indexOf('iphone') > -1 || getPlatforms().indexOf('android') > -1,
             isIpad: getPlatforms().indexOf('ipad') > -1,
@@ -543,9 +557,11 @@
          changeTheme(event: any) {
             console.log(event)
             if (event.detail.checked) {
+               localStorage.setItem('mode', 'dark')
                document.body.classList.remove('light');
                document.body.classList.add('dark')
             } else {
+               localStorage.setItem('mode', 'light')
                document.body.classList.remove('dark');
                document.body.classList.add('light')
             }

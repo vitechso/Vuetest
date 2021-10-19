@@ -282,7 +282,8 @@ export default defineComponent({
 
     next(){
         if(this.type == 'pdf'){
-            modalController.dismiss()
+            //modalController.dismiss()
+            this.sendpdf();
         }
         if(this.type == 'sendprint'){
             this.sendprint();
@@ -320,6 +321,11 @@ export default defineComponent({
           }
       })
       return modal.present();
+    },
+
+    async sendpdf(){
+            this.router.push('/pdf-view');
+             modalController.dismiss()
     },
   }
 });
